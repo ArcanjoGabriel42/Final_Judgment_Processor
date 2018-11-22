@@ -2,7 +2,7 @@ Library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-ENTITY memoria_rom is 
+ENTITY memoria_ROM2 is 
 PORT(
 	clk: IN STD_LOGIC;
 	entrada: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -13,10 +13,11 @@ PORT(
 	rs : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 	funct : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 	tipoi : OUT STD_LOGIC_VECTOR (5 DOWNTO 0);
-	jump : out STD_LOGIC_VECTOR(12 DOWNTO 0));
-END memoria_rom;
+	jump : out STD_LOGIC_VECTOR(11 DOWNTO 0)
+);
+END memoria_ROM2;
 
-ARCHITECTURE behavior OF memoria_rom IS
+ARCHITECTURE behavior OF memoria_ROM2 IS
 
 TYPE matriz IS ARRAY(0 TO 65535) OF STD_LOGIC_VECTOR(15 downto 0);
 SIGNAL ROM : matriz := ("0101010101010101", "1010101010101010", 
@@ -69,13 +70,13 @@ BEGIN
 				jump <= ROM(conv_integer(entrada))(11 DOWNTO 0);
 			
 			ELSE
-				op <= "ZZZZZZZZZZZ";
-				rs <= "ZZZZZZZZZZZ";
-				rt <= "ZZZZZZZZZZZ";
-				rd <= "ZZZZZZZZZZZ";
-				funct <= "ZZZZZZZZZZZ";
-				tipoi <= "ZZZZZZZZZZZ";
-				jump <= "ZZZZZZZZZZZ";
+				op <= "ZZZZ"; -- SÓ PODE TER 4
+				rs <= "ZZZ";
+				rt <= "ZZZ";
+				rd <= "ZZZ";
+				funct <= "ZZZ";
+				tipoi <= "ZZZZZZ";
+				jump <= "ZZZZZZZZZZZZ";
 			END IF;
 		END IF;
 	END PROCESS;
