@@ -1,0 +1,213 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Instruction_to_writeRegister[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_writeRegister[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_writeRegister[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_controlULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_controlULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_controlULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_is_BEQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_is_BEQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_is_BEQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_is_BEQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_is_BEQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_is_BEQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruct_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock_Sistema",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

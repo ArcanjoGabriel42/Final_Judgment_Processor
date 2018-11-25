@@ -1,13 +1,12 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.STD_LOGIC_ARITH.ALL;
-USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
 ENTITY memoria_ROM2 is 
 PORT(
 	clk: IN STD_LOGIC;
 	entrada: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	rom_out : out std_logic_vector(15 downto 0);
+	saida: OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	op : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 	rd : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 	rt : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -30,8 +29,8 @@ BEGIN
 			IF (ROM(conv_integer(entrada))(15 DOWNTO 12) = "0000") THEN
 				op <= ROM(conv_integer(entrada))(15 DOWNTO 12);
 				rs <= ROM(conv_integer(entrada))(11 DOWNTO 9);
-				rt <= ROM(conv_integer(entrada))(8  DOWNTO 6);
-				rd <= ROM(conv_integer(entrada))(5  DOWNTO 3);
+				rt <= ROM(conv_integer(entrada))(8 DOWNTO 6);
+				rd <= ROM(conv_integer(entrada))(5 DOWNTO 3);
 				funct <= ROM(conv_integer(entrada))(2 DOWNTO 0);
 				
 			ELSIF (ROM(conv_integer(entrada))(15 DOWNTO 12) = "0001") THEN
@@ -80,6 +79,5 @@ BEGIN
 				jump <= "ZZZZZZZZZZZZ";
 			END IF;
 		END IF;
-		rom_out <= ROM(conv_integer(unsigned(entrada)));
 	END PROCESS;
 END behavior;
