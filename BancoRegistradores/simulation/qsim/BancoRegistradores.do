@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vcom -work work BancoRegistradores.vho
-vcom -work work Waveform3.vwf.vht
+vcom -work work BancoRegistradores.vwf.vht
 vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.BancoRegistradores_vhd_vec_tst
 vcd file -direction BancoRegistradores.msim.vcd
 vcd add -internal BancoRegistradores_vhd_vec_tst/*
