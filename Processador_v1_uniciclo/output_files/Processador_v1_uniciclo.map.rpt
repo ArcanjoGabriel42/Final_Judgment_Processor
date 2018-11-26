@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Mon Nov 26 11:09:05 2018
+Mon Nov 26 18:02:46 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,14 +43,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 26 11:09:05 2018       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 26 18:02:46 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 84                                          ;
-; Total pins                      ; 51                                          ;
+; Total pins                      ; 63                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -154,28 +155,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                          ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
-; ../Luigi/memoria_rom2.vhd        ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Luigi/memoria_rom2.vhd               ;         ;
-; ../Tarlison/SomadorPC.vhd        ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Tarlison/SomadorPC.vhd               ;         ;
-; ../Tarlison/PC.vhd               ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Tarlison/PC.vhd                      ;         ;
-; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                ;         ;
+; SomadorPC.vhd                    ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd         ;         ;
+; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd      ;         ;
+; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd ;         ;
+; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd  ;         ;
+; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd          ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -183,38 +186,40 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 46                  ;
+; Estimate of Logic utilization (ALMs needed) ; 48                  ;
 ;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 42                  ;
+; Combinational ALUT usage for logic          ; 52                  ;
 ;     -- 7 input functions                    ; 0                   ;
 ;     -- 6 input functions                    ; 7                   ;
 ;     -- 5 input functions                    ; 1                   ;
-;     -- 4 input functions                    ; 5                   ;
-;     -- <=3 input functions                  ; 29                  ;
+;     -- 4 input functions                    ; 11                  ;
+;     -- <=3 input functions                  ; 33                  ;
 ;                                             ;                     ;
 ; Dedicated logic registers                   ; 84                  ;
 ;                                             ;                     ;
-; I/O pins                                    ; 51                  ;
+; I/O pins                                    ; 63                  ;
 ;                                             ;                     ;
 ; Total DSP Blocks                            ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; Clock_Sistema~input ;
 ; Maximum fan-out                             ; 84                  ;
-; Total fan-out                               ; 479                 ;
-; Average fan-out                             ; 2.10                ;
+; Total fan-out                               ; 591                 ;
+; Average fan-out                             ; 1.94                ;
 +---------------------------------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------+--------------+--------------+
-; |DataPath                  ; 42 (0)              ; 84 (0)                    ; 0                 ; 0          ; 51   ; 0            ; |DataPath                 ; DataPath     ; work         ;
-;    |PC:G1|                 ; 1 (1)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1           ; PC           ; work         ;
-;    |SomadorPC:G2|          ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2    ; SomadorPC    ; work         ;
-;    |memoria_ROM2:G3|       ; 26 (26)             ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G3 ; memoria_ROM2 ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------+--------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------------+--------------+
+; |DataPath                  ; 52 (0)              ; 84 (0)                    ; 0                 ; 0          ; 63   ; 0            ; |DataPath                      ; DataPath          ; work         ;
+;    |Multiplexador2x1:G5|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G5  ; Multiplexador2x1  ; work         ;
+;    |PC:G1|                 ; 1 (1)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                ; PC                ; work         ;
+;    |SomadorPC:G2|          ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2         ; SomadorPC         ; work         ;
+;    |UnidadedeControle:G4|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G4 ; UnidadedeControle ; work         ;
+;    |memoria_ROM2:G3|       ; 26 (26)             ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G3      ; memoria_ROM2      ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,6 +238,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|UnidadedeControle:G4|origalu ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -241,22 +255,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arriav_ff             ; 84                          ;
 ;     ENA               ; 60                          ;
 ;     plain             ; 24                          ;
-; arriav_io_obuf        ; 34                          ;
-; arriav_lcell_comb     ; 42                          ;
+; arriav_io_obuf        ; 43                          ;
+; arriav_lcell_comb     ; 52                          ;
 ;     arith             ; 15                          ;
 ;         1 data inputs ; 14                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 27                          ;
+;     normal            ; 37                          ;
 ;         1 data inputs ; 11                          ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 5                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 11                          ;
 ;         5 data inputs ; 1                           ;
 ;         6 data inputs ; 7                           ;
-; boundary_port         ; 51                          ;
+; boundary_port         ; 63                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.01                        ;
+; Average LUT depth     ; 0.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -275,40 +289,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 11:08:25 2018
+    Info: Processing started: Mon Nov 26 18:02:30 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /trabalhos_aoc/final_judgment_processor/luigi/memoria_rom2.vhd
-    Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Luigi/memoria_rom2.vhd Line: 21
-    Info (12023): Found entity 1: memoria_ROM2 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Luigi/memoria_rom2.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /trabalhos_aoc/final_judgment_processor/tarlison/somadorpc.vhd
-    Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Tarlison/SomadorPC.vhd Line: 12
-    Info (12023): Found entity 1: SomadorPC File: C:/Trabalhos_AOC/Final_Judgment_Processor/Tarlison/SomadorPC.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /trabalhos_aoc/final_judgment_processor/tarlison/pc.vhd
-    Info (12022): Found design unit 1: PC-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Tarlison/PC.vhd Line: 17
-    Info (12023): Found entity 1: PC File: C:/Trabalhos_AOC/Final_Judgment_Processor/Tarlison/PC.vhd Line: 6
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: PC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
+    Info (12023): Found entity 1: PC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file somadorpc.vhd
+    Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
+    Info (12023): Found entity 1: SomadorPC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom2.vhd
+    Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
+    Info (12023): Found entity 1: memoria_ROM2 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
+    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 15
+    Info (12023): Found entity 1: UnidadedeControle File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 2
+Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1.vhd
+    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
+    Info (12023): Found entity 1: Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: DataPath-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 30
-    Info (12023): Found entity 1: DataPath File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
+    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 47
+    Info (12023): Found entity 1: DataPath File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 75
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 76
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 77
-Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Trabalhos_AOC/Final_Judgment_Processor/Luigi/memoria_rom2.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Trabalhos_AOC/Final_Judgment_Processor/Luigi/memoria_rom2.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Trabalhos_AOC/Final_Judgment_Processor/Luigi/memoria_rom2.vhd Line: 83
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 116
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 117
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 118
+Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 120
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 122
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 151 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 173 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 50 output pins
-    Info (21061): Implemented 100 logic cells
+    Info (21059): Implemented 19 output pins
+    Info (21060): Implemented 43 bidirectional pins
+    Info (21061): Implemented 110 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4983 megabytes
-    Info: Processing ended: Mon Nov 26 11:09:05 2018
-    Info: Elapsed time: 00:00:40
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 4934 megabytes
+    Info: Processing ended: Mon Nov 26 18:02:46 2018
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:31
 
 

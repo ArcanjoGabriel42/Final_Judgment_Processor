@@ -7,22 +7,39 @@ ENTITY DataPath IS
 	PORT
 	(
 				--Clock Geral do Sistema--
-				
 		Clock_Sistema:               in  std_logic;
-		
 		-------------------------------------------------------------
-
-		Instruction_to_writeRegister:	out std_logic_vector(2  downto 0);
-		Instruction_to_Control:   	   out std_logic_vector(3  downto 0);
-		Instruction_to_register1:   	out std_logic_vector(2  downto 0);
-		Instruction_to_register2:   	out std_logic_vector(2  downto 0);
-		Instruction_to_controlULA:   	out std_logic_vector(2  downto 0);
-		Instruction_to_is_BEQ:   	   out std_logic_vector(5  downto 0);
-		Instruction_to_Jump:			  	out std_logic_vector(11 downto 0);
 		
-				--Saída Geral da ROM--
-				
-		Instruct_out:                	out std_logic_vector(15 downto 0)
+		--------Saidas da Memoria de instrução-----------------------
+		Instruction_to_multiplexador:	inout std_logic_vector(2  downto 0);
+		Instruction_to_Control:   	   inout std_logic_vector(3  downto 0);
+		Instruction_to_register1:   	inout std_logic_vector(2  downto 0);
+		Instruction_to_register2:   	inout std_logic_vector(2  downto 0);
+		Instruction_to_controlULA:   	inout std_logic_vector(2  downto 0);
+		Instruction_to_is_BEQ:   	   inout std_logic_vector(5  downto 0);
+		Instruction_to_Jump:			  	inout std_logic_vector(11 downto 0);
+		--------------------------------------------------------------
+		
+		---------Saída Geral da ROM-----------------------------------
+		Instruct_out:                	out std_logic_vector(15 downto 0);
+		
+		--------------------------------------------------------------
+		
+		--------Saída do Multiplexador1-------------------------------
+		multiplexador_to_writeRegister: out std_logic_vector(2  downto 0);
+		--------------------------------------------------------------
+		
+		-------- Flags da Unidade de controle-------------------------
+		Flag_regdest:						inout  std_logic;
+		Flag_origialu:						inout  std_logic;
+		Flag_memparareg:					inout  std_logic;
+		Flag_escrevereg:					inout  std_logic;
+		Flag_lemem:							inout  std_logic;
+		Flag_escrevemem:					inout  std_logic;
+		Flag_branch: 						inout  std_logic;
+		Flag_aluop1: 	  					inout  std_logic;
+		Flag_aluop0: 	 					inout  std_logic
+		---------------------------------------------------------------
 	);
 END DataPath;
 
@@ -48,7 +65,7 @@ ARCHITECTURE behavior OF DataPath IS
 		);
 	END COMPONENT;
 
-	COMPONENT memoria_ROM2 is 
+	COMPONENT memoria_ROM2 IS 
 		PORT
 		(
 			clk: 		IN  STD_LOGIC;
@@ -64,17 +81,43 @@ ARCHITECTURE behavior OF DataPath IS
 		);
 	END COMPONENT;
 
-	SIGNAL SomadorToPc      : std_logic_vector(15 downto 0);
-	SIGNAL SaidaPc          : std_logic_vector(15 downto 0);
+	COMPONENT Multiplexador2x1 IS
+		PORT( 
+		SIGNAL A,B  : IN   STD_LOGIC_VECTOR(2 DOWNTO 0);
+		SIGNAL S	   : IN   STD_LOGIC;
+		SIGNAL SAIDA: OUT  STD_LOGIC_VECTOR(2 DOWNTO 0)
+		) ;
+END COMPONENT;
+	
+	COMPONENT UnidadedeControle IS
+		PORT
+			(
+			 entrada : 		in std_logic_vector (3 DOWNTO 0);
+			 regdest : 		out std_logic; 
+			 origalu : 		out std_logic; 
+			 memparareg : 	out std_logic;	
+			 escrevereg :  out std_logic;	
+			 lemem : 		out std_logic;	
+			 escrevemem :  out std_logic;	
+			 branch : 		out std_logic;	
+			 aluop1 :      out std_logic;
+			 aluop0 : 		out std_logic	
+			);
+END COMPONENT;
+	
+	SIGNAL SomadorToPc      :  std_logic_vector(15 downto 0);
+	SIGNAL SaidaPc          :  std_logic_vector(15 downto 0);
 
 
 BEGIN
 
 		--BI = BUSCA DE INSTRUÇÃO--
 		
-G1: PC           port map (Clock_Sistema, SomadorToPc, SaidaPc);
-G2: SomadorPC    port map (SaidaPc, SomadorToPc);
-G3: memoria_ROM2 port map (Clock_Sistema, SaidaPc, Instruct_out, Instruction_to_Control, Instruction_to_register1, Instruction_to_register2, 
-								  Instruction_to_writeRegister,Instruction_to_controlULA, Instruction_to_is_BEQ, Instruction_to_Jump);
-
+G1: PC           		 port map (Clock_Sistema, SomadorToPc, SaidaPc);
+G2: SomadorPC    		 port map (SaidaPc, SomadorToPc);
+G3: memoria_ROM2 		 port map (Clock_Sistema, SaidaPc, Instruct_out, Instruction_to_Control, Instruction_to_register1, Instruction_to_register2, 
+										 Instruction_to_multiplexador,Instruction_to_controlULA, Instruction_to_is_BEQ, Instruction_to_Jump);
+G4: UnidadedeControle port map (Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
+										  Flag_branch, Flag_aluop1, Flag_aluop0);								 
+G5: Multiplexador2x1  port map (Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
 END behavior;
