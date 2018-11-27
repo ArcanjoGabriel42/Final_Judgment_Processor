@@ -5,14 +5,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 Entity BancoRegistradores is port
 	(
-	  Clock: in std_logic;
-	 EscReg: in std_logic; -- Sinal da unidade de controle
-		RegA: out std_logic_vector (15 downto 0);
-		RegB: out std_logic_vector (15 downto 0); 
-	   Data: in std_logic_vector (15 downto 0); -- Dado a ser escrito
-	 RegDst: in std_logic_vector (2 downto 0);  -- Registrador de destino
-	 LeReg1: in std_logic_vector (2 downto 0);  -- Endereço do resgistrador 1
-	 LeReg2: in std_logic_vector (2 downto 0)   -- Endereço do resgistrador 2
+	  Clock: 	in  std_logic;
+	  EscReg:   in  std_logic; -- Sinal da unidade de controle
+	  RegA:     out std_logic_vector (15 downto 0);
+	  RegB:     out std_logic_vector (15 downto 0); 
+	  Data:     in  std_logic_vector (15 downto 0); -- Dado a ser escrito
+	  RegDst:   in  std_logic_vector (2  downto 0);  -- Registrador de destino
+	  LeReg1:   in  std_logic_vector (2  downto 0);  -- Endereço do resgistrador 1
+	  LeReg2:   in  std_logic_vector (2  downto 0)   -- Endereço do resgistrador 2
 	);
 end BancoRegistradores;
 

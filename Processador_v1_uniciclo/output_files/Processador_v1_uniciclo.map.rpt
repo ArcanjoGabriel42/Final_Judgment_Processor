@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Tue Nov 27 09:12:46 2018
+Tue Nov 27 11:40:06 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,10 +14,13 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "ExtensordeSinal6To16bits:G7"
+ 10. Port Connectivity Checks: "BancoRegistradores:G6"
+ 11. Port Connectivity Checks: "UnidadedeControle:G4"
+ 12. Port Connectivity Checks: "memoria_ROM2:G3"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -43,14 +46,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 27 09:12:46 2018       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 27 11:40:06 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 212                                         ;
-; Total pins                      ; 143                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 1                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -155,73 +158,67 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; BancoRegistradores.vhd           ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd ;         ;
-; PC.vhd                           ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                 ;         ;
-; SomadorPC.vhd                    ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd          ;         ;
-; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd       ;         ;
-; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd  ;         ;
-; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd   ;         ;
-; DataPath.vhd                     ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd           ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; ExtensordeSinal6To16bits.vhd     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd ;         ;
+; BancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd       ;         ;
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                       ;         ;
+; SomadorPC.vhd                    ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd                ;         ;
+; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd             ;         ;
+; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd        ;         ;
+; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd         ;         ;
+; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 177                 ;
-;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 124                 ;
-;     -- 7 input functions                    ; 64                  ;
-;     -- 6 input functions                    ; 7                   ;
-;     -- 5 input functions                    ; 1                   ;
-;     -- 4 input functions                    ; 19                  ;
-;     -- <=3 input functions                  ; 33                  ;
-;                                             ;                     ;
-; Dedicated logic registers                   ; 212                 ;
-;                                             ;                     ;
-; I/O pins                                    ; 143                 ;
-;                                             ;                     ;
-; Total DSP Blocks                            ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; Clock_Sistema~input ;
-; Maximum fan-out                             ; 212                 ;
-; Total fan-out                               ; 1666                ;
-; Average fan-out                             ; 2.28                ;
-+---------------------------------------------+---------------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimate of Logic utilization (ALMs needed) ; 0             ;
+;                                             ;               ;
+; Combinational ALUT usage for logic          ; 0             ;
+;     -- 7 input functions                    ; 0             ;
+;     -- 6 input functions                    ; 0             ;
+;     -- 5 input functions                    ; 0             ;
+;     -- 4 input functions                    ; 0             ;
+;     -- <=3 input functions                  ; 0             ;
+;                                             ;               ;
+; Dedicated logic registers                   ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 1             ;
+;                                             ;               ;
+; Total DSP Blocks                            ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; Clock_Sistema ;
+; Maximum fan-out                             ; 1             ;
+; Total fan-out                               ; 1             ;
+; Average fan-out                             ; 0.50          ;
++---------------------------------------------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name        ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+--------------------+--------------+
-; |DataPath                  ; 124 (0)             ; 212 (0)                   ; 0                 ; 0          ; 143  ; 0            ; |DataPath                       ; DataPath           ; work         ;
-;    |BancoRegistradores:G6| ; 72 (72)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G6 ; BancoRegistradores ; work         ;
-;    |Multiplexador2x1:G5|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G5   ; Multiplexador2x1   ; work         ;
-;    |PC:G1|                 ; 1 (1)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                 ; PC                 ; work         ;
-;    |SomadorPC:G2|          ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2          ; SomadorPC          ; work         ;
-;    |UnidadedeControle:G4|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G4  ; UnidadedeControle  ; work         ;
-;    |memoria_ROM2:G3|       ; 26 (26)             ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G3       ; memoria_ROM2       ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+--------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |DataPath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 1    ; 0            ; |DataPath           ; DataPath    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -230,52 +227,71 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 212   ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 188   ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|UnidadedeControle:G4|origalu ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ExtensordeSinal6To16bits:G7"                                                         ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; saida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BancoRegistradores:G6"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rega ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; regb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UnidadedeControle:G4"                                                                     ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; origalu    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; memparareg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; lemem      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; escrevemem ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; branch     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; aluop1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; aluop0     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memoria_ROM2:G3"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; rom_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; funct   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; jump    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 212                         ;
-;     ENA               ; 188                         ;
-;     plain             ; 24                          ;
-; arriav_io_obuf        ; 110                         ;
-; arriav_lcell_comb     ; 124                         ;
-;     arith             ; 15                          ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 1                           ;
-;     extend            ; 64                          ;
-;         7 data inputs ; 64                          ;
-;     normal            ; 45                          ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 19                          ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 7                           ;
-; boundary_port         ; 143                         ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.12                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 1                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -283,7 +299,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -293,230 +309,74 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 27 09:12:21 2018
+    Info: Processing started: Tue Nov 27 11:39:52 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file extensordesinal6to16bits.vhd
+    Info (12022): Found design unit 1: ExtensordeSinal6To16bits-BEHAVIOR File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd Line: 14
+    Info (12023): Found entity 1: ExtensordeSinal6To16bits File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
-    Info (12022): Found design unit 1: BancoRegistradores-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 19
-    Info (12023): Found entity 1: BancoRegistradores File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 6
+    Info (12022): Found design unit 1: BancoRegistradores-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 19
+    Info (12023): Found entity 1: BancoRegistradores File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
-    Info (12023): Found entity 1: PC File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
+    Info (12022): Found design unit 1: PC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
+    Info (12023): Found entity 1: PC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somadorpc.vhd
-    Info (12022): Found design unit 1: SomadorPC-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
-    Info (12023): Found entity 1: SomadorPC File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
+    Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
+    Info (12023): Found entity 1: SomadorPC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom2.vhd
-    Info (12022): Found design unit 1: memoria_ROM2-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
-    Info (12023): Found entity 1: memoria_ROM2 File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
+    Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
+    Info (12023): Found entity 1: memoria_ROM2 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
-    Info (12022): Found design unit 1: UnidadedeControle-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 22
-    Info (12023): Found entity 1: UnidadedeControle File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 4
+    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 22
+    Info (12023): Found entity 1: UnidadedeControle File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1.vhd
-    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
-    Info (12023): Found entity 1: Multiplexador2x1 File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
+    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
+    Info (12023): Found entity 1: Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: DataPath-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 59
-    Info (12023): Found entity 1: DataPath File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
+    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
+    Info (12023): Found entity 1: DataPath File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 138
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 139
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 140
-Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 142
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 144
-Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G6" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 145
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "LeReg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "LeReg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "BancoRegistradores:G6|Reg" is uninferred due to asynchronous read logic File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[15]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[14]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[13]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[12]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[11]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[10]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[9]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[8]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[7]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[6]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[5]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[4]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[3]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[2]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[0]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaPc[1]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[1]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[2]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[3]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[4]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[5]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[6]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[7]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[8]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[9]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[10]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[11]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[12]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[13]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[14]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SomadorToPc[15]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[0]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[1]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[2]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[3]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[4]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[5]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[6]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[7]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[8]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[9]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[10]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[11]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[12]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[13]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[14]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegA[15]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[0]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[1]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[2]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[3]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[4]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[5]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[6]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[7]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[8]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[9]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[10]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[11]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[12]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[13]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[14]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "SaidaRegB[15]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13035): Inserted always-enabled tri-state buffer between "multiplexador_to_writeRegister[0]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-    Warning (13035): Inserted always-enabled tri-state buffer between "multiplexador_to_writeRegister[1]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-    Warning (13035): Inserted always-enabled tri-state buffer between "multiplexador_to_writeRegister[2]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[15]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[14]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[13]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[12]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[11]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[10]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[9]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[8]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[7]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[6]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[5]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[4]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[3]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[2]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[0]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SaidaPc[1]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[0]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[1]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[2]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[3]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[4]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[5]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[6]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[7]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[8]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[9]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[10]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[11]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[12]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[13]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[14]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "SomadorToPc[15]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "multiplexador_to_writeRegister[0]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "multiplexador_to_writeRegister[1]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "multiplexador_to_writeRegister[2]" is moved to its source File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "SaidaPc[0]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SomadorToPc[1]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[2]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[3]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[4]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[5]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[6]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[7]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[8]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[9]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[10]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[11]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[12]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[13]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[14]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SomadorToPc[15]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 15
-    Warning (13010): Node "SaidaPc[0]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[1]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[2]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[3]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[4]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[5]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[6]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[7]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[8]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[9]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[10]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[11]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[12]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[13]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[14]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaPc[15]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
-    Warning (13010): Node "SaidaRegA[0]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[1]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[2]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[3]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[4]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[5]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[6]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[7]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[8]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[9]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[10]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[11]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[12]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[13]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[14]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegA[15]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 19
-    Warning (13010): Node "SaidaRegB[0]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[1]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[2]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[3]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[4]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[5]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[6]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[7]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[8]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[9]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[10]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[11]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[12]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[13]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[14]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "SaidaRegB[15]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 20
-    Warning (13010): Node "multiplexador_to_writeRegister[0]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-    Warning (13010): Node "multiplexador_to_writeRegister[1]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-    Warning (13010): Node "multiplexador_to_writeRegister[2]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 37
-Info (286030): Timing-Driven Synthesis is running
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(104): object "SaidaRegA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 104
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(105): object "SaidaRegB" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 105
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(112): object "Instruction_to_controlULA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 112
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(114): object "Instruction_to_Jump" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 114
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(118): object "Instruct_out" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 118
+Warning (10541): VHDL Signal Declaration warning at DataPath.vhd(126): used implicit default value for signal "Data_to_writeRegister" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 126
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(131): object "Flag_origialu" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 131
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(132): object "Flag_memparareg" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 132
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(134): object "Flag_lemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 134
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(135): object "Flag_escrevemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 135
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(136): object "Flag_branch" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 136
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(137): object "Flag_aluop1" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 137
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(138): object "Flag_aluop0" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 138
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(142): object "Saida_extensor" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 142
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 148
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 149
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 150
+Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 152
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 154
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "LeReg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "LeReg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
+Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 157
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 468 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21060): Implemented 110 bidirectional pins
-    Info (21061): Implemented 325 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
-    Info: Peak virtual memory: 4916 megabytes
-    Info: Processing ended: Tue Nov 27 09:12:46 2018
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:49
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clock_Sistema" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 10
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4929 megabytes
+    Info: Processing ended: Tue Nov 27 11:40:06 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 

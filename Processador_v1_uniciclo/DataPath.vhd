@@ -7,51 +7,8 @@ ENTITY DataPath IS
 	PORT
 	(
 		--------Clock Geral do Sistema-------------------------------
-		Clock_Sistema:               in  std_logic;
+		Clock_Sistema:               in  std_logic
 		-------------------------------------------------------------
-		
-		
-		--------Entradas e Saídas do PC------------------------------
-		SomadorToPc: 			        	 inout std_logic_vector(15 downto 0);
-		SaidaPc: 			  			  	 inout std_logic_vector(15 downto 0);
-		-------------------------------------------------------------
-		-------Entradas do Banco de Registradores--------------------
-		SaidaRegA:  			  		  	 inout std_logic_vector(15 downto 0);
-		SaidaRegB:  			  		  	 inout std_logic_vector(15 downto 0);
-		
-		--------Saidas da Memoria de instrução-----------------------
-		Instruction_to_multiplexador:	 inout  std_logic_vector(2  downto 0);
-		Instruction_to_Control:   	    inout  std_logic_vector(3  downto 0);
-		Instruction_to_register1:   	 inout  std_logic_vector(2  downto 0);
-		Instruction_to_register2:   	 inout  std_logic_vector(2  downto 0);
-		Instruction_to_controlULA:   	 inout  std_logic_vector(2  downto 0);
-		Instruction_to_is_BEQ:   	    inout  std_logic_vector(5  downto 0);
-		Instruction_to_Jump:			  	 inout  std_logic_vector(11 downto 0);
-		--------------------------------------------------------------
-		
-		---------Saída Geral da ROM-----------------------------------
-		Instruct_out:                	 out   std_logic_vector(15 downto 0);
-		--------------------------------------------------------------
-		
-		--------Saída do Multiplexador1-------------------------------
-		multiplexador_to_writeRegister:inout std_logic_vector(2  downto 0);
-		--------------------------------------------------------------
-		
-		--------Dados Para o Banco De Registradores--------------------
-		Data_to_writeRegister: 			in     std_logic_vector(15 downto 0);
-		--------------------------------------------------------------
-		
-		-------- Flags da Unidade de controle-------------------------
-		Flag_regdest:					   inout  std_logic;
-		Flag_origialu:						inout  std_logic;
-		Flag_memparareg:					inout  std_logic;
-		Flag_escrevereg:					inout  std_logic;
-		Flag_lemem:							inout  std_logic;
-		Flag_escrevemem:					inout  std_logic;
-		Flag_branch: 						inout  std_logic;
-		Flag_aluop1: 	  					inout  std_logic;
-		Flag_aluop0: 	 					inout  std_logic
-		---------------------------------------------------------------
 	);
 END DataPath;
 
@@ -128,22 +85,75 @@ END COMPONENT;
 			LeReg2: in  std_logic_vector (2  downto 0)   -- Endereço do resgistrador 2
 		);
 END COMPONENT;
+
+	COMPONENT ExtensordeSinal6To16bits IS
+		PORT
+		(
+			ENTRADA : IN STD_LOGIC_VECTOR(5 DOWNTO 0); 
+			SAIDA   : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+		);
+	
+	END COMPONENT;		
+		
+		-------Entrada e Saida do PC---------------------------------
+		SIGNAL SomadorToPc: 			        	  std_logic_vector(15 downto 0);
+		SIGNAL SaidaPc: 			  			  	  std_logic_vector(15 downto 0);
+		-------------------------------------------------------------
+		
+		-------Saidas do Banco de Registradores----------------------
+		SIGNAL SaidaRegA:  			  		  	  std_logic_vector(15 downto 0);
+		SIGNAL SaidaRegB:  			  		  	  std_logic_vector(15 downto 0);
+		
+		--------Saidas da Memoria de instrução-----------------------
+		SIGNAL Instruction_to_multiplexador:	   std_logic_vector(2  downto 0);
+		SIGNAL Instruction_to_Control:   	      std_logic_vector(3  downto 0);
+		SIGNAL Instruction_to_register1:   	      std_logic_vector(2  downto 0);
+		SIGNAL Instruction_to_register2:   	      std_logic_vector(2  downto 0);
+		SIGNAL Instruction_to_controlULA:   	   std_logic_vector(2  downto 0);
+		SIGNAL Instruction_to_extensorDeSinal:   	std_logic_vector(5  downto 0);
+		SIGNAL Instruction_to_Jump:			  	   std_logic_vector(11 downto 0);
+		--------------------------------------------------------------
+		
+		---------Saída Geral da ROM-----------------------------------
+		SIGNAL Instruct_out:                	   std_logic_vector(15 downto 0);
+		--------------------------------------------------------------
+		
+		--------Saída do Multiplexador1-------------------------------
+		SIGNAL multiplexador_to_writeRegister:    std_logic_vector(2  downto 0);
+		--------------------------------------------------------------
+		
+		--------Dados Para o Banco De Registradores--------------------
+		SIGNAL Data_to_writeRegister: 		      std_logic_vector(15 downto 0);
+		--------------------------------------------------------------
+		
+		-------- Flags da Unidade de controle-------------------------
+		SIGNAL Flag_regdest:					     std_logic;
+		SIGNAL Flag_origialu:					  std_logic;
+		SIGNAL Flag_memparareg:					  std_logic;
+		SIGNAL Flag_escrevereg:					  std_logic;
+		SIGNAL Flag_lemem:						  std_logic;
+		SIGNAL Flag_escrevemem:					  std_logic;
+		SIGNAL Flag_branch: 						  std_logic;
+		SIGNAL Flag_aluop1: 	  					  std_logic;
+		SIGNAL Flag_aluop0: 	 					  std_logic;
+		---------------------------------------------------------------
+		
+		--------Saida do Extensor de sinal-------------------
+		SIGNAL Saida_extensor:                std_logic_vector(15 downto 0);
+		---------------------------------------------------------------
+		
 		
 
+BEGIN		
+G1: PC           		        port map (Clock_Sistema, SomadorToPc, SaidaPc);
+G2: SomadorPC    		        port map (SaidaPc, SomadorToPc);
+G3: memoria_ROM2 		        port map (Clock_Sistema, SaidaPc, Instruct_out, Instruction_to_Control, Instruction_to_register1, Instruction_to_register2, 
+													Instruction_to_multiplexador,Instruction_to_controlULA, Instruction_to_extensorDeSinal, Instruction_to_Jump);											
+G4: UnidadedeControle        port map (Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
+													Flag_branch, Flag_aluop1, Flag_aluop0);								 											
+G5: Multiplexador2x1     	  port map (Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
+G6: BancoRegistradores 		  port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,SaidaRegB,Data_to_writeRegister, multiplexador_to_writeRegister,
+													Instruction_to_register1, Instruction_to_register2);
+G7: ExtensordeSinal6To16bits port map (Instruction_to_extensorDeSinal,Saida_extensor);
 
-BEGIN
-
-		--BI = BUSCA DE INSTRUÇÃO--
-		
-G1: PC           		  port map (Clock_Sistema, SomadorToPc, SaidaPc);
-G2: SomadorPC    		  port map (SaidaPc, SomadorToPc);
-G3: memoria_ROM2 		  port map (Clock_Sistema, SaidaPc, Instruct_out, Instruction_to_Control, Instruction_to_register1, Instruction_to_register2, 
-										   Instruction_to_multiplexador,Instruction_to_controlULA, Instruction_to_is_BEQ, Instruction_to_Jump);
-											
-G4: UnidadedeControle  port map (Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
-										   Flag_branch, Flag_aluop1, Flag_aluop0);								 
-											
-G5: Multiplexador2x1   port map (Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
-G6: BancoRegistradores port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,SaidaRegB,Data_to_writeRegister, multiplexador_to_writeRegister,
-											Instruction_to_register1, Instruction_to_register2);
 END behavior;
