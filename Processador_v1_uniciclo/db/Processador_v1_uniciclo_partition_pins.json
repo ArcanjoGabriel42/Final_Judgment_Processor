@@ -68,6 +68,262 @@
 					"strict" : false
 				},
 				{
+					"name" : "SomadorToPc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SomadorToPc[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaPc[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaRegB[15]",
+					"strict" : false
+				},
+				{
 					"name" : "Instruction_to_multiplexador[0]",
 					"strict" : false
 				},
@@ -253,6 +509,70 @@
 				},
 				{
 					"name" : "Clock_Sistema",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_to_writeRegister[15]",
 					"strict" : false
 				}
 			]
