@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Mon Nov 26 18:02:46 2018
+Mon Nov 26 20:46:17 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 26 18:02:46 2018       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 26 20:46:17 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
@@ -155,30 +155,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; PC.vhd                           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                ;         ;
-; SomadorPC.vhd                    ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd         ;         ;
-; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd      ;         ;
-; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd ;         ;
-; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd  ;         ;
-; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd          ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                ;         ;
+; SomadorPC.vhd                    ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd         ;         ;
+; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd      ;         ;
+; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd ;         ;
+; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd  ;         ;
+; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd          ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -279,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -289,37 +289,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 18:02:30 2018
+    Info: Processing started: Mon Nov 26 20:45:43 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
-    Info (12023): Found entity 1: PC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
+    Info (12022): Found design unit 1: PC-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
+    Info (12023): Found entity 1: PC File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somadorpc.vhd
-    Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
-    Info (12023): Found entity 1: SomadorPC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
+    Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
+    Info (12023): Found entity 1: SomadorPC File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom2.vhd
-    Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
-    Info (12023): Found entity 1: memoria_ROM2 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
+    Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
+    Info (12023): Found entity 1: memoria_ROM2 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
-    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 15
-    Info (12023): Found entity 1: UnidadedeControle File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 2
+    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 15
+    Info (12023): Found entity 1: UnidadedeControle File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 2
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1.vhd
-    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
-    Info (12023): Found entity 1: Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
+    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
+    Info (12023): Found entity 1: Multiplexador2x1 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 47
-    Info (12023): Found entity 1: DataPath File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
+    Info (12022): Found design unit 1: DataPath-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 47
+    Info (12023): Found entity 1: DataPath File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 116
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 117
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 118
-Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 120
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 122
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 116
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 117
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 118
+Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 120
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 122
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -329,9 +329,9 @@ Info (21057): Implemented 173 device resources after synthesis - the final resou
     Info (21060): Implemented 43 bidirectional pins
     Info (21061): Implemented 110 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4934 megabytes
-    Info: Processing ended: Mon Nov 26 18:02:46 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Peak virtual memory: 4939 megabytes
+    Info: Processing ended: Mon Nov 26 20:46:17 2018
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:43
 
 
