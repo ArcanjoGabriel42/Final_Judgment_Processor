@@ -93,7 +93,16 @@ END COMPONENT;
 			SAIDA   : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 		);
 	
-	END COMPONENT;		
+	END COMPONENT;
+	COMPONENT ShiftEsquerda IS 
+
+	PORT(
+		VALOR: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		SAIDA: OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	);
+	
+	END COMPONENT;	
+		
 		
 		-------Entrada e Saida do PC---------------------------------
 		SIGNAL SomadorToPc: 			        	  std_logic_vector(15 downto 0);
@@ -142,7 +151,8 @@ END COMPONENT;
 		SIGNAL Saida_extensor:                std_logic_vector(15 downto 0);
 		---------------------------------------------------------------
 		
-		
+		--------Saida do SLL para componente SOMADOR DA ULA------------
+		SIGNAL Saida_SLL_to_SumUla:           std_logic_vector(15 downto 0);
 
 BEGIN		
 G1: PC           		        port map (Clock_Sistema, SomadorToPc, SaidaPc);
@@ -155,5 +165,5 @@ G5: Multiplexador2x1     	  port map (Instruction_to_register2,Instruction_to_mu
 G6: BancoRegistradores 		  port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,SaidaRegB,Data_to_writeRegister, multiplexador_to_writeRegister,
 													Instruction_to_register1, Instruction_to_register2);
 G7: ExtensordeSinal6To16bits port map (Instruction_to_extensorDeSinal,Saida_extensor);
-
+G8: ShiftEsquerda            port map (Saida_extensor, Saida_SLL_to_SumUla);
 END behavior;

@@ -15,7 +15,7 @@ END ShiftEsquerda;
 ARCHITECTURE BEHAVIOR OF ShiftEsquerda IS
 SIGNAL AUX: STD_LOGIC_VECTOR(15 downto 0);
 	BEGIN 
-		AUX   <= SAIDA(13) & "00";
+		AUX   <= VALOR(13 downto 0) & "00";
 		SAIDA <= AUX(15 DOWNTO 0);
 		
 END BEHAVIOR;

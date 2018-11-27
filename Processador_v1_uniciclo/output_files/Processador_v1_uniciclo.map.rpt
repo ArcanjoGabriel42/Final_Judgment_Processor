@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Tue Nov 27 11:40:06 2018
+Tue Nov 27 12:29:54 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "ExtensordeSinal6To16bits:G7"
+  9. Port Connectivity Checks: "ShiftEsquerda:G8"
  10. Port Connectivity Checks: "BancoRegistradores:G6"
  11. Port Connectivity Checks: "UnidadedeControle:G4"
  12. Port Connectivity Checks: "memoria_ROM2:G3"
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 27 11:40:06 2018       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 27 12:29:54 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
@@ -174,6 +174,7 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; ShiftEsquerda.vhd                ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/ShiftEsquerda.vhd            ;         ;
 ; ExtensordeSinal6To16bits.vhd     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd ;         ;
 ; BancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd       ;         ;
 ; PC.vhd                           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                       ;         ;
@@ -238,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ExtensordeSinal6To16bits:G7"                                                         ;
+; Port Connectivity Checks: "ShiftEsquerda:G8"                                                                    ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -309,10 +310,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 27 11:39:52 2018
+    Info: Processing started: Tue Nov 27 12:29:40 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file shiftesquerda.vhd
+    Info (12022): Found design unit 1: ShiftEsquerda-BEHAVIOR File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ShiftEsquerda.vhd Line: 15
+    Info (12023): Found entity 1: ShiftEsquerda File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ShiftEsquerda.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file extensordesinal6to16bits.vhd
     Info (12022): Found design unit 1: ExtensordeSinal6To16bits-BEHAVIOR File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd Line: 14
     Info (12023): Found entity 1: ExtensordeSinal6To16bits File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd Line: 6
@@ -338,34 +342,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file datapat
     Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 16
     Info (12023): Found entity 1: DataPath File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(104): object "SaidaRegA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 104
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(105): object "SaidaRegB" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 105
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(112): object "Instruction_to_controlULA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 112
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(114): object "Instruction_to_Jump" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 114
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(118): object "Instruct_out" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 118
-Warning (10541): VHDL Signal Declaration warning at DataPath.vhd(126): used implicit default value for signal "Data_to_writeRegister" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 126
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(131): object "Flag_origialu" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 131
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(132): object "Flag_memparareg" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 132
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(134): object "Flag_lemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 134
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(135): object "Flag_escrevemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 135
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(136): object "Flag_branch" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 136
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(137): object "Flag_aluop1" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 137
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(138): object "Flag_aluop0" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 138
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(142): object "Saida_extensor" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 142
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 148
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 149
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 150
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(113): object "SaidaRegA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 113
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(114): object "SaidaRegB" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 114
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(121): object "Instruction_to_controlULA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 121
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(123): object "Instruction_to_Jump" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 123
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(127): object "Instruct_out" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 127
+Warning (10541): VHDL Signal Declaration warning at DataPath.vhd(135): used implicit default value for signal "Data_to_writeRegister" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 135
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(140): object "Flag_origialu" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 140
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(141): object "Flag_memparareg" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 141
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(143): object "Flag_lemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 143
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(144): object "Flag_escrevemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 144
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(145): object "Flag_branch" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 145
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(146): object "Flag_aluop1" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 146
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(147): object "Flag_aluop0" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 147
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(155): object "Saida_SLL_to_SumUla" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 155
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 158
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 159
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 160
 Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
 Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 152
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 154
-Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 155
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 162
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 164
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 165
 Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
 Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "LeReg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
 Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
 Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "LeReg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
-Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 157
+Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 167
+Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G8" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 168
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
@@ -374,8 +379,8 @@ Info (21057): Implemented 1 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4929 megabytes
-    Info: Processing ended: Tue Nov 27 11:40:06 2018
+    Info: Peak virtual memory: 4928 megabytes
+    Info: Processing ended: Tue Nov 27 12:29:54 2018
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:29
 
