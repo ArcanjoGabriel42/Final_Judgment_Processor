@@ -7,7 +7,7 @@ PORT
 	pc : in std_logic_vector (15 downto 0);
 	opshift : in std_logic_vector(11 downto 0);
 	resshift : out std_logic_vector(15 downto 0));
-END Qsll;
+END QShift;
 
 ARCHITECTURE behavior of Qsll is
 	signal vet : std_logic_vector(13 downto 0);
