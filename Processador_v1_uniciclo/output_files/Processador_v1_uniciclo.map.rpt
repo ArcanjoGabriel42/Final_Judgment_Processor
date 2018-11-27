@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Mon Nov 26 20:46:17 2018
+Tue Nov 27 01:02:12 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "BancoRegistradores:G6"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,14 +44,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 26 20:46:17 2018       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 27 01:02:12 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 84                                          ;
-; Total pins                      ; 63                                          ;
+; Total pins                      ; 79                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -167,18 +168,19 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
-; PC.vhd                           ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                ;         ;
-; SomadorPC.vhd                    ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd         ;         ;
-; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd      ;         ;
-; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd ;         ;
-; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd  ;         ;
-; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd          ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                         ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
+; BancoRegistradores.vhd           ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd ;         ;
+; PC.vhd                           ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                 ;         ;
+; SomadorPC.vhd                    ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd          ;         ;
+; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd       ;         ;
+; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd  ;         ;
+; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd   ;         ;
+; DataPath.vhd                     ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd           ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -197,14 +199,14 @@ refer to the applicable agreement for further details.
 ;                                             ;                     ;
 ; Dedicated logic registers                   ; 84                  ;
 ;                                             ;                     ;
-; I/O pins                                    ; 63                  ;
+; I/O pins                                    ; 79                  ;
 ;                                             ;                     ;
 ; Total DSP Blocks                            ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; Clock_Sistema~input ;
 ; Maximum fan-out                             ; 84                  ;
-; Total fan-out                               ; 591                 ;
-; Average fan-out                             ; 1.94                ;
+; Total fan-out                               ; 610                 ;
+; Average fan-out                             ; 1.79                ;
 +---------------------------------------------+---------------------+
 
 
@@ -213,7 +215,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name       ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------------+--------------+
-; |DataPath                  ; 52 (0)              ; 84 (0)                    ; 0                 ; 0          ; 63   ; 0            ; |DataPath                      ; DataPath          ; work         ;
+; |DataPath                  ; 52 (0)              ; 84 (0)                    ; 0                 ; 0          ; 79   ; 0            ; |DataPath                      ; DataPath          ; work         ;
 ;    |Multiplexador2x1:G5|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G5  ; Multiplexador2x1  ; work         ;
 ;    |PC:G1|                 ; 1 (1)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                ; PC                ; work         ;
 ;    |SomadorPC:G2|          ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2         ; SomadorPC         ; work         ;
@@ -247,6 +249,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BancoRegistradores:G6"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rega ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; regb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -255,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arriav_ff             ; 84                          ;
 ;     ENA               ; 60                          ;
 ;     plain             ; 24                          ;
-; arriav_io_obuf        ; 43                          ;
+; arriav_io_obuf        ; 46                          ;
 ; arriav_lcell_comb     ; 52                          ;
 ;     arith             ; 15                          ;
 ;         1 data inputs ; 14                          ;
@@ -267,10 +279,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         4 data inputs ; 11                          ;
 ;         5 data inputs ; 1                           ;
 ;         6 data inputs ; 7                           ;
-; boundary_port         ; 63                          ;
+; boundary_port         ; 79                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 0.97                        ;
+; Average LUT depth     ; 0.95                        ;
 +-----------------------+-----------------------------+
 
 
@@ -279,7 +291,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -289,49 +301,84 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 20:45:43 2018
+    Info: Processing started: Tue Nov 27 01:01:38 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
+    Info (12022): Found design unit 1: BancoRegistradores-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 19
+    Info (12023): Found entity 1: BancoRegistradores File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
-    Info (12023): Found entity 1: PC File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
+    Info (12022): Found design unit 1: PC-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
+    Info (12023): Found entity 1: PC File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somadorpc.vhd
-    Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
-    Info (12023): Found entity 1: SomadorPC File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
+    Info (12022): Found design unit 1: SomadorPC-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 12
+    Info (12023): Found entity 1: SomadorPC File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom2.vhd
-    Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
-    Info (12023): Found entity 1: memoria_ROM2 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
+    Info (12022): Found design unit 1: memoria_ROM2-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 21
+    Info (12023): Found entity 1: memoria_ROM2 File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
-    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 15
-    Info (12023): Found entity 1: UnidadedeControle File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 2
+    Info (12022): Found design unit 1: UnidadedeControle-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 22
+    Info (12023): Found entity 1: UnidadedeControle File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1.vhd
-    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
-    Info (12023): Found entity 1: Multiplexador2x1 File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
+    Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
+    Info (12023): Found entity 1: Multiplexador2x1 File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: DataPath-behavior File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 47
-    Info (12023): Found entity 1: DataPath File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
+    Info (12022): Found design unit 1: DataPath-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 50
+    Info (12023): Found entity 1: DataPath File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 116
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 117
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 118
-Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 120
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 122
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(126): object "SaidaRegA" assigned a value but never read File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 126
+Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(127): object "SaidaRegB" assigned a value but never read File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 127
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 134
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 135
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G3" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 136
+Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G4" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 138
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G5" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 140
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G6" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 141
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "LeReg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "LeReg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "multiplexador_to_writeRegister[0]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 28
+    Warning (13035): Inserted always-enabled tri-state buffer between "multiplexador_to_writeRegister[1]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 28
+    Warning (13035): Inserted always-enabled tri-state buffer between "multiplexador_to_writeRegister[2]" and its non-tri-state driver. File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 28
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "multiplexador_to_writeRegister[0]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 28
+    Warning (13010): Node "multiplexador_to_writeRegister[1]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 28
+    Warning (13010): Node "multiplexador_to_writeRegister[2]~synth" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 173 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 19 output pins
-    Info (21060): Implemented 43 bidirectional pins
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[0]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[1]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[2]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[3]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[4]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[5]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[6]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[7]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[8]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[9]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[10]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[11]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[12]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[13]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[14]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+    Warning (15610): No output dependent on input pin "Data_to_writeRegister[15]" File: E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 32
+Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21060): Implemented 46 bidirectional pins
     Info (21061): Implemented 110 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4939 megabytes
-    Info: Processing ended: Mon Nov 26 20:46:17 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4915 megabytes
+    Info: Processing ended: Tue Nov 27 01:02:12 2018
     Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Total CPU time (on all processors): 00:01:00
 
 

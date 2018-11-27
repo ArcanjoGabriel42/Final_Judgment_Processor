@@ -68,18 +68,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "multiplexador_to_writeRegister[0]",
-					"strict" : false
-				},
-				{
-					"name" : "multiplexador_to_writeRegister[1]",
-					"strict" : false
-				},
-				{
-					"name" : "multiplexador_to_writeRegister[2]",
-					"strict" : false
-				},
-				{
 					"name" : "Instruction_to_multiplexador[0]",
 					"strict" : false
 				},
@@ -213,6 +201,18 @@
 				},
 				{
 					"name" : "Instruction_to_Jump[11]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplexador_to_writeRegister[0]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplexador_to_writeRegister[1]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplexador_to_writeRegister[2]",
 					"strict" : false
 				},
 				{

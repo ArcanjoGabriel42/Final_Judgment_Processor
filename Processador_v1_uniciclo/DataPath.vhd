@@ -11,26 +11,29 @@ ENTITY DataPath IS
 		-------------------------------------------------------------
 		
 		--------Saidas da Memoria de instrução-----------------------
-		Instruction_to_multiplexador:	inout std_logic_vector(2  downto 0);
-		Instruction_to_Control:   	   inout std_logic_vector(3  downto 0);
-		Instruction_to_register1:   	inout std_logic_vector(2  downto 0);
-		Instruction_to_register2:   	inout std_logic_vector(2  downto 0);
-		Instruction_to_controlULA:   	inout std_logic_vector(2  downto 0);
-		Instruction_to_is_BEQ:   	   inout std_logic_vector(5  downto 0);
-		Instruction_to_Jump:			  	inout std_logic_vector(11 downto 0);
+		Instruction_to_multiplexador:	 inout  std_logic_vector(2  downto 0);
+		Instruction_to_Control:   	    inout  std_logic_vector(3  downto 0);
+		Instruction_to_register1:   	 inout  std_logic_vector(2  downto 0);
+		Instruction_to_register2:   	 inout  std_logic_vector(2  downto 0);
+		Instruction_to_controlULA:   	 inout  std_logic_vector(2  downto 0);
+		Instruction_to_is_BEQ:   	    inout  std_logic_vector(5  downto 0);
+		Instruction_to_Jump:			  	 inout  std_logic_vector(11 downto 0);
 		--------------------------------------------------------------
 		
 		---------Saída Geral da ROM-----------------------------------
-		Instruct_out:                	out std_logic_vector(15 downto 0);
-		
+		Instruct_out:                	 out   std_logic_vector(15 downto 0);
 		--------------------------------------------------------------
 		
 		--------Saída do Multiplexador1-------------------------------
-		multiplexador_to_writeRegister: out std_logic_vector(2  downto 0);
+		multiplexador_to_writeRegister:inout std_logic_vector(2  downto 0);
+		--------------------------------------------------------------
+		
+		--------Dados Para o Banco De Registradores--------------------
+		Data_to_writeRegister: 			in     std_logic_vector(15 downto 0);
 		--------------------------------------------------------------
 		
 		-------- Flags da Unidade de controle-------------------------
-		Flag_regdest:						inout  std_logic;
+		Flag_regdest:					   inout  std_logic;
 		Flag_origialu:						inout  std_logic;
 		Flag_memparareg:					inout  std_logic;
 		Flag_escrevereg:					inout  std_logic;
@@ -120,6 +123,8 @@ END COMPONENT;
 	
 	SIGNAL SomadorToPc      :  std_logic_vector(15 downto 0);
 	SIGNAL SaidaPc          :  std_logic_vector(15 downto 0);
+	SIGNAL SaidaRegA        :  std_logic_vector(15 downto 0);
+	SIGNAL SaidaRegB        :  std_logic_vector(15 downto 0);
 
 
 BEGIN
@@ -133,12 +138,6 @@ G3: memoria_ROM2 		  port map (Clock_Sistema, SaidaPc, Instruct_out, Instruction
 G4: UnidadedeControle  port map (Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
 										   Flag_branch, Flag_aluop1, Flag_aluop0);								 
 G5: Multiplexador2x1   port map (Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
-G6: BancoRegistradores port map (Clock_Sistema, Flag_escrevereg, 
-			RegA:   out std_logic_vector (15 downto 0);
-		   RegB:   out std_logic_vector (15 downto 0); 
-		   Data:   in std_logic_vector (15 downto 0); -- Dado a ser escrito
-			RegDst: in std_logic_vector (2 downto 0);  -- Registrador de destino
-			LeReg1: in std_logic_vector (2 downto 0);  -- Endereço do resgistrador 1
-			LeReg2 in std_logic_vector (2 downto 0)   -- Endereço do resgistrador 2
-			);
+G6: BancoRegistradores port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,SaidaRegB,Data_to_writeRegister, multiplexador_to_writeRegister,
+											Instruction_to_register1, Instruction_to_register2);
 END behavior;
