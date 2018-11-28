@@ -1,27 +1,27 @@
-library ieee;
-USE ieee.std_logic_1164.all;
-USE ieee.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 ENTITY memram IS
-PORT
-(
-	entrada : in UNSIGNED (15 DOWNTO 0);
-	saida : out UNSIGNED (15 DOWNTO 0);
-	endereco : in UNSIGNED (7 DOWNTO 0);
-	escrita,funcionando : in std_logic);
-end memram;
+PORT(
+	entrada  : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+	saida    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
+	endereco : IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+	rd, wr   : IN STD_LOGIC);
+END memram;
 
 ARCHITECTURE behavior OF memram IS
-	TYPE arranjo is array (0 to 65535) OF UNSIGNED (15 DOWNTO 0);
-	SIGNAL memoria:arranjo;
+	TYPE memoria IS ARRAY (0 TO 16) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SIGNAL ram : memoria;
 BEGIN
-	process(funcionando,endereco)
-	BEGIN	
-		IF rising_edge(funcionando) THEN
-			IF escrita = '0' THEN memoria(to_integer(endereco)) <= entrada;
+	PROCESS (wr,endereco)
+	BEGIN
+		IF (wr = '1') THEN
+			IF rd = '0' THEN
+				ram(conv_integer(endereco)) <= entrada;
 				END IF;
 			END IF;
 		END PROCESS;
-	saida <= memoria(to_integer(endereco));
-end behavior;
-		
+	saida <= ram(conv_integer(endereco));
+END behavior;
