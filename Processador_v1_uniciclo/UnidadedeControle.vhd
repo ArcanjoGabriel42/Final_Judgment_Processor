@@ -12,8 +12,8 @@ PORT
 		lemem      : out std_logic;
 		escrevemem : out std_logic;
 		branch     : out std_logic;
-		aluop1     : out std_logic;
-		aluop0     : out std_logic
+		aluSRC     : out std_logic;
+		jump     : out std_logic
 	);
 	
 END UnidadedeControle;
@@ -33,8 +33,8 @@ operacoes: PROCESS (entrada)
 			lemem <= '0';
 			escrevemem <= '0';
 			branch <= '0';
-			aluop1 <= '1';
-			aluop0 <= '0';
+			aluSRC <= '1';
+			jump <= '0';
 			
 		ELSIF entrada = "0001" then --instrução load
 			regdest <= '0';
@@ -44,8 +44,8 @@ operacoes: PROCESS (entrada)
 			lemem <= '1';
 			escrevemem <= '0';
 			branch <= '0';
-			aluop1 <= '0';
-			aluop0 <= '0';
+			aluSRC <= '0';
+			jump <= '0';
 			
 		ELSIF entrada = "0010" then --instrução store
 			regdest <= 'Z';
@@ -55,8 +55,8 @@ operacoes: PROCESS (entrada)
 			lemem <= '0';
 			escrevemem <= '1';
 			branch <= '0';
-			aluop1 <= '0';
-			aluop0 <= '0';
+			aluSRC <= '0';
+			jump <= '0';
 			
 		ELSIF entrada = "0101" then --instrução jump
 			regdest <= 'Z';
@@ -66,8 +66,8 @@ operacoes: PROCESS (entrada)
 			lemem <= '0';
 			escrevemem <= '0';
 			branch <= '1';
-			aluop1 <= '0';
-			aluop0 <= '1';
+			aluSRC <= '0';
+			jump <= '1';
 			
 		ELSE
 			regdest <= 'Z';
@@ -77,8 +77,8 @@ operacoes: PROCESS (entrada)
 			lemem <= 'Z';
 			escrevemem <= 'Z';
 			branch <= 'Z';
-			aluop1 <= 'Z';
-			aluop0 <= 'Z';
+			aluSRC <= 'Z';
+			jump <= 'Z';
 			
 		END if;
 		
