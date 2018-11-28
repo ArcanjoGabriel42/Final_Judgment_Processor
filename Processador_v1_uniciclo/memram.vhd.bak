@@ -7,7 +7,7 @@ ENTITY memram IS
 PORT(
 	entrada  : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
 	saida    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
-	endereco : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+	endereco : IN STD_LOGIC_VECTOR (5 DOWNTO 0);
 	rd, wr   : IN STD_LOGIC);
 END memram;
 
