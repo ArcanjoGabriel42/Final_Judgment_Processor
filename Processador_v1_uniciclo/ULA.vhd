@@ -64,7 +64,7 @@ Architecture behavior of ULA is
 	
 	begin
 						 
-	process(Controle_ULA)
+	process(Controle_ULA, EntradaA, EntradaB)
 		begin
 			 case Controle_ULA is
 				  when "0000000" => Splitter <= EntradaA  +   EntradaB;

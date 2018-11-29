@@ -25,7 +25,7 @@ SIGNAL ROM : matriz := ("0101010101010101", "1010101010101010",
 								"0011001100110011", "1100110011001100", OTHERS => "0000000000000000");
 
 BEGIN
-	PROCESS (clk) BEGIN
+	PROCESS (clk,entrada,ROM) BEGIN
 		IF (clk = '1' AND clk'EVENT) THEN
 			IF (ROM(conv_integer(entrada))(15 DOWNTO 12) = "0000") THEN
 				op <= ROM(conv_integer(entrada))(15 DOWNTO 12);

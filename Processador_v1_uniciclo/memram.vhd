@@ -15,7 +15,7 @@ ARCHITECTURE behavior OF memram IS
 	TYPE memoria IS ARRAY (0 TO 16) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
 	SIGNAL ram : memoria;
 BEGIN
-	PROCESS (wr,endereco)
+	PROCESS (wr,endereco, entrada,rd)
 	BEGIN
 		IF (wr = '1') THEN
 			IF rd = '0' THEN

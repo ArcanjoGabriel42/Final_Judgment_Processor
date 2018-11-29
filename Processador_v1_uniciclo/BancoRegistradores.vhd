@@ -30,7 +30,7 @@ Architecture behavior of BancoRegistradores is
 	
 begin
 	
-	process (Clock)
+	process (Clock, Reg, LeReg1, LeReg2)
 		begin 
 	     if(Clock'EVENT) AND (Clock = '1') then
 			if EscReg = '1' then
