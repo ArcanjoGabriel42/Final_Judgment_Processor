@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/25/2018 04:42:17"
+-- Generated on "11/29/2018 12:28:31"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -34,40 +34,16 @@ ARCHITECTURE DataPath_arch OF DataPath_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL Clock_Sistema : STD_LOGIC;
-SIGNAL Instruct_out : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL Instruction_to_Control : STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL Instruction_to_controlULA : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL Instruction_to_is_BEQ : STD_LOGIC_VECTOR(5 DOWNTO 0);
-SIGNAL Instruction_to_Jump : STD_LOGIC_VECTOR(11 DOWNTO 0);
-SIGNAL Instruction_to_register1 : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL Instruction_to_register2 : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL Instruction_to_writeRegister : STD_LOGIC_VECTOR(2 DOWNTO 0);
 COMPONENT DataPath
 	PORT (
-	Clock_Sistema : IN STD_LOGIC;
-	Instruct_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Instruction_to_Control : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-	Instruction_to_controlULA : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-	Instruction_to_is_BEQ : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
-	Instruction_to_Jump : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-	Instruction_to_register1 : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-	Instruction_to_register2 : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-	Instruction_to_writeRegister : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+	Clock_Sistema : IN STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
 	i1 : DataPath
 	PORT MAP (
 -- list connections between master ports and signals
-	Clock_Sistema => Clock_Sistema,
-	Instruct_out => Instruct_out,
-	Instruction_to_Control => Instruction_to_Control,
-	Instruction_to_controlULA => Instruction_to_controlULA,
-	Instruction_to_is_BEQ => Instruction_to_is_BEQ,
-	Instruction_to_Jump => Instruction_to_Jump,
-	Instruction_to_register1 => Instruction_to_register1,
-	Instruction_to_register2 => Instruction_to_register2,
-	Instruction_to_writeRegister => Instruction_to_writeRegister
+	Clock_Sistema => Clock_Sistema
 	);
 
 -- Clock_Sistema
@@ -75,9 +51,9 @@ t_prcs_Clock_Sistema: PROCESS
 BEGIN
 LOOP
 	Clock_Sistema <= '0';
-	WAIT FOR 50000 ps;
+	WAIT FOR 5000 ps;
 	Clock_Sistema <= '1';
-	WAIT FOR 50000 ps;
+	WAIT FOR 5000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_Clock_Sistema;

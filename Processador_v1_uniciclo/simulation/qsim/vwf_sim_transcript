@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,18 +25,43 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 25 04:42:15 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "Processador_v1_uniciclo"
+    Info: Processing started: Thu Nov 29 12:28:28 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-Instruction_to_writeRegister[2]" in vector source file when writing test bench files
+t find port "Instruction_to_register2" in design
+
+la[15]" in design
+
+lor_to_mult[5]" in design
+
+dorPC:G2|entrada[8]" in design
+
+ (201007): Can't find port "memoria_ROM2:G4|jump[6]" in design
+
+:G5|entrada[3]" in design
+
+Registradores:G7|Reg.q_b[4]" in design
+
+t "BancoRegistradores:G7|Reg~PORTBDATAOUT14" in design
+
+RADA2[4]" in design
+
+
+
+ design
+
+Can't find port "ULA:G16|Saida_to_Dados[4]" in design
+
+n design
+
+esign
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -54,14 +79,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 25 04:42:18 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "Processador_v1_uniciclo"
+    Info: Processing started: Thu Nov 29 12:28:33 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Processador_v1_uniciclo.vho in folder "E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Processador_v1_uniciclo.vho in folder "C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4721 megabytes
-    Info: Processing ended: Sun Nov 25 04:42:20 2018
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Thu Nov 29 12:28:35 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -69,7 +93,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.do generated.
+C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.do generated.
 
 Completed successfully. 
 
@@ -81,80 +105,2758 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do Processador_v1_uniciclo.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:42:22 on Nov 25,2018
+# Start time: 12:28:36 on Nov 29,2018
 # vcom -work work Processador_v1_uniciclo.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Loading package altera_lnsim_components
-
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity DataPath
 # -- Compiling architecture structure of DataPath
-# End time: 04:42:22 on Nov 25,2018, Elapsed time: 0:00:00
+# End time: 12:28:36 on Nov 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:42:22 on Nov 25,2018
+# Start time: 12:28:36 on Nov 29,2018
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DataPath_vhd_vec_tst
 # -- Compiling architecture DataPath_arch of DataPath_vhd_vec_tst
-# End time: 04:42:22 on Nov 25,2018, Elapsed time: 0:00:00
+
+# End time: 12:28:36 on Nov 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.DataPath_vhd_vec_tst 
-# Start time: 04:42:22 on Nov 25,2018
+# Start time: 12:28:36 on Nov 29,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.datapath_vhd_vec_tst(datapath_arch)
+# Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
-# Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
 # Loading work.datapath(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 27927 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# after#34
+# after#32
 
-# End time: 04:42:23 on Nov 25,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 12:28:37 on Nov 29,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf...
+Reading C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf...
 
-Reading E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.msim.vcd...
+Reading C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to E:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo_20181125044223.sim.vwf
+Warning: Data_to_writeRegister[15] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[14] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[13] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[12] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[11] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[10] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[9] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[8] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[7] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[6] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[5] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[4] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[3] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[2] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[1] - signal not found in VCD.
+
+Warning: Data_to_writeRegister[0] - signal not found in VCD.
+
+Warning: Flag_origialu[3] - signal not found in VCD.
+
+Warning: Flag_origialu[2] - signal not found in VCD.
+
+Warning: Flag_origialu[1] - signal not found in VCD.
+
+Warning: Flag_origialu[0] - signal not found in VCD.
+
+Warning: PC:G1 - signal not found in VCD.
+
+Warning: SomadorPC:G2 - signal not found in VCD.
+
+Warning: Qsll:G3 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4 - signal not found in VCD.
+
+Warning: UnidadedeControle:G5 - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7 - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8 - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9 - signal not found in VCD.
+
+Warning: Somadorde16bits:G10 - signal not found in VCD.
+
+Warning: QAndBIT:G11 - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12 - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13 - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14 - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15 - signal not found in VCD.
+
+Warning: ULA:G16 - signal not found in VCD.
+
+Warning: memram:G17 - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18 - signal not found in VCD.
+
+Warning: Instruct_out[15] - signal not found in VCD.
+
+Warning: Instruct_out[14] - signal not found in VCD.
+
+Warning: Instruct_out[13] - signal not found in VCD.
+
+Warning: Instruct_out[12] - signal not found in VCD.
+
+Warning: Instruct_out[11] - signal not found in VCD.
+
+Warning: Instruct_out[10] - signal not found in VCD.
+
+Warning: Instruct_out[9] - signal not found in VCD.
+
+Warning: Instruct_out[8] - signal not found in VCD.
+
+Warning: Instruct_out[7] - signal not found in VCD.
+
+Warning: Instruct_out[6] - signal not found in VCD.
+
+Warning: Instruct_out[5] - signal not found in VCD.
+
+Warning: Instruct_out[4] - signal not found in VCD.
+
+Warning: Instruct_out[3] - signal not found in VCD.
+
+Warning: Instruct_out[2] - signal not found in VCD.
+
+Warning: Instruct_out[1] - signal not found in VCD.
+
+Warning: Instruct_out[0] - signal not found in VCD.
+
+Warning: Instruction_to_Control[3] - signal not found in VCD.
+
+Warning: Instruction_to_Control[2] - signal not found in VCD.
+
+Warning: Instruction_to_Control[1] - signal not found in VCD.
+
+Warning: Instruction_to_Control[0] - signal not found in VCD.
+
+Warning: Instruction_to_controlULA[2] - signal not found in VCD.
+
+Warning: Instruction_to_controlULA[1] - signal not found in VCD.
+
+Warning: Instruction_to_controlULA[0] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal[5] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal[4] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal[3] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal[2] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal[1] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal[0] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[11] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[10] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[9] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[8] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[7] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[6] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[5] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[4] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[3] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[2] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[1] - signal not found in VCD.
+
+Warning: Instruction_to_Jump[0] - signal not found in VCD.
+
+Warning: Instruction_to_multiplexador[2] - signal not found in VCD.
+
+Warning: Instruction_to_multiplexador[1] - signal not found in VCD.
+
+Warning: Instruction_to_multiplexador[0] - signal not found in VCD.
+
+Warning: Instruction_to_register1[2] - signal not found in VCD.
+
+Warning: Instruction_to_register1[1] - signal not found in VCD.
+
+Warning: Instruction_to_register1[0] - signal not found in VCD.
+
+Warning: Instruction_to_register2[2] - signal not found in VCD.
+
+Warning: Instruction_to_register2[1] - signal not found in VCD.
+
+Warning: Instruction_to_register2[0] - signal not found in VCD.
+
+Warning: multiplexador_to_writeRegister[2] - signal not found in VCD.
+
+Warning: multiplexador_to_writeRegister[1] - signal not found in VCD.
+
+Warning: multiplexador_to_writeRegister[0] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[15] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[14] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[13] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[12] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[11] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[10] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[9] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[8] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[7] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[6] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[5] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[4] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[3] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[2] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[1] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM[0] - signal not found in VCD.
+
+Warning: Saida_extensor[15] - signal not found in VCD.
+
+Warning: Saida_extensor[14] - signal not found in VCD.
+
+Warning: Saida_extensor[13] - signal not found in VCD.
+
+Warning: Saida_extensor[12] - signal not found in VCD.
+
+Warning: Saida_extensor[11] - signal not found in VCD.
+
+Warning: Saida_extensor[10] - signal not found in VCD.
+
+Warning: Saida_extensor[9] - signal not found in VCD.
+
+Warning: Saida_extensor[8] - signal not found in VCD.
+
+Warning: Saida_extensor[7] - signal not found in VCD.
+
+Warning: Saida_extensor[6] - signal not found in VCD.
+
+Warning: Saida_extensor[5] - signal not found in VCD.
+
+Warning: Saida_extensor[4] - signal not found in VCD.
+
+Warning: Saida_extensor[3] - signal not found in VCD.
+
+Warning: Saida_extensor[2] - signal not found in VCD.
+
+Warning: Saida_extensor[1] - signal not found in VCD.
+
+Warning: Saida_extensor[0] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[15] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[14] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[13] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[12] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[11] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[10] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[9] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[8] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[7] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[6] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[5] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[4] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[3] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[2] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[1] - signal not found in VCD.
+
+Warning: Saida_MemoridaDeDados_to_mult[0] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[15] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[14] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[13] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[12] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[11] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[10] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[9] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[8] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[7] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[6] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[5] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[4] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[3] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[2] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[1] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult[0] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[15] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[14] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[13] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[12] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[11] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[10] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[9] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[8] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[7] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[6] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[5] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[4] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[3] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[2] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[1] - signal not found in VCD.
+
+Warning: Saida_mult_to_ULA[0] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[6] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[5] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[4] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[3] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[2] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[1] - signal not found in VCD.
+
+Warning: Saida_OperacaoDaULA[0] - signal not found in VCD.
+
+Warning: Saida_Qsll[15] - signal not found in VCD.
+
+Warning: Saida_Qsll[14] - signal not found in VCD.
+
+Warning: Saida_Qsll[13] - signal not found in VCD.
+
+Warning: Saida_Qsll[12] - signal not found in VCD.
+
+Warning: Saida_Qsll[11] - signal not found in VCD.
+
+Warning: Saida_Qsll[10] - signal not found in VCD.
+
+Warning: Saida_Qsll[9] - signal not found in VCD.
+
+Warning: Saida_Qsll[8] - signal not found in VCD.
+
+Warning: Saida_Qsll[7] - signal not found in VCD.
+
+Warning: Saida_Qsll[6] - signal not found in VCD.
+
+Warning: Saida_Qsll[5] - signal not found in VCD.
+
+Warning: Saida_Qsll[4] - signal not found in VCD.
+
+Warning: Saida_Qsll[3] - signal not found in VCD.
+
+Warning: Saida_Qsll[2] - signal not found in VCD.
+
+Warning: Saida_Qsll[1] - signal not found in VCD.
+
+Warning: Saida_Qsll[0] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[15] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[14] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[13] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[12] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[11] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[10] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[9] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[8] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[7] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[6] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[5] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[4] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[3] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[2] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[1] - signal not found in VCD.
+
+Warning: Saida_SLL_to_SumUla[0] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[15] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[14] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[13] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[12] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[11] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[10] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[9] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[8] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[7] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[6] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[5] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[4] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[3] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[2] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[1] - signal not found in VCD.
+
+Warning: Saida_SumUla_to_mult[0] - signal not found in VCD.
+
+Warning: Saida_to_PC[15] - signal not found in VCD.
+
+Warning: Saida_to_PC[14] - signal not found in VCD.
+
+Warning: Saida_to_PC[13] - signal not found in VCD.
+
+Warning: Saida_to_PC[12] - signal not found in VCD.
+
+Warning: Saida_to_PC[11] - signal not found in VCD.
+
+Warning: Saida_to_PC[10] - signal not found in VCD.
+
+Warning: Saida_to_PC[9] - signal not found in VCD.
+
+Warning: Saida_to_PC[8] - signal not found in VCD.
+
+Warning: Saida_to_PC[7] - signal not found in VCD.
+
+Warning: Saida_to_PC[6] - signal not found in VCD.
+
+Warning: Saida_to_PC[5] - signal not found in VCD.
+
+Warning: Saida_to_PC[4] - signal not found in VCD.
+
+Warning: Saida_to_PC[3] - signal not found in VCD.
+
+Warning: Saida_to_PC[2] - signal not found in VCD.
+
+Warning: Saida_to_PC[1] - signal not found in VCD.
+
+Warning: Saida_to_PC[0] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[15] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[14] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[13] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[12] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[11] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[10] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[9] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[8] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[7] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[6] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[5] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[4] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[3] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[2] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[1] - signal not found in VCD.
+
+Warning: Saida_valor_to_mult[0] - signal not found in VCD.
+
+Warning: SaidaPc[15] - signal not found in VCD.
+
+Warning: SaidaPc[14] - signal not found in VCD.
+
+Warning: SaidaPc[13] - signal not found in VCD.
+
+Warning: SaidaPc[12] - signal not found in VCD.
+
+Warning: SaidaPc[11] - signal not found in VCD.
+
+Warning: SaidaPc[10] - signal not found in VCD.
+
+Warning: SaidaPc[9] - signal not found in VCD.
+
+Warning: SaidaPc[8] - signal not found in VCD.
+
+Warning: SaidaPc[7] - signal not found in VCD.
+
+Warning: SaidaPc[6] - signal not found in VCD.
+
+Warning: SaidaPc[5] - signal not found in VCD.
+
+Warning: SaidaPc[4] - signal not found in VCD.
+
+Warning: SaidaPc[3] - signal not found in VCD.
+
+Warning: SaidaPc[2] - signal not found in VCD.
+
+Warning: SaidaPc[1] - signal not found in VCD.
+
+Warning: SaidaPc[0] - signal not found in VCD.
+
+Warning: SaidaRegA[15] - signal not found in VCD.
+
+Warning: SaidaRegA[14] - signal not found in VCD.
+
+Warning: SaidaRegA[13] - signal not found in VCD.
+
+Warning: SaidaRegA[12] - signal not found in VCD.
+
+Warning: SaidaRegA[11] - signal not found in VCD.
+
+Warning: SaidaRegA[10] - signal not found in VCD.
+
+Warning: SaidaRegA[9] - signal not found in VCD.
+
+Warning: SaidaRegA[8] - signal not found in VCD.
+
+Warning: SaidaRegA[7] - signal not found in VCD.
+
+Warning: SaidaRegA[6] - signal not found in VCD.
+
+Warning: SaidaRegA[5] - signal not found in VCD.
+
+Warning: SaidaRegA[4] - signal not found in VCD.
+
+Warning: SaidaRegA[3] - signal not found in VCD.
+
+Warning: SaidaRegA[2] - signal not found in VCD.
+
+Warning: SaidaRegA[1] - signal not found in VCD.
+
+Warning: SaidaRegA[0] - signal not found in VCD.
+
+Warning: SaidaRegB[15] - signal not found in VCD.
+
+Warning: SaidaRegB[14] - signal not found in VCD.
+
+Warning: SaidaRegB[13] - signal not found in VCD.
+
+Warning: SaidaRegB[12] - signal not found in VCD.
+
+Warning: SaidaRegB[11] - signal not found in VCD.
+
+Warning: SaidaRegB[10] - signal not found in VCD.
+
+Warning: SaidaRegB[9] - signal not found in VCD.
+
+Warning: SaidaRegB[8] - signal not found in VCD.
+
+Warning: SaidaRegB[7] - signal not found in VCD.
+
+Warning: SaidaRegB[6] - signal not found in VCD.
+
+Warning: SaidaRegB[5] - signal not found in VCD.
+
+Warning: SaidaRegB[4] - signal not found in VCD.
+
+Warning: SaidaRegB[3] - signal not found in VCD.
+
+Warning: SaidaRegB[2] - signal not found in VCD.
+
+Warning: SaidaRegB[1] - signal not found in VCD.
+
+Warning: SaidaRegB[0] - signal not found in VCD.
+
+Warning: SomadorToPc[15] - signal not found in VCD.
+
+Warning: SomadorToPc[14] - signal not found in VCD.
+
+Warning: SomadorToPc[13] - signal not found in VCD.
+
+Warning: SomadorToPc[12] - signal not found in VCD.
+
+Warning: SomadorToPc[11] - signal not found in VCD.
+
+Warning: SomadorToPc[10] - signal not found in VCD.
+
+Warning: SomadorToPc[9] - signal not found in VCD.
+
+Warning: SomadorToPc[8] - signal not found in VCD.
+
+Warning: SomadorToPc[7] - signal not found in VCD.
+
+Warning: SomadorToPc[6] - signal not found in VCD.
+
+Warning: SomadorToPc[5] - signal not found in VCD.
+
+Warning: SomadorToPc[4] - signal not found in VCD.
+
+Warning: SomadorToPc[3] - signal not found in VCD.
+
+Warning: SomadorToPc[2] - signal not found in VCD.
+
+Warning: SomadorToPc[1] - signal not found in VCD.
+
+Warning: SomadorToPc[0] - signal not found in VCD.
+
+Warning: PC:G1|clk - signal not found in VCD.
+
+Warning: PC:G1|pin[15] - signal not found in VCD.
+
+Warning: PC:G1|pin[14] - signal not found in VCD.
+
+Warning: PC:G1|pin[13] - signal not found in VCD.
+
+Warning: PC:G1|pin[12] - signal not found in VCD.
+
+Warning: PC:G1|pin[11] - signal not found in VCD.
+
+Warning: PC:G1|pin[10] - signal not found in VCD.
+
+Warning: PC:G1|pin[9] - signal not found in VCD.
+
+Warning: PC:G1|pin[8] - signal not found in VCD.
+
+Warning: PC:G1|pin[7] - signal not found in VCD.
+
+Warning: PC:G1|pin[6] - signal not found in VCD.
+
+Warning: PC:G1|pin[5] - signal not found in VCD.
+
+Warning: PC:G1|pin[4] - signal not found in VCD.
+
+Warning: PC:G1|pin[3] - signal not found in VCD.
+
+Warning: PC:G1|pin[2] - signal not found in VCD.
+
+Warning: PC:G1|pin[1] - signal not found in VCD.
+
+Warning: PC:G1|pin[0] - signal not found in VCD.
+
+Warning: PC:G1|pout[15] - signal not found in VCD.
+
+Warning: PC:G1|pout[14] - signal not found in VCD.
+
+Warning: PC:G1|pout[13] - signal not found in VCD.
+
+Warning: PC:G1|pout[12] - signal not found in VCD.
+
+Warning: PC:G1|pout[11] - signal not found in VCD.
+
+Warning: PC:G1|pout[10] - signal not found in VCD.
+
+Warning: PC:G1|pout[9] - signal not found in VCD.
+
+Warning: PC:G1|pout[8] - signal not found in VCD.
+
+Warning: PC:G1|pout[7] - signal not found in VCD.
+
+Warning: PC:G1|pout[6] - signal not found in VCD.
+
+Warning: PC:G1|pout[5] - signal not found in VCD.
+
+Warning: PC:G1|pout[4] - signal not found in VCD.
+
+Warning: PC:G1|pout[3] - signal not found in VCD.
+
+Warning: PC:G1|pout[2] - signal not found in VCD.
+
+Warning: PC:G1|pout[1] - signal not found in VCD.
+
+Warning: PC:G1|pout[0] - signal not found in VCD.
+
+Warning: PC:G1|pout[0]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[1]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[2]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[3]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[4]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[5]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[6]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[7]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[8]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[9]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[10]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[11]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[12]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[13]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[14]~reg0 - signal not found in VCD.
+
+Warning: PC:G1|pout[15]~reg0 - signal not found in VCD.
+
+Warning: SomadorPC:G2|Add0 - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[15] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[14] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[13] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[12] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[11] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[10] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[9] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[8] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[7] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[6] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[5] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[4] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[3] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[2] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[1] - signal not found in VCD.
+
+Warning: SomadorPC:G2|entrada[0] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[15] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[14] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[13] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[12] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[11] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[10] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[9] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[8] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[7] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[6] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[5] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[4] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[3] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[2] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[1] - signal not found in VCD.
+
+Warning: SomadorPC:G2|saida[0] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[11] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[10] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[9] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[8] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[7] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[6] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[5] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[4] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[3] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[2] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[1] - signal not found in VCD.
+
+Warning: Qsll:G3|opshift[0] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[15] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[14] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[13] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[12] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[11] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[10] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[9] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[8] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[7] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[6] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[5] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[4] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[3] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[2] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[1] - signal not found in VCD.
+
+Warning: Qsll:G3|pc[0] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[15] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[14] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[13] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[12] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[11] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[10] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[9] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[8] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[7] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[6] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[5] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[4] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[3] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[2] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[1] - signal not found in VCD.
+
+Warning: Qsll:G3|resshift[0] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[13] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[12] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[11] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[10] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[9] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[8] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[7] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[6] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[5] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[4] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[3] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[2] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[1] - signal not found in VCD.
+
+Warning: Qsll:G3|vet[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|clk - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|comb - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[15] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[14] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[13] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[12] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[11] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[10] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[9] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[8] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[7] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[6] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[5] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[4] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[3] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|entrada[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|funct[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[11] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[10] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[9] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[8] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[7] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[6] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[5] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[4] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[3] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[3]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[3]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[4]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[4]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[5]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[5]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[6]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[6]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[7]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[7]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[8]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[8]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[9]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[9]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[10]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[10]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[11]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|jump[11]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[3] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[3]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|op[3]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rd[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[15] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[14] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[13] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[12] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[11] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[10] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[9] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[8] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[7] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[6] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[5] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[4] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[3] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rom_out[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rs[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|rt[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[5] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[4] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[3] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[2] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[1] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[0] - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[0]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[0]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[1]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[1]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[2]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[2]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[3]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[3]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[4]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[4]~reg0 - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[5]~en - signal not found in VCD.
+
+Warning: memoria_ROM2:G4|tipoi[5]~reg0 - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|aluSRC - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|branch - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|entrada[3] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|entrada[2] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|entrada[1] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|entrada[0] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|Equal0 - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|Equal1 - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|Equal2 - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|Equal3 - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|escrevemem - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|escrevereg - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|jump - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|lemem - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|memparareg - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|origalu[3] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|origalu[2] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|origalu[1] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|origalu[0] - signal not found in VCD.
+
+Warning: UnidadedeControle:G5|regdest - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|A[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|A[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|A[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|B[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|B[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|B[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|S - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|SAIDA[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|SAIDA[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1:G6|SAIDA[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Clock - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[15] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[14] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[13] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[12] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[11] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[10] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[9] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[8] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[7] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[6] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[5] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[4] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[3] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Data[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|EscReg - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|LeReg1[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|LeReg1[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|LeReg1[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|LeReg2[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|LeReg2[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|LeReg2[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[15] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[14] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[13] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[12] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[11] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[10] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[9] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[8] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[7] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[6] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[5] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[4] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[3] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.data_a[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[15] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[14] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[13] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[12] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[11] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[10] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[9] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[8] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[7] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[6] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[5] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[4] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[3] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_a[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[15] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[14] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[13] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[12] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[11] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[10] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[9] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[8] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[7] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[6] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[5] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[4] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[3] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.q_b[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.raddr_a[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.raddr_a[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.raddr_a[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.raddr_b[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.raddr_b[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.raddr_b[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.waddr_a[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.waddr_a[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg.waddr_a[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[15] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[14] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[13] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[12] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[11] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[10] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[9] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[8] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[7] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[6] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[5] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[4] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[3] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegA[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[15] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[14] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[13] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[12] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[11] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[10] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[9] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[8] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[7] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[6] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[5] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[4] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[3] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegB[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegDst[2] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegDst[1] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|RegDst[0] - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~0 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~1 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~2 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~3 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~4 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~5 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~6 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~7 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~8 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~9 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~10 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~11 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~12 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~13 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~14 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~15 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~16 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~17 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~18 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~19 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT1 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT2 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT3 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT4 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT5 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT6 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT7 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT8 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT9 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT10 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT11 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT12 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT13 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT14 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~DATAOUT15 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT0 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT1 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT2 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT3 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT4 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT5 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT6 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT7 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT8 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT9 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT10 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT11 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT12 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT13 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT14 - signal not found in VCD.
+
+Warning: BancoRegistradores:G7|Reg~PORTBDATAOUT15 - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|ENTRADA[5] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|ENTRADA[4] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|ENTRADA[3] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|ENTRADA[2] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|ENTRADA[1] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|ENTRADA[0] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[15] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[14] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[13] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[12] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[11] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[10] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[9] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[8] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[7] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[6] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[5] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[4] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[3] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[2] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[1] - signal not found in VCD.
+
+Warning: ExtensordeSinal6To16bits:G8|SAIDA[0] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[15] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[14] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[13] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[12] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[11] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[10] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[9] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[8] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[7] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[6] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[5] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[4] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[3] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[2] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[1] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|AUX[0] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[15] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[14] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[13] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[12] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[11] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[10] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[9] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[8] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[7] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[6] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[5] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[4] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[3] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[2] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[1] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|SAIDA[0] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[15] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[14] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[13] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[12] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[11] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[10] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[9] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[8] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[7] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[6] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[5] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[4] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[3] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[2] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[1] - signal not found in VCD.
+
+Warning: ShiftEsquerda:G9|VALOR[0] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|Add0 - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[15] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[14] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[13] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[12] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[11] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[10] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[9] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[8] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[7] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[6] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[5] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[4] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[3] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[2] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[1] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA1[0] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[15] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[14] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[13] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[12] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[11] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[10] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[9] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[8] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[7] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[6] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[5] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[4] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[3] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[2] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[1] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|ENTRADA2[0] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[15] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[14] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[13] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[12] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[11] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[10] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[9] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[8] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[7] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[6] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[5] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[4] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[3] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[2] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[1] - signal not found in VCD.
+
+Warning: Somadorde16bits:G10|SAIDA[0] - signal not found in VCD.
+
+Warning: QAndBIT:G11|E1 - signal not found in VCD.
+
+Warning: QAndBIT:G11|E2 - signal not found in VCD.
+
+Warning: QAndBIT:G11|S1 - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|A[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|B[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|S - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G12|SAIDA[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|A[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|B[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|S - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G13|SAIDA[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|A[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|B[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|S - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G14|SAIDA[0] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA1[3] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA1[2] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA1[1] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA1[0] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA2[2] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA2[1] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|ENTRADA2[0] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[6] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[5] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[4] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[3] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[2] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[1] - signal not found in VCD.
+
+Warning: OperacaoDaULA:G15|SAIDA[0] - signal not found in VCD.
+
+Warning: ULA:G16|Add0 - signal not found in VCD.
+
+Warning: ULA:G16|Add1 - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[6] - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[5] - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[4] - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[3] - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[2] - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[1] - signal not found in VCD.
+
+Warning: ULA:G16|Controle_ULA[0] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[15] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[14] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[13] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[12] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[11] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[10] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[9] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[8] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[7] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[6] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[5] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[4] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[3] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[2] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[1] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaA[0] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[15] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[14] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[13] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[12] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[11] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[10] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[9] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[8] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[7] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[6] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[5] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[4] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[3] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[2] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[1] - signal not found in VCD.
+
+Warning: ULA:G16|EntradaB[0] - signal not found in VCD.
+
+Warning: ULA:G16|Equal0 - signal not found in VCD.
+
+Warning: ULA:G16|Equal1 - signal not found in VCD.
+
+Warning: ULA:G16|Mux0 - signal not found in VCD.
+
+Warning: ULA:G16|Mux1 - signal not found in VCD.
+
+Warning: ULA:G16|Mux2 - signal not found in VCD.
+
+Warning: ULA:G16|Mux3 - signal not found in VCD.
+
+Warning: ULA:G16|Mux4 - signal not found in VCD.
+
+Warning: ULA:G16|Mux5 - signal not found in VCD.
+
+Warning: ULA:G16|Mux6 - signal not found in VCD.
+
+Warning: ULA:G16|Mux7 - signal not found in VCD.
+
+Warning: ULA:G16|Mux8 - signal not found in VCD.
+
+Warning: ULA:G16|Mux9 - signal not found in VCD.
+
+Warning: ULA:G16|Mux10 - signal not found in VCD.
+
+Warning: ULA:G16|Mux11 - signal not found in VCD.
+
+Warning: ULA:G16|Mux12 - signal not found in VCD.
+
+Warning: ULA:G16|Mux13 - signal not found in VCD.
+
+Warning: ULA:G16|Mux14 - signal not found in VCD.
+
+Warning: ULA:G16|Mux15 - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[15] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[14] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[13] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[12] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[11] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[10] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[9] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[8] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[7] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[6] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[5] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[4] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[3] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[2] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[1] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Dados[0] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[15] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[14] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[13] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[12] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[11] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[10] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[9] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[8] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[7] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[6] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[5] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[4] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[3] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[2] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[1] - signal not found in VCD.
+
+Warning: ULA:G16|Saida_to_Mux[0] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[15] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[14] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[13] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[12] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[11] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[10] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[9] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[8] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[7] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[6] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[5] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[4] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[3] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[2] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[1] - signal not found in VCD.
+
+Warning: ULA:G16|Splitter[0] - signal not found in VCD.
+
+Warning: ULA:G16|ZeroULA - signal not found in VCD.
+
+Warning: memram:G17|endereco[15] - signal not found in VCD.
+
+Warning: memram:G17|endereco[14] - signal not found in VCD.
+
+Warning: memram:G17|endereco[13] - signal not found in VCD.
+
+Warning: memram:G17|endereco[12] - signal not found in VCD.
+
+Warning: memram:G17|endereco[11] - signal not found in VCD.
+
+Warning: memram:G17|endereco[10] - signal not found in VCD.
+
+Warning: memram:G17|endereco[9] - signal not found in VCD.
+
+Warning: memram:G17|endereco[8] - signal not found in VCD.
+
+Warning: memram:G17|endereco[7] - signal not found in VCD.
+
+Warning: memram:G17|endereco[6] - signal not found in VCD.
+
+Warning: memram:G17|endereco[5] - signal not found in VCD.
+
+Warning: memram:G17|endereco[4] - signal not found in VCD.
+
+Warning: memram:G17|endereco[3] - signal not found in VCD.
+
+Warning: memram:G17|endereco[2] - signal not found in VCD.
+
+Warning: memram:G17|endereco[1] - signal not found in VCD.
+
+Warning: memram:G17|endereco[0] - signal not found in VCD.
+
+Warning: memram:G17|entrada[15] - signal not found in VCD.
+
+Warning: memram:G17|entrada[14] - signal not found in VCD.
+
+Warning: memram:G17|entrada[13] - signal not found in VCD.
+
+Warning: memram:G17|entrada[12] - signal not found in VCD.
+
+Warning: memram:G17|entrada[11] - signal not found in VCD.
+
+Warning: memram:G17|entrada[10] - signal not found in VCD.
+
+Warning: memram:G17|entrada[9] - signal not found in VCD.
+
+Warning: memram:G17|entrada[8] - signal not found in VCD.
+
+Warning: memram:G17|entrada[7] - signal not found in VCD.
+
+Warning: memram:G17|entrada[6] - signal not found in VCD.
+
+Warning: memram:G17|entrada[5] - signal not found in VCD.
+
+Warning: memram:G17|entrada[4] - signal not found in VCD.
+
+Warning: memram:G17|entrada[3] - signal not found in VCD.
+
+Warning: memram:G17|entrada[2] - signal not found in VCD.
+
+Warning: memram:G17|entrada[1] - signal not found in VCD.
+
+Warning: memram:G17|entrada[0] - signal not found in VCD.
+
+Warning: memram:G17|ram - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[15] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[14] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[13] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[12] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[11] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[10] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[9] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[8] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[7] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[6] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[5] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[4] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[3] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[2] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[1] - signal not found in VCD.
+
+Warning: memram:G17|ram.data_a[0] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[15] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[14] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[13] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[12] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[11] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[10] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[9] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[8] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[7] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[6] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[5] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[4] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[3] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[2] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[1] - signal not found in VCD.
+
+Warning: memram:G17|ram.q_a[0] - signal not found in VCD.
+
+Warning: memram:G17|ram.raddr_a[4] - signal not found in VCD.
+
+Warning: memram:G17|ram.raddr_a[3] - signal not found in VCD.
+
+Warning: memram:G17|ram.raddr_a[2] - signal not found in VCD.
+
+Warning: memram:G17|ram.raddr_a[1] - signal not found in VCD.
+
+Warning: memram:G17|ram.raddr_a[0] - signal not found in VCD.
+
+Warning: memram:G17|ram.waddr_a[4] - signal not found in VCD.
+
+Warning: memram:G17|ram.waddr_a[3] - signal not found in VCD.
+
+Warning: memram:G17|ram.waddr_a[2] - signal not found in VCD.
+
+Warning: memram:G17|ram.waddr_a[1] - signal not found in VCD.
+
+Warning: memram:G17|ram.waddr_a[0] - signal not found in VCD.
+
+Warning: memram:G17|ram.we_a - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT1 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT2 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT3 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT4 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT5 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT6 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT7 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT8 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT9 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT10 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT11 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT12 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT13 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT14 - signal not found in VCD.
+
+Warning: memram:G17|ram~DATAOUT15 - signal not found in VCD.
+
+Warning: memram:G17|rd - signal not found in VCD.
+
+Warning: memram:G17|saida[15] - signal not found in VCD.
+
+Warning: memram:G17|saida[14] - signal not found in VCD.
+
+Warning: memram:G17|saida[13] - signal not found in VCD.
+
+Warning: memram:G17|saida[12] - signal not found in VCD.
+
+Warning: memram:G17|saida[11] - signal not found in VCD.
+
+Warning: memram:G17|saida[10] - signal not found in VCD.
+
+Warning: memram:G17|saida[9] - signal not found in VCD.
+
+Warning: memram:G17|saida[8] - signal not found in VCD.
+
+Warning: memram:G17|saida[7] - signal not found in VCD.
+
+Warning: memram:G17|saida[6] - signal not found in VCD.
+
+Warning: memram:G17|saida[5] - signal not found in VCD.
+
+Warning: memram:G17|saida[4] - signal not found in VCD.
+
+Warning: memram:G17|saida[3] - signal not found in VCD.
+
+Warning: memram:G17|saida[2] - signal not found in VCD.
+
+Warning: memram:G17|saida[1] - signal not found in VCD.
+
+Warning: memram:G17|saida[0] - signal not found in VCD.
+
+Warning: memram:G17|wr - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|A[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|B[0] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|S - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[15] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[14] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[13] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[12] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[11] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[10] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[9] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[8] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[7] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[6] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[5] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[4] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[3] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[2] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[1] - signal not found in VCD.
+
+Warning: Multiplexador2x1_16bits:G18|SAIDA[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo_20181129122837.sim.vwf
 
 Finished VCD to VWF conversion.
 

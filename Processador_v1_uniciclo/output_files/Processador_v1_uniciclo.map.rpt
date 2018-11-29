@@ -1,5 +1,9 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
+<<<<<<< Updated upstream
 Thu Nov 29 12:32:01 2018
+=======
+Thu Nov 29 12:24:57 2018
+>>>>>>> Stashed changes
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +47,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis Status     ; Successful - Thu Nov 29 12:32:01 2018       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Thu Nov 29 12:24:56 2018       ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
@@ -278,7 +286,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Thu Nov 29 12:31:46 2018
+=======
+    Info: Processing started: Thu Nov 29 12:24:32 2018
+>>>>>>> Stashed changes
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -336,7 +348,12 @@ Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgm
 Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 268
 Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 269
 Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 270
+<<<<<<< Updated upstream
 Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
+=======
+Warning (10543): VHDL Variable Declaration warning at memoria_rom2.vhd(24): used default initial value for variable "ROM" because variable was never assigned a value or an initial value expression. Use of default initial value may introduce unintended design optimizations. File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(93): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 93
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 272
 Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 274
 Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 275
@@ -356,10 +373,18 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
+<<<<<<< Updated upstream
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4933 megabytes
     Info: Processing ended: Thu Nov 29 12:32:01 2018
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:31
+=======
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Thu Nov 29 12:24:57 2018
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:40
+>>>>>>> Stashed changes
 
 

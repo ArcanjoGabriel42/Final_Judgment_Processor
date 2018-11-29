@@ -1,5 +1,9 @@
 EDA Netlist Writer report for Processador_v1_uniciclo
+<<<<<<< Updated upstream
 Thu Nov 29 12:32:59 2018
+=======
+Thu Nov 29 12:28:35 2018
+>>>>>>> Stashed changes
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +40,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
+<<<<<<< Updated upstream
 ; EDA Netlist Writer Status ; Successful - Thu Nov 29 12:32:59 2018 ;
+=======
+; EDA Netlist Writer Status ; Successful - Thu Nov 29 12:28:35 2018 ;
+>>>>>>> Stashed changes
 ; Revision Name             ; Processador_v1_uniciclo               ;
 ; Top-level Entity Name     ; DataPath                              ;
 ; Family                    ; Cyclone V                             ;
@@ -50,8 +58,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                ;
 +---------------------------------------------------------------------------------------------------+------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate functional simulation netlist                                                            ; Off                    ;
-; Time scale                                                                                        ; 1 ps                   ;
+; Generate functional simulation netlist                                                            ; On                     ;
 ; Truncate long hierarchy paths                                                                     ; Off                    ;
 ; Map illegal HDL characters                                                                        ; Off                    ;
 ; Flatten buses into individual nodes                                                               ; Off                    ;
@@ -66,6 +73,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
+<<<<<<< Updated upstream
 +-----------------------------------------------------------------------------------------------------+
 ; Simulation Generated Files                                                                          ;
 +-----------------------------------------------------------------------------------------------------+
@@ -73,6 +81,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------+
 ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/modelsim/Processador_v1_uniciclo.vho ;
 +-----------------------------------------------------------------------------------------------------+
+=======
++--------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                       ;
++--------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                  ;
++--------------------------------------------------------------------------------------------------+
+; C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//Processador_v1_uniciclo.vho ;
++--------------------------------------------------------------------------------------------------+
+>>>>>>> Stashed changes
 
 
 +-----------------------------+
@@ -81,6 +98,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Thu Nov 29 12:32:57 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -89,6 +107,28 @@ Info (204019): Generated file Processador_v1_uniciclo.vho in folder "C:/Final_Ju
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4749 megabytes
     Info: Processing ended: Thu Nov 29 12:32:59 2018
+=======
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Nov 29 12:28:33 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file Processador_v1_uniciclo.vho in folder "C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Thu Nov 29 12:28:35 2018
+>>>>>>> Stashed changes
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

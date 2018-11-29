@@ -21,11 +21,25 @@ END memoria_ROM2;
 ARCHITECTURE behavior OF memoria_ROM2 IS
 
 TYPE matriz IS ARRAY(0 TO 65535) OF STD_LOGIC_VECTOR(15 downto 0);
-SIGNAL ROM : matriz := ("0101010101010101", "1010101010101010", 
-								"0011001100110011", "1100110011001100", OTHERS => "0000000000000000");
+SHARED VARIABLE ROM : matriz;
+--procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
+--BEGIN
+-- listaInstrucoes(0) := "0001000000000101";
+--	listaInstrucoes(1) := "0001001000000001";
+--	listaInstrucoes(2) := "0000000001011001";
+--	listaInstrucoes(3) := "0011011000000000";
+--	listaInstrucoes(4) := "0001100000000001";
+--	listaInstrucoes(5) := "0001000000000101";
+--	listaInstrucoes(6) := "0001100000000000";
+--END PROCEDURE;
 
 BEGIN
+<<<<<<< Updated upstream
 	PROCESS (clk,entrada,ROM) BEGIN
+=======
+	--carregando_ROM(ROM);
+	PROCESS (clk) BEGIN
+>>>>>>> Stashed changes
 		IF (clk = '1' AND clk'EVENT) THEN
 			IF (ROM(conv_integer(entrada))(15 DOWNTO 12) = "0000") THEN
 				op <= ROM(conv_integer(entrada))(15 DOWNTO 12);
