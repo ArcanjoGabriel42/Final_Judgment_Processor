@@ -62,7 +62,7 @@ END COMPONENT;
 		PORT(
 			 entrada : 		in std_logic_vector (3 DOWNTO 0);
 			 regdest : 		out std_logic; 
-			 origalu : 		out std_logic; 
+			 origalu : 		out std_logic_vector(3 DOWNTO 0); 
 			 memparareg : 	out std_logic;	
 			 escrevereg :  out std_logic;	
 			 lemem : 		out std_logic;	
@@ -139,6 +139,26 @@ END COMPONENT;
 		) ;
 	END COMPONENT;	
 		
+	COMPONENT OperacaoDaULA IS
+	PORT
+	(
+		ENTRADA1: IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+		ENTRADA2: IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
+		SAIDA: 	 OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+	
+	END COMPONENT;	
+		
+	COMPONENT memram IS
+		PORT
+		(
+			entrada : in UNSIGNED (15 DOWNTO 0);
+			saida : out UNSIGNED (15 DOWNTO 0);
+			endereco : in UNSIGNED (7 DOWNTO 0);
+			escrita,funcionando : in std_logic
+		);
+END COMPONENT;	
+		
 		-------Entrada e Saida do PC---------------------------------
 		SIGNAL SomadorToPc: 			        	  std_logic_vector(15 downto 0);
 		SIGNAL SaidaPc: 			  			  	  std_logic_vector(15 downto 0);
@@ -175,7 +195,7 @@ END COMPONENT;
 		
 		-------- Flags da Unidade de controle-------------------------
 		SIGNAL Flag_regdest:					     std_logic;
-		SIGNAL Flag_origialu:					  std_logic;
+		SIGNAL Flag_origialu:					  std_logic_vector(3 downto 0);
 		SIGNAL Flag_memparareg:					  std_logic;
 		SIGNAL Flag_escrevereg:					  std_logic;
 		SIGNAL Flag_lemem:						  std_logic;
@@ -185,9 +205,12 @@ END COMPONENT;
 		SIGNAL Flag_jump: 	 					  std_logic;
 		---------------------------------------------------------------
 		
-		--------Saida do Extensor de sinal-------------------
+		--------Saida do Extensor de sinal-----------------------------
 		SIGNAL Saida_extensor:                std_logic_vector(15 downto 0);
 		---------------------------------------------------------------
+		
+		--------Saida do operacao da ULA-------------------------------
+		SIGNAL Saida_OperacaoDaULA:            std_logic_vector(6 downto 0);
 		
 		--------Saida do SLL para componente SOMADOR DA ULA------------
 		SIGNAL Saida_SLL_to_SumUla:           std_logic_vector(15 downto 0);
@@ -215,7 +238,10 @@ END COMPONENT;
 		
 		--------Saida do mult para ULA----------------------------------
 		SIGNAL Saida_mult_to_ULA:             std_logic_vector(15 downto 0);
-	   ----------------------------------------------------------------	
+	   ----------------------------------------------------------------
+	
+		--------Saida da ULA para a memoria de dados--------------------
+		SIGNAL Saida_adress_to_ULA:           std_logic_vector(15 downto 0);
 
 BEGIN		
 G1:  PC           		      port map (Clock_Sistema, Saida_to_PC, SaidaPc);
@@ -235,5 +261,7 @@ G11: QAndBIT                  port map (Flag_branch, Saida_ZeroDaULA, SaidaAND);
 G12: Multiplexador2x1_16bits  port map (SomadorToPc, Saida_SumUla_to_mult, SaidaAND, Saida_mult_to_mult);
 G13: Multiplexador2x1_16bits  port map (Saida_mult_to_mult, Saida_Qsll, Flag_jump, Saida_to_PC);
 G14: Multiplexador2x1_16bits  port map (SaidaRegB,Saida_extensor,Flag_aluSRC,Saida_mult_to_ULA);
+G15: OperacaoDaULA				port map (Flag_origialu,Instruction_to_controlULA,Saida_OperacaoDaULA);
+G16: memram     					port map (Saida_adress_to_ULA,SaidaRegB,Flag_escrevemem,Flag_lemem);
 
 END behavior;

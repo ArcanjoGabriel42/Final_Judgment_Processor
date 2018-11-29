@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Tue Nov 27 16:13:36 2018
+Wed Nov 28 21:22:53 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -10,17 +10,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "Multiplexador2x1_16bits:G14"
- 10. Port Connectivity Checks: "BancoRegistradores:G7"
- 11. Port Connectivity Checks: "UnidadedeControle:G5"
- 12. Port Connectivity Checks: "memoria_ROM2:G4"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,27 +33,22 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 27 16:13:36 2018       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                   ; Processador_v1_uniciclo                     ;
-; Top-level Entity Name           ; DataPath                                    ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 1                                           ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Wed Nov 28 21:22:53 2018           ;
+; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name               ; Processador_v1_uniciclo                     ;
+; Top-level Entity Name       ; DataPath                                    ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------+
@@ -169,150 +154,19 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; QAndBIT.vhd                      ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/QAndBIT.vhd                  ;         ;
-; Somadorde16bits.vhd              ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Somadorde16bits.vhd          ;         ;
-; Qsll.vhd                         ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Qsll.vhd                     ;         ;
-; ShiftEsquerda.vhd                ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/ShiftEsquerda.vhd            ;         ;
-; ExtensordeSinal6To16bits.vhd     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/ExtensordeSinal6To16bits.vhd ;         ;
-; BancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd       ;         ;
-; PC.vhd                           ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd                       ;         ;
-; SomadorPC.vhd                    ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd                ;         ;
-; memoria_rom2.vhd                 ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd             ;         ;
-; UnidadedeControle.vhd            ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd        ;         ;
-; Multiplexador2x1.vhd             ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd         ;         ;
-; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd                 ;         ;
-; Multiplexador2x1_16bits.vhd      ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd  ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-
-
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimate of Logic utilization (ALMs needed) ; 0             ;
-;                                             ;               ;
-; Combinational ALUT usage for logic          ; 0             ;
-;     -- 7 input functions                    ; 0             ;
-;     -- 6 input functions                    ; 0             ;
-;     -- 5 input functions                    ; 0             ;
-;     -- 4 input functions                    ; 0             ;
-;     -- <=3 input functions                  ; 0             ;
-;                                             ;               ;
-; Dedicated logic registers                   ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 1             ;
-;                                             ;               ;
-; Total DSP Blocks                            ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; Clock_Sistema ;
-; Maximum fan-out                             ; 1             ;
-; Total fan-out                               ; 1             ;
-; Average fan-out                             ; 0.50          ;
-+---------------------------------------------+---------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |DataPath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 1    ; 0            ; |DataPath           ; DataPath    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Multiplexador2x1_16bits:G14"                                                         ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; saida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BancoRegistradores:G7"                                                              ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; rega ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UnidadedeControle:G5"                                                                     ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; origalu    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; memparareg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; lemem      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; escrevemem ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memoria_ROM2:G4"                                                                       ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; rom_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; funct   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 27 16:13:20 2018
+    Info: Processing started: Wed Nov 28 21:22:41 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file memram.vhd
+    Info (12022): Found design unit 1: memram-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 14
+    Info (12023): Found entity 1: memram File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file qandbit.vhd
     Info (12022): Found design unit 1: QandBIT-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/QAndBIT.vhd Line: 11
     Info (12023): Found entity 1: QAndBIT File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/QAndBIT.vhd Line: 4
@@ -352,47 +206,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file datapat
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1_16bits.vhd
     Info (12022): Found design unit 1: Multiplexador2x1_16bits-Multiplexador2x1_16bits File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 15
     Info (12023): Found entity 1: Multiplexador2x1_16bits File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 5
-Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(148): object "SaidaRegA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 148
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(156): object "Instruction_to_controlULA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 156
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(165): object "Instruct_out" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 165
-Warning (10541): VHDL Signal Declaration warning at DataPath.vhd(173): used implicit default value for signal "Data_to_writeRegister" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 173
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(178): object "Flag_origialu" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 178
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(179): object "Flag_memparareg" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 179
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(181): object "Flag_lemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 181
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(182): object "Flag_escrevemem" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 182
-Warning (10541): VHDL Signal Declaration warning at DataPath.vhd(201): used implicit default value for signal "Saida_ZeroDaULA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 201
-Warning (10036): Verilog HDL or VHDL warning at DataPath.vhd(217): object "Saida_mult_to_ULA" assigned a value but never read File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 217
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 221
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 222
-Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 223
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 224
-Warning (10540): VHDL Signal Declaration warning at memoria_rom2.vhd(24): used explicit default value for signal "ROM" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "ROM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at memoria_rom2.vhd(83): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 83
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 226
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 228
-Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 229
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(40): signal "LeReg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "Reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at BancoRegistradores.vhd(41): signal "LeReg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 41
-Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G8" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 231
-Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G9" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 232
-Info (12128): Elaborating entity "Somadorde16bits" for hierarchy "Somadorde16bits:G10" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 233
-Info (12128): Elaborating entity "QAndBIT" for hierarchy "QAndBIT:G11" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 234
-Info (12128): Elaborating entity "Multiplexador2x1_16bits" for hierarchy "Multiplexador2x1_16bits:G12" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 235
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clock_Sistema" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 10
-Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4931 megabytes
-    Info: Processing ended: Tue Nov 27 16:13:36 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:32
+Info (12021): Found 2 design units, including 1 entities, in source file operacaodaula.vhd
+    Info (12022): Found design unit 1: OperacaoDaULA-BEHAVIOR File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/OperacaoDaULA.vhd Line: 15
+    Info (12023): Found entity 1: OperacaoDaULA File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/OperacaoDaULA.vhd Line: 6
+Error (10476): VHDL error at DataPath.vhd(265): type of identifier "Saida_adress_to_ULA" does not agree with its usage as "UNSIGNED" type File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 265
+Error (10476): VHDL error at DataPath.vhd(265): type of identifier "SaidaRegB" does not agree with its usage as "UNSIGNED" type File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 265
+Error (10558): VHDL error at DataPath.vhd(265): cannot associate formal port "saida" of mode "out" with an expression File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 265
+Error (10476): VHDL error at DataPath.vhd(265): type of identifier "Flag_escrevemem" does not agree with its usage as "UNSIGNED" type File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 265
+Error (10346): VHDL error at DataPath.vhd(265): formal port or parameter "funcionando" must have actual or default value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 265
+Error (10784): HDL error at DataPath.vhd(158): see declaration for object "funcionando" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 158
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
+    Error: Peak virtual memory: 4862 megabytes
+    Error: Processing ended: Wed Nov 28 21:22:53 2018
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:28
 
 

@@ -6,14 +6,14 @@ PORT
 	(
 		entrada    : in  std_logic_vector (3 DOWNTO 0);
 		regdest    : out std_logic;
-		origalu    : out std_logic;
+		origalu    : out std_logic_vector (3 DOWNTO 0);
 		memparareg : out std_logic;
 		escrevereg : out std_logic;
 		lemem      : out std_logic;
 		escrevemem : out std_logic;
 		branch     : out std_logic;
 		aluSRC     : out std_logic;
-		jump     : out std_logic
+		jump       : out std_logic
 	);
 	
 END UnidadedeControle;
@@ -27,7 +27,7 @@ operacoes: PROCESS (entrada)
 	
 		IF entrada = "0000" then --instrução tipo r
 			regdest <= '1';
-			origalu <= '0';
+			origalu <= "0000";
 			memparareg <= '0';
 			escrevereg <= '1';
 			lemem <= '0';
@@ -38,7 +38,7 @@ operacoes: PROCESS (entrada)
 			
 		ELSIF entrada = "0001" then --instrução load
 			regdest <= '0';
-			origalu <= '1';
+			origalu <= "0001";
 			memparareg <= '1';
 			escrevereg <= '1';
 			lemem <= '1';
@@ -49,7 +49,7 @@ operacoes: PROCESS (entrada)
 			
 		ELSIF entrada = "0010" then --instrução store
 			regdest <= 'Z';
-			origalu <= '1';
+			origalu <= "0010";
 			memparareg <= 'Z';
 			escrevereg <= '0';
 			lemem <= '0';
@@ -60,7 +60,7 @@ operacoes: PROCESS (entrada)
 			
 		ELSIF entrada = "0101" then --instrução jump
 			regdest <= 'Z';
-			origalu <= '0';
+			origalu <= "0101";
 			memparareg <= 'Z';
 			escrevereg <= '0';
 			lemem <= '0';
@@ -71,7 +71,7 @@ operacoes: PROCESS (entrada)
 			
 		ELSE
 			regdest <= 'Z';
-			origalu <= 'Z';
+			origalu <= "ZZZZ";
 			memparareg <= 'Z';
 			escrevereg <= 'Z';
 			lemem <= 'Z';
