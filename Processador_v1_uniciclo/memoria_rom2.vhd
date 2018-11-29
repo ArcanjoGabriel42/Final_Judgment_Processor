@@ -7,7 +7,6 @@ ENTITY memoria_ROM2 is
 PORT(
 	clk: IN STD_LOGIC;
 	entrada: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	rom_out : out std_logic_vector(15 downto 0);
 	op : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 	rd : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 	rt : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -91,6 +90,5 @@ BEGIN
 				jump <= "ZZZZZZZZZZZZ";
 			END IF;
 		END IF;
-		rom_out <= ROM(conv_integer(unsigned(entrada)));
 	END PROCESS;
 END behavior;
