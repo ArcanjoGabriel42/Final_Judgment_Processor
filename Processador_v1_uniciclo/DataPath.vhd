@@ -148,16 +148,29 @@ END COMPONENT;
 	);
 	
 	END COMPONENT;	
-		
 	COMPONENT memram IS
 		PORT
-		(
-			entrada : in UNSIGNED (15 DOWNTO 0);
-			saida : out UNSIGNED (15 DOWNTO 0);
-			endereco : in UNSIGNED (7 DOWNTO 0);
-			escrita,funcionando : in std_logic
-		);
-END COMPONENT;	
+			(
+				entrada  : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+				saida    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
+				endereco : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+				rd, wr   : IN STD_LOGIC
+			);
+		END COMPONENT;	
+		
+	COMPONENT ULA is
+	Port
+	(
+		EntradaA:	    in  std_logic_vector(15 downto 0);
+		EntradaB:	    in  std_logic_vector(15 downto 0);
+		Controle_ULA:       in  std_logic_vector(6  downto 0);
+		Saida_to_Dados:     out std_logic_vector(15 downto 0);
+		Saida_to_Mux:       out std_logic_vector(15 downto 0);		
+		ZeroULA:	    out std_logic
+	);
+
+	END COMPONENT;
+		
 		
 		-------Entrada e Saida do PC---------------------------------
 		SIGNAL SomadorToPc: 			        	  std_logic_vector(15 downto 0);
@@ -240,10 +253,17 @@ END COMPONENT;
 		SIGNAL Saida_mult_to_ULA:             std_logic_vector(15 downto 0);
 	   ----------------------------------------------------------------
 	
-		--------Saida da ULA para a memoria de dados--------------------
-		SIGNAL Saida_adress_to_ULA:           std_logic_vector(15 downto 0);
+		--------Saida da ULA para a memoria de dados e Mult-------------
+		SIGNAL Saida_adress_to_RAM:           std_logic_vector(15 downto 0);
+		SIGNAL Saida_valor_to_mult:           std_logic_vector(15 downto 0);		
+		----------------------------------------------------------------
+		
+		--------Saida da Memoria de dados (RAM)-------------------------
+		SIGNAL Saida_MemoridaDeDados_to_mult:  std_logic_vector(15 downto 0);
+		----------------------------------------------------------------
 
-BEGIN		
+BEGIN	
+	
 G1:  PC           		      port map (Clock_Sistema, Saida_to_PC, SaidaPc);
 G2:  SomadorPC    		      port map (SaidaPc, SomadorToPc);
 G3:  Qsll							port map (SomadorToPc,Instruction_to_Jump,Saida_Qsll);
@@ -262,6 +282,8 @@ G12: Multiplexador2x1_16bits  port map (SomadorToPc, Saida_SumUla_to_mult, Saida
 G13: Multiplexador2x1_16bits  port map (Saida_mult_to_mult, Saida_Qsll, Flag_jump, Saida_to_PC);
 G14: Multiplexador2x1_16bits  port map (SaidaRegB,Saida_extensor,Flag_aluSRC,Saida_mult_to_ULA);
 G15: OperacaoDaULA				port map (Flag_origialu,Instruction_to_controlULA,Saida_OperacaoDaULA);
-G16: memram     					port map (Saida_adress_to_ULA,SaidaRegB,Flag_escrevemem,Flag_lemem);
+G16: ULA								port map (SaidaRegA,Saida_mult_to_ULA,Saida_OperacaoDaULA,Saida_adress_to_RAM,Saida_valor_to_mult,Saida_ZeroDaULA);
+G17: memram     					port map (SaidaRegB,Saida_MemoridaDeDados_to_mult,Saida_adress_to_RAM,Flag_lemem,Flag_escrevemem);
+G18: Multiplexador2x1_16bits  port map (Saida_MemoridaDeDados_to_mult,Saida_valor_to_mult,Flag_memparareg,Data_to_writeRegister);
 
 END behavior;
