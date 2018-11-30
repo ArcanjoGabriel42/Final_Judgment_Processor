@@ -23,13 +23,13 @@ TYPE matriz IS ARRAY(0 TO 65535) OF STD_LOGIC_VECTOR(15 downto 0);
 SHARED VARIABLE ROM : matriz;
 procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
 BEGIN
-listaInstrucoes(0) := "0001000000000101";
-listaInstrucoes(1) := "0001001000000001";
-listaInstrucoes(2) := "0000000001011001";
-listaInstrucoes(3) := "0011011000000000";
-listaInstrucoes(4) := "0001100000000001";
-listaInstrucoes(5) := "0001000000000101";
-listaInstrucoes(6) := "0001100000000000";
+	listaInstrucoes(0) := "0001000000000101";
+	listaInstrucoes(1) := "0001001000000001";
+	listaInstrucoes(2) := "0000000001011001";
+	listaInstrucoes(3) := "0011011000000000";
+	listaInstrucoes(4) := "0001100000000001";
+	listaInstrucoes(5) := "0001000000000101";
+	listaInstrucoes(6) := "0001100000000000";
 END PROCEDURE;
 
 BEGIN

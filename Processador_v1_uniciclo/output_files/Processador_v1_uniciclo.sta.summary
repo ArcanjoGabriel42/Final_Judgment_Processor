@@ -2,100 +2,52 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'BancoRegistradores:G7|Reg~116'
-Slack : -18.604
-TNS   : -3018.256
-
 Type  : Slow 1100mV 85C Model Setup 'Clock_Sistema'
-Slack : -13.859
-TNS   : -1071.211
+Slack : -8.141
+TNS   : -2894.816
 
 Type  : Slow 1100mV 85C Model Hold 'Clock_Sistema'
-Slack : 0.212
+Slack : 0.316
 TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'BancoRegistradores:G7|Reg~116'
-Slack : 1.714
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'BancoRegistradores:G7|Reg~116'
-Slack : -3.571
-TNS   : -5486.218
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock_Sistema'
 Slack : -0.724
-TNS   : -130.288
-
-Type  : Slow 1100mV 0C Model Setup 'BancoRegistradores:G7|Reg~116'
-Slack : -18.275
-TNS   : -3008.480
+TNS   : -608.770
 
 Type  : Slow 1100mV 0C Model Setup 'Clock_Sistema'
-Slack : -13.653
-TNS   : -1070.023
+Slack : -7.798
+TNS   : -2814.999
 
 Type  : Slow 1100mV 0C Model Hold 'Clock_Sistema'
-Slack : -0.009
-TNS   : -0.009
-
-Type  : Slow 1100mV 0C Model Hold 'BancoRegistradores:G7|Reg~116'
-Slack : 0.837
+Slack : 0.299
 TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'BancoRegistradores:G7|Reg~116'
-Slack : -3.934
-TNS   : -5866.710
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock_Sistema'
 Slack : -0.724
-TNS   : -130.189
-
-Type  : Fast 1100mV 85C Model Setup 'BancoRegistradores:G7|Reg~116'
-Slack : -9.377
-TNS   : -1432.957
+TNS   : -609.265
 
 Type  : Fast 1100mV 85C Model Setup 'Clock_Sistema'
-Slack : -6.397
-TNS   : -442.970
+Slack : -3.141
+TNS   : -965.804
 
 Type  : Fast 1100mV 85C Model Hold 'Clock_Sistema'
-Slack : 0.118
+Slack : 0.146
 TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'BancoRegistradores:G7|Reg~116'
-Slack : 0.768
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BancoRegistradores:G7|Reg~116'
-Slack : -1.500
-TNS   : -1701.350
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock_Sistema'
-Slack : -0.090
-TNS   : -9.980
-
-Type  : Fast 1100mV 0C Model Setup 'BancoRegistradores:G7|Reg~116'
-Slack : -8.240
-TNS   : -1271.026
+Slack : -0.091
+TNS   : -45.842
 
 Type  : Fast 1100mV 0C Model Setup 'Clock_Sistema'
-Slack : -5.613
-TNS   : -386.159
+Slack : -2.718
+TNS   : -821.275
 
 Type  : Fast 1100mV 0C Model Hold 'Clock_Sistema'
-Slack : 0.023
+Slack : 0.132
 TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'BancoRegistradores:G7|Reg~116'
-Slack : 0.738
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BancoRegistradores:G7|Reg~116'
-Slack : -1.254
-TNS   : -1400.437
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock_Sistema'
-Slack : -0.089
-TNS   : -9.914
+Slack : -0.090
+TNS   : -46.216
 
 ------------------------------------------------------------

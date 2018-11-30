@@ -5,11 +5,17 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 ENTITY SomadorPC IS
 PORT(
+	clk: in std_logic;
 	entrada : in STD_LOGIC_VECTOR(15 DOWNTO 0);
 	saida : out STD_LOGIC_VECTOR(15 DOWNTO 0));
 END SomadorPC;
 
 ARCHITECTURE behavior OF SomadorPC IS
-BEGIN
-	saida <= entrada + "0000000000000001";
+begin
+process(clk)
+	BEGIN
+		IF (clk = '1' AND clk'EVENT) THEN
+			saida <= entrada + "0000000000000001";
+		end if;
+end process;
 END behavior;

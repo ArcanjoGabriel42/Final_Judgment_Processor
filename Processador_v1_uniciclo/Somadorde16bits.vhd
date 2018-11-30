@@ -5,17 +5,20 @@ USE ieee.std_logic_unsigned.all;
 
 ENTITY Somadorde16bits IS
 	PORT(
+		clk: in std_logic;
 		ENTRADA1, ENTRADA2 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 		SAIDA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END Somadorde16bits;
 
 ARCHITECTURE BEHAVIOR OF Somadorde16bits IS
-	
+begin
+process(clk)
 	BEGIN
-	
+		IF (clk = '1' AND clk'EVENT) THEN
 		SAIDA <= ENTRADA1 + ENTRADA2;
-
+		end if;
+end process;
 END ARCHITECTURE;
 
 

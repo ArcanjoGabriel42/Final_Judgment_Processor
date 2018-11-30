@@ -67,7 +67,8 @@ ARCHITECTURE behavior OF DataPath IS
 
 	COMPONENT SomadorPC IS
 		PORT
-		(
+		(	
+			clk :  IN  STD_LOGIC;
 			entrada : in  STD_LOGIC_VECTOR(15 DOWNTO 0);
 			saida : 	 out STD_LOGIC_VECTOR(15 DOWNTO 0)
 		);
@@ -90,6 +91,7 @@ ARCHITECTURE behavior OF DataPath IS
 
 	COMPONENT Multiplexador2x1 IS
 		PORT( 
+		clk :  IN  STD_LOGIC;
 		SIGNAL A,B  : IN   STD_LOGIC_VECTOR(2 DOWNTO 0);
 		SIGNAL S	   : IN   STD_LOGIC;
 		SIGNAL SAIDA: OUT  STD_LOGIC_VECTOR(2 DOWNTO 0)
@@ -128,6 +130,7 @@ END COMPONENT;
 	COMPONENT ExtensordeSinal6To16bits IS
 		PORT
 		(
+			clk :  IN  STD_LOGIC;
 			ENTRADA : IN STD_LOGIC_VECTOR(5 DOWNTO 0); 
 			SAIDA   : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 		);
@@ -136,6 +139,7 @@ END COMPONENT;
 	COMPONENT ShiftEsquerda IS 
 
 	PORT(
+		clk :  IN  STD_LOGIC;
 		VALOR: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 		SAIDA: OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
@@ -146,6 +150,7 @@ END COMPONENT;
 	COMPONENT Qsll IS
 		PORT
 		(
+			clk :  IN  STD_LOGIC;
 			pc : in std_logic_vector (15 downto 0);
 			opshift : in std_logic_vector(11 downto 0);
 			resshift : out std_logic_vector(15 downto 0)
@@ -155,6 +160,7 @@ END COMPONENT;
 	COMPONENT Somadorde16bits IS
 		PORT
 			(
+				clk :  IN  STD_LOGIC;
 				ENTRADA1, ENTRADA2 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 				SAIDA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 			);
@@ -164,6 +170,7 @@ END COMPONENT;
 	COMPONENT QAndBIT is 
 		PORT
 			(
+				clk :  IN  STD_LOGIC;
 				E1, E2 : IN STD_LOGIC;
 				S1 : OUT STD_LOGIC
 			);
@@ -171,7 +178,8 @@ END COMPONENT;
 		
 	COMPONENT Multiplexador2x1_16bits IS
 		PORT
-		( 
+		( 	
+			clk : IN STD_LOGIC;
 			SIGNAL A,B  : IN   STD_LOGIC_VECTOR(15 DOWNTO 0);
 			SIGNAL S	   : IN   STD_LOGIC;
 			SIGNAL SAIDA: OUT  STD_LOGIC_VECTOR(15 DOWNTO 0)
@@ -181,6 +189,7 @@ END COMPONENT;
 	COMPONENT OperacaoDaULA IS
 	PORT
 	(
+		clk :  IN  STD_LOGIC;
 		ENTRADA1: IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		ENTRADA2: IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
 		SAIDA: 	 OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
@@ -190,6 +199,7 @@ END COMPONENT;
 	COMPONENT memram IS
 		PORT
 			(
+				clk :  IN  STD_LOGIC;
 				entrada  : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
 				saida    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
 				endereco : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
@@ -197,21 +207,18 @@ END COMPONENT;
 			);
 		END COMPONENT;	
 		
-	COMPONENT ULA is
-	Port
-	(
-		EntradaA:	    in  std_logic_vector(15 downto 0);
-		EntradaB:	    in  std_logic_vector(15 downto 0);
-		Controle_ULA:       in  std_logic_vector(6  downto 0);
-		Saida_to_Dados:     out std_logic_vector(15 downto 0);
-		Saida_to_Mux:       out std_logic_vector(15 downto 0);		
-		ZeroULA:	    out std_logic
-	);
+		COMPONENT ULA is
+			Port
+			(
+				EntradaA:	    in  std_logic_vector(15 downto 0);
+				EntradaB:	    in  std_logic_vector(15 downto 0);
+				Controle_ULA:   in  std_logic_vector(6  downto 0);
+				Saida_to_Dados: out std_logic_vector(15 downto 0);
+				Saida_to_Mux:   out std_logic_vector(15 downto 0);		
+				ZeroULA:	       out std_logic
+			);
 
-	END COMPONENT;
-		
-		
-				
+		End COMPONENT;	
 		
 		-------Entrada e Saida do PC---------------------------------
 		SIGNAL SomadorToPc: 			        	  std_logic_vector(15 downto 0);
@@ -303,26 +310,26 @@ END COMPONENT;
 BEGIN	
 	
 G1:  PC           		      port map (Clock_Sistema, Saida_to_PC, SaidaPc);
-G2:  SomadorPC    		      port map (SaidaPc, SomadorToPc);
-G3:  Qsll							port map (SomadorToPc,Instruction_to_Jump,Saida_Qsll);
+G2:  SomadorPC    		      port map (Clock_Sistema,SaidaPc, SomadorToPc);
+G3:  Qsll							port map (Clock_Sistema,SomadorToPc,Instruction_to_Jump,Saida_Qsll);
 G4:  memoria_ROM2 		      port map (Clock_Sistema, SaidaPc, Instruction_to_Control, Instruction_to_register1, Instruction_to_register2, 
 													 Instruction_to_multiplexador,Instruction_to_controlULA, Instruction_to_extensorDeSinal, Instruction_to_Jump);											
 G5:  UnidadedeControle        port map (Clock_Sistema,Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
-													 Flag_branch, Flag_aluSRC, Flag_jump);								 											
-G6:  Multiplexador2x1     	   port map (Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
+																		Flag_branch, Flag_aluSRC, Flag_jump);								 											
+G6:  Multiplexador2x1     	   port map (Clock_Sistema,Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
 G7:  BancoRegistradores 		port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,SaidaRegB,Data_to_writeRegister, multiplexador_to_writeRegister,
-													 Instruction_to_register1, Instruction_to_register2);
-G8:  ExtensordeSinal6To16bits port map (Instruction_to_extensorDeSinal,Saida_extensor);
-G9:  ShiftEsquerda            port map (Saida_extensor, Saida_SLL_to_SumUla);
-G10: Somadorde16bits          port map (SomadorToPc,Saida_SLL_to_sumULA, Saida_SumUla_to_mult);
-G11: QAndBIT                  port map (Flag_jump, Saida_ZeroDaULA, SaidaAND);
-G12: Multiplexador2x1_16bits  port map (SomadorToPc, Saida_SumUla_to_mult, SaidaAND, Saida_mult_to_mult);
-G13: Multiplexador2x1_16bits  port map (Saida_mult_to_mult, Saida_Qsll, Flag_branch, Saida_to_PC);
-G14: Multiplexador2x1_16bits  port map (SaidaRegB,Saida_extensor,Flag_aluSRC,Saida_mult_to_ULA);
-G15: OperacaoDaULA				port map (Flag_origialu,Instruction_to_controlULA,Saida_OperacaoDaULA);
+																		Instruction_to_register1, Instruction_to_register2);
+G8:  ExtensordeSinal6To16bits port map (Clock_Sistema,Instruction_to_extensorDeSinal,Saida_extensor);
+G9:  ShiftEsquerda            port map (Clock_Sistema,Saida_extensor, Saida_SLL_to_SumUla);
+G10: Somadorde16bits          port map (Clock_Sistema,SomadorToPc,Saida_SLL_to_sumULA, Saida_SumUla_to_mult);
+G11: QAndBIT                  port map (Clock_Sistema,Flag_jump, Saida_ZeroDaULA, SaidaAND);
+G12: Multiplexador2x1_16bits  port map (Clock_Sistema,SomadorToPc, Saida_SumUla_to_mult, SaidaAND, Saida_mult_to_mult);
+G13: Multiplexador2x1_16bits  port map (Clock_Sistema,Saida_mult_to_mult, Saida_Qsll, Flag_branch, Saida_to_PC);
+G14: Multiplexador2x1_16bits  port map (Clock_Sistema,SaidaRegB,Saida_extensor,Flag_aluSRC,Saida_mult_to_ULA);
+G15: OperacaoDaULA				port map (Clock_Sistema,Flag_origialu,Instruction_to_controlULA,Saida_OperacaoDaULA);
 G16: ULA								port map (SaidaRegA,Saida_mult_to_ULA,Saida_OperacaoDaULA,Saida_adress_to_RAM,Saida_valor_to_mult,Saida_ZeroDaULA);
-G17: memram     					port map (SaidaRegB,Saida_MemoridaDeDados_to_mult,Saida_adress_to_RAM,Flag_lemem,Flag_escrevemem);
-G18: Multiplexador2x1_16bits  port map (Saida_MemoridaDeDados_to_mult,Saida_valor_to_mult,Flag_memparareg,Data_to_writeRegister);
+G17: memram     					port map (Clock_Sistema,SaidaRegB,Saida_MemoridaDeDados_to_mult,Saida_adress_to_RAM,Flag_lemem,Flag_escrevemem);
+G18: Multiplexador2x1_16bits  port map (Clock_Sistema,Saida_MemoridaDeDados_to_mult,Saida_valor_to_mult,Flag_memparareg,Data_to_writeRegister);
 
 SomadorToPc_outWaveform <= SomadorToPc; -- SAIDA DA SOMA DO PC + 1
  

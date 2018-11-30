@@ -6,6 +6,7 @@ use IEEE.NUMERIC_STD.ALL;
 ENTITY OperacaoDaULA IS
 	PORT
 	(
+		clk: in std_logic;
 		ENTRADA1:IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		ENTRADA2:IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
 		SAIDA:   OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
@@ -13,6 +14,11 @@ ENTITY OperacaoDaULA IS
 END OperacaoDaULA;
 
 ARCHITECTURE BEHAVIOR OF OperacaoDaULA IS
+begin
+process(clk)
 	BEGIN
+	IF (clk = '1' AND clk'EVENT) THEN
 		SAIDA <= ENTRADA1 & ENTRADA2;
+	end if;
+end process;
 END BEHAVIOR;
