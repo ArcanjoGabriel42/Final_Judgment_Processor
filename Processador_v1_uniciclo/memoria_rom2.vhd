@@ -24,18 +24,26 @@ SHARED VARIABLE ROM : matriz;
 procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
 BEGIN
 	listaInstrucoes(0) := "0000000001011001";
---	listaInstrucoes(1) := "0001001000000001";
---	listaInstrucoes(2) := "0001000000000101";
---	listaInstrucoes(3) := "0011011000000000";
---	listaInstrucoes(4) := "0001100000000001";
---	listaInstrucoes(5) := "0001000000000101";
---	listaInstrucoes(6) := "0001100000000000";
+	listaInstrucoes(1) := "0001001000000001";
+	listaInstrucoes(2) := "0001000000000101";
+	listaInstrucoes(3) := "0011011000000000";
+	listaInstrucoes(4) := "0001100000000001";
+	listaInstrucoes(5) := "0001000000000101";
+	listaInstrucoes(6) := "0001100000000000";
 END PROCEDURE;
 
 BEGIN
 	carregando_ROM(ROM);
 	PROCESS (clk,entrada)
 	BEGIN
+	op <= (others => '0');
+	rs <= (others => '0');
+	rt <= (others => '0');
+	rd <= (others => '0');
+	funct <= (others => '0');
+	tipoi <= (others => '0');
+	jump <= (others => '0');
+	
 		IF (clk = '1') THEN
 			IF (ROM(conv_integer(entrada))(15 DOWNTO 12) = "0000") THEN
 				op <= ROM(conv_integer(entrada))(15 DOWNTO 12);
@@ -80,14 +88,14 @@ BEGIN
 				op <= ROM(conv_integer(entrada))(15 DOWNTO 12);
 				jump <= ROM(conv_integer(entrada))(11 DOWNTO 0);
 			
-			ELSE
-				op <= "ZZZZ"; -- SÓ PODE TER 4
-				rs <= "ZZZ";
-				rt <= "ZZZ";
-				rd <= "ZZZ";
-				funct <= "ZZZ";
-				tipoi <= "ZZZZZZ";
-				jump <= "ZZZZZZZZZZZZ";
+--			ELSE
+--			op <= "ZZZZ"; -- SÓ PODE TER 4
+--			rs <= "ZZZ";
+--			rt <= "ZZZ";
+--			rd <= "ZZZ";
+--			funct <= "ZZZ";
+--			tipoi <= "ZZZZZZ";
+--			jump <= "ZZZZZZZZZZZZ";
 			END IF;
 		END IF;
 	END PROCESS;

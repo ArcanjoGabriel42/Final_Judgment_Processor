@@ -17,6 +17,7 @@ ARCHITECTURE Multiplexador2x1 OF Multiplexador2x1 IS
 BEGIN 
 	PROCESS (A,B,S,clk)
 		BEGIN
+		SAIDA <= (others => '0');
 		IF (clk = '1') THEN
 			CASE S IS
 				WHEN '0' => SAIDA <= A;

@@ -18,7 +18,7 @@ SIGNAL AUX: STD_LOGIC_VECTOR(15 downto 0);
 begin
 process(clk)
 	BEGIN 
-		IF (clk = '1' AND clk'EVENT) THEN
+		IF (clk = '1') THEN
 		AUX   <= VALOR(13 downto 0) & "00";
 		SAIDA <= AUX(15 DOWNTO 0);
 		end if;

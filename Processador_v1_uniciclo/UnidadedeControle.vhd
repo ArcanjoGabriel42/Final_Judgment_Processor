@@ -18,11 +18,8 @@ PORT
 	);
 	
 END UnidadedeControle;
-
-
 ARCHITECTURE behavior OF UnidadedeControle  IS
 BEGIN
-
 operacoes: PROCESS (entrada,Clock)
 	BEGIN
 		if(Clock = '1') then
@@ -70,17 +67,17 @@ operacoes: PROCESS (entrada,Clock)
 					aluSRC <= '0';
 					jump <= '1';
 					
-				ELSE
-					regdest <= 'Z';
-					origalu <= "ZZZZ";
-					memparareg <= 'Z';
-					escrevereg <= 'Z';
-					lemem <= 'Z';
-					escrevemem <= 'Z';
-					branch <= 'Z';
-					aluSRC <= 'Z';
-					jump <= 'Z';
-					
+--				ELSE
+--					regdest <= 'Z';
+--					origalu <= "ZZZZ";
+--					memparareg <= 'Z';
+--					escrevereg <= 'Z';
+--					lemem <= 'Z';
+--					escrevemem <= 'Z';
+--					branch <= 'Z';
+--					aluSRC <= 'Z';
+--					jump <= 'Z';
+--					
 				END if;
 		END IF;
 	END PROCESS operacoes;		

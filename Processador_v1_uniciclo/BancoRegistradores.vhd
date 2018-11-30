@@ -19,22 +19,23 @@ end BancoRegistradores;
 Architecture behavior of BancoRegistradores is
 	
 	type RegBank is array(0 to 7) of std_logic_vector (15 downto 0);
-	signal Reg : RegBank := ("0000000000000000",
-									 "0000000000000000",
-									 "0000000000000000",
-									 "0000000000000000",
-									 "0000000000000000",
-									 "0000000000000000",
-									 "0000000000000000",
-									 "0000000000000000");
+	shared variable Reg : RegBank;
+--									:= ("0000000000000000",
+--									 "0000000000000000",
+--									 "0000000000000000",
+--									 "0000000000000000",
+--									 "0000000000000000",
+--									 "0000000000000000",
+--									 "0000000000000000",
+--									 "0000000000000000");
 	
 begin
 	
-	process (Clock, Reg, LeReg1, LeReg2)
+	process (Clock, LeReg1, LeReg2, EscReg, Data, RegDst)
 		begin 
-	     if(Clock'EVENT) AND (Clock = '1') then
+	     if(Clock = '1') then
 			if EscReg = '1' then
-				Reg(to_integer(unsigned(RegDst))) <= Data;
+				Reg(to_integer(unsigned(RegDst))) := Data;
 			end if;
 		  end if;
 		RegA <= Reg(to_integer(unsigned(LeReg1)));

@@ -17,7 +17,8 @@ ARCHITECTURE BEHAVIOR OF ExtensordeSinal6To16bits IS
 	BEGIN
 		PROCESS(ENTRADA, clk)
 			BEGIN
-			IF (clk = '1' AND clk'EVENT) THEN
+			SAIDA <= (others => '0');
+			IF (clk = '1') THEN
 				IF ENTRADA(5) = '0' THEN
 					SAIDA <= ("0000000000") & ENTRADA;
 				ELSE

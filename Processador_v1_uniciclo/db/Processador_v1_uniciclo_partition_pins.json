@@ -292,14 +292,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instruction_to_Control_outWaveform[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Control_outWaveform[3]",
-					"strict" : false
-				},
-				{
 					"name" : "Instruction_to_register1_outWaveform[0]",
 					"strict" : false
 				},
@@ -308,19 +300,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instruction_to_register1_outWaveform[2]",
-					"strict" : false
-				},
-				{
 					"name" : "Instruction_to_register2_outWaveform[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_register2_outWaveform[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_register2_outWaveform[2]",
 					"strict" : false
 				},
 				{
@@ -328,11 +308,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instruction_to_controlULA_outWaveform[1]",
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Instruction_to_controlULA_outWaveform[2]",
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[4]",
 					"strict" : false
 				},
 				{
@@ -605,10 +593,6 @@
 				},
 				{
 					"name" : "Flag_origialu_OUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_origialu_OUT[3]",
 					"strict" : false
 				},
 				{

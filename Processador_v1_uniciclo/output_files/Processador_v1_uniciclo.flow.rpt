@@ -1,5 +1,5 @@
 Flow report for Processador_v1_uniciclo
-Fri Nov 30 15:16:24 2018
+Fri Nov 30 18:09:53 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,25 +40,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 30 15:16:24 2018       ;
+; Flow Status                     ; Successful - Fri Nov 30 18:09:53 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 68 / 56,480 ( < 1 % )                       ;
-; Total registers                 ; 137                                         ;
-; Total pins                      ; 178 / 268 ( 66 % )                          ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 60                                          ;
+; Total pins                      ; 178                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 11/30/2018 14:54:22     ;
+; Start date & time ; 11/30/2018 18:08:35     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; Processador_v1_uniciclo ;
 +-------------------+-------------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value           ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110073159012324.154360406115356        ; --                      ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 132098961924332.154361571410796        ; --                      ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                      ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                  ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --                      ; --          ; eda_simulation ;
@@ -99,18 +99,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4888 MB             ; 00:00:33                           ;
-; Fitter               ; 00:01:06     ; 1.0                     ; 6485 MB             ; 00:01:42                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 4852 MB             ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.1                     ; 5194 MB             ; 00:00:12                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4768 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4734 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4743 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4734 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4743 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4734 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4743 MB             ; 00:00:02                           ;
-; Total                ; 00:01:57     ; --                      ; --                  ; 00:02:51                           ;
+; Analysis & Synthesis ; 00:00:42     ; 1.0                     ; 5252 MB             ; 00:00:58                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4734 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4742 MB             ; 00:00:02                           ;
+; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,17 +111,9 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LUIGI-NOTEBOOK   ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -137,16 +121,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_fit --read_settings_files=off --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_asm --read_settings_files=off --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_sta Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_eda --read_settings_files=off --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
 
 
 
