@@ -14,7 +14,7 @@ ARCHITECTURE behavior OF SomadorPC IS
 begin
 process(clk)
 	BEGIN
-		IF (clk = '1' AND clk'EVENT) THEN
+		IF (clk = '1') THEN
 			saida <= entrada + "0000000000000001";
 		end if;
 end process;

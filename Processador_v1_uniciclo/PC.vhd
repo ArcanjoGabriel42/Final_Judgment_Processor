@@ -18,7 +18,7 @@ ARCHITECTURE behavior OF PC IS
 BEGIN
 	PROCESS(clk)
 		BEGIN
-			IF (clk = '1' AND clk'EVENT) THEN
+			IF (clk = '1') THEN
 				pout <= pin;
 			END IF;
 	END PROCESS;

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri Nov 30 17:56:44 2018
+Fitter Status : Successful - Fri Nov 30 18:54:10 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : Processador_v1_uniciclo
 Top-level Entity Name : DataPath
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 339 / 56,480 ( < 1 % )
+Logic utilization (in ALMs) : 379 / 56,480 ( < 1 % )
 Total registers : 61
 Total pins : 178 / 268 ( 66 % )
 Total virtual pins : 0
