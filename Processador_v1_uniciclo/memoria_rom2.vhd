@@ -20,20 +20,21 @@ END memoria_ROM2;
 ARCHITECTURE behavior OF memoria_ROM2 IS
 
 TYPE matriz IS ARRAY(0 TO 65535) OF STD_LOGIC_VECTOR(15 downto 0);
-SHARED VARIABLE ROM : matriz;
-procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
-BEGIN
-   listaInstrucoes(0) := "0001000000000101";
-	listaInstrucoes(1) := "0001001000000001";
-	listaInstrucoes(2) := "0000000001011001";
-	listaInstrucoes(3) := "0011011000000000";
-	listaInstrucoes(4) := "0001100000000001";
-	listaInstrucoes(5) := "0001000000000101";
-	listaInstrucoes(6) := "0001100000000000";
-END PROCEDURE;
+SHARED VARIABLE ROM : matriz:= ("0001000000000101", "0001001000000001", "0000000001011001", "0011011000000000", 
+"0001100000000001","0001000000000101","0001100000000000",OTHERS => "0000000000000000");
+--procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
+--BEGIN
+-- listaInstrucoes(0) := "0001000000000101";
+--	listaInstrucoes(1) := "0001001000000001";
+--	listaInstrucoes(2) := "0000000001011001";
+--	listaInstrucoes(3) := "0011011000000000";
+--	listaInstrucoes(4) := "0001100000000001";
+--	listaInstrucoes(5) := "0001000000000101";
+--	listaInstrucoes(6) := "0001100000000000";
+--END PROCEDURE;
 
 BEGIN
-	carregando_ROM(ROM);
+	--carregando_ROM(ROM);
 	PROCESS (clk,entrada)
 	BEGIN
 		IF (clk = '1' AND clk'EVENT) THEN

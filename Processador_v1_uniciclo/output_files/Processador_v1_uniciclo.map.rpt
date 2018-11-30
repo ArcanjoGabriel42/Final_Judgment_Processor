@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Thu Nov 29 17:44:15 2018
+Thu Nov 29 19:46:35 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 29 17:44:15 2018       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 29 19:46:35 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
@@ -364,10 +364,6 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; memoria_ROM2:G4|funct[1]~reg0           ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|tipoi[5]~reg0           ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|tipoi[1]~reg0           ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[8]~reg0            ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[7]~reg0            ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[5]~reg0            ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[1]~reg0            ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|jump[0]~en              ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|jump[1]~en              ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|jump[2]~en              ; Stuck at GND due to stuck port data_in      ;
@@ -381,10 +377,14 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; memoria_ROM2:G4|jump[10]~en             ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|jump[11]~en             ; Stuck at GND due to stuck port data_in      ;
 ; memoria_ROM2:G4|jump[0]~reg0            ; Stuck at GND due to stuck port clock_enable ;
+; memoria_ROM2:G4|jump[1]~reg0            ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[2]~reg0            ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[3]~reg0            ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[4]~reg0            ; Stuck at GND due to stuck port clock_enable ;
+; memoria_ROM2:G4|jump[5]~reg0            ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[6]~reg0            ; Stuck at GND due to stuck port clock_enable ;
+; memoria_ROM2:G4|jump[7]~reg0            ; Stuck at GND due to stuck port clock_enable ;
+; memoria_ROM2:G4|jump[8]~reg0            ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[9]~reg0            ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[10]~reg0           ; Stuck at GND due to stuck port clock_enable ;
 ; memoria_ROM2:G4|jump[11]~reg0           ; Stuck at GND due to stuck port clock_enable ;
@@ -641,7 +641,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 29 17:43:59 2018
+    Info: Processing started: Thu Nov 29 19:46:06 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -698,7 +698,7 @@ Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgm
 Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 294
 Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 295
 Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 296
-Warning (10873): Using initial value X (don't care) for net "ROM[7..65535]" at memoria_rom2.vhd(23) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 23
+Warning (10542): VHDL Variable Declaration warning at memoria_rom2.vhd(23): used initial value expression for variable "ROM" because variable was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 23
 Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 298
 Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 300
 Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 301
@@ -727,41 +727,41 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|origalu[3]" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
     Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|regdest" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 8
 Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[2]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[3]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rd[2]" to the node "BancoRegistradores:G7|Reg" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|funct[1]" to the node "ULA:G16|Mux15" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[1]" to the node "Multiplexador2x1_16bits:G14|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[5]" to the node "Multiplexador2x1_16bits:G14|SAIDA[15]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[0]" to the node "Multiplexador2x1_16bits:G13|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[1]" to the node "Multiplexador2x1_16bits:G13|SAIDA[3]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[2]" to the node "Multiplexador2x1_16bits:G13|SAIDA[4]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[3]" to the node "Multiplexador2x1_16bits:G13|SAIDA[5]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[4]" to the node "Multiplexador2x1_16bits:G13|SAIDA[6]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[5]" to the node "Multiplexador2x1_16bits:G13|SAIDA[7]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[6]" to the node "Multiplexador2x1_16bits:G13|SAIDA[8]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[7]" to the node "Multiplexador2x1_16bits:G13|SAIDA[9]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[8]" to the node "Multiplexador2x1_16bits:G13|SAIDA[10]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[9]" to the node "Multiplexador2x1_16bits:G13|SAIDA[11]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[10]" to the node "Multiplexador2x1_16bits:G13|SAIDA[12]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[11]" to the node "Multiplexador2x1_16bits:G13|SAIDA[13]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[2]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[3]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rd[2]" to the node "BancoRegistradores:G7|Reg" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|funct[1]" to the node "ULA:G16|Mux15" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[1]" to the node "Multiplexador2x1_16bits:G14|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[5]" to the node "Multiplexador2x1_16bits:G14|SAIDA[15]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[0]" to the node "Multiplexador2x1_16bits:G13|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[1]" to the node "Multiplexador2x1_16bits:G13|SAIDA[3]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[2]" to the node "Multiplexador2x1_16bits:G13|SAIDA[4]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[3]" to the node "Multiplexador2x1_16bits:G13|SAIDA[5]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[4]" to the node "Multiplexador2x1_16bits:G13|SAIDA[6]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[5]" to the node "Multiplexador2x1_16bits:G13|SAIDA[7]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[6]" to the node "Multiplexador2x1_16bits:G13|SAIDA[8]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[7]" to the node "Multiplexador2x1_16bits:G13|SAIDA[9]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[8]" to the node "Multiplexador2x1_16bits:G13|SAIDA[10]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[9]" to the node "Multiplexador2x1_16bits:G13|SAIDA[11]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[10]" to the node "Multiplexador2x1_16bits:G13|SAIDA[12]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[11]" to the node "Multiplexador2x1_16bits:G13|SAIDA[13]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rt[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[0]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[1]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[0]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[1]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[0]" to the node "ULA:G16|Mux15" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[2]" to the node "ULA:G16|Mux15" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[0]" to the node "Multiplexador2x1_16bits:G14|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[2]" to the node "Multiplexador2x1_16bits:G14|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[3]" to the node "Multiplexador2x1_16bits:G14|SAIDA[3]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[4]" to the node "Multiplexador2x1_16bits:G14|SAIDA[4]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rt[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[0]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[1]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[0]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[1]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[0]" to the node "ULA:G16|Mux15" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[2]" to the node "ULA:G16|Mux15" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[0]" to the node "Multiplexador2x1_16bits:G14|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[2]" to the node "Multiplexador2x1_16bits:G14|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[3]" to the node "Multiplexador2x1_16bits:G14|SAIDA[3]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[4]" to the node "Multiplexador2x1_16bits:G14|SAIDA[4]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
 Warning (13012): Latch memram:G17|ram~256 has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 16
     Warning (13013): Ports D and ENA on the latch are fed by the same signal BancoRegistradores:G7|Reg~synth File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
 Warning (13012): Latch memram:G17|ram~257 has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 16
@@ -941,9 +941,9 @@ Info (21057): Implemented 740 device resources after synthesis - the final resou
     Info (21059): Implemented 165 output pins
     Info (21061): Implemented 574 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 222 warnings
-    Info: Peak virtual memory: 4920 megabytes
-    Info: Processing ended: Thu Nov 29 17:44:15 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4939 megabytes
+    Info: Processing ended: Thu Nov 29 19:46:35 2018
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:43
 
 

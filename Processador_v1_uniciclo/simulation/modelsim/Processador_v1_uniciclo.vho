@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "11/29/2018 17:46:14"
+-- DATE "11/29/2018 19:48:30"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -283,7 +283,7 @@ SIGNAL \G13|SAIDA[8]~8_combout\ : std_logic;
 SIGNAL \G2|Add0~34\ : std_logic;
 SIGNAL \G2|Add0~37_sumout\ : std_logic;
 SIGNAL \G13|SAIDA[9]~9_combout\ : std_logic;
-SIGNAL \G4|Mux3~0_combout\ : std_logic;
+SIGNAL \G4|Mux0~0_combout\ : std_logic;
 SIGNAL \G2|Add0~38\ : std_logic;
 SIGNAL \G2|Add0~41_sumout\ : std_logic;
 SIGNAL \G13|SAIDA[10]~10_combout\ : std_logic;
@@ -301,29 +301,29 @@ SIGNAL \G2|Add0~57_sumout\ : std_logic;
 SIGNAL \G1|pout[15]~DUPLICATE_q\ : std_logic;
 SIGNAL \G2|Add0~58\ : std_logic;
 SIGNAL \G2|Add0~61_sumout\ : std_logic;
-SIGNAL \G4|Mux3~1_combout\ : std_logic;
-SIGNAL \G4|Mux5~0_combout\ : std_logic;
+SIGNAL \G4|Mux0~1_combout\ : std_logic;
+SIGNAL \G4|Mux0~3_combout\ : std_logic;
 SIGNAL \G4|op[1]~reg0_q\ : std_logic;
 SIGNAL \G2|Add0~1_sumout\ : std_logic;
 SIGNAL \G13|SAIDA[0]~0_combout\ : std_logic;
-SIGNAL \G4|Mux6~0_combout\ : std_logic;
+SIGNAL \G4|Mux1~0_combout\ : std_logic;
 SIGNAL \G4|op[0]~reg0_q\ : std_logic;
 SIGNAL \G2|Add0~13_sumout\ : std_logic;
 SIGNAL \G13|SAIDA[3]~3_combout\ : std_logic;
-SIGNAL \G4|Mux3~2_combout\ : std_logic;
-SIGNAL \G4|Mux2~0_combout\ : std_logic;
+SIGNAL \G4|Mux0~2_combout\ : std_logic;
+SIGNAL \G4|Mux4~0_combout\ : std_logic;
 SIGNAL \G4|rs[0]~reg0_q\ : std_logic;
-SIGNAL \G4|Mux1~0_combout\ : std_logic;
+SIGNAL \G4|Mux3~0_combout\ : std_logic;
 SIGNAL \G4|rs[2]~reg0_q\ : std_logic;
-SIGNAL \G4|Mux3~3_combout\ : std_logic;
+SIGNAL \G4|Mux5~0_combout\ : std_logic;
 SIGNAL \G4|rd[2]~3_combout\ : std_logic;
 SIGNAL \G4|rd[0]~reg0_q\ : std_logic;
 SIGNAL \G4|rd[0]~enfeeder_combout\ : std_logic;
 SIGNAL \G4|rd[0]~en_q\ : std_logic;
 SIGNAL \G4|rt[0]~reg0_q\ : std_logic;
-SIGNAL \G4|Mux7~0_combout\ : std_logic;
+SIGNAL \G4|Mux6~0_combout\ : std_logic;
 SIGNAL \G4|funct[0]~reg0_q\ : std_logic;
-SIGNAL \G4|Mux0~0_combout\ : std_logic;
+SIGNAL \G4|Mux2~0_combout\ : std_logic;
 SIGNAL \G4|funct[2]~reg0_q\ : std_logic;
 SIGNAL \G4|tipoi[0]~reg0_q\ : std_logic;
 SIGNAL \G4|tipoi[0]~enfeeder_combout\ : std_logic;
@@ -1139,7 +1139,7 @@ SIGNAL \G17|ALT_INV_ram~259_combout\ : std_logic;
 SIGNAL \G17|ALT_INV_ram~258_combout\ : std_logic;
 SIGNAL \G17|ALT_INV_ram~257_combout\ : std_logic;
 SIGNAL \G17|ALT_INV_ram~256_combout\ : std_logic;
-SIGNAL \G4|ALT_INV_Mux6~0_combout\ : std_logic;
+SIGNAL \G4|ALT_INV_Mux1~0_combout\ : std_logic;
 SIGNAL \ALT_INV_rtl~16_combout\ : std_logic;
 SIGNAL \ALT_INV_rtl~15_combout\ : std_logic;
 SIGNAL \ALT_INV_rtl~14_combout\ : std_logic;
@@ -1159,10 +1159,10 @@ SIGNAL \ALT_INV_rtl~1_combout\ : std_logic;
 SIGNAL \ALT_INV_rtl~0_combout\ : std_logic;
 SIGNAL \G5|ALT_INV_Equal2~0_combout\ : std_logic;
 SIGNAL \G4|ALT_INV_rd[2]~3_combout\ : std_logic;
-SIGNAL \G4|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \G4|ALT_INV_Mux3~2_combout\ : std_logic;
-SIGNAL \G4|ALT_INV_Mux3~1_combout\ : std_logic;
-SIGNAL \G4|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \G4|ALT_INV_Mux0~3_combout\ : std_logic;
+SIGNAL \G4|ALT_INV_Mux0~2_combout\ : std_logic;
+SIGNAL \G4|ALT_INV_Mux0~1_combout\ : std_logic;
+SIGNAL \G4|ALT_INV_Mux0~0_combout\ : std_logic;
 SIGNAL \G16|ALT_INV_Mux8~0_combout\ : std_logic;
 SIGNAL \G16|ALT_INV_Mux9~0_combout\ : std_logic;
 SIGNAL \G16|ALT_INV_Mux10~0_combout\ : std_logic;
@@ -1671,7 +1671,7 @@ ww_devpor <= devpor;
 \G17|ALT_INV_ram~258_combout\ <= NOT \G17|ram~258_combout\;
 \G17|ALT_INV_ram~257_combout\ <= NOT \G17|ram~257_combout\;
 \G17|ALT_INV_ram~256_combout\ <= NOT \G17|ram~256_combout\;
-\G4|ALT_INV_Mux6~0_combout\ <= NOT \G4|Mux6~0_combout\;
+\G4|ALT_INV_Mux1~0_combout\ <= NOT \G4|Mux1~0_combout\;
 \ALT_INV_rtl~16_combout\ <= NOT \rtl~16_combout\;
 \ALT_INV_rtl~15_combout\ <= NOT \rtl~15_combout\;
 \ALT_INV_rtl~14_combout\ <= NOT \rtl~14_combout\;
@@ -1691,10 +1691,10 @@ ww_devpor <= devpor;
 \ALT_INV_rtl~0_combout\ <= NOT \rtl~0_combout\;
 \G5|ALT_INV_Equal2~0_combout\ <= NOT \G5|Equal2~0_combout\;
 \G4|ALT_INV_rd[2]~3_combout\ <= NOT \G4|rd[2]~3_combout\;
-\G4|ALT_INV_Mux5~0_combout\ <= NOT \G4|Mux5~0_combout\;
-\G4|ALT_INV_Mux3~2_combout\ <= NOT \G4|Mux3~2_combout\;
-\G4|ALT_INV_Mux3~1_combout\ <= NOT \G4|Mux3~1_combout\;
-\G4|ALT_INV_Mux3~0_combout\ <= NOT \G4|Mux3~0_combout\;
+\G4|ALT_INV_Mux0~3_combout\ <= NOT \G4|Mux0~3_combout\;
+\G4|ALT_INV_Mux0~2_combout\ <= NOT \G4|Mux0~2_combout\;
+\G4|ALT_INV_Mux0~1_combout\ <= NOT \G4|Mux0~1_combout\;
+\G4|ALT_INV_Mux0~0_combout\ <= NOT \G4|Mux0~0_combout\;
 \G16|ALT_INV_Mux8~0_combout\ <= NOT \G16|Mux8~0_combout\;
 \G16|ALT_INV_Mux9~0_combout\ <= NOT \G16|Mux9~0_combout\;
 \G16|ALT_INV_Mux10~0_combout\ <= NOT \G16|Mux10~0_combout\;
@@ -4577,9 +4577,9 @@ PORT MAP (
 	q => \G1|pout\(9));
 
 -- Location: LABCELL_X56_Y4_N54
-\G4|Mux3~0\ : cyclonev_lcell_comb
+\G4|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux3~0_combout\ = ( !\G1|pout\(5) & ( !\G1|pout\(8) & ( (!\G1|pout\(7) & (!\G1|pout\(9) & (!\G1|pout\(4) & !\G1|pout\(6)))) ) ) )
+-- \G4|Mux0~0_combout\ = ( !\G1|pout\(5) & ( !\G1|pout\(8) & ( (!\G1|pout\(7) & (!\G1|pout\(9) & (!\G1|pout\(4) & !\G1|pout\(6)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4594,7 +4594,7 @@ PORT MAP (
 	datad => \G1|ALT_INV_pout\(6),
 	datae => \G1|ALT_INV_pout\(5),
 	dataf => \G1|ALT_INV_pout\(8),
-	combout => \G4|Mux3~0_combout\);
+	combout => \G4|Mux0~0_combout\);
 
 -- Location: LABCELL_X56_Y4_N30
 \G2|Add0~41\ : cyclonev_lcell_comb
@@ -4879,9 +4879,9 @@ PORT MAP (
 	q => \G1|pout\(15));
 
 -- Location: LABCELL_X56_Y4_N48
-\G4|Mux3~1\ : cyclonev_lcell_comb
+\G4|Mux0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux3~1_combout\ = ( !\G1|pout\(13) & ( !\G1|pout\(10) & ( (!\G1|pout\(14) & (!\G1|pout\(15) & (!\G1|pout\(12) & !\G1|pout\(11)))) ) ) )
+-- \G4|Mux0~1_combout\ = ( !\G1|pout\(13) & ( !\G1|pout\(10) & ( (!\G1|pout\(14) & (!\G1|pout\(15) & (!\G1|pout\(12) & !\G1|pout\(11)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4896,12 +4896,12 @@ PORT MAP (
 	datad => \G1|ALT_INV_pout\(11),
 	datae => \G1|ALT_INV_pout\(13),
 	dataf => \G1|ALT_INV_pout\(10),
-	combout => \G4|Mux3~1_combout\);
+	combout => \G4|Mux0~1_combout\);
 
 -- Location: LABCELL_X16_Y6_N51
-\G4|Mux5~0\ : cyclonev_lcell_comb
+\G4|Mux0~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux5~0_combout\ = ( \G4|Mux3~0_combout\ & ( \G4|Mux3~1_combout\ & ( (\G1|pout\(0) & (!\G1|pout\(2) & (\G1|pout\(1) & !\G1|pout\(3)))) ) ) )
+-- \G4|Mux0~3_combout\ = ( \G4|Mux0~0_combout\ & ( \G4|Mux0~1_combout\ & ( (\G1|pout\(0) & (!\G1|pout\(2) & (\G1|pout\(1) & !\G1|pout\(3)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4914,9 +4914,9 @@ PORT MAP (
 	datab => \G1|ALT_INV_pout\(2),
 	datac => \G1|ALT_INV_pout\(1),
 	datad => \G1|ALT_INV_pout\(3),
-	datae => \G4|ALT_INV_Mux3~0_combout\,
-	dataf => \G4|ALT_INV_Mux3~1_combout\,
-	combout => \G4|Mux5~0_combout\);
+	datae => \G4|ALT_INV_Mux0~0_combout\,
+	dataf => \G4|ALT_INV_Mux0~1_combout\,
+	combout => \G4|Mux0~3_combout\);
 
 -- Location: FF_X16_Y6_N38
 \G4|op[1]~reg0\ : dffeas
@@ -4927,7 +4927,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux5~0_combout\,
+	asdata => \G4|Mux0~3_combout\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -4966,9 +4966,9 @@ PORT MAP (
 	q => \G1|pout\(0));
 
 -- Location: LABCELL_X16_Y6_N3
-\G4|Mux6~0\ : cyclonev_lcell_comb
+\G4|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux6~0_combout\ = ( \G1|pout\(1) & ( \G4|Mux3~1_combout\ & ( (\G4|Mux3~0_combout\ & (!\G1|pout\(3) & (!\G1|pout\(0) $ (!\G1|pout\(2))))) ) ) ) # ( !\G1|pout\(1) & ( \G4|Mux3~1_combout\ & ( (\G4|Mux3~0_combout\ & !\G1|pout\(3)) ) ) )
+-- \G4|Mux1~0_combout\ = ( \G1|pout\(1) & ( \G4|Mux0~1_combout\ & ( (\G4|Mux0~0_combout\ & (!\G1|pout\(3) & (!\G1|pout\(0) $ (!\G1|pout\(2))))) ) ) ) # ( !\G1|pout\(1) & ( \G4|Mux0~1_combout\ & ( (\G4|Mux0~0_combout\ & !\G1|pout\(3)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4979,11 +4979,11 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \G1|ALT_INV_pout\(0),
 	datab => \G1|ALT_INV_pout\(2),
-	datac => \G4|ALT_INV_Mux3~0_combout\,
+	datac => \G4|ALT_INV_Mux0~0_combout\,
 	datad => \G1|ALT_INV_pout\(3),
 	datae => \G1|ALT_INV_pout\(1),
-	dataf => \G4|ALT_INV_Mux3~1_combout\,
-	combout => \G4|Mux6~0_combout\);
+	dataf => \G4|ALT_INV_Mux0~1_combout\,
+	combout => \G4|Mux1~0_combout\);
 
 -- Location: FF_X16_Y6_N2
 \G4|op[0]~reg0\ : dffeas
@@ -4994,7 +4994,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux6~0_combout\,
+	asdata => \G4|Mux1~0_combout\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -5034,9 +5034,9 @@ PORT MAP (
 	q => \G1|pout\(3));
 
 -- Location: MLABCELL_X21_Y6_N21
-\G4|Mux3~2\ : cyclonev_lcell_comb
+\G4|Mux0~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux3~2_combout\ = (\G4|Mux3~0_combout\ & \G4|Mux3~1_combout\)
+-- \G4|Mux0~2_combout\ = (\G4|Mux0~0_combout\ & \G4|Mux0~1_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5045,14 +5045,14 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \G4|ALT_INV_Mux3~0_combout\,
-	datad => \G4|ALT_INV_Mux3~1_combout\,
-	combout => \G4|Mux3~2_combout\);
+	datac => \G4|ALT_INV_Mux0~0_combout\,
+	datad => \G4|ALT_INV_Mux0~1_combout\,
+	combout => \G4|Mux0~2_combout\);
 
 -- Location: MLABCELL_X21_Y6_N12
-\G4|Mux2~0\ : cyclonev_lcell_comb
+\G4|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux2~0_combout\ = ( \G4|Mux3~2_combout\ & ( !\G1|pout\(2) & ( (!\G1|pout\(3) & \G1|pout\(0)) ) ) )
+-- \G4|Mux4~0_combout\ = ( \G4|Mux0~2_combout\ & ( !\G1|pout\(2) & ( (!\G1|pout\(3) & \G1|pout\(0)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5063,9 +5063,9 @@ GENERIC MAP (
 PORT MAP (
 	datab => \G1|ALT_INV_pout\(3),
 	datac => \G1|ALT_INV_pout\(0),
-	datae => \G4|ALT_INV_Mux3~2_combout\,
+	datae => \G4|ALT_INV_Mux0~2_combout\,
 	dataf => \G1|ALT_INV_pout\(2),
-	combout => \G4|Mux2~0_combout\);
+	combout => \G4|Mux4~0_combout\);
 
 -- Location: FF_X21_Y6_N13
 \G4|rs[0]~reg0\ : dffeas
@@ -5076,15 +5076,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	d => \G4|Mux2~0_combout\,
+	d => \G4|Mux4~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \G4|rs[0]~reg0_q\);
 
 -- Location: MLABCELL_X21_Y6_N18
-\G4|Mux1~0\ : cyclonev_lcell_comb
+\G4|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux1~0_combout\ = ( \G1|pout\(2) & ( (\G4|Mux3~2_combout\ & (!\G1|pout\(0) & !\G1|pout\(3))) ) )
+-- \G4|Mux3~0_combout\ = ( \G1|pout\(2) & ( (\G4|Mux0~2_combout\ & (!\G1|pout\(0) & !\G1|pout\(3))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5093,11 +5093,11 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \G4|ALT_INV_Mux3~2_combout\,
+	dataa => \G4|ALT_INV_Mux0~2_combout\,
 	datac => \G1|ALT_INV_pout\(0),
 	datad => \G1|ALT_INV_pout\(3),
 	dataf => \G1|ALT_INV_pout\(2),
-	combout => \G4|Mux1~0_combout\);
+	combout => \G4|Mux3~0_combout\);
 
 -- Location: FF_X21_Y6_N19
 \G4|rs[2]~reg0\ : dffeas
@@ -5108,15 +5108,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	d => \G4|Mux1~0_combout\,
+	d => \G4|Mux3~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \G4|rs[2]~reg0_q\);
 
 -- Location: MLABCELL_X21_Y6_N39
-\G4|Mux3~3\ : cyclonev_lcell_comb
+\G4|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux3~3_combout\ = ( \G4|Mux3~2_combout\ & ( !\G1|pout\(2) & ( (\G1|pout\(1) & (!\G1|pout\(3) & !\G1|pout\(0))) ) ) )
+-- \G4|Mux5~0_combout\ = ( \G4|Mux0~2_combout\ & ( !\G1|pout\(2) & ( (\G1|pout\(1) & (!\G1|pout\(3) & !\G1|pout\(0))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5128,14 +5128,14 @@ PORT MAP (
 	dataa => \G1|ALT_INV_pout\(1),
 	datab => \G1|ALT_INV_pout\(3),
 	datad => \G1|ALT_INV_pout\(0),
-	datae => \G4|ALT_INV_Mux3~2_combout\,
+	datae => \G4|ALT_INV_Mux0~2_combout\,
 	dataf => \G1|ALT_INV_pout\(2),
-	combout => \G4|Mux3~3_combout\);
+	combout => \G4|Mux5~0_combout\);
 
 -- Location: LABCELL_X16_Y6_N27
 \G4|rd[2]~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|rd[2]~3_combout\ = ( \G4|Mux5~0_combout\ ) # ( !\G4|Mux5~0_combout\ & ( \G4|Mux6~0_combout\ ) )
+-- \G4|rd[2]~3_combout\ = ( \G4|Mux0~3_combout\ ) # ( !\G4|Mux0~3_combout\ & ( \G4|Mux1~0_combout\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5144,8 +5144,8 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \G4|ALT_INV_Mux6~0_combout\,
-	dataf => \G4|ALT_INV_Mux5~0_combout\,
+	datad => \G4|ALT_INV_Mux1~0_combout\,
+	dataf => \G4|ALT_INV_Mux0~3_combout\,
 	combout => \G4|rd[2]~3_combout\);
 
 -- Location: FF_X17_Y6_N56
@@ -5157,7 +5157,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux3~3_combout\,
+	asdata => \G4|Mux5~0_combout\,
 	sload => VCC,
 	ena => \G4|ALT_INV_rd[2]~3_combout\,
 	devclrn => ww_devclrn,
@@ -5202,16 +5202,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux3~3_combout\,
+	asdata => \G4|Mux5~0_combout\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \G4|rt[0]~reg0_q\);
 
 -- Location: LABCELL_X16_Y6_N39
-\G4|Mux7~0\ : cyclonev_lcell_comb
+\G4|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux7~0_combout\ = ( \G4|Mux3~0_combout\ & ( \G4|Mux3~1_combout\ & ( (!\G1|pout\(3) & ((!\G1|pout\(1)) # ((!\G1|pout\(2) & !\G1|pout\(0))))) ) ) )
+-- \G4|Mux6~0_combout\ = ( \G4|Mux0~0_combout\ & ( \G4|Mux0~1_combout\ & ( (!\G1|pout\(3) & ((!\G1|pout\(1)) # ((!\G1|pout\(2) & !\G1|pout\(0))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5224,9 +5224,9 @@ PORT MAP (
 	datab => \G1|ALT_INV_pout\(1),
 	datac => \G1|ALT_INV_pout\(2),
 	datad => \G1|ALT_INV_pout\(0),
-	datae => \G4|ALT_INV_Mux3~0_combout\,
-	dataf => \G4|ALT_INV_Mux3~1_combout\,
-	combout => \G4|Mux7~0_combout\);
+	datae => \G4|ALT_INV_Mux0~0_combout\,
+	dataf => \G4|ALT_INV_Mux0~1_combout\,
+	combout => \G4|Mux6~0_combout\);
 
 -- Location: FF_X16_Y6_N20
 \G4|funct[0]~reg0\ : dffeas
@@ -5237,7 +5237,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux7~0_combout\,
+	asdata => \G4|Mux6~0_combout\,
 	sload => VCC,
 	ena => \G4|ALT_INV_rd[2]~3_combout\,
 	devclrn => ww_devclrn,
@@ -5245,9 +5245,9 @@ PORT MAP (
 	q => \G4|funct[0]~reg0_q\);
 
 -- Location: MLABCELL_X21_Y6_N33
-\G4|Mux0~0\ : cyclonev_lcell_comb
+\G4|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G4|Mux0~0_combout\ = ( !\G1|pout\(3) & ( \G4|Mux3~1_combout\ & ( (!\G1|pout\(1) & (\G4|Mux3~0_combout\ & (!\G1|pout\(2) $ (\G1|pout\(0))))) ) ) )
+-- \G4|Mux2~0_combout\ = ( !\G1|pout\(3) & ( \G4|Mux0~1_combout\ & ( (!\G1|pout\(1) & (\G4|Mux0~0_combout\ & (!\G1|pout\(2) $ (\G1|pout\(0))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5258,11 +5258,11 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \G1|ALT_INV_pout\(1),
 	datab => \G1|ALT_INV_pout\(2),
-	datac => \G4|ALT_INV_Mux3~0_combout\,
+	datac => \G4|ALT_INV_Mux0~0_combout\,
 	datad => \G1|ALT_INV_pout\(0),
 	datae => \G1|ALT_INV_pout\(3),
-	dataf => \G4|ALT_INV_Mux3~1_combout\,
-	combout => \G4|Mux0~0_combout\);
+	dataf => \G4|ALT_INV_Mux0~1_combout\,
+	combout => \G4|Mux2~0_combout\);
 
 -- Location: FF_X18_Y7_N38
 \G4|funct[2]~reg0\ : dffeas
@@ -5273,7 +5273,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux0~0_combout\,
+	asdata => \G4|Mux2~0_combout\,
 	sload => VCC,
 	ena => \G4|ALT_INV_rd[2]~3_combout\,
 	devclrn => ww_devclrn,
@@ -5289,7 +5289,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux7~0_combout\,
+	asdata => \G4|Mux6~0_combout\,
 	sload => VCC,
 	ena => \G4|rd[2]~3_combout\,
 	devclrn => ww_devclrn,
@@ -5334,7 +5334,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux0~0_combout\,
+	asdata => \G4|Mux2~0_combout\,
 	sload => VCC,
 	ena => \G4|rd[2]~3_combout\,
 	devclrn => ww_devclrn,
@@ -5350,7 +5350,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \Clock_Sistema~inputCLKENA0_outclk\,
-	asdata => \G4|Mux3~3_combout\,
+	asdata => \G4|Mux5~0_combout\,
 	sload => VCC,
 	ena => \G4|rd[2]~3_combout\,
 	devclrn => ww_devclrn,

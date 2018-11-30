@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/29/2018 12:47:20"
+-- Generated on "11/29/2018 19:48:47"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -34,29 +34,77 @@ ARCHITECTURE DataPath_arch OF DataPath_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL Clock_Sistema : STD_LOGIC;
+SIGNAL Data_to_writeRegister_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL Instruction_to_Control_outWaveform : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL Instruction_to_controlULA_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL Instruction_to_extensorDeSinal_outWaveform : STD_LOGIC_VECTOR(5 DOWNTO 0);
+SIGNAL Instruction_to_Jump_outWaveform : STD_LOGIC_VECTOR(11 DOWNTO 0);
+SIGNAL Instruction_to_multiplexador_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL Instruction_to_register1_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL Instruction_to_register2_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL multiplexador_to_writeRegister_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL Saida_adress_to_RAM_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL Saida_mult_to_mult_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL Saida_to_PC_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL SaidaPc_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL SaidaRegA_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL SaidaRegB_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL SomadorToPc_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
 COMPONENT DataPath
 	PORT (
-	Clock_Sistema : IN STD_LOGIC
+	Clock_Sistema : IN STD_LOGIC;
+	Data_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Instruction_to_Control_outWaveform : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Instruction_to_controlULA_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Instruction_to_extensorDeSinal_outWaveform : BUFFER STD_LOGIC_VECTOR(5 DOWNTO 0);
+	Instruction_to_Jump_outWaveform : BUFFER STD_LOGIC_VECTOR(11 DOWNTO 0);
+	Instruction_to_multiplexador_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Instruction_to_register1_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Instruction_to_register2_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	multiplexador_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Saida_adress_to_RAM_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Saida_mult_to_mult_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Saida_to_PC_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SaidaPc_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SaidaRegA_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SaidaRegB_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SomadorToPc_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
 	i1 : DataPath
 	PORT MAP (
 -- list connections between master ports and signals
-	Clock_Sistema => Clock_Sistema
+	Clock_Sistema => Clock_Sistema,
+	Data_to_writeRegister_outWaveform => Data_to_writeRegister_outWaveform,
+	Instruction_to_Control_outWaveform => Instruction_to_Control_outWaveform,
+	Instruction_to_controlULA_outWaveform => Instruction_to_controlULA_outWaveform,
+	Instruction_to_extensorDeSinal_outWaveform => Instruction_to_extensorDeSinal_outWaveform,
+	Instruction_to_Jump_outWaveform => Instruction_to_Jump_outWaveform,
+	Instruction_to_multiplexador_outWaveform => Instruction_to_multiplexador_outWaveform,
+	Instruction_to_register1_outWaveform => Instruction_to_register1_outWaveform,
+	Instruction_to_register2_outWaveform => Instruction_to_register2_outWaveform,
+	multiplexador_to_writeRegister_outWaveform => multiplexador_to_writeRegister_outWaveform,
+	Saida_adress_to_RAM_outWaveform => Saida_adress_to_RAM_outWaveform,
+	Saida_mult_to_mult_outWaveform => Saida_mult_to_mult_outWaveform,
+	Saida_to_PC_outWaveform => Saida_to_PC_outWaveform,
+	SaidaPc_outWaveform => SaidaPc_outWaveform,
+	SaidaRegA_outWaveform => SaidaRegA_outWaveform,
+	SaidaRegB_outWaveform => SaidaRegB_outWaveform,
+	SomadorToPc_outWaveform => SomadorToPc_outWaveform
 	);
 
 -- Clock_Sistema
 t_prcs_Clock_Sistema: PROCESS
 BEGIN
 	Clock_Sistema <= '1';
-	WAIT FOR 10000 ps;
-	FOR i IN 1 TO 49
+	WAIT FOR 20000 ps;
+	FOR i IN 1 TO 24
 	LOOP
 		Clock_Sistema <= '0';
-		WAIT FOR 10000 ps;
+		WAIT FOR 20000 ps;
 		Clock_Sistema <= '1';
-		WAIT FOR 10000 ps;
+		WAIT FOR 20000 ps;
 	END LOOP;
 	Clock_Sistema <= '0';
 WAIT;
