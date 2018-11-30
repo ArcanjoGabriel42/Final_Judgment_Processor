@@ -17,7 +17,7 @@ ARCHITECTURE BEHAVIOR OF OperacaoDaULA IS
 begin
 process(clk)
 	BEGIN
-	IF (clk = '1' AND clk'EVENT) THEN
+	IF (clk = '1') THEN
 		SAIDA <= ENTRADA1 & ENTRADA2;
 	end if;
 end process;

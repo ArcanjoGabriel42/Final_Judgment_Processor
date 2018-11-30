@@ -25,7 +25,7 @@ BEGIN
 
 operacoes: PROCESS (entrada,Clock)
 	BEGIN
-		if(Clock'EVENT) AND (Clock = '1') then
+		if(Clock = '1') then
 				IF entrada = "0000" then --instrução tipo r
 					regdest <= '1';
 					origalu <= "0000";

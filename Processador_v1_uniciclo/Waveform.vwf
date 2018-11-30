@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work Processador_v1_uniciclo.vho
@@ -20,18 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
-
-
-
-
-
-
-
-
 
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
@@ -51,18 +39,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
-
-
-
-
-
-
-
-
 
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
@@ -2056,14 +2032,14 @@ TRANSITION_LIST("Clock_Sistema")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 1 FOR 5.0;
 		NODE
 		{
-			REPEAT = 16;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 30.0;
+			REPEAT = 99;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
 		}
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
 	}
 }
 
@@ -3671,7 +3647,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform";
+	CHANNEL = "SomadorToPc_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -3681,7 +3657,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[15]";
+	CHANNEL = "SomadorToPc_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -3691,7 +3667,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[14]";
+	CHANNEL = "SomadorToPc_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -3701,7 +3677,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[13]";
+	CHANNEL = "SomadorToPc_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -3711,7 +3687,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[12]";
+	CHANNEL = "SomadorToPc_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -3721,7 +3697,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[11]";
+	CHANNEL = "SomadorToPc_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -3731,7 +3707,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[10]";
+	CHANNEL = "SomadorToPc_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -3741,7 +3717,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[9]";
+	CHANNEL = "SomadorToPc_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -3751,7 +3727,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[8]";
+	CHANNEL = "SomadorToPc_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -3761,7 +3737,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[7]";
+	CHANNEL = "SomadorToPc_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -3771,7 +3747,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[6]";
+	CHANNEL = "SomadorToPc_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -3781,7 +3757,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[5]";
+	CHANNEL = "SomadorToPc_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -3791,7 +3767,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[4]";
+	CHANNEL = "SomadorToPc_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -3801,7 +3777,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[3]";
+	CHANNEL = "SomadorToPc_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -3811,7 +3787,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[2]";
+	CHANNEL = "SomadorToPc_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -3821,7 +3797,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[1]";
+	CHANNEL = "SomadorToPc_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -3831,7 +3807,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Data_to_writeRegister_outWaveform[0]";
+	CHANNEL = "SomadorToPc_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -3841,124 +3817,342 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_aluSRC_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 0;
+	CHILDREN = 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_branch_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_escrevemem_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_escrevereg_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_jump_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_lemem_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_memparareg_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_origialu_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
-	TREE_LEVEL = 0;
-	CHILDREN = 26, 27, 28, 29;
+	TREE_LEVEL = 1;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_origialu_OUT[3]";
+	CHANNEL = "Saida_to_PC_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_origialu_OUT[2]";
+	CHANNEL = "Saida_to_PC_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_origialu_OUT[1]";
+	CHANNEL = "Saida_to_PC_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_origialu_OUT[0]";
+	CHANNEL = "Saida_to_PC_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
-	PARENT = 25;
+	PARENT = 18;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Flag_regdest_OUT";
+	CHANNEL = "Saida_to_PC_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Saida_to_PC_outWaveform[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Saida_to_PC_outWaveform[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Saida_to_PC_outWaveform[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Saida_to_PC_outWaveform[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 1;
+	PARENT = 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
 	TREE_LEVEL = 0;
+	CHILDREN = 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SaidaPc_outWaveform[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 1;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
@@ -3966,9 +4160,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_Control_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 31;
+	TREE_INDEX = 52;
 	TREE_LEVEL = 0;
-	CHILDREN = 32, 33, 34, 35;
+	CHILDREN = 53, 54, 55, 56;
 }
 
 DISPLAY_LINE
@@ -3976,9 +4170,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_Control_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 32;
+	TREE_INDEX = 53;
 	TREE_LEVEL = 1;
-	PARENT = 31;
+	PARENT = 52;
 }
 
 DISPLAY_LINE
@@ -3986,9 +4180,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_Control_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 33;
+	TREE_INDEX = 54;
 	TREE_LEVEL = 1;
-	PARENT = 31;
+	PARENT = 52;
 }
 
 DISPLAY_LINE
@@ -3996,9 +4190,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_Control_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 34;
+	TREE_INDEX = 55;
 	TREE_LEVEL = 1;
-	PARENT = 31;
+	PARENT = 52;
 }
 
 DISPLAY_LINE
@@ -4006,9 +4200,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_Control_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 35;
+	TREE_INDEX = 56;
 	TREE_LEVEL = 1;
-	PARENT = 31;
+	PARENT = 52;
 }
 
 DISPLAY_LINE
@@ -4016,9 +4210,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_controlULA_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 36;
+	TREE_INDEX = 57;
 	TREE_LEVEL = 0;
-	CHILDREN = 37, 38, 39;
+	CHILDREN = 58, 59, 60;
 }
 
 DISPLAY_LINE
@@ -4026,9 +4220,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_controlULA_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 37;
+	TREE_INDEX = 58;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
@@ -4036,9 +4230,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_controlULA_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 38;
+	TREE_INDEX = 59;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
@@ -4046,9 +4240,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_controlULA_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 39;
+	TREE_INDEX = 60;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
@@ -4056,9 +4250,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 40;
+	TREE_INDEX = 61;
 	TREE_LEVEL = 0;
-	CHILDREN = 41, 42, 43, 44, 45, 46;
+	CHILDREN = 62, 63, 64, 65, 66, 67;
 }
 
 DISPLAY_LINE
@@ -4066,9 +4260,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 41;
+	TREE_INDEX = 62;
 	TREE_LEVEL = 1;
-	PARENT = 40;
+	PARENT = 61;
 }
 
 DISPLAY_LINE
@@ -4076,9 +4270,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 42;
+	TREE_INDEX = 63;
 	TREE_LEVEL = 1;
-	PARENT = 40;
+	PARENT = 61;
 }
 
 DISPLAY_LINE
@@ -4086,9 +4280,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 43;
+	TREE_INDEX = 64;
 	TREE_LEVEL = 1;
-	PARENT = 40;
+	PARENT = 61;
 }
 
 DISPLAY_LINE
@@ -4096,9 +4290,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 44;
+	TREE_INDEX = 65;
 	TREE_LEVEL = 1;
-	PARENT = 40;
+	PARENT = 61;
 }
 
 DISPLAY_LINE
@@ -4106,9 +4300,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 45;
+	TREE_INDEX = 66;
 	TREE_LEVEL = 1;
-	PARENT = 40;
+	PARENT = 61;
 }
 
 DISPLAY_LINE
@@ -4116,9 +4310,9 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_extensorDeSinal_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 46;
+	TREE_INDEX = 67;
 	TREE_LEVEL = 1;
-	PARENT = 40;
+	PARENT = 61;
 }
 
 DISPLAY_LINE
@@ -4126,224 +4320,14 @@ DISPLAY_LINE
 	CHANNEL = "Instruction_to_Jump_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 47;
+	TREE_INDEX = 68;
 	TREE_LEVEL = 0;
-	CHILDREN = 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59;
+	CHILDREN = 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "Instruction_to_Jump_outWaveform[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 48;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 49;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 50;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 51;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 52;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 53;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 54;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 55;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 56;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 57;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 58;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_Jump_outWaveform[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 59;
-	TREE_LEVEL = 1;
-	PARENT = 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_multiplexador_outWaveform";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 60;
-	TREE_LEVEL = 0;
-	CHILDREN = 61, 62, 63;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_multiplexador_outWaveform[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 61;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_multiplexador_outWaveform[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 62;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_multiplexador_outWaveform[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 63;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_register1_outWaveform";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 64;
-	TREE_LEVEL = 0;
-	CHILDREN = 65, 66, 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_register1_outWaveform[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 65;
-	TREE_LEVEL = 1;
-	PARENT = 64;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_register1_outWaveform[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 66;
-	TREE_LEVEL = 1;
-	PARENT = 64;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_register1_outWaveform[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 67;
-	TREE_LEVEL = 1;
-	PARENT = 64;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_register2_outWaveform";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 68;
-	TREE_LEVEL = 0;
-	CHILDREN = 69, 70, 71;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Instruction_to_register2_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -4353,7 +4337,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Instruction_to_register2_outWaveform[1]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -4363,7 +4347,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Instruction_to_register2_outWaveform[0]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -4373,217 +4357,217 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "multiplexador_to_writeRegister_outWaveform";
+	CHANNEL = "Instruction_to_Jump_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
-	TREE_LEVEL = 0;
-	CHILDREN = 73, 74, 75;
+	TREE_LEVEL = 1;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "multiplexador_to_writeRegister_outWaveform[2]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "multiplexador_to_writeRegister_outWaveform[1]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "multiplexador_to_writeRegister_outWaveform[0]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform";
+	CHANNEL = "Instruction_to_Jump_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
-	TREE_LEVEL = 0;
-	CHILDREN = 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92;
+	TREE_LEVEL = 1;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[15]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[14]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[13]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[12]";
+	CHANNEL = "Instruction_to_Jump_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 68;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[11]";
+	CHANNEL = "Instruction_to_multiplexador_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
-	TREE_LEVEL = 1;
-	PARENT = 76;
+	TREE_LEVEL = 0;
+	CHILDREN = 82, 83, 84;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[10]";
+	CHANNEL = "Instruction_to_multiplexador_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 81;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[9]";
+	CHANNEL = "Instruction_to_multiplexador_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 81;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[8]";
+	CHANNEL = "Instruction_to_multiplexador_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 81;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[7]";
+	CHANNEL = "Instruction_to_register2_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
-	TREE_LEVEL = 1;
-	PARENT = 76;
+	TREE_LEVEL = 0;
+	CHILDREN = 86, 87, 88;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[6]";
+	CHANNEL = "Instruction_to_register2_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 85;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[5]";
+	CHANNEL = "Instruction_to_register2_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 85;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[4]";
+	CHANNEL = "Instruction_to_register2_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 85;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[3]";
+	CHANNEL = "Instruction_to_register1_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
-	TREE_LEVEL = 1;
-	PARENT = 76;
+	TREE_LEVEL = 0;
+	CHILDREN = 90, 91, 92;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[2]";
+	CHANNEL = "Instruction_to_register1_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 89;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[1]";
+	CHANNEL = "Instruction_to_register1_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 89;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_adress_to_RAM_outWaveform[0]";
+	CHANNEL = "Instruction_to_register1_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
 	TREE_LEVEL = 1;
-	PARENT = 76;
+	PARENT = 89;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform";
+	CHANNEL = "SaidaRegA_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 93;
@@ -4593,7 +4577,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[15]";
+	CHANNEL = "SaidaRegA_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 94;
@@ -4603,7 +4587,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[14]";
+	CHANNEL = "SaidaRegA_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 95;
@@ -4613,7 +4597,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[13]";
+	CHANNEL = "SaidaRegA_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 96;
@@ -4623,7 +4607,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[12]";
+	CHANNEL = "SaidaRegA_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 97;
@@ -4633,7 +4617,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[11]";
+	CHANNEL = "SaidaRegA_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 98;
@@ -4643,7 +4627,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[10]";
+	CHANNEL = "SaidaRegA_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 99;
@@ -4653,7 +4637,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[9]";
+	CHANNEL = "SaidaRegA_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 100;
@@ -4663,7 +4647,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[8]";
+	CHANNEL = "SaidaRegA_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 101;
@@ -4673,7 +4657,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[7]";
+	CHANNEL = "SaidaRegA_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -4683,7 +4667,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[6]";
+	CHANNEL = "SaidaRegA_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 103;
@@ -4693,7 +4677,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[5]";
+	CHANNEL = "SaidaRegA_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 104;
@@ -4703,7 +4687,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[4]";
+	CHANNEL = "SaidaRegA_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 105;
@@ -4713,7 +4697,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[3]";
+	CHANNEL = "SaidaRegA_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 106;
@@ -4723,7 +4707,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[2]";
+	CHANNEL = "SaidaRegA_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 107;
@@ -4733,7 +4717,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[1]";
+	CHANNEL = "SaidaRegA_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 108;
@@ -4743,7 +4727,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_mult_to_mult_outWaveform[0]";
+	CHANNEL = "SaidaRegA_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 109;
@@ -4753,7 +4737,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform";
+	CHANNEL = "SaidaRegB_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 110;
@@ -4763,7 +4747,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[15]";
+	CHANNEL = "SaidaRegB_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 111;
@@ -4773,7 +4757,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[14]";
+	CHANNEL = "SaidaRegB_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 112;
@@ -4783,7 +4767,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[13]";
+	CHANNEL = "SaidaRegB_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 113;
@@ -4793,7 +4777,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[12]";
+	CHANNEL = "SaidaRegB_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 114;
@@ -4803,7 +4787,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[11]";
+	CHANNEL = "SaidaRegB_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 115;
@@ -4813,7 +4797,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[10]";
+	CHANNEL = "SaidaRegB_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 116;
@@ -4823,7 +4807,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[9]";
+	CHANNEL = "SaidaRegB_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 117;
@@ -4833,7 +4817,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[8]";
+	CHANNEL = "SaidaRegB_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 118;
@@ -4843,7 +4827,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[7]";
+	CHANNEL = "SaidaRegB_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 119;
@@ -4853,7 +4837,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[6]";
+	CHANNEL = "SaidaRegB_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 120;
@@ -4863,7 +4847,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[5]";
+	CHANNEL = "SaidaRegB_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 121;
@@ -4873,7 +4857,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[4]";
+	CHANNEL = "SaidaRegB_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 122;
@@ -4883,7 +4867,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[3]";
+	CHANNEL = "SaidaRegB_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 123;
@@ -4893,7 +4877,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[2]";
+	CHANNEL = "SaidaRegB_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 124;
@@ -4903,7 +4887,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[1]";
+	CHANNEL = "SaidaRegB_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 125;
@@ -4913,7 +4897,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Saida_to_PC_outWaveform[0]";
+	CHANNEL = "SaidaRegB_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 126;
@@ -4923,7 +4907,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform";
+	CHANNEL = "Data_to_writeRegister_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 127;
@@ -4933,7 +4917,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[15]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 128;
@@ -4943,7 +4927,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[14]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 129;
@@ -4953,7 +4937,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[13]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 130;
@@ -4963,7 +4947,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[12]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 131;
@@ -4973,7 +4957,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[11]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 132;
@@ -4983,7 +4967,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[10]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 133;
@@ -4993,7 +4977,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[9]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 134;
@@ -5003,7 +4987,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[8]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 135;
@@ -5013,7 +4997,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[7]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 136;
@@ -5023,7 +5007,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[6]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 137;
@@ -5033,7 +5017,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[5]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 138;
@@ -5043,7 +5027,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[4]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 139;
@@ -5053,7 +5037,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[3]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 140;
@@ -5063,7 +5047,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[2]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 141;
@@ -5073,7 +5057,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[1]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 142;
@@ -5083,7 +5067,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaPc_outWaveform[0]";
+	CHANNEL = "Data_to_writeRegister_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 143;
@@ -5093,177 +5077,169 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform";
+	CHANNEL = "Flag_aluSRC_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 144;
 	TREE_LEVEL = 0;
-	CHILDREN = 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[15]";
+	CHANNEL = "Flag_branch_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 145;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[14]";
+	CHANNEL = "Flag_escrevemem_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 146;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[13]";
+	CHANNEL = "Flag_escrevereg_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 147;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[12]";
+	CHANNEL = "Flag_jump_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 148;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[11]";
+	CHANNEL = "Flag_lemem_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 149;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[10]";
+	CHANNEL = "Flag_memparareg_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 150;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[9]";
+	CHANNEL = "Flag_origialu_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 151;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
+	CHILDREN = 152, 153, 154, 155;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[8]";
+	CHANNEL = "Flag_origialu_OUT[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 152;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 151;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[7]";
+	CHANNEL = "Flag_origialu_OUT[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 153;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 151;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[6]";
+	CHANNEL = "Flag_origialu_OUT[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 154;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 151;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[5]";
+	CHANNEL = "Flag_origialu_OUT[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 155;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 151;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[4]";
+	CHANNEL = "Flag_regdest_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 156;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[3]";
+	CHANNEL = "multiplexador_to_writeRegister_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 157;
-	TREE_LEVEL = 1;
-	PARENT = 144;
+	TREE_LEVEL = 0;
+	CHILDREN = 158, 159, 160;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[2]";
+	CHANNEL = "multiplexador_to_writeRegister_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 158;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 157;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[1]";
+	CHANNEL = "multiplexador_to_writeRegister_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 159;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 157;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegA_outWaveform[0]";
+	CHANNEL = "multiplexador_to_writeRegister_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 160;
 	TREE_LEVEL = 1;
-	PARENT = 144;
+	PARENT = 157;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 161;
@@ -5273,7 +5249,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[15]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 162;
@@ -5283,7 +5259,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[14]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 163;
@@ -5293,7 +5269,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[13]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 164;
@@ -5303,7 +5279,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[12]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 165;
@@ -5313,7 +5289,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[11]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 166;
@@ -5323,7 +5299,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[10]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 167;
@@ -5333,7 +5309,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[9]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 168;
@@ -5343,7 +5319,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[8]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 169;
@@ -5353,7 +5329,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[7]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 170;
@@ -5363,7 +5339,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[6]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 171;
@@ -5373,7 +5349,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[5]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 172;
@@ -5383,7 +5359,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[4]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 173;
@@ -5393,7 +5369,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[3]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 174;
@@ -5403,7 +5379,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[2]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 175;
@@ -5413,7 +5389,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[1]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 176;
@@ -5423,7 +5399,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SaidaRegB_outWaveform[0]";
+	CHANNEL = "Saida_adress_to_RAM_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 177;
@@ -5433,7 +5409,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform";
+	CHANNEL = "Saida_mult_to_mult_outWaveform";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 178;
@@ -5443,7 +5419,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[15]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 179;
@@ -5453,7 +5429,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[14]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 180;
@@ -5463,7 +5439,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[13]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 181;
@@ -5473,7 +5449,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[12]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 182;
@@ -5483,7 +5459,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[11]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 183;
@@ -5493,7 +5469,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[10]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 184;
@@ -5503,7 +5479,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[9]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 185;
@@ -5513,7 +5489,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[8]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 186;
@@ -5523,7 +5499,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[7]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 187;
@@ -5533,7 +5509,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[6]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 188;
@@ -5543,7 +5519,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[5]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 189;
@@ -5553,7 +5529,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[4]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 190;
@@ -5563,7 +5539,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[3]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 191;
@@ -5573,7 +5549,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[2]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 192;
@@ -5583,7 +5559,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[1]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 193;
@@ -5593,7 +5569,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SomadorToPc_outWaveform[0]";
+	CHANNEL = "Saida_mult_to_mult_outWaveform[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 194;

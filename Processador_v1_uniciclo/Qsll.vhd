@@ -15,7 +15,7 @@ ARCHITECTURE behavior of Qsll is
 begin
 	process(clk)
 		BEGIN
-			IF (clk = '1' AND clk'EVENT) THEN
+			IF (clk = '1') THEN
 				vet <=  opshift & "00";
 				resshift <= pc(15 downto 14) & vet;
 			end if;

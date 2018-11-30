@@ -34,7 +34,7 @@ Architecture behavior of ULA is
 	
 	LeftPart:= 	"00000000";
 	
-	for i in 0 to 8 loop
+	for i in 0 to 7 loop
 	
 		if    ((Prod(0) = '0') and (C = '1')) then
 		

@@ -17,7 +17,7 @@ ARCHITECTURE Multiplexador2x1_16bits OF Multiplexador2x1_16bits IS
 BEGIN 
 	PROCESS (A,B,S,clk)
 		BEGIN
-		IF (clk = '1' AND clk'EVENT) THEN
+		IF (clk = '1') THEN
 			CASE S IS
 				WHEN '0' => SAIDA <= A;
 				WHEN '1' => SAIDA <= B;

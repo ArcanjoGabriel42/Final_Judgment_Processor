@@ -18,7 +18,7 @@ ARCHITECTURE behavior OF memram IS
 BEGIN
 	PROCESS (wr,endereco, entrada,rd, clk)
 	BEGIN
-	IF (clk = '1' AND clk'EVENT) THEN
+	IF (clk = '1') THEN
 		IF (wr = '1') THEN
 			IF rd = '0' THEN
 				ram(conv_integer(endereco)) <= entrada;

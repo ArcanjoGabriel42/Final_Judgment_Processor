@@ -23,20 +23,20 @@ TYPE matriz IS ARRAY(0 TO 65535) OF STD_LOGIC_VECTOR(15 downto 0);
 SHARED VARIABLE ROM : matriz;
 procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
 BEGIN
-	listaInstrucoes(0) := "0001000000000101";
-	listaInstrucoes(1) := "0001001000000001";
-	listaInstrucoes(2) := "0000000001011001";
-	listaInstrucoes(3) := "0011011000000000";
-	listaInstrucoes(4) := "0001100000000001";
-	listaInstrucoes(5) := "0001000000000101";
-	listaInstrucoes(6) := "0001100000000000";
+	listaInstrucoes(0) := "0000000001011001";
+--	listaInstrucoes(1) := "0001001000000001";
+--	listaInstrucoes(2) := "0001000000000101";
+--	listaInstrucoes(3) := "0011011000000000";
+--	listaInstrucoes(4) := "0001100000000001";
+--	listaInstrucoes(5) := "0001000000000101";
+--	listaInstrucoes(6) := "0001100000000000";
 END PROCEDURE;
 
 BEGIN
 	carregando_ROM(ROM);
 	PROCESS (clk,entrada)
 	BEGIN
-		IF (clk = '1' AND clk'EVENT) THEN
+		IF (clk = '1') THEN
 			IF (ROM(conv_integer(entrada))(15 DOWNTO 12) = "0000") THEN
 				op <= ROM(conv_integer(entrada))(15 DOWNTO 12);
 				rs <= ROM(conv_integer(entrada))(11 DOWNTO 9);
