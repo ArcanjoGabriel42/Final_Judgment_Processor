@@ -616,6 +616,54 @@
 					"strict" : false
 				},
 				{
+					"name" : "Flag_regdest_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_origialu_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_origialu_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_origialu_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_origialu_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_memparareg_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_escrevereg_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_lemem_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_escrevemem_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_branch_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_aluSRC_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "Flag_jump_OUT",
+					"strict" : false
+				},
+				{
 					"name" : "Clock_Sistema",
 					"strict" : false
 				}

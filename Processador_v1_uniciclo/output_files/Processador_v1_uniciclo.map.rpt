@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Thu Nov 29 19:46:35 2018
+Fri Nov 30 12:16:38 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,12 +15,11 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -46,14 +45,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 29 19:46:35 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 30 12:16:37 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 62                                          ;
-; Total pins                      ; 166                                         ;
+; Total registers                 ; 117                                         ;
+; Total pins                      ; 178                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -194,31 +193,31 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 319             ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 514             ;
-;     -- 7 input functions                    ; 75              ;
-;     -- 6 input functions                    ; 45              ;
-;     -- 5 input functions                    ; 6               ;
-;     -- 4 input functions                    ; 76              ;
-;     -- <=3 input functions                  ; 312             ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 62              ;
-;                                             ;                 ;
-; I/O pins                                    ; 166             ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; ULA:G16|Mux13~0 ;
-; Maximum fan-out                             ; 84              ;
-; Total fan-out                               ; 2565            ;
-; Average fan-out                             ; 2.82            ;
-+---------------------------------------------+-----------------+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimate of Logic utilization (ALMs needed) ; 358                 ;
+;                                             ;                     ;
+; Combinational ALUT usage for logic          ; 591                 ;
+;     -- 7 input functions                    ; 64                  ;
+;     -- 6 input functions                    ; 52                  ;
+;     -- 5 input functions                    ; 41                  ;
+;     -- 4 input functions                    ; 116                 ;
+;     -- <=3 input functions                  ; 318                 ;
+;                                             ;                     ;
+; Dedicated logic registers                   ; 117                 ;
+;                                             ;                     ;
+; I/O pins                                    ; 178                 ;
+;                                             ;                     ;
+; Total DSP Blocks                            ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; Clock_Sistema~input ;
+; Maximum fan-out                             ; 117                 ;
+; Total fan-out                               ; 3069                ;
+; Average fan-out                             ; 2.88                ;
++---------------------------------------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -226,17 +225,17 @@ refer to the applicable agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name             ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------------+--------------+
-; |DataPath                        ; 514 (17)            ; 62 (0)                    ; 0                 ; 0          ; 166  ; 0            ; |DataPath                             ; DataPath                ; work         ;
-;    |BancoRegistradores:G7|       ; 34 (34)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G7       ; BancoRegistradores      ; work         ;
-;    |Multiplexador2x1:G6|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6         ; Multiplexador2x1        ; work         ;
+; |DataPath                        ; 591 (17)            ; 117 (0)                   ; 0                 ; 0          ; 178  ; 0            ; |DataPath                             ; DataPath                ; work         ;
+;    |BancoRegistradores:G7|       ; 69 (69)             ; 80 (80)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G7       ; BancoRegistradores      ; work         ;
+;    |Multiplexador2x1:G6|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6         ; Multiplexador2x1        ; work         ;
 ;    |Multiplexador2x1_16bits:G13| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G13 ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G18| ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G18 ; Multiplexador2x1_16bits ; work         ;
+;    |Multiplexador2x1_16bits:G18| ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G18 ; Multiplexador2x1_16bits ; work         ;
 ;    |PC:G1|                       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                       ; PC                      ; work         ;
 ;    |SomadorPC:G2|                ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2                ; SomadorPC               ; work         ;
-;    |ULA:G16|                     ; 58 (58)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                     ; ULA                     ; work         ;
-;    |UnidadedeControle:G5|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5        ; UnidadedeControle       ; work         ;
+;    |ULA:G16|                     ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                     ; ULA                     ; work         ;
+;    |UnidadedeControle:G5|        ; 9 (9)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5        ; UnidadedeControle       ; work         ;
 ;    |memoria_ROM2:G4|             ; 14 (14)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4             ; memoria_ROM2            ; work         ;
-;    |memram:G17|                  ; 336 (336)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memram:G17                  ; memram                  ; work         ;
+;    |memram:G17|                  ; 337 (337)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memram:G17                  ; memram                  ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -351,224 +350,132 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+-----------------------------------------+---------------------------------------------+
-; Register name                           ; Reason for Removal                          ;
-+-----------------------------------------+---------------------------------------------+
-; memoria_ROM2:G4|op[3]~reg0              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|op[2]~reg0              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|rt[2]~reg0              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|rt[1]~reg0              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|rd[2]~reg0              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|funct[1]~reg0           ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|tipoi[5]~reg0           ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|tipoi[1]~reg0           ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[0]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[1]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[2]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[3]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[4]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[5]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[6]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[7]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[8]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[9]~en              ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[10]~en             ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[11]~en             ; Stuck at GND due to stuck port data_in      ;
-; memoria_ROM2:G4|jump[0]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[1]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[2]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[3]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[4]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[5]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[6]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[7]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[8]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[9]~reg0            ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[10]~reg0           ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|jump[11]~reg0           ; Stuck at GND due to stuck port clock_enable ;
-; memoria_ROM2:G4|funct[2]~en             ; Merged with memoria_ROM2:G4|funct[1]~en     ;
-; memoria_ROM2:G4|funct[1]~en             ; Merged with memoria_ROM2:G4|funct[0]~en     ;
-; memoria_ROM2:G4|funct[0]~en             ; Merged with memoria_ROM2:G4|rd[2]~en        ;
-; memoria_ROM2:G4|rd[2]~en                ; Merged with memoria_ROM2:G4|rd[1]~en        ;
-; memoria_ROM2:G4|rd[1]~en                ; Merged with memoria_ROM2:G4|rd[0]~en        ;
-; memoria_ROM2:G4|tipoi[5]~en             ; Merged with memoria_ROM2:G4|tipoi[4]~en     ;
-; memoria_ROM2:G4|tipoi[4]~en             ; Merged with memoria_ROM2:G4|tipoi[3]~en     ;
-; memoria_ROM2:G4|tipoi[3]~en             ; Merged with memoria_ROM2:G4|tipoi[2]~en     ;
-; memoria_ROM2:G4|tipoi[2]~en             ; Merged with memoria_ROM2:G4|tipoi[1]~en     ;
-; memoria_ROM2:G4|tipoi[1]~en             ; Merged with memoria_ROM2:G4|tipoi[0]~en     ;
-; memoria_ROM2:G4|rs[2]~en                ; Merged with memoria_ROM2:G4|rt[2]~en        ;
-; memoria_ROM2:G4|rt[2]~en                ; Merged with memoria_ROM2:G4|rs[1]~en        ;
-; memoria_ROM2:G4|rs[1]~en                ; Merged with memoria_ROM2:G4|rt[1]~en        ;
-; memoria_ROM2:G4|rt[1]~en                ; Merged with memoria_ROM2:G4|op[3]~en        ;
-; memoria_ROM2:G4|op[3]~en                ; Merged with memoria_ROM2:G4|op[2]~en        ;
-; memoria_ROM2:G4|op[2]~en                ; Merged with memoria_ROM2:G4|op[1]~en        ;
-; memoria_ROM2:G4|op[1]~en                ; Merged with memoria_ROM2:G4|op[0]~en        ;
-; memoria_ROM2:G4|op[0]~en                ; Merged with memoria_ROM2:G4|rs[0]~en        ;
-; memoria_ROM2:G4|rs[0]~en                ; Merged with memoria_ROM2:G4|rt[0]~en        ;
-; memoria_ROM2:G4|rs[1]~reg0              ; Merged with memoria_ROM2:G4|op[1]~reg0      ;
-; memoria_ROM2:G4|rd[1]~reg0              ; Merged with memoria_ROM2:G4|rd[0]~reg0      ;
-; memoria_ROM2:G4|tipoi[4]~reg0           ; Merged with memoria_ROM2:G4|tipoi[3]~reg0   ;
-; BancoRegistradores:G7|Reg~68            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~52            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~69            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~53            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~70            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~54            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~71            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~55            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~72            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~56            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~73            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~57            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~74            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~58            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~75            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~59            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~76            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~60            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~77            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~61            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~78            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~62            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~79            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~63            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~80            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~64            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~81            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~65            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~82            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~66            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~83            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~67            ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~132           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~116           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~133           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~117           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~134           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~118           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~135           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~119           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~136           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~120           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~137           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~121           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~138           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~122           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~139           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~123           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~140           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~124           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~141           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~125           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~142           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~126           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~143           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~127           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~144           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~128           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~145           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~129           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~146           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~130           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~147           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~131           ; Stuck at GND due to stuck port clock_enable ;
-; BancoRegistradores:G7|Reg~100           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~84            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~101           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~85            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~102           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~86            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~103           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~87            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~104           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~88            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~105           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~89            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~106           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~90            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~107           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~91            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~108           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~92            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~109           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~93            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~110           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~94            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~111           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~95            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~112           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~96            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~113           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~97            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~114           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~98            ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~115           ; Lost fanout                                 ;
-; BancoRegistradores:G7|Reg~99            ; Lost fanout                                 ;
-; Total Number of Removed Registers = 150 ;                                             ;
-+-----------------------------------------+---------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                    ;
-+-------------------------------+--------------------------------+---------------------------------------------------------------+
-; Register name                 ; Reason for Removal             ; Registers Removed due to This Register                        ;
-+-------------------------------+--------------------------------+---------------------------------------------------------------+
-; BancoRegistradores:G7|Reg~68  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~69, BancoRegistradores:G7|Reg~53,   ;
-;                               ; due to stuck port clock_enable ; BancoRegistradores:G7|Reg~133, BancoRegistradores:G7|Reg~117, ;
-;                               ;                                ; BancoRegistradores:G7|Reg~100, BancoRegistradores:G7|Reg~84,  ;
-;                               ;                                ; BancoRegistradores:G7|Reg~101                                 ;
-; BancoRegistradores:G7|Reg~72  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~73, BancoRegistradores:G7|Reg~57,   ;
-;                               ; due to stuck port clock_enable ; BancoRegistradores:G7|Reg~137, BancoRegistradores:G7|Reg~121, ;
-;                               ;                                ; BancoRegistradores:G7|Reg~88, BancoRegistradores:G7|Reg~105,  ;
-;                               ;                                ; BancoRegistradores:G7|Reg~90                                  ;
-; BancoRegistradores:G7|Reg~70  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~102, BancoRegistradores:G7|Reg~86,  ;
-;                               ; due to stuck port clock_enable ; BancoRegistradores:G7|Reg~103, BancoRegistradores:G7|Reg~87,  ;
-;                               ;                                ; BancoRegistradores:G7|Reg~104                                 ;
-; BancoRegistradores:G7|Reg~74  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~106                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~75  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~107                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~76  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~108                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~77  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~109                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~78  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~110                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~79  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~111                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~80  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~112                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~81  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~113                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~82  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~114                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~83  ; Stuck at GND                   ; BancoRegistradores:G7|Reg~115                                 ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~132 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~85                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~136 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~89                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~138 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~91                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~139 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~92                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~140 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~93                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~141 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~94                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~142 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~95                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~143 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~96                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~144 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~97                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~145 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~98                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-; BancoRegistradores:G7|Reg~146 ; Stuck at GND                   ; BancoRegistradores:G7|Reg~99                                  ;
-;                               ; due to stuck port clock_enable ;                                                               ;
-+-------------------------------+--------------------------------+---------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++-----------------------------------------+--------------------------------------------------+
+; Register name                           ; Reason for Removal                               ;
++-----------------------------------------+--------------------------------------------------+
+; UnidadedeControle:G5|origalu[3]~reg0    ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|op[3]~reg0              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|op[2]~reg0              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|rt[2]~reg0              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|rt[1]~reg0              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|rd[2]~reg0              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|funct[1]~reg0           ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|tipoi[5]~reg0           ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|tipoi[1]~reg0           ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[8]~reg0            ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[7]~reg0            ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[5]~reg0            ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[1]~reg0            ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[0]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[1]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[2]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[3]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[4]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[5]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[6]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[7]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[8]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[9]~en              ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[10]~en             ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[11]~en             ; Stuck at GND due to stuck port data_in           ;
+; memoria_ROM2:G4|jump[0]~reg0            ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[2]~reg0            ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[3]~reg0            ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[4]~reg0            ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[6]~reg0            ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[9]~reg0            ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[10]~reg0           ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|jump[11]~reg0           ; Stuck at GND due to stuck port clock_enable      ;
+; memoria_ROM2:G4|funct[2]~en             ; Merged with memoria_ROM2:G4|funct[1]~en          ;
+; memoria_ROM2:G4|funct[1]~en             ; Merged with memoria_ROM2:G4|funct[0]~en          ;
+; memoria_ROM2:G4|funct[0]~en             ; Merged with memoria_ROM2:G4|rd[2]~en             ;
+; memoria_ROM2:G4|rd[2]~en                ; Merged with memoria_ROM2:G4|rd[1]~en             ;
+; memoria_ROM2:G4|rd[1]~en                ; Merged with memoria_ROM2:G4|rd[0]~en             ;
+; memoria_ROM2:G4|tipoi[5]~en             ; Merged with memoria_ROM2:G4|tipoi[4]~en          ;
+; memoria_ROM2:G4|tipoi[4]~en             ; Merged with memoria_ROM2:G4|tipoi[3]~en          ;
+; memoria_ROM2:G4|tipoi[3]~en             ; Merged with memoria_ROM2:G4|tipoi[2]~en          ;
+; memoria_ROM2:G4|tipoi[2]~en             ; Merged with memoria_ROM2:G4|tipoi[1]~en          ;
+; memoria_ROM2:G4|tipoi[1]~en             ; Merged with memoria_ROM2:G4|tipoi[0]~en          ;
+; memoria_ROM2:G4|op[3]~en                ; Merged with memoria_ROM2:G4|op[2]~en             ;
+; memoria_ROM2:G4|op[2]~en                ; Merged with memoria_ROM2:G4|op[1]~en             ;
+; memoria_ROM2:G4|op[1]~en                ; Merged with memoria_ROM2:G4|op[0]~en             ;
+; memoria_ROM2:G4|op[0]~en                ; Merged with memoria_ROM2:G4|rs[2]~en             ;
+; memoria_ROM2:G4|rs[2]~en                ; Merged with memoria_ROM2:G4|rt[2]~en             ;
+; memoria_ROM2:G4|rt[2]~en                ; Merged with memoria_ROM2:G4|rs[1]~en             ;
+; memoria_ROM2:G4|rs[1]~en                ; Merged with memoria_ROM2:G4|rt[1]~en             ;
+; memoria_ROM2:G4|rt[1]~en                ; Merged with memoria_ROM2:G4|rs[0]~en             ;
+; memoria_ROM2:G4|rs[0]~en                ; Merged with memoria_ROM2:G4|rt[0]~en             ;
+; UnidadedeControle:G5|aluSRC~en          ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|origalu[0]~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|origalu[1]~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|origalu[2]~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|origalu[3]~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|memparareg~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|jump~en            ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|branch~en          ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|escrevereg~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|lemem~en           ; Merged with UnidadedeControle:G5|regdest~en      ;
+; UnidadedeControle:G5|escrevemem~en      ; Merged with UnidadedeControle:G5|regdest~en      ;
+; memoria_ROM2:G4|op[1]~reg0              ; Merged with memoria_ROM2:G4|rs[1]~reg0           ;
+; memoria_ROM2:G4|rd[1]~reg0              ; Merged with memoria_ROM2:G4|rd[0]~reg0           ;
+; memoria_ROM2:G4|tipoi[4]~reg0           ; Merged with memoria_ROM2:G4|tipoi[3]~reg0        ;
+; UnidadedeControle:G5|escrevereg~reg0    ; Merged with UnidadedeControle:G5|aluSRC~reg0     ;
+; UnidadedeControle:G5|escrevemem~reg0    ; Merged with UnidadedeControle:G5|origalu[1]~reg0 ;
+; UnidadedeControle:G5|jump~reg0          ; Merged with UnidadedeControle:G5|origalu[2]~reg0 ;
+; UnidadedeControle:G5|branch~reg0        ; Merged with UnidadedeControle:G5|origalu[2]~reg0 ;
+; UnidadedeControle:G5|lemem~reg0         ; Merged with UnidadedeControle:G5|memparareg~reg0 ;
+; BancoRegistradores:G7|Reg~100           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~84            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~101           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~85            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~102           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~86            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~103           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~87            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~104           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~88            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~105           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~89            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~106           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~90            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~107           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~91            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~108           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~92            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~109           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~93            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~110           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~94            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~111           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~95            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~112           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~96            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~113           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~97            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~114           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~98            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~115           ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~99            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~52            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~53            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~54            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~55            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~56            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~57            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~58            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~59            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~60            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~61            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~62            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~63            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~64            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~65            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~66            ; Lost fanout                                      ;
+; BancoRegistradores:G7|Reg~67            ; Lost fanout                                      ;
+; Total Number of Removed Registers = 119 ;                                                  ;
++-----------------------------------------+--------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -576,24 +483,24 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 62    ;
+; Total registers                              ; 117   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Clock Enable       ; 88    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|UnidadedeControle:G5|origalu[2] ;
-; 64:1               ; 16 bits   ; 672 LEs       ; 96 LEs               ; 576 LEs                ; No         ; |DataPath|ULA:G16|Mux15                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DataPath|UnidadedeControle:G5|jump ;
+; 128:1              ; 16 bits   ; 1360 LEs      ; 112 LEs              ; 1248 LEs               ; No         ; |DataPath|ULA:G16|Mux1              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -601,28 +508,27 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 62                          ;
-;     ENA               ; 40                          ;
-;     plain             ; 22                          ;
-; arriav_io_obuf        ; 34                          ;
-; arriav_lcell_comb     ; 515                         ;
+; arriav_ff             ; 117                         ;
+;     ENA               ; 88                          ;
+;     plain             ; 29                          ;
+; arriav_io_obuf        ; 46                          ;
+; arriav_lcell_comb     ; 591                         ;
 ;     arith             ; 49                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
 ;         4 data inputs ; 32                          ;
-;     extend            ; 75                          ;
-;         7 data inputs ; 75                          ;
-;     normal            ; 391                         ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 290                         ;
-;         4 data inputs ; 44                          ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 45                          ;
-; boundary_port         ; 166                         ;
+;     extend            ; 64                          ;
+;         7 data inputs ; 64                          ;
+;     normal            ; 478                         ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 289                         ;
+;         4 data inputs ; 84                          ;
+;         5 data inputs ; 41                          ;
+;         6 data inputs ; 52                          ;
+; boundary_port         ; 178                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.20                        ;
-; Average LUT depth     ; 4.02                        ;
+; Max LUT depth         ; 7.20                        ;
+; Average LUT depth     ; 4.85                        ;
 +-----------------------+-----------------------------+
 
 
@@ -641,7 +547,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 29 19:46:06 2018
+    Info: Processing started: Fri Nov 30 12:16:21 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -679,13 +585,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file memoria
     Info (12022): Found design unit 1: memoria_ROM2-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 20
     Info (12023): Found entity 1: memoria_ROM2 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
-    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 22
+    Info (12022): Found design unit 1: UnidadedeControle-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
     Info (12023): Found entity 1: UnidadedeControle File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1.vhd
     Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 15
     Info (12023): Found entity 1: Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 44
+    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 55
     Info (12023): Found entity 1: DataPath File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1_16bits.vhd
     Info (12022): Found design unit 1: Multiplexador2x1_16bits-Multiplexador2x1_16bits File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 15
@@ -694,74 +600,73 @@ Info (12021): Found 2 design units, including 1 entities, in source file operaca
     Info (12022): Found design unit 1: OperacaoDaULA-BEHAVIOR File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/OperacaoDaULA.vhd Line: 15
     Info (12023): Found entity 1: OperacaoDaULA File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/OperacaoDaULA.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 293
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 294
-Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 295
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 296
-Warning (10542): VHDL Variable Declaration warning at memoria_rom2.vhd(23): used initial value expression for variable "ROM" because variable was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 23
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 298
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 300
-Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 301
-Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G8" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 303
-Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G9" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 304
-Info (12128): Elaborating entity "Somadorde16bits" for hierarchy "Somadorde16bits:G10" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 305
-Info (12128): Elaborating entity "QAndBIT" for hierarchy "QAndBIT:G11" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 306
-Info (12128): Elaborating entity "Multiplexador2x1_16bits" for hierarchy "Multiplexador2x1_16bits:G12" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 307
-Info (12128): Elaborating entity "OperacaoDaULA" for hierarchy "OperacaoDaULA:G15" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 310
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:G16" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 311
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 305
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 306
+Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 307
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 308
+Warning (10873): Using initial value X (don't care) for net "ROM[7..65535]" at memoria_rom2.vhd(23) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 23
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 310
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 312
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 313
+Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G8" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 315
+Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G9" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 316
+Info (12128): Elaborating entity "Somadorde16bits" for hierarchy "Somadorde16bits:G10" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 317
+Info (12128): Elaborating entity "QAndBIT" for hierarchy "QAndBIT:G11" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 318
+Info (12128): Elaborating entity "Multiplexador2x1_16bits" for hierarchy "Multiplexador2x1_16bits:G12" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 319
+Info (12128): Elaborating entity "OperacaoDaULA" for hierarchy "OperacaoDaULA:G15" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 322
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:G16" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 323
 Warning (10542): VHDL Variable Declaration warning at ULA.vhd(27): used initial value expression for variable "Prod" because variable was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ULA.vhd Line: 27
-Info (12128): Elaborating entity "memram" for hierarchy "memram:G17" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 312
+Info (12128): Elaborating entity "memram" for hierarchy "memram:G17" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 324
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "BancoRegistradores:G7|Reg" is uninferred due to asynchronous read logic File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|jump" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 16
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|aluSRC" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 15
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|branch" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 14
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|escrevemem" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|lemem" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 12
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|escrevereg" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|memparareg" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 10
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|origalu[0]" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|origalu[1]" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|origalu[2]" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|origalu[3]" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
-    Warning (13049): Converted tri-state buffer "UnidadedeControle:G5|regdest" feeding internal logic into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 8
 Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[2]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[3]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rd[2]" to the node "BancoRegistradores:G7|Reg" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|funct[1]" to the node "ULA:G16|Mux15" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[1]" to the node "Multiplexador2x1_16bits:G14|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[5]" to the node "Multiplexador2x1_16bits:G14|SAIDA[15]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[0]" to the node "Multiplexador2x1_16bits:G13|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[1]" to the node "Multiplexador2x1_16bits:G13|SAIDA[3]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[2]" to the node "Multiplexador2x1_16bits:G13|SAIDA[4]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[3]" to the node "Multiplexador2x1_16bits:G13|SAIDA[5]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[4]" to the node "Multiplexador2x1_16bits:G13|SAIDA[6]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[5]" to the node "Multiplexador2x1_16bits:G13|SAIDA[7]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[6]" to the node "Multiplexador2x1_16bits:G13|SAIDA[8]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[7]" to the node "Multiplexador2x1_16bits:G13|SAIDA[9]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[8]" to the node "Multiplexador2x1_16bits:G13|SAIDA[10]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[9]" to the node "Multiplexador2x1_16bits:G13|SAIDA[11]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[10]" to the node "Multiplexador2x1_16bits:G13|SAIDA[12]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[11]" to the node "Multiplexador2x1_16bits:G13|SAIDA[13]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rt[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[2]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|op[3]" to the node "UnidadedeControle:G5|Equal0" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|rd[2]" to the node "BancoRegistradores:G7|Reg" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|funct[1]" to the node "ULA:G16|Mux1" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[1]" to the node "Multiplexador2x1_16bits:G14|SAIDA[1]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|tipoi[5]" to the node "Multiplexador2x1_16bits:G14|SAIDA[15]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[0]" to the node "Multiplexador2x1_16bits:G13|SAIDA[2]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[1]" to the node "Multiplexador2x1_16bits:G13|SAIDA[3]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[2]" to the node "Multiplexador2x1_16bits:G13|SAIDA[4]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[3]" to the node "Multiplexador2x1_16bits:G13|SAIDA[5]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[4]" to the node "Multiplexador2x1_16bits:G13|SAIDA[6]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[5]" to the node "Multiplexador2x1_16bits:G13|SAIDA[7]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[6]" to the node "Multiplexador2x1_16bits:G13|SAIDA[8]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[7]" to the node "Multiplexador2x1_16bits:G13|SAIDA[9]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[8]" to the node "Multiplexador2x1_16bits:G13|SAIDA[10]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[9]" to the node "Multiplexador2x1_16bits:G13|SAIDA[11]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[10]" to the node "Multiplexador2x1_16bits:G13|SAIDA[12]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "memoria_ROM2:G4|jump[11]" to the node "Multiplexador2x1_16bits:G13|SAIDA[13]" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13051): Converted the fanout from the open-drain buffer "UnidadedeControle:G5|origalu[3]" to the node "ULA:G16|Mux1" into a wire File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 28
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rt[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[0]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[1]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[0]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[1]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[0]" to the node "ULA:G16|Mux15" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[2]" to the node "ULA:G16|Mux15" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[0]" to the node "Multiplexador2x1_16bits:G14|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[2]" to the node "Multiplexador2x1_16bits:G14|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[3]" to the node "Multiplexador2x1_16bits:G14|SAIDA[3]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[4]" to the node "Multiplexador2x1_16bits:G14|SAIDA[4]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 40
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rt[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[0]" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|regdest" to the node "Multiplexador2x1:G6|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[1]" to the node "Multiplexador2x1:G6|SAIDA[1]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rs[2]" to the node "Multiplexador2x1:G6|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[0]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|op[1]" to the node "UnidadedeControle:G5|Equal0" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[0]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|rd[1]" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[0]" to the node "ULA:G16|Mux1" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|funct[2]" to the node "ULA:G16|Mux1" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[0]" to the node "Multiplexador2x1_16bits:G14|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[2]" to the node "Multiplexador2x1_16bits:G14|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[3]" to the node "Multiplexador2x1_16bits:G14|SAIDA[3]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoria_ROM2:G4|tipoi[4]" to the node "Multiplexador2x1_16bits:G14|SAIDA[4]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 39
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|aluSRC" to the node "Multiplexador2x1_16bits:G14|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 16
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|origalu[0]" to the node "Multiplexador2x1_16bits:G12|SAIDA[15]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 28
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|origalu[1]" to the node "Multiplexador2x1_16bits:G12|SAIDA[15]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 28
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|origalu[2]" to the node "Multiplexador2x1_16bits:G12|SAIDA[15]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 28
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|memparareg" to the node "Multiplexador2x1_16bits:G18|SAIDA[0]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|jump" to the node "Multiplexador2x1_16bits:G12|SAIDA[15]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|branch" to the node "Multiplexador2x1_16bits:G13|SAIDA[2]" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 15
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|escrevereg" to the node "BancoRegistradores:G7|Reg" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|lemem" to the node "memram:G17|ram.we_a" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "UnidadedeControle:G5|escrevemem" to the node "memram:G17|ram.we_a" into an OR gate File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 14
 Warning (13012): Latch memram:G17|ram~256 has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 16
     Warning (13013): Ports D and ENA on the latch are fed by the same signal BancoRegistradores:G7|Reg~synth File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
 Warning (13012): Latch memram:G17|ram~257 has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 16
@@ -933,17 +838,17 @@ Warning (13012): Latch memram:G17|ram~132 has unsafe behavior File: C:/Final_Jud
 Warning (13012): Latch memram:G17|ram~164 has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd Line: 16
     Warning (13013): Ports D and ENA on the latch are fed by the same signal BancoRegistradores:G7|Reg~synth File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 32 registers lost all their fanouts during netlist optimizations.
+Info (17049): 48 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 740 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 880 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 165 output pins
-    Info (21061): Implemented 574 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 222 warnings
-    Info: Peak virtual memory: 4939 megabytes
-    Info: Processing ended: Thu Nov 29 19:46:35 2018
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:43
+    Info (21059): Implemented 177 output pins
+    Info (21061): Implemented 702 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 221 warnings
+    Info: Peak virtual memory: 4916 megabytes
+    Info: Processing ended: Fri Nov 30 12:16:38 2018
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:30
 
 

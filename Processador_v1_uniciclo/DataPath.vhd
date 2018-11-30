@@ -34,8 +34,19 @@ ENTITY DataPath IS
 		
 		Saida_to_PC_outWaveform:                     out std_logic_vector(15 downto 0);
 		
-		Saida_adress_to_RAM_outWaveform:             out std_logic_vector(15 downto 0)
-	
+		Saida_adress_to_RAM_outWaveform:             out std_logic_vector(15 downto 0);
+		
+		------------------F L A G S --------------------------------------------------
+		Flag_regdest_OUT:					     out std_logic;
+		Flag_origialu_OUT:					     out std_logic_vector(3 downto 0);
+		Flag_memparareg_OUT:					  out std_logic;
+      Flag_escrevereg_OUT:					  out std_logic;
+		Flag_lemem_OUT:						     out std_logic;
+		Flag_escrevemem_OUT:					  out std_logic;
+		Flag_branch_OUT: 						  out std_logic;
+		Flag_aluSRC_OUT: 	  					  out std_logic;
+		Flag_jump_OUT: 	 					     out std_logic	
+		---------------------------------------------------------------------------------
 		
 	);
 END DataPath;
@@ -87,6 +98,7 @@ END COMPONENT;
 	
 	COMPONENT UnidadedeControle IS
 		PORT(
+		    Clock   :     in std_logic;
 			 entrada : 		in std_logic_vector (3 DOWNTO 0);
 			 regdest : 		out std_logic; 
 			 origalu : 		out std_logic_vector(3 DOWNTO 0); 
@@ -295,7 +307,7 @@ G2:  SomadorPC    		      port map (SaidaPc, SomadorToPc);
 G3:  Qsll							port map (SomadorToPc,Instruction_to_Jump,Saida_Qsll);
 G4:  memoria_ROM2 		      port map (Clock_Sistema, SaidaPc, Instruction_to_Control, Instruction_to_register1, Instruction_to_register2, 
 													 Instruction_to_multiplexador,Instruction_to_controlULA, Instruction_to_extensorDeSinal, Instruction_to_Jump);											
-G5:  UnidadedeControle        port map (Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
+G5:  UnidadedeControle        port map (Clock_Sistema,Instruction_to_Control, Flag_regdest, Flag_origialu, Flag_memparareg, Flag_escrevereg, Flag_lemem, Flag_escrevemem,
 													 Flag_branch, Flag_aluSRC, Flag_jump);								 											
 G6:  Multiplexador2x1     	   port map (Instruction_to_register2,Instruction_to_multiplexador,Flag_regdest,multiplexador_to_writeRegister);
 G7:  BancoRegistradores 		port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,SaidaRegB,Data_to_writeRegister, multiplexador_to_writeRegister,
@@ -303,9 +315,9 @@ G7:  BancoRegistradores 		port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,Sa
 G8:  ExtensordeSinal6To16bits port map (Instruction_to_extensorDeSinal,Saida_extensor);
 G9:  ShiftEsquerda            port map (Saida_extensor, Saida_SLL_to_SumUla);
 G10: Somadorde16bits          port map (SomadorToPc,Saida_SLL_to_sumULA, Saida_SumUla_to_mult);
-G11: QAndBIT                  port map (Flag_branch, Saida_ZeroDaULA, SaidaAND);
+G11: QAndBIT                  port map (Flag_jump, Saida_ZeroDaULA, SaidaAND);
 G12: Multiplexador2x1_16bits  port map (SomadorToPc, Saida_SumUla_to_mult, SaidaAND, Saida_mult_to_mult);
-G13: Multiplexador2x1_16bits  port map (Saida_mult_to_mult, Saida_Qsll, Flag_jump, Saida_to_PC);
+G13: Multiplexador2x1_16bits  port map (Saida_mult_to_mult, Saida_Qsll, Flag_branch, Saida_to_PC);
 G14: Multiplexador2x1_16bits  port map (SaidaRegB,Saida_extensor,Flag_aluSRC,Saida_mult_to_ULA);
 G15: OperacaoDaULA				port map (Flag_origialu,Instruction_to_controlULA,Saida_OperacaoDaULA);
 G16: ULA								port map (SaidaRegA,Saida_mult_to_ULA,Saida_OperacaoDaULA,Saida_adress_to_RAM,Saida_valor_to_mult,Saida_ZeroDaULA);
@@ -327,7 +339,19 @@ Instruction_to_controlULA_outWaveform <= Instruction_to_controlULA;
 Instruction_to_extensorDeSinal_outWaveform <= Instruction_to_extensorDeSinal;  
 Instruction_to_Jump_outWaveform <= Instruction_to_Jump;
 			  	   								
+----------FLAGS--------------------------------------
 
+Flag_regdest_OUT<= Flag_regdest;
+Flag_origialu_OUT<= Flag_origialu;
+Flag_memparareg_OUT<= Flag_memparareg;	
+Flag_escrevereg_OUT<= Flag_escrevereg;	
+Flag_lemem_OUT<= Flag_lemem;	
+Flag_escrevemem_OUT<= Flag_escrevemem;
+Flag_branch_OUT<= Flag_branch;
+Flag_aluSRC_OUT<= Flag_aluSRC;
+Flag_jump_OUT<= Flag_jump;							  
+	 					  
+------------------------------------------------------
  
 Data_to_writeRegister_outWaveform <= Data_to_writeRegister; 		      
  							   

@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/29/2018 19:48:47"
+-- Generated on "11/30/2018 12:24:25"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -35,6 +35,15 @@ ARCHITECTURE DataPath_arch OF DataPath_vhd_vec_tst IS
 -- signals                                                   
 SIGNAL Clock_Sistema : STD_LOGIC;
 SIGNAL Data_to_writeRegister_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL Flag_aluSRC_OUT : STD_LOGIC;
+SIGNAL Flag_branch_OUT : STD_LOGIC;
+SIGNAL Flag_escrevemem_OUT : STD_LOGIC;
+SIGNAL Flag_escrevereg_OUT : STD_LOGIC;
+SIGNAL Flag_jump_OUT : STD_LOGIC;
+SIGNAL Flag_lemem_OUT : STD_LOGIC;
+SIGNAL Flag_memparareg_OUT : STD_LOGIC;
+SIGNAL Flag_origialu_OUT : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL Flag_regdest_OUT : STD_LOGIC;
 SIGNAL Instruction_to_Control_outWaveform : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL Instruction_to_controlULA_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL Instruction_to_extensorDeSinal_outWaveform : STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -54,6 +63,15 @@ COMPONENT DataPath
 	PORT (
 	Clock_Sistema : IN STD_LOGIC;
 	Data_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Flag_aluSRC_OUT : BUFFER STD_LOGIC;
+	Flag_branch_OUT : BUFFER STD_LOGIC;
+	Flag_escrevemem_OUT : BUFFER STD_LOGIC;
+	Flag_escrevereg_OUT : BUFFER STD_LOGIC;
+	Flag_jump_OUT : BUFFER STD_LOGIC;
+	Flag_lemem_OUT : BUFFER STD_LOGIC;
+	Flag_memparareg_OUT : BUFFER STD_LOGIC;
+	Flag_origialu_OUT : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Flag_regdest_OUT : BUFFER STD_LOGIC;
 	Instruction_to_Control_outWaveform : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
 	Instruction_to_controlULA_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	Instruction_to_extensorDeSinal_outWaveform : BUFFER STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -77,6 +95,15 @@ BEGIN
 -- list connections between master ports and signals
 	Clock_Sistema => Clock_Sistema,
 	Data_to_writeRegister_outWaveform => Data_to_writeRegister_outWaveform,
+	Flag_aluSRC_OUT => Flag_aluSRC_OUT,
+	Flag_branch_OUT => Flag_branch_OUT,
+	Flag_escrevemem_OUT => Flag_escrevemem_OUT,
+	Flag_escrevereg_OUT => Flag_escrevereg_OUT,
+	Flag_jump_OUT => Flag_jump_OUT,
+	Flag_lemem_OUT => Flag_lemem_OUT,
+	Flag_memparareg_OUT => Flag_memparareg_OUT,
+	Flag_origialu_OUT => Flag_origialu_OUT,
+	Flag_regdest_OUT => Flag_regdest_OUT,
 	Instruction_to_Control_outWaveform => Instruction_to_Control_outWaveform,
 	Instruction_to_controlULA_outWaveform => Instruction_to_controlULA_outWaveform,
 	Instruction_to_extensorDeSinal_outWaveform => Instruction_to_extensorDeSinal_outWaveform,
