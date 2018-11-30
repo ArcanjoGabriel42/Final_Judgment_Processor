@@ -1,0 +1,297 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Saida_to_Dados[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Dados[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida_to_Mux[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ZeroULA",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Controle_ULA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[12]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[13]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[14]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaB[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
