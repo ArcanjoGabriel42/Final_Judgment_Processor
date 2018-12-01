@@ -25,11 +25,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Nov 30 18:55:31 2018
+    Info: Processing started: Fri Nov 30 22:30:22 2018
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "Processador_v1_uniciclo"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-8]" in vector source file when writing test bench files
+ng test bench files
 
 Completed successfully. 
 
@@ -53,13 +54,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Nov 30 18:55:34 2018
+    Info: Processing started: Fri Nov 30 22:30:24 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "Processador_v1_uniciclo"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Processador_v1_uniciclo.vho in folder "C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4747 megabytes
-    Info: Processing ended: Fri Nov 30 18:55:36 2018
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Fri Nov 30 22:30:26 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -83,11 +85,11 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # do Processador_v1_uniciclo.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:55:37 on Nov 30,2018
+# Start time: 22:30:27 on Nov 30,2018
 # vcom -work work Processador_v1_uniciclo.vho 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -100,23 +102,23 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity DataPath
 # -- Compiling architecture structure of DataPath
 
-# End time: 18:55:37 on Nov 30,2018, Elapsed time: 0:00:00
+# End time: 22:30:28 on Nov 30,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:55:38 on Nov 30,2018
+# Start time: 22:30:28 on Nov 30,2018
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DataPath_vhd_vec_tst
+
 # -- Compiling architecture DataPath_arch of DataPath_vhd_vec_tst
-# End time: 18:55:38 on Nov 30,2018, Elapsed time: 0:00:00
+# End time: 22:30:28 on Nov 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.DataPath_vhd_vec_tst 
-# Start time: 18:55:38 on Nov 30,2018
+# Start time: 22:30:28 on Nov 30,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -132,14 +134,13 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_clkena(behavior)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 164528 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 166545 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 18:55:39 on Nov 30,2018, Elapsed time: 0:00:01
+# End time: 22:30:29 on Nov 30,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -152,7 +153,7 @@ Reading C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Proc
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo_20181130185539.sim.vwf
+Writing the resulting VWF to C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo_20181130223029.sim.vwf
 
 Finished VCD to VWF conversion.
 

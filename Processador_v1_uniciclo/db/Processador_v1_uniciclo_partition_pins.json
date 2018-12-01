@@ -580,6 +580,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "saida_cont_sincz1",
+					"strict" : false
+				},
+				{
+					"name" : "saida_cont_sincz2",
+					"strict" : false
+				},
+				{
+					"name" : "saida_cont_sincz3",
+					"strict" : false
+				},
+				{
 					"name" : "Flag_regdest_OUT",
 					"strict" : false
 				},

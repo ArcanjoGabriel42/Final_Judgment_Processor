@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Fri Nov 30 18:52:49 2018
+Fri Nov 30 22:30:12 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -18,9 +18,10 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 13. Port Connectivity Checks: "PC:G1|contsinc:G0"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -46,14 +47,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 30 18:52:49 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 30 22:30:12 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 60                                          ;
-; Total pins                      ; 178                                         ;
+; Total registers                 ; 47                                          ;
+; Total pins                      ; 182                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -175,6 +176,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; registerjk.vhd                   ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/registerjk.vhd               ;         ;
+; contsinc.vhd                     ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/contsinc.vhd                 ;         ;
 ; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/ULA.vhd                      ;         ;
 ; memram.vhd                       ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/memram.vhd                   ;         ;
 ; QAndBIT.vhd                      ; yes             ; User VHDL File  ; C:/Final_Judgment_Processor/Processador_v1_uniciclo/QAndBIT.vhd                  ;         ;
@@ -199,50 +202,54 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 404                 ;
+; Estimate of Logic utilization (ALMs needed) ; 414                 ;
 ;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 652                 ;
+; Combinational ALUT usage for logic          ; 671                 ;
 ;     -- 7 input functions                    ; 64                  ;
 ;     -- 6 input functions                    ; 91                  ;
 ;     -- 5 input functions                    ; 25                  ;
 ;     -- 4 input functions                    ; 8                   ;
-;     -- <=3 input functions                  ; 464                 ;
+;     -- <=3 input functions                  ; 483                 ;
 ;                                             ;                     ;
-; Dedicated logic registers                   ; 60                  ;
+; Dedicated logic registers                   ; 47                  ;
 ;                                             ;                     ;
-; I/O pins                                    ; 178                 ;
+; I/O pins                                    ; 182                 ;
 ;                                             ;                     ;
 ; Total DSP Blocks                            ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; Clock_Sistema~input ;
-; Maximum fan-out                             ; 143                 ;
-; Total fan-out                               ; 2920                ;
+; Maximum fan-out                             ; 146                 ;
+; Total fan-out                               ; 2955                ;
 ; Average fan-out                             ; 2.73                ;
 +---------------------------------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name             ; Library Name ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------------+--------------+
-; |DataPath                        ; 652 (17)            ; 60 (0)                    ; 0                 ; 0          ; 178  ; 0            ; |DataPath                             ; DataPath                ; work         ;
-;    |Multiplexador2x1:G6|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6         ; Multiplexador2x1        ; work         ;
-;    |Multiplexador2x1_16bits:G12| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G12 ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G13| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G13 ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G14| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G14 ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G18| ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G18 ; Multiplexador2x1_16bits ; work         ;
-;    |OperacaoDaULA:G15|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|OperacaoDaULA:G15           ; OperacaoDaULA           ; work         ;
-;    |PC:G1|                       ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                       ; PC                      ; work         ;
-;    |Qsll:G3|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Qsll:G3                     ; Qsll                    ; work         ;
-;    |ShiftEsquerda:G9|            ; 0 (0)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ShiftEsquerda:G9            ; ShiftEsquerda           ; work         ;
-;    |SomadorPC:G2|                ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2                ; SomadorPC               ; work         ;
-;    |Somadorde16bits:G10|         ; 14 (14)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Somadorde16bits:G10         ; Somadorde16bits         ; work         ;
-;    |ULA:G16|                     ; 72 (72)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                     ; ULA                     ; work         ;
-;    |UnidadedeControle:G5|        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5        ; UnidadedeControle       ; work         ;
-;    |memoria_ROM2:G4|             ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4             ; memoria_ROM2            ; work         ;
-;    |memram:G17|                  ; 337 (337)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memram:G17                  ; memram                  ; work         ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name             ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------------------+--------------+
+; |DataPath                        ; 671 (17)            ; 47 (0)                    ; 0                 ; 0          ; 182  ; 0            ; |DataPath                                 ; DataPath                ; work         ;
+;    |Multiplexador2x1:G6|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6             ; Multiplexador2x1        ; work         ;
+;    |Multiplexador2x1_16bits:G12| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G12     ; Multiplexador2x1_16bits ; work         ;
+;    |Multiplexador2x1_16bits:G13| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G13     ; Multiplexador2x1_16bits ; work         ;
+;    |Multiplexador2x1_16bits:G14| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G14     ; Multiplexador2x1_16bits ; work         ;
+;    |Multiplexador2x1_16bits:G18| ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G18     ; Multiplexador2x1_16bits ; work         ;
+;    |OperacaoDaULA:G15|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|OperacaoDaULA:G15               ; OperacaoDaULA           ; work         ;
+;    |PC:G1|                       ; 19 (16)             ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                           ; PC                      ; work         ;
+;       |contsinc:G0|              ; 3 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1|contsinc:G0               ; contsinc                ; work         ;
+;          |registerjk:G0|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1|contsinc:G0|registerjk:G0 ; registerjk              ; work         ;
+;          |registerjk:G1|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1|contsinc:G0|registerjk:G1 ; registerjk              ; work         ;
+;          |registerjk:G3|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1|contsinc:G0|registerjk:G3 ; registerjk              ; work         ;
+;    |Qsll:G3|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Qsll:G3                         ; Qsll                    ; work         ;
+;    |ShiftEsquerda:G9|            ; 0 (0)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ShiftEsquerda:G9                ; ShiftEsquerda           ; work         ;
+;    |SomadorPC:G2|                ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2                    ; SomadorPC               ; work         ;
+;    |Somadorde16bits:G10|         ; 14 (14)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Somadorde16bits:G10             ; Somadorde16bits         ; work         ;
+;    |ULA:G16|                     ; 72 (72)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                         ; ULA                     ; work         ;
+;    |UnidadedeControle:G5|        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5            ; UnidadedeControle       ; work         ;
+;    |memoria_ROM2:G4|             ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4                 ; memoria_ROM2            ; work         ;
+;    |memram:G17|                  ; 337 (337)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memram:G17                      ; memram                  ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -251,6 +258,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+------------------------------+------------------------+
 ; Latch Name                                           ; Latch Enable Signal          ; Free of Timing Hazards ;
 +------------------------------------------------------+------------------------------+------------------------+
+; PC:G1|pout[0]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[1]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[2]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[3]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[4]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[5]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[6]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[7]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[8]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[9]                                        ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[10]                                       ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[11]                                       ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[12]                                       ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[13]                                       ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[14]                                       ; Clock_Sistema                ; yes                    ;
+; PC:G1|pout[15]                                       ; Clock_Sistema                ; yes                    ;
 ; Multiplexador2x1_16bits:G18|SAIDA[0]                 ; Clock_Sistema                ; yes                    ;
 ; Multiplexador2x1_16bits:G18|SAIDA[1]                 ; Clock_Sistema                ; yes                    ;
 ; Multiplexador2x1_16bits:G18|SAIDA[2]                 ; Clock_Sistema                ; yes                    ;
@@ -335,23 +358,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memram:G17|ram~262                                   ; rtl~0                        ; yes                    ;
 ; memram:G17|ram~263                                   ; rtl~0                        ; yes                    ;
 ; memram:G17|ram~264                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~265                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~266                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~267                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~268                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~269                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~270                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~271                                   ; rtl~0                        ; yes                    ;
-; memram:G17|ram~80                                    ; rtl~1                        ; yes                    ;
-; memram:G17|ram~112                                   ; rtl~2                        ; yes                    ;
-; memram:G17|ram~64                                    ; rtl~3                        ; yes                    ;
-; memram:G17|ram~96                                    ; rtl~4                        ; yes                    ;
-; memram:G17|ram~208                                   ; rtl~5                        ; yes                    ;
-; memram:G17|ram~240                                   ; rtl~6                        ; yes                    ;
-; memram:G17|ram~192                                   ; rtl~7                        ; yes                    ;
-; memram:G17|ram~224                                   ; rtl~8                        ; yes                    ;
-; memram:G17|ram~81                                    ; rtl~1                        ; yes                    ;
-; Number of user-specified and inferred latches = 347  ;                              ;                        ;
+; Number of user-specified and inferred latches = 363  ;                              ;                        ;
 +------------------------------------------------------+------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -384,36 +391,23 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------+----------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                   ;
-+--------------------------+---------------------------+----------------------------------------+
-; Register name            ; Reason for Removal        ; Registers Removed due to This Register ;
-+--------------------------+---------------------------+----------------------------------------+
-; ShiftEsquerda:G9|AUX[0]  ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[0]              ;
-;                          ; due to stuck port data_in ;                                        ;
-; ShiftEsquerda:G9|AUX[1]  ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[1]              ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[0]           ; Stuck at GND              ; Qsll:G3|resshift[0]                    ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[1]           ; Stuck at GND              ; Qsll:G3|resshift[1]                    ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[2]           ; Stuck at GND              ; Qsll:G3|resshift[2]                    ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[4]           ; Stuck at GND              ; Qsll:G3|resshift[4]                    ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[5]           ; Stuck at GND              ; Qsll:G3|resshift[5]                    ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[10]          ; Stuck at GND              ; Qsll:G3|resshift[10]                   ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[11]          ; Stuck at GND              ; Qsll:G3|resshift[11]                   ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[12]          ; Stuck at GND              ; Qsll:G3|resshift[12]                   ;
-;                          ; due to stuck port data_in ;                                        ;
-; Qsll:G3|vet[13]          ; Stuck at GND              ; Qsll:G3|resshift[13]                   ;
-;                          ; due to stuck port data_in ;                                        ;
-; ShiftEsquerda:G9|AUX[10] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[10]             ;
-;                          ; due to stuck port data_in ;                                        ;
-+--------------------------+---------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++-------------------------+---------------------------+----------------------------------------------------------------------------------------+
+; Register name           ; Reason for Removal        ; Registers Removed due to This Register                                                 ;
++-------------------------+---------------------------+----------------------------------------------------------------------------------------+
+; Qsll:G3|vet[1]          ; Stuck at GND              ; Qsll:G3|resshift[1], Qsll:G3|vet[2], Qsll:G3|vet[4], Qsll:G3|vet[5], Qsll:G3|vet[10],  ;
+;                         ; due to stuck port data_in ; Qsll:G3|vet[11], Qsll:G3|vet[12], Qsll:G3|vet[13], Qsll:G3|resshift[13],               ;
+;                         ;                           ; Qsll:G3|resshift[12], Qsll:G3|resshift[11], Qsll:G3|resshift[10], Qsll:G3|resshift[5], ;
+;                         ;                           ; Qsll:G3|resshift[4], Qsll:G3|resshift[2], ShiftEsquerda:G9|AUX[10],                    ;
+;                         ;                           ; ShiftEsquerda:G9|SAIDA[10], OperacaoDaULA:G15|SAIDA[2]                                 ;
+; ShiftEsquerda:G9|AUX[0] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[0]                                                              ;
+;                         ; due to stuck port data_in ;                                                                                        ;
+; ShiftEsquerda:G9|AUX[1] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[1]                                                              ;
+;                         ; due to stuck port data_in ;                                                                                        ;
+; Qsll:G3|vet[0]          ; Stuck at GND              ; Qsll:G3|resshift[0]                                                                    ;
+;                         ; due to stuck port data_in ;                                                                                        ;
++-------------------------+---------------------------+----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -421,7 +415,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 60    ;
+; Total registers                              ; 47    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -438,10 +432,20 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|UnidadedeControle:G5|origalu[0] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DataPath|Multiplexador2x1:G6|SAIDA[2]    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|rd[0]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|funct[2]        ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|tipoi[0]        ;
 ; 32:1               ; 16 bits   ; 336 LEs       ; 64 LEs               ; 272 LEs                ; No         ; |DataPath|ULA:G16|Mux15                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "PC:G1|contsinc:G0" ;
++------+-------+----------+---------------------+
+; Port ; Type  ; Severity ; Details             ;
++------+-------+----------+---------------------+
+; j    ; Input ; Info     ; Stuck at VCC        ;
+; k    ; Input ; Info     ; Stuck at VCC        ;
++------+-------+----------+---------------------+
 
 
 +-----------------------------------------------------+
@@ -449,28 +453,28 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 60                          ;
-;     plain             ; 60                          ;
-; arriav_lcell_comb     ; 655                         ;
+; arriav_ff             ; 47                          ;
+;     plain             ; 47                          ;
+; arriav_lcell_comb     ; 675                         ;
 ;     arith             ; 45                          ;
 ;         1 data inputs ; 24                          ;
 ;         2 data inputs ; 21                          ;
 ;     extend            ; 64                          ;
 ;         7 data inputs ; 64                          ;
-;     normal            ; 530                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 46                          ;
-;         3 data inputs ; 356                         ;
+;     normal            ; 550                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 47                          ;
+;         3 data inputs ; 373                         ;
 ;         4 data inputs ; 8                           ;
 ;         5 data inputs ; 25                          ;
 ;         6 data inputs ; 91                          ;
 ;     shared            ; 16                          ;
 ;         2 data inputs ; 16                          ;
-; boundary_port         ; 178                         ;
+; boundary_port         ; 182                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.10                        ;
-; Average LUT depth     ; 3.82                        ;
+; Max LUT depth         ; 6.20                        ;
+; Average LUT depth     ; 3.69                        ;
 +-----------------------+-----------------------------+
 
 
@@ -479,7 +483,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -489,10 +493,16 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 30 18:52:32 2018
+    Info: Processing started: Fri Nov 30 22:29:30 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file registerjk.vhd
+    Info (12022): Found design unit 1: registerjk-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/registerjk.vhd Line: 10
+    Info (12023): Found entity 1: registerjk File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/registerjk.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file contsinc.vhd
+    Info (12022): Found design unit 1: contsinc-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/contsinc.vhd Line: 11
+    Info (12023): Found entity 1: contsinc File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/contsinc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ULA.vhd Line: 19
     Info (12023): Found entity 1: ULA File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ULA.vhd Line: 6
@@ -518,7 +528,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file bancore
     Info (12022): Found design unit 1: BancoRegistradores-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 19
     Info (12023): Found entity 1: BancoRegistradores File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 17
+    Info (12022): Found design unit 1: PC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 20
     Info (12023): Found entity 1: PC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somadorpc.vhd
     Info (12022): Found design unit 1: SomadorPC-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/SomadorPC.vhd Line: 13
@@ -533,7 +543,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file multipl
     Info (12022): Found design unit 1: Multiplexador2x1-Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 16
     Info (12023): Found entity 1: Multiplexador2x1 File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 55
+    Info (12022): Found design unit 1: DataPath-behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 61
     Info (12023): Found entity 1: DataPath File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador2x1_16bits.vhd
     Info (12022): Found design unit 1: Multiplexador2x1_16bits-Multiplexador2x1_16bits File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 16
@@ -542,12 +552,38 @@ Info (12021): Found 2 design units, including 1 entities, in source file operaca
     Info (12022): Found design unit 1: OperacaoDaULA-BEHAVIOR File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/OperacaoDaULA.vhd Line: 16
     Info (12023): Found entity 1: OperacaoDaULA File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/OperacaoDaULA.vhd Line: 6
 Info (12127): Elaborating entity "DataPath" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 311
-Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 312
-Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 313
-Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 314
+Info (12128): Elaborating entity "PC" for hierarchy "PC:G1" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 330
+Warning (10540): VHDL Signal Declaration warning at PC.vhd(30): used explicit default value for signal "aux1" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 30
+Warning (10540): VHDL Signal Declaration warning at PC.vhd(31): used explicit default value for signal "aux2" because signal was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at PC.vhd(46): signal "ativo" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at PC.vhd(47): signal "pin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 47
+Warning (10631): VHDL Process Statement warning at PC.vhd(44): inferring latch(es) for signal or variable "pout", which holds its previous value in one or more paths through the process File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at PC.vhd(51): inferring latch(es) for signal or variable "ativo", which holds its previous value in one or more paths through the process File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 51
+Info (10041): Inferred latch for "ativo" at PC.vhd(51) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 51
+Info (10041): Inferred latch for "pout[0]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[1]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[2]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[3]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[4]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[5]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[6]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[7]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[8]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[9]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[10]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[11]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[12]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[13]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[14]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (10041): Inferred latch for "pout[15]" at PC.vhd(44) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
+Info (12128): Elaborating entity "contsinc" for hierarchy "PC:G1|contsinc:G0" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 36
+Info (12128): Elaborating entity "registerjk" for hierarchy "PC:G1|contsinc:G0|registerjk:G0" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/contsinc.vhd Line: 28
+Info (12128): Elaborating entity "QAndBIT" for hierarchy "PC:G1|contsinc:G0|QAndBIT:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/contsinc.vhd Line: 32
+Info (12128): Elaborating entity "SomadorPC" for hierarchy "SomadorPC:G2" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 331
+Info (12128): Elaborating entity "Qsll" for hierarchy "Qsll:G3" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 332
+Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 333
 Warning (10873): Using initial value X (don't care) for net "ROM[7..65535]" at memoria_rom2.vhd(23) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/memoria_rom2.vhd Line: 23
-Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 316
+Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 335
 Warning (10631): VHDL Process Statement warning at UnidadedeControle.vhd(23): inferring latch(es) for signal or variable "regdest", which holds its previous value in one or more paths through the process File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
 Warning (10631): VHDL Process Statement warning at UnidadedeControle.vhd(23): inferring latch(es) for signal or variable "origalu", which holds its previous value in one or more paths through the process File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
 Warning (10631): VHDL Process Statement warning at UnidadedeControle.vhd(23): inferring latch(es) for signal or variable "memparareg", which holds its previous value in one or more paths through the process File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
@@ -569,13 +605,12 @@ Info (10041): Inferred latch for "origalu[1]" at UnidadedeControle.vhd(23) File:
 Info (10041): Inferred latch for "origalu[2]" at UnidadedeControle.vhd(23) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
 Info (10041): Inferred latch for "origalu[3]" at UnidadedeControle.vhd(23) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
 Info (10041): Inferred latch for "regdest" at UnidadedeControle.vhd(23) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
-Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 318
-Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 319
-Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G8" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 321
-Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G9" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 322
-Info (12128): Elaborating entity "Somadorde16bits" for hierarchy "Somadorde16bits:G10" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 323
-Info (12128): Elaborating entity "QAndBIT" for hierarchy "QAndBIT:G11" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 324
-Info (12128): Elaborating entity "Multiplexador2x1_16bits" for hierarchy "Multiplexador2x1_16bits:G12" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 325
+Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 337
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 338
+Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G8" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 340
+Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G9" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 341
+Info (12128): Elaborating entity "Somadorde16bits" for hierarchy "Somadorde16bits:G10" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 342
+Info (12128): Elaborating entity "Multiplexador2x1_16bits" for hierarchy "Multiplexador2x1_16bits:G12" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 344
 Warning (10631): VHDL Process Statement warning at Multiplexador2x1_16bits.vhd(18): inferring latch(es) for signal or variable "SAIDA", which holds its previous value in one or more paths through the process File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
 Info (10041): Inferred latch for "SAIDA[0]" at Multiplexador2x1_16bits.vhd(18) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
 Info (10041): Inferred latch for "SAIDA[1]" at Multiplexador2x1_16bits.vhd(18) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
@@ -593,11 +628,11 @@ Info (10041): Inferred latch for "SAIDA[12]" at Multiplexador2x1_16bits.vhd(18) 
 Info (10041): Inferred latch for "SAIDA[13]" at Multiplexador2x1_16bits.vhd(18) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
 Info (10041): Inferred latch for "SAIDA[14]" at Multiplexador2x1_16bits.vhd(18) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
 Info (10041): Inferred latch for "SAIDA[15]" at Multiplexador2x1_16bits.vhd(18) File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (12128): Elaborating entity "OperacaoDaULA" for hierarchy "OperacaoDaULA:G15" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 328
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:G16" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 329
+Info (12128): Elaborating entity "OperacaoDaULA" for hierarchy "OperacaoDaULA:G15" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 347
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:G16" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 348
 Warning (10542): VHDL Variable Declaration warning at ULA.vhd(26): used initial value expression for variable "Prod" because variable was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ULA.vhd Line: 26
 Warning (10542): VHDL Variable Declaration warning at ULA.vhd(27): used initial value expression for variable "NotMult" because variable was never assigned a value File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/ULA.vhd Line: 27
-Info (12128): Elaborating entity "memram" for hierarchy "memram:G17" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 330
+Info (12128): Elaborating entity "memram" for hierarchy "memram:G17" File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 349
 Warning (14026): LATCH primitive "BancoRegistradores:G7|Reg~0" is permanently enabled File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
 Warning (14026): LATCH primitive "BancoRegistradores:G7|Reg~1" is permanently enabled File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
 Warning (14026): LATCH primitive "BancoRegistradores:G7|Reg~2" is permanently enabled File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 22
@@ -671,7 +706,7 @@ Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
 Warning (13012): Latch UnidadedeControle:G5|regdest has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 9
     Warning (13013): Ports D and ENA on the latch are fed by the same signal Clock_Sistema File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 10
 Warning (13012): Latch UnidadedeControle:G5|origalu[0] has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:G1|pout[4] File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:G1|pout[4] File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/PC.vhd Line: 44
 Warning (13012): Latch UnidadedeControle:G5|origalu[1] has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
     Warning (13013): Ports D and ENA on the latch are fed by the same signal Clock_Sistema File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 10
 Warning (13012): Latch UnidadedeControle:G5|origalu[2] has unsafe behavior File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/UnidadedeControle.vhd Line: 23
@@ -871,18 +906,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Instruction_to_Jump_outWaveform[9]" is stuck at GND File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 27
     Warning (13410): Pin "Instruction_to_Jump_outWaveform[10]" is stuck at GND File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 27
     Warning (13410): Pin "Instruction_to_Jump_outWaveform[11]" is stuck at GND File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 27
-    Warning (13410): Pin "Flag_origialu_OUT[3]" is stuck at GND File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 41
+    Warning (13410): Pin "funcionou" is stuck at VCC File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 43
+    Warning (13410): Pin "Flag_origialu_OUT[3]" is stuck at GND File: C:/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 47
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 860 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 867 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 177 output pins
-    Info (21061): Implemented 682 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 282 warnings
-    Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Fri Nov 30 18:52:49 2018
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:32
+    Info (21059): Implemented 181 output pins
+    Info (21061): Implemented 685 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 289 warnings
+    Info: Peak virtual memory: 5258 megabytes
+    Info: Processing ended: Fri Nov 30 22:30:12 2018
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:00:56
 
 

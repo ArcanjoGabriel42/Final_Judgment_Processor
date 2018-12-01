@@ -180,6 +180,10 @@ Saida_adress_to_RAM_outWaveform[12] << ULA:G16.Saida_to_Dados[12]
 Saida_adress_to_RAM_outWaveform[13] << ULA:G16.Saida_to_Dados[13]
 Saida_adress_to_RAM_outWaveform[14] << ULA:G16.Saida_to_Dados[14]
 Saida_adress_to_RAM_outWaveform[15] << ULA:G16.Saida_to_Dados[15]
+saida_cont_sincz1 << PC:G1.saidacont1
+saida_cont_sincz2 << PC:G1.saidacont2
+saida_cont_sincz3 << PC:G1.saidacont3
+funcionou << PC:G1.tafunfando
 Flag_regdest_OUT << UnidadedeControle:G5.regdest
 Flag_origialu_OUT[0] << UnidadedeControle:G5.origalu[0]
 Flag_origialu_OUT[1] << UnidadedeControle:G5.origalu[1]
@@ -195,54 +199,97 @@ Flag_jump_OUT << UnidadedeControle:G5.jump
 
 
 |DataPath|PC:G1
-clk => pout[0]~reg0.CLK
-clk => pout[1]~reg0.CLK
-clk => pout[2]~reg0.CLK
-clk => pout[3]~reg0.CLK
-clk => pout[4]~reg0.CLK
-clk => pout[5]~reg0.CLK
-clk => pout[6]~reg0.CLK
-clk => pout[7]~reg0.CLK
-clk => pout[8]~reg0.CLK
-clk => pout[9]~reg0.CLK
-clk => pout[10]~reg0.CLK
-clk => pout[11]~reg0.CLK
-clk => pout[12]~reg0.CLK
-clk => pout[13]~reg0.CLK
-clk => pout[14]~reg0.CLK
-clk => pout[15]~reg0.CLK
-pin[0] => pout[0]~reg0.DATAIN
-pin[1] => pout[1]~reg0.DATAIN
-pin[2] => pout[2]~reg0.DATAIN
-pin[3] => pout[3]~reg0.DATAIN
-pin[4] => pout[4]~reg0.DATAIN
-pin[5] => pout[5]~reg0.DATAIN
-pin[6] => pout[6]~reg0.DATAIN
-pin[7] => pout[7]~reg0.DATAIN
-pin[8] => pout[8]~reg0.DATAIN
-pin[9] => pout[9]~reg0.DATAIN
-pin[10] => pout[10]~reg0.DATAIN
-pin[11] => pout[11]~reg0.DATAIN
-pin[12] => pout[12]~reg0.DATAIN
-pin[13] => pout[13]~reg0.DATAIN
-pin[14] => pout[14]~reg0.DATAIN
-pin[15] => pout[15]~reg0.DATAIN
-pout[0] <= pout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[1] <= pout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[2] <= pout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[3] <= pout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[4] <= pout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[5] <= pout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[6] <= pout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[7] <= pout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[8] <= pout[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[9] <= pout[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[10] <= pout[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[11] <= pout[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[12] <= pout[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[13] <= pout[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[14] <= pout[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pout[15] <= pout[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => contsinc:G0.clock
+clk => pout[0]$latch.LATCH_ENABLE
+clk => pout[1]$latch.LATCH_ENABLE
+clk => pout[2]$latch.LATCH_ENABLE
+clk => pout[3]$latch.LATCH_ENABLE
+clk => pout[4]$latch.LATCH_ENABLE
+clk => pout[5]$latch.LATCH_ENABLE
+clk => pout[6]$latch.LATCH_ENABLE
+clk => pout[7]$latch.LATCH_ENABLE
+clk => pout[8]$latch.LATCH_ENABLE
+clk => pout[9]$latch.LATCH_ENABLE
+clk => pout[10]$latch.LATCH_ENABLE
+clk => pout[11]$latch.LATCH_ENABLE
+clk => pout[12]$latch.LATCH_ENABLE
+clk => pout[13]$latch.LATCH_ENABLE
+clk => pout[14]$latch.LATCH_ENABLE
+clk => pout[15]$latch.LATCH_ENABLE
+pin[0] => pout[0]$latch.DATAIN
+pin[1] => pout[1]$latch.DATAIN
+pin[2] => pout[2]$latch.DATAIN
+pin[3] => pout[3]$latch.DATAIN
+pin[4] => pout[4]$latch.DATAIN
+pin[5] => pout[5]$latch.DATAIN
+pin[6] => pout[6]$latch.DATAIN
+pin[7] => pout[7]$latch.DATAIN
+pin[8] => pout[8]$latch.DATAIN
+pin[9] => pout[9]$latch.DATAIN
+pin[10] => pout[10]$latch.DATAIN
+pin[11] => pout[11]$latch.DATAIN
+pin[12] => pout[12]$latch.DATAIN
+pin[13] => pout[13]$latch.DATAIN
+pin[14] => pout[14]$latch.DATAIN
+pin[15] => pout[15]$latch.DATAIN
+pout[0] <= pout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= pout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= pout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= pout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[4] <= pout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[5] <= pout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[6] <= pout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[7] <= pout[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[8] <= pout[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[9] <= pout[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[10] <= pout[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[11] <= pout[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[12] <= pout[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[13] <= pout[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[14] <= pout[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pout[15] <= pout[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saidacont1 <= contsinc:G0.z1
+saidacont2 <= contsinc:G0.z2
+saidacont3 <= contsinc:G0.z3
+tafunfando <= <VCC>
+
+
+|DataPath|PC:G1|contsinc:G0
+j => registerjk:G0.ent1
+k => registerjk:G0.ent2
+clock => registerjk:G0.relogio
+clock => registerjk:G1.relogio
+clock => registerjk:G3.relogio
+z1 <= registerjk:G0.saida
+z2 <= registerjk:G1.saida
+z3 <= registerjk:G3.saida
+
+
+|DataPath|PC:G1|contsinc:G0|registerjk:G0
+ent1 => Mux0.IN4
+ent2 => Mux0.IN5
+relogio => state.CLK
+saida <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|PC:G1|contsinc:G0|registerjk:G1
+ent1 => Mux0.IN4
+ent2 => Mux0.IN5
+relogio => state.CLK
+saida <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|PC:G1|contsinc:G0|QAndBIT:G2
+E1 => S1.IN0
+E2 => S1.IN1
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|PC:G1|contsinc:G0|registerjk:G3
+ent1 => Mux0.IN4
+ent2 => Mux0.IN5
+relogio => state.CLK
+saida <= state.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DataPath|SomadorPC:G2
