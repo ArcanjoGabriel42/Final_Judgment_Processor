@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Fri Nov 30 12:16:48 2018
+Fri Nov 30 21:22:45 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 30 12:16:48 2018       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 30 21:22:45 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; ULA                                         ;
 ; Top-level Entity Name           ; ULA                                         ;
@@ -166,40 +166,40 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                        ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
-; ULA.vhd                          ; yes             ; User VHDL File  ; E:/Documentos/ULA/ULA.vhd    ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
+; ULA.vhd                          ; yes             ; User VHDL File  ; E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA(Gabriel BEQ BNE)/ULA.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                         ;
-+---------------------------------------------+-----------------------+
-; Resource                                    ; Usage                 ;
-+---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 56                    ;
-;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 94                    ;
-;     -- 7 input functions                    ; 0                     ;
-;     -- 6 input functions                    ; 18                    ;
-;     -- 5 input functions                    ; 20                    ;
-;     -- 4 input functions                    ; 13                    ;
-;     -- <=3 input functions                  ; 43                    ;
-;                                             ;                       ;
-; Dedicated logic registers                   ; 0                     ;
-;                                             ;                       ;
-; I/O pins                                    ; 72                    ;
-;                                             ;                       ;
-; Total DSP Blocks                            ; 0                     ;
-;                                             ;                       ;
-; Maximum fan-out node                        ; Controle_ULA[0]~input ;
-; Maximum fan-out                             ; 27                    ;
-; Total fan-out                               ; 483                   ;
-; Average fan-out                             ; 2.03                  ;
-+---------------------------------------------+-----------------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; 171               ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 300               ;
+;     -- 7 input functions                    ; 14                ;
+;     -- 6 input functions                    ; 27                ;
+;     -- 5 input functions                    ; 145               ;
+;     -- 4 input functions                    ; 21                ;
+;     -- <=3 input functions                  ; 93                ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 72                ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; EntradaB[5]~input ;
+; Maximum fan-out                             ; 55                ;
+; Total fan-out                               ; 1504              ;
+; Average fan-out                             ; 3.39              ;
++---------------------------------------------+-------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +207,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |ULA                       ; 94 (94)             ; 0 (0)                     ; 0                 ; 0          ; 72   ; 0            ; |ULA                ; ULA         ; work         ;
+; |ULA                       ; 300 (300)           ; 0 (0)                     ; 0                 ; 0          ; 72   ; 0            ; |ULA                ; ULA         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,8 +232,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 128:1              ; 9 bits    ; 765 LEs       ; 63 LEs               ; 702 LEs                ; No         ; |ULA|Mux8                  ;
-; 129:1              ; 7 bits    ; 602 LEs       ; 56 LEs               ; 546 LEs                ; No         ; |ULA|Mux15                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ULA|Prod                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ULA|Prod                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ULA|Prod                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ULA|Prod                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ULA|Prod                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ULA|Prod                  ;
+; 67:1               ; 2 bits    ; 88 LEs        ; 14 LEs               ; 74 LEs                 ; No         ; |ULA|Mux0                  ;
+; 130:1              ; 7 bits    ; 602 LEs       ; 56 LEs               ; 546 LEs                ; No         ; |ULA|Mux7                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -242,22 +248,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 94                          ;
-;     arith             ; 23                          ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 17                          ;
-;     normal            ; 55                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 13                          ;
-;         5 data inputs ; 20                          ;
-;         6 data inputs ; 18                          ;
+; arriav_lcell_comb     ; 300                         ;
+;     arith             ; 143                         ;
+;         0 data inputs ; 7                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 16                          ;
+;         5 data inputs ; 96                          ;
+;     extend            ; 14                          ;
+;         7 data inputs ; 14                          ;
+;     normal            ; 127                         ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 21                          ;
+;         5 data inputs ; 49                          ;
+;         6 data inputs ; 27                          ;
 ;     shared            ; 16                          ;
 ;         2 data inputs ; 16                          ;
 ; boundary_port         ; 72                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.30                        ;
-; Average LUT depth     ; 3.39                        ;
+; Max LUT depth         ; 17.40                       ;
+; Average LUT depth     ; 12.77                       ;
 +-----------------------+-----------------------------+
 
 
@@ -276,27 +287,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 30 12:16:25 2018
+    Info: Processing started: Fri Nov 30 21:22:20 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-behavior File: E:/Documentos/ULA/ULA.vhd Line: 19
-    Info (12023): Found entity 1: ULA File: E:/Documentos/ULA/ULA.vhd Line: 6
+    Info (12022): Found design unit 1: ULA-behavior File: E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA(Gabriel BEQ BNE)/ULA.vhd Line: 19
+    Info (12023): Found entity 1: ULA File: E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA(Gabriel BEQ BNE)/ULA.vhd Line: 6
 Info (12127): Elaborating entity "ULA" for the top level hierarchy
-Warning (10542): VHDL Variable Declaration warning at ULA.vhd(26): used initial value expression for variable "Prod" because variable was never assigned a value File: E:/Documentos/ULA/ULA.vhd Line: 26
-Warning (10542): VHDL Variable Declaration warning at ULA.vhd(27): used initial value expression for variable "NotMult" because variable was never assigned a value File: E:/Documentos/ULA/ULA.vhd Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 166 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 372 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 39 input pins
     Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 94 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Fri Nov 30 12:16:48 2018
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:48
+    Info (21061): Implemented 300 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Fri Nov 30 21:22:45 2018
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:51
 
 

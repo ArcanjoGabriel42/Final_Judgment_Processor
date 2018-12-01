@@ -140,6 +140,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "EntradaB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EntradaA[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Controle_ULA[0]",
 					"strict" : false
 				},
@@ -152,6 +160,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Controle_ULA[6]",
+					"strict" : false
+				},
+				{
 					"name" : "Controle_ULA[3]",
 					"strict" : false
 				},
@@ -160,15 +172,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Controle_ULA[6]",
-					"strict" : false
-				},
-				{
-					"name" : "EntradaB[0]",
-					"strict" : false
-				},
-				{
-					"name" : "EntradaA[0]",
+					"name" : "EntradaB[1]",
 					"strict" : false
 				},
 				{
@@ -176,7 +180,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[1]",
+					"name" : "EntradaB[2]",
 					"strict" : false
 				},
 				{
@@ -184,7 +188,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[2]",
+					"name" : "EntradaB[3]",
 					"strict" : false
 				},
 				{
@@ -192,7 +196,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[3]",
+					"name" : "EntradaB[4]",
 					"strict" : false
 				},
 				{
@@ -200,7 +204,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[4]",
+					"name" : "EntradaB[5]",
 					"strict" : false
 				},
 				{
@@ -208,7 +212,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[5]",
+					"name" : "EntradaB[6]",
 					"strict" : false
 				},
 				{
@@ -216,7 +220,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[6]",
+					"name" : "EntradaB[7]",
 					"strict" : false
 				},
 				{
@@ -224,7 +228,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[7]",
+					"name" : "EntradaB[8]",
 					"strict" : false
 				},
 				{
@@ -232,7 +236,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[8]",
+					"name" : "EntradaB[9]",
 					"strict" : false
 				},
 				{
@@ -240,7 +244,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[9]",
+					"name" : "EntradaB[10]",
 					"strict" : false
 				},
 				{
@@ -248,7 +252,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[10]",
+					"name" : "EntradaB[11]",
 					"strict" : false
 				},
 				{
@@ -256,7 +260,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[11]",
+					"name" : "EntradaB[12]",
 					"strict" : false
 				},
 				{
@@ -264,15 +268,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "EntradaB[12]",
+					"name" : "EntradaB[13]",
 					"strict" : false
 				},
 				{
 					"name" : "EntradaA[13]",
-					"strict" : false
-				},
-				{
-					"name" : "EntradaB[13]",
 					"strict" : false
 				},
 				{
