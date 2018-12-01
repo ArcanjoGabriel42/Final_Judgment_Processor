@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/30/2018 12:18:16"
+-- Generated on "11/30/2018 21:27:35"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ULA
 -- 
@@ -69,7 +69,7 @@ END PROCESS t_prcs_Controle_ULA_6;
 -- Controle_ULA[5]
 t_prcs_Controle_ULA_5: PROCESS
 BEGIN
-	Controle_ULA(5) <= '1';
+	Controle_ULA(5) <= '0';
 WAIT;
 END PROCESS t_prcs_Controle_ULA_5;
 -- Controle_ULA[4]
@@ -93,7 +93,7 @@ END PROCESS t_prcs_Controle_ULA_2;
 -- Controle_ULA[1]
 t_prcs_Controle_ULA_1: PROCESS
 BEGIN
-	Controle_ULA(1) <= '0';
+	Controle_ULA(1) <= '1';
 WAIT;
 END PROCESS t_prcs_Controle_ULA_1;
 -- Controle_ULA[0]
@@ -165,7 +165,7 @@ END PROCESS t_prcs_EntradaA_6;
 -- EntradaA[5]
 t_prcs_EntradaA_5: PROCESS
 BEGIN
-	EntradaA(5) <= '0';
+	EntradaA(5) <= '1';
 WAIT;
 END PROCESS t_prcs_EntradaA_5;
 -- EntradaA[4]
@@ -177,7 +177,7 @@ END PROCESS t_prcs_EntradaA_4;
 -- EntradaA[3]
 t_prcs_EntradaA_3: PROCESS
 BEGIN
-	EntradaA(3) <= '0';
+	EntradaA(3) <= '1';
 WAIT;
 END PROCESS t_prcs_EntradaA_3;
 -- EntradaA[2]
@@ -285,7 +285,7 @@ END PROCESS t_prcs_EntradaB_2;
 -- EntradaB[1]
 t_prcs_EntradaB_1: PROCESS
 BEGIN
-	EntradaB(1) <= '0';
+	EntradaB(1) <= '1';
 WAIT;
 END PROCESS t_prcs_EntradaB_1;
 -- EntradaB[0]

@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA -c ULA --vector_source="E:/Documentos/ULA/Waveform.vwf" --testbench_file="E:/Documentos/ULA/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA -c ULA --vector_source="E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/Waveform.vwf" --testbench_file="E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,18 +25,18 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Nov 30 12:18:14 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA -c ULA --vector_source=E:/Documentos/ULA/Waveform.vwf --testbench_file=E:/Documentos/ULA/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Fri Nov 30 21:27:33 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA -c ULA --vector_source="E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/Waveform.vwf" --testbench_file="E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/Waveform.vwf.vht"
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "ULA"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-ng (201005): Ignoring output pin "Saida_to_Mux[11]" in vector source file when writing test bench files
+put pin "Saida_to_Mux[12]" in vector source file when writing test bench files
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Documentos/ULA/simulation/qsim/" ULA -c ULA
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/" ULA -c ULA
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -54,22 +54,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Nov 30 12:18:17 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Documentos/ULA/simulation/qsim/ ULA -c ULA
+    Info: Processing started: Fri Nov 30 21:27:36 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/" ULA -c ULA
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "ULA"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ULA.vho in folder "E:/Documentos/ULA/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ULA.vho in folder "E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4722 megabytes
-    Info: Processing ended: Fri Nov 30 12:18:19 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4733 megabytes
+    Info: Processing ended: Fri Nov 30 21:27:39 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-E:/Documentos/ULA/simulation/qsim/ULA.do generated.
+E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/ULA.do generated.
 
 Completed successfully. 
 
@@ -81,19 +81,18 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do ULA.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:18:20 on Nov 30,2018
+# Start time: 21:27:42 on Nov 30,2018
 # vcom -work work ULA.vho 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_lnsim_components
+
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
@@ -101,11 +100,11 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity ULA
 # -- Compiling architecture structure of ULA
 
-# End time: 12:18:21 on Nov 30,2018, Elapsed time: 0:00:01
+# End time: 21:27:42 on Nov 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:18:21 on Nov 30,2018
+# Start time: 21:27:42 on Nov 30,2018
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +112,11 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity ULA_vhd_vec_tst
 # -- Compiling architecture ULA_arch of ULA_vhd_vec_tst
 
-# End time: 12:18:21 on Nov 30,2018, Elapsed time: 0:00:00
+# End time: 21:27:43 on Nov 30,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ULA_vhd_vec_tst 
-# Start time: 12:18:21 on Nov 30,2018
+# Start time: 21:27:43 on Nov 30,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -132,24 +131,24 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 26591 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 69573 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#32
 
-# End time: 12:18:22 on Nov 30,2018, Elapsed time: 0:00:01
+# End time: 21:27:44 on Nov 30,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading E:/Documentos/ULA/Waveform.vwf...
+Reading E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/Waveform.vwf...
 
-Reading E:/Documentos/ULA/simulation/qsim/ULA.msim.vcd...
+Reading E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/ULA.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to E:/Documentos/ULA/simulation/qsim/ULA_20181130121822.sim.vwf
+Writing the resulting VWF to E:/Documentos/Final Judgment/Final_Judgment_Processor/ULA/simulation/qsim/ULA_20181130212744.sim.vwf
 
 Finished VCD to VWF conversion.
 
