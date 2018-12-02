@@ -324,6 +324,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "out_Saida_OperacaoDaULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[5]",
+					"strict" : false
+				},
+				{
 					"name" : "Data_to_writeRegister_outWaveform[0]",
 					"strict" : false
 				},

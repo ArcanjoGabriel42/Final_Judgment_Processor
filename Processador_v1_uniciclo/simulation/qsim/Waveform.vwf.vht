@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/30/2018 22:30:23"
+-- Generated on "12/02/2018 16:18:42"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -53,6 +53,7 @@ SIGNAL Instruction_to_multiplexador_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL Instruction_to_register1_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL Instruction_to_register2_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL multiplexador_to_writeRegister_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL out_Saida_OperacaoDaULA : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL Saida_adress_to_RAM_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL saida_cont_sincz1 : STD_LOGIC;
 SIGNAL saida_cont_sincz2 : STD_LOGIC;
@@ -85,6 +86,7 @@ COMPONENT DataPath
 	Instruction_to_register1_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	Instruction_to_register2_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	multiplexador_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	out_Saida_OperacaoDaULA : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
 	Saida_adress_to_RAM_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	saida_cont_sincz1 : BUFFER STD_LOGIC;
 	saida_cont_sincz2 : BUFFER STD_LOGIC;
@@ -121,6 +123,7 @@ BEGIN
 	Instruction_to_register1_outWaveform => Instruction_to_register1_outWaveform,
 	Instruction_to_register2_outWaveform => Instruction_to_register2_outWaveform,
 	multiplexador_to_writeRegister_outWaveform => multiplexador_to_writeRegister_outWaveform,
+	out_Saida_OperacaoDaULA => out_Saida_OperacaoDaULA,
 	Saida_adress_to_RAM_outWaveform => Saida_adress_to_RAM_outWaveform,
 	saida_cont_sincz1 => saida_cont_sincz1,
 	saida_cont_sincz2 => saida_cont_sincz2,
@@ -137,14 +140,7 @@ BEGIN
 t_prcs_Clock_Sistema: PROCESS
 BEGIN
 	Clock_Sistema <= '1';
-	WAIT FOR 20000 ps;
-	FOR i IN 1 TO 24
-	LOOP
-		Clock_Sistema <= '0';
-		WAIT FOR 20000 ps;
-		Clock_Sistema <= '1';
-		WAIT FOR 20000 ps;
-	END LOOP;
+	WAIT FOR 530000 ps;
 	Clock_Sistema <= '0';
 WAIT;
 END PROCESS t_prcs_Clock_Sistema;

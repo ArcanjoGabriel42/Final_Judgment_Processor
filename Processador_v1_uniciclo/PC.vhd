@@ -41,7 +41,7 @@ BEGIN
 	tafunfando <= ativo;
 	aux <= a1 & a2 & a3;
 	
-	PROCESS(clk)
+	PROCESS(clk, ativo)
 		BEGIN
 			IF (clk = '1') and (ativo = '1') THEN
 				pout <= pin;
