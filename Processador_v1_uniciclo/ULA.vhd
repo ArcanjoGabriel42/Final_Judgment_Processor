@@ -18,47 +18,44 @@ End ULA;
 
 Architecture behavior of ULA is
 
-	function Booth(EntradaA,EntradaB: std_logic_vector(7 downto 0)) return std_logic_vector is
+	function Booth(Entrada_1,Entrada_2: std_logic_vector(7 downto 0)) return std_logic_vector is
 	
 	variable C : 		 std_logic;
-	variable LeftPart: std_logic_vector(7  downto 0);
-	variable Mult:     std_logic_vector(7  downto 0) := EntradaA; 
-	variable Prod:     std_logic_vector(7  downto 0) := EntradaB;
-	variable NotMult:	 std_logic_vector(7  downto 0) := (Not EntradaA) + "1";
-	variable Shifter:  std_logic_vector(15 downto 0);
-	variable Aux:      std_logic_vector(15 downto 0);
+	variable Mult:     std_logic_vector(7  downto 0);
+	variable Prod:     std_logic_vector(15  downto 0);
 	
 	begin
-	
-	C:= 			'0';
-	
-	LeftPart:= 	"00000000";
-	
-	for i in 0 to 7 loop
-	
-		if    ((Prod(0) = '0') and (C = '1')) then
 		
-			LeftPart := LeftPart + Mult;
+		Mult    := Entrada_1;
+		
+		Prod(15 downto 8)  := (others =>'0');
+		
+		Prod(7 downto 0)  := Entrada_2;
+		
+		C := '0';
+		
+		for i in 7 downto 0 Loop
+	
+	
+			if   (Prod(0) = '0' and C = '1') then
+				
+				C:= Prod(0);
+				
+				Prod(15 downto 8):= Prod(15 downto 8) + Mult;
+				
+			elsif (Prod(0) = '1' and C = '0') then
+				
+				C := Prod(0);
+				
+				Prod(15 downto 8):= Prod(15 downto 8) - Mult;
 			
-		elsif ((Prod(0) = '1') and (C = '0')) then
-		
-			LeftPart := LeftPart + NotMult;
-		
-		End if;
-		
-		C        := Prod(0);
-		
-		Aux      := LeftPart & Mult;
-		
-		Shifter  := "0" & Aux (15 downto 1);
-		
-		LeftPart := Shifter  (15 downto 8);
-		
-		Mult     := Shifter  (7  downto 0);
-		
-	end Loop;
+			End if;
+			
+			Prod(14 downto 0):= Prod(15 downto 1);
+			
+		End Loop;
 	
-	return Shifter;
+	return Prod;
 	
 	End Booth;
 	
@@ -66,7 +63,7 @@ Architecture behavior of ULA is
 	
 	begin
 						 
-	process(Controle_ULA, EntradaA, EntradaB)
+	process(Controle_ULA,EntradaA, EntradaB)
 		begin
 			 case Controle_ULA is
 				  when "0000000" => Splitter <= EntradaA  +   EntradaB;
@@ -76,8 +73,14 @@ Architecture behavior of ULA is
 				  when "0000100" => Splitter <= EntradaA  or EntradaB ;
 				  when others    => Splitter <= "0000000000000000";
 			 end case;
+			 
+			 If (Controle_ULA(6 downto 3) = "0001" or Controle_ULA(6 downto 3) = "0010") then 
+			 
+				Splitter <= EntradaA + EntradaB;
+				
+			End If;
+				
 		end process;
-		
 		
 		ZeroULA <= 
 			'1' when (Controle_ULA(6 downto 3) = "0011") and ((EntradaA - EntradaB) = "0000000000000000") else

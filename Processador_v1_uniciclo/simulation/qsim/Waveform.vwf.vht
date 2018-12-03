@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/30/2018 22:30:23"
+-- Generated on "12/03/2018 16:53:15"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -44,7 +44,6 @@ SIGNAL Flag_lemem_OUT : STD_LOGIC;
 SIGNAL Flag_memparareg_OUT : STD_LOGIC;
 SIGNAL Flag_origialu_OUT : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL Flag_regdest_OUT : STD_LOGIC;
-SIGNAL funcionou : STD_LOGIC;
 SIGNAL Instruction_to_Control_outWaveform : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL Instruction_to_controlULA_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL Instruction_to_extensorDeSinal_outWaveform : STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -53,10 +52,8 @@ SIGNAL Instruction_to_multiplexador_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL Instruction_to_register1_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL Instruction_to_register2_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL multiplexador_to_writeRegister_outWaveform : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL out_Saida_OperacaoDaULA : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL Saida_adress_to_RAM_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL saida_cont_sincz1 : STD_LOGIC;
-SIGNAL saida_cont_sincz2 : STD_LOGIC;
-SIGNAL saida_cont_sincz3 : STD_LOGIC;
 SIGNAL Saida_mult_to_mult_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL Saida_to_PC_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL SaidaPc_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -76,7 +73,6 @@ COMPONENT DataPath
 	Flag_memparareg_OUT : BUFFER STD_LOGIC;
 	Flag_origialu_OUT : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
 	Flag_regdest_OUT : BUFFER STD_LOGIC;
-	funcionou : BUFFER STD_LOGIC;
 	Instruction_to_Control_outWaveform : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
 	Instruction_to_controlULA_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	Instruction_to_extensorDeSinal_outWaveform : BUFFER STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -85,10 +81,8 @@ COMPONENT DataPath
 	Instruction_to_register1_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	Instruction_to_register2_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	multiplexador_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	out_Saida_OperacaoDaULA : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
 	Saida_adress_to_RAM_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	saida_cont_sincz1 : BUFFER STD_LOGIC;
-	saida_cont_sincz2 : BUFFER STD_LOGIC;
-	saida_cont_sincz3 : BUFFER STD_LOGIC;
 	Saida_mult_to_mult_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	Saida_to_PC_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	SaidaPc_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -112,7 +106,6 @@ BEGIN
 	Flag_memparareg_OUT => Flag_memparareg_OUT,
 	Flag_origialu_OUT => Flag_origialu_OUT,
 	Flag_regdest_OUT => Flag_regdest_OUT,
-	funcionou => funcionou,
 	Instruction_to_Control_outWaveform => Instruction_to_Control_outWaveform,
 	Instruction_to_controlULA_outWaveform => Instruction_to_controlULA_outWaveform,
 	Instruction_to_extensorDeSinal_outWaveform => Instruction_to_extensorDeSinal_outWaveform,
@@ -121,10 +114,8 @@ BEGIN
 	Instruction_to_register1_outWaveform => Instruction_to_register1_outWaveform,
 	Instruction_to_register2_outWaveform => Instruction_to_register2_outWaveform,
 	multiplexador_to_writeRegister_outWaveform => multiplexador_to_writeRegister_outWaveform,
+	out_Saida_OperacaoDaULA => out_Saida_OperacaoDaULA,
 	Saida_adress_to_RAM_outWaveform => Saida_adress_to_RAM_outWaveform,
-	saida_cont_sincz1 => saida_cont_sincz1,
-	saida_cont_sincz2 => saida_cont_sincz2,
-	saida_cont_sincz3 => saida_cont_sincz3,
 	Saida_mult_to_mult_outWaveform => Saida_mult_to_mult_outWaveform,
 	Saida_to_PC_outWaveform => Saida_to_PC_outWaveform,
 	SaidaPc_outWaveform => SaidaPc_outWaveform,
@@ -137,15 +128,14 @@ BEGIN
 t_prcs_Clock_Sistema: PROCESS
 BEGIN
 	Clock_Sistema <= '1';
-	WAIT FOR 20000 ps;
-	FOR i IN 1 TO 24
+	WAIT FOR 200000 ps;
+	FOR i IN 1 TO 2
 	LOOP
 		Clock_Sistema <= '0';
-		WAIT FOR 20000 ps;
+		WAIT FOR 200000 ps;
 		Clock_Sistema <= '1';
-		WAIT FOR 20000 ps;
+		WAIT FOR 200000 ps;
 	END LOOP;
-	Clock_Sistema <= '0';
 WAIT;
 END PROCESS t_prcs_Clock_Sistema;
 END DataPath_arch;

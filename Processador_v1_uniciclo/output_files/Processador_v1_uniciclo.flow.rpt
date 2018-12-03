@@ -1,5 +1,5 @@
 Flow report for Processador_v1_uniciclo
-Fri Nov 30 22:30:26 2018
+Mon Dec 03 16:53:17 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 30 22:30:26 2018       ;
+; Flow Status                     ; Successful - Mon Dec 03 16:53:17 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
@@ -48,8 +48,8 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 47                                          ;
-; Total pins                      ; 182                                         ;
+; Total registers                 ; 54                                          ;
+; Total pins                      ; 185                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 11/30/2018 22:29:31     ;
+; Start date & time ; 12/03/2018 16:48:46     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; Processador_v1_uniciclo ;
 +-------------------+-------------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value           ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 132098961927148.154363137001268        ; --                      ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 132098961924332.154387012510832        ; --                      ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                      ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                  ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --                      ; --          ; eda_simulation ;
@@ -99,10 +99,14 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:41     ; 1.0                     ; 5258 MB             ; 00:00:55                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4734 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4739 MB             ; 00:00:02                           ;
-; Total                ; 00:00:44     ; --                      ; --                  ; 00:00:58                           ;
+; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4950 MB             ; 00:00:41                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4737 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4742 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4738 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4742 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4738 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4742 MB             ; 00:00:02                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,9 +115,13 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-8JNJVRF  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-8JNJVRF  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-8JNJVRF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4V1VJV9  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -121,6 +129,10 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
 

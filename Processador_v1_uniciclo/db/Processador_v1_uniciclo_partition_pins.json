@@ -292,6 +292,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Instruction_to_Control_outWaveform[2]",
+					"strict" : false
+				},
+				{
 					"name" : "Instruction_to_register1_outWaveform[0]",
 					"strict" : false
 				},
@@ -304,11 +308,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "Instruction_to_register2_outWaveform[1]",
+					"strict" : false
+				},
+				{
 					"name" : "Instruction_to_controlULA_outWaveform[0]",
 					"strict" : false
 				},
 				{
+					"name" : "Instruction_to_controlULA_outWaveform[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_controlULA_outWaveform[2]",
+					"strict" : false
+				},
+				{
 					"name" : "Instruction_to_extensorDeSinal_outWaveform[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[1]",
 					"strict" : false
 				},
 				{
@@ -321,6 +341,54 @@
 				},
 				{
 					"name" : "Instruction_to_extensorDeSinal_outWaveform[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump_outWaveform[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump_outWaveform[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump_outWaveform[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump_outWaveform[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump_outWaveform[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Jump_outWaveform[11]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_Saida_OperacaoDaULA[5]",
 					"strict" : false
 				},
 				{
@@ -577,18 +645,6 @@
 				},
 				{
 					"name" : "Saida_adress_to_RAM_outWaveform[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_cont_sincz1",
-					"strict" : false
-				},
-				{
-					"name" : "saida_cont_sincz2",
-					"strict" : false
-				},
-				{
-					"name" : "saida_cont_sincz3",
 					"strict" : false
 				},
 				{
