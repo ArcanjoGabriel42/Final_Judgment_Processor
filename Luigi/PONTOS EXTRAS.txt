@@ -1,0 +1,7 @@
+1º ponto extra: Little Endian e Big Endian
+2º ponto extra: Fatorial
+3º ponto extra: Arm, MIPS, Intel: vantagens, diferenças e qual é o melhor
+4º ponto extra: algoritmo de Booth
+Para aula de 11/10/2018: uma lauda sobre Spectre
+Para aula de 18/10/2018: descreva em uma lauda com exemplos descreva porque a estrutura goto não é uma boa prática de programação, demonstre qual as vantagens dele.
+Da aula 13/11/2018: Funcionamento do RAID 10, funcionamento da escrita e leitura do Blu-Ray
