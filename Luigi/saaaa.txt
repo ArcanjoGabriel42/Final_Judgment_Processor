@@ -1,0 +1,5 @@
+listaInstrucoes(0) := "0000011011000001";-- SUB R3,R0,R1
+	listaInstrucoes(1) := "0100000011000000";-- BNE R0,R3,0
+	listaInstrucoes(2) := "0010100011000000";-- STORE R3,R4(0)
+	listaInstrucoes(3) := "0001100010000000";-- LOAD R2,R4(0)
+	listaInstrucoes(4) := "0000011000001010";-- Mult R3,R0,R3

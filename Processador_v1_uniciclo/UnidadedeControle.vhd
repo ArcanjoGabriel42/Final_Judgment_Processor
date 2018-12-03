@@ -4,7 +4,7 @@ USE ieee.std_logic_1164.all;
 ENTITY UnidadedeControle IS
 PORT
 	(
-		Clock      : in  std_logic;
+		--Clock      : in  std_logic;
 		entrada    : in  std_logic_vector (3 DOWNTO 0);
 		regdest    : out std_logic;
 		origalu    : out std_logic_vector (3 DOWNTO 0);
@@ -20,10 +20,13 @@ PORT
 END UnidadedeControle;
 ARCHITECTURE behavior OF UnidadedeControle  IS
 BEGIN
-operacoes: PROCESS (entrada,Clock)
+--operacoes: PROCESS (entrada,Clock)
+operacoes: PROCESS (entrada)
+variable recv_op : std_logic_vector(3 downto 0);
 	BEGIN
-		if(Clock = '1') then
-				case entrada is
+		--if(Clock'event and Clock = '1') then
+		recv_op := entrada;
+				case recv_op is
 					WHEN "0000" => --instrução tipo r
 						regdest <= '1';
 						origalu <= "0000";
@@ -35,62 +38,7 @@ operacoes: PROCESS (entrada,Clock)
 						aluSRC <= '0';
 						jump <= '0';
 					
-				   when "0001" => --instrução load
-						regdest <= '0';
-						origalu <= "0001";
-						memparareg <= '0';
-						escrevereg <= '1';
-						lemem <= '1';
-						escrevemem <= '0';
-						branch <= '0';
-						aluSRC <= '1';
-						jump <= '0';
-					
-					when "0010" => --instrução store
-						regdest <= '0';
-						origalu <= "0010";
-						memparareg <= '0';
-						escrevereg <= '0';
-						lemem <= '0';
-						escrevemem <= '1';
-						branch <= '0';
-						aluSRC <= '1';
-						jump <= '0';
-					
-					when "0101" => --instrução jump
-						regdest <= '0';
-						origalu <= "0101";
-						memparareg <= '0';
-						escrevereg <= '0';
-						lemem <= '0';
-						escrevemem <= '0';
-						branch <= '1';
-						aluSRC <= '0';
-						jump <= '1';
-					
-					when "0011" => --instrução BEQ
-						regdest <= '0';
-						origalu <= "0011";
-						memparareg <= '0';
-						escrevereg <= '0';
-						lemem <= '0';
-						escrevemem <= '0';
-						branch <= '1';
-						aluSRC <= '0';
-						jump <= '0';
-					
-				
-					when "0100" => --instrução BNQ
-						regdest <= '0';
-						origalu <= "0100";
-						memparareg <= '0';
-						escrevereg <= '0';
-						lemem <= '0';
-						escrevemem <= '0';
-						branch <= '1';
-						aluSRC <= '0';
-						jump <= '0';
-					when others =>
+				  when others =>
 						regdest <= '0';
 						origalu <= "1010";
 						memparareg <= '0';
@@ -113,6 +61,6 @@ operacoes: PROCESS (entrada,Clock)
 --					jump <= 'Z';
 --					
 				END case;
-		END IF;
+		--END IF;
 	END PROCESS operacoes;		
 END behavior;
