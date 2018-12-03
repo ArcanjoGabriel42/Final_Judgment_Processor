@@ -18,7 +18,11 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
+<<<<<<< Updated upstream
 -- Generated on "12/03/2018 13:56:41"
+=======
+-- Generated on "12/02/2018 22:10:41"
+>>>>>>> Stashed changes
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
