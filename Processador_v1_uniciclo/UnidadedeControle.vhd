@@ -12,9 +12,9 @@ PORT
 		escrevereg : out std_logic;
 		lemem      : out std_logic;
 		escrevemem : out std_logic;
-		jump     : out std_logic;
+		jump       : out std_logic;
 		aluSRC     : out std_logic;
-		branch       : out std_logic
+		branch     : out std_logic
 	);
 	
 END UnidadedeControle;
