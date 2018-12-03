@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,18 +25,18 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Dec 03 16:04:12 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Mon Dec 03 16:53:13 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source=C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf --testbench_file=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "Processador_v1_uniciclo"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-source file when writing test bench files
+t bench files
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -54,14 +54,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Dec 03 16:04:14 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
+    Info: Processing started: Mon Dec 03 16:53:16 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/ Processador_v1_uniciclo -c Processador_v1_uniciclo
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "Processador_v1_uniciclo"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Processador_v1_uniciclo.vho in folder "C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Processador_v1_uniciclo.vho in folder "C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4741 megabytes
-    Info: Processing ended: Mon Dec 03 16:04:15 2018
+    Info: Peak virtual memory: 4742 megabytes
+    Info: Processing ended: Mon Dec 03 16:53:17 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -69,7 +69,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.do generated.
+C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.do generated.
 
 Completed successfully. 
 
@@ -86,9 +86,8 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:16 on Dec 03,2018
+# Start time: 16:53:18 on Dec 03,2018
 # vcom -work work Processador_v1_uniciclo.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -102,10 +101,11 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity DataPath
 # -- Compiling architecture structure of DataPath
 
-# End time: 16:04:17 on Dec 03,2018, Elapsed time: 0:00:01
+# End time: 16:53:19 on Dec 03,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:17 on Dec 03,2018
+# Start time: 16:53:19 on Dec 03,2018
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 
@@ -113,46 +113,411 @@ Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package std_logic_1164
 # -- Compiling entity DataPath_vhd_vec_tst
 # -- Compiling architecture DataPath_arch of DataPath_vhd_vec_tst
-# End time: 16:04:17 on Dec 03,2018, Elapsed time: 0:00:00
+# End time: 16:53:19 on Dec 03,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.DataPath_vhd_vec_tst 
-# Start time: 16:04:17 on Dec 03,2018
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.UnidadedeControle_vhd_vec_tst 
+# Start time: 16:53:20 on Dec 03,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.datapath_vhd_vec_tst(datapath_arch)
+# Loading work.unidadedecontrole_vhd_vec_tst(unidadedecontrole_arch)
+# Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
-# Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.datapath(structure)
+# Loading work.unidadedecontrole(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 260244 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
 # after#34
 
-# End time: 16:04:19 on Dec 03,2018, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 1
+# End time: 16:53:20 on Dec 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf...
+Reading C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf...
 
-Reading C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.msim.vcd...
+Reading C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo_20181203160419.sim.vwf
+Warning: Clock_Sistema - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[15] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[14] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[13] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[12] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[11] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[10] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[9] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[8] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[7] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[6] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[5] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[4] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[3] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[2] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[1] - signal not found in VCD.
+
+Warning: Data_to_writeRegister_outWaveform[0] - signal not found in VCD.
+
+Warning: Flag_aluSRC_OUT - signal not found in VCD.
+
+Warning: Flag_branch_OUT - signal not found in VCD.
+
+Warning: Flag_escrevemem_OUT - signal not found in VCD.
+
+Warning: Flag_escrevereg_OUT - signal not found in VCD.
+
+Warning: Flag_jump_OUT - signal not found in VCD.
+
+Warning: Flag_lemem_OUT - signal not found in VCD.
+
+Warning: Flag_memparareg_OUT - signal not found in VCD.
+
+Warning: Flag_origialu_OUT[3] - signal not found in VCD.
+
+Warning: Flag_origialu_OUT[2] - signal not found in VCD.
+
+Warning: Flag_origialu_OUT[1] - signal not found in VCD.
+
+Warning: Flag_origialu_OUT[0] - signal not found in VCD.
+
+Warning: Flag_regdest_OUT - signal not found in VCD.
+
+Warning: Instruction_to_Control_outWaveform[3] - signal not found in VCD.
+
+Warning: Instruction_to_Control_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_Control_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_Control_outWaveform[0] - signal not found in VCD.
+
+Warning: Instruction_to_controlULA_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_controlULA_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_controlULA_outWaveform[0] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal_outWaveform[5] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal_outWaveform[4] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal_outWaveform[3] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_extensorDeSinal_outWaveform[0] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[11] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[10] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[9] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[8] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[7] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[6] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[5] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[4] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[3] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_Jump_outWaveform[0] - signal not found in VCD.
+
+Warning: Instruction_to_multiplexador_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_multiplexador_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_multiplexador_outWaveform[0] - signal not found in VCD.
+
+Warning: Instruction_to_register1_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_register1_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_register1_outWaveform[0] - signal not found in VCD.
+
+Warning: Instruction_to_register2_outWaveform[2] - signal not found in VCD.
+
+Warning: Instruction_to_register2_outWaveform[1] - signal not found in VCD.
+
+Warning: Instruction_to_register2_outWaveform[0] - signal not found in VCD.
+
+Warning: multiplexador_to_writeRegister_outWaveform[2] - signal not found in VCD.
+
+Warning: multiplexador_to_writeRegister_outWaveform[1] - signal not found in VCD.
+
+Warning: multiplexador_to_writeRegister_outWaveform[0] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[6] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[5] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[4] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[3] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[2] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[1] - signal not found in VCD.
+
+Warning: out_Saida_OperacaoDaULA[0] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[15] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[14] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[13] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[12] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[11] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[10] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[9] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[8] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[7] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[6] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[5] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[4] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[3] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[2] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[1] - signal not found in VCD.
+
+Warning: Saida_adress_to_RAM_outWaveform[0] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[15] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[14] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[13] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[12] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[11] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[10] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[9] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[8] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[7] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[6] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[5] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[4] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[3] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[2] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[1] - signal not found in VCD.
+
+Warning: Saida_mult_to_mult_outWaveform[0] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[15] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[14] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[13] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[12] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[11] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[10] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[9] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[8] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[7] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[6] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[5] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[4] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[3] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[2] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[1] - signal not found in VCD.
+
+Warning: Saida_to_PC_outWaveform[0] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[15] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[14] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[13] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[12] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[11] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[10] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[9] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[8] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[7] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[6] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[5] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[4] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[3] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[2] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[1] - signal not found in VCD.
+
+Warning: SaidaPc_outWaveform[0] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[15] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[14] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[13] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[12] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[11] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[10] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[9] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[8] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[7] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[6] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[5] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[4] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[3] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[2] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[1] - signal not found in VCD.
+
+Warning: SaidaRegA_outWaveform[0] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[15] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[14] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[13] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[12] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[11] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[10] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[9] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[8] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[7] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[6] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[5] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[4] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[3] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[2] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[1] - signal not found in VCD.
+
+Warning: SaidaRegB_outWaveform[0] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[15] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[14] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[13] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[12] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[11] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[10] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[9] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[8] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[7] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[6] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[5] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[4] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[3] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[2] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[1] - signal not found in VCD.
+
+Warning: SomadorToPc_outWaveform[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Processador_v1_uniciclo_20181203165321.sim.vwf
 
 Finished VCD to VWF conversion.
 
