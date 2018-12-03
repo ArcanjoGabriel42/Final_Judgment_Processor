@@ -34,6 +34,8 @@ begin
 		begin
 		Reg(0) := "0000000000000101";
 		Reg(1) := "0000000000000111";
+		Reg(2) := "0000000000001000";
+		Reg(3) := "0000000000001010";
 	     if(Clock = '1') then 
 			if EscReg = '1' then
 				Reg(to_integer(unsigned(RegDst))) := Data;

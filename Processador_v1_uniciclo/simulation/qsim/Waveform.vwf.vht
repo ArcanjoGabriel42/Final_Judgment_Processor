@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/03/2018 13:56:41"
+-- Generated on "12/03/2018 16:53:15"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -128,15 +128,14 @@ BEGIN
 t_prcs_Clock_Sistema: PROCESS
 BEGIN
 	Clock_Sistema <= '1';
-	WAIT FOR 50000 ps;
-	FOR i IN 1 TO 9
+	WAIT FOR 200000 ps;
+	FOR i IN 1 TO 2
 	LOOP
 		Clock_Sistema <= '0';
-		WAIT FOR 50000 ps;
+		WAIT FOR 200000 ps;
 		Clock_Sistema <= '1';
-		WAIT FOR 50000 ps;
+		WAIT FOR 200000 ps;
 	END LOOP;
-	Clock_Sistema <= '0';
 WAIT;
 END PROCESS t_prcs_Clock_Sistema;
 END DataPath_arch;
