@@ -3,7 +3,7 @@ $comment
 		vcd file Processador_v1_uniciclo.msim.vcd -direction
 $end
 $date
-	Sun Dec 02 16:18:52 2018
+	Sun Dec 02 21:39:50 2018
 $end
 $version
 	ModelSim Version 10.5b
@@ -594,1617 +594,1646 @@ $var wire 1 ,& \Clock_Sistema~input_o\ $end
 $var wire 1 -& \G2|Add0~1_sumout\ $end
 $var wire 1 .& \G2|Add0~2\ $end
 $var wire 1 /& \G2|Add0~5_sumout\ $end
-$var wire 1 0& \G4|rs[1]~2_combout\ $end
-$var wire 1 1& \G4|op[0]~0_combout\ $end
-$var wire 1 2& \G5|origalu[1]~0_combout\ $end
+$var wire 1 0& \G2|Add0~14\ $end
+$var wire 1 1& \G2|Add0~17_sumout\ $end
+$var wire 1 2& \G5|origalu[2]~1_combout\ $end
 $var wire 1 3& \G5|regdest~0_combout\ $end
-$var wire 1 4& \G5|origalu[2]~1_combout\ $end
-$var wire 1 5& \G11|S1~0_combout\ $end
-$var wire 1 6& \G11|S1~1_combout\ $end
-$var wire 1 7& \G2|Add0~14\ $end
-$var wire 1 8& \G2|Add0~17_sumout\ $end
-$var wire 1 9& \G4|Mux0~2_combout\ $end
-$var wire 1 :& \G4|tipoi[3]~2_combout\ $end
-$var wire 1 ;& \G4|Mux6~0_combout\ $end
-$var wire 1 <& \G4|Mux1~0_combout\ $end
-$var wire 1 =& \G4|tipoi[2]~1_combout\ $end
-$var wire 1 >& \G10|Add0~2\ $end
-$var wire 1 ?& \G10|Add0~6\ $end
-$var wire 1 @& \G10|Add0~10\ $end
-$var wire 1 A& \G10|Add0~13_sumout\ $end
-$var wire 1 B& \G12|SAIDA~5_combout\ $end
-$var wire 1 C& \G13|SAIDA~5_combout\ $end
-$var wire 1 D& \G2|Add0~18\ $end
-$var wire 1 E& \G2|Add0~21_sumout\ $end
-$var wire 1 F& \G10|Add0~14\ $end
-$var wire 1 G& \G10|Add0~17_sumout\ $end
-$var wire 1 H& \G12|SAIDA~6_combout\ $end
-$var wire 1 I& \G13|SAIDA~6_combout\ $end
-$var wire 1 J& \G2|Add0~22\ $end
-$var wire 1 K& \G2|Add0~25_sumout\ $end
-$var wire 1 L& \G10|Add0~18\ $end
-$var wire 1 M& \G10|Add0~21_sumout\ $end
-$var wire 1 N& \G12|SAIDA~7_combout\ $end
-$var wire 1 O& \G13|SAIDA~7_combout\ $end
-$var wire 1 P& \G2|Add0~26\ $end
-$var wire 1 Q& \G2|Add0~29_sumout\ $end
-$var wire 1 R& \G10|Add0~22\ $end
-$var wire 1 S& \G10|Add0~25_sumout\ $end
-$var wire 1 T& \G12|SAIDA~8_combout\ $end
-$var wire 1 U& \G13|SAIDA~8_combout\ $end
-$var wire 1 V& \G2|Add0~30\ $end
-$var wire 1 W& \G2|Add0~33_sumout\ $end
-$var wire 1 X& \G10|Add0~26\ $end
-$var wire 1 Y& \G10|Add0~29_sumout\ $end
-$var wire 1 Z& \G12|SAIDA~9_combout\ $end
-$var wire 1 [& \G13|SAIDA~9_combout\ $end
-$var wire 1 \& \G2|Add0~34\ $end
-$var wire 1 ]& \G2|Add0~37_sumout\ $end
-$var wire 1 ^& \G10|Add0~30\ $end
-$var wire 1 _& \G10|Add0~33_sumout\ $end
-$var wire 1 `& \G12|SAIDA~10_combout\ $end
-$var wire 1 a& \G13|SAIDA~10_combout\ $end
-$var wire 1 b& \G2|Add0~38\ $end
-$var wire 1 c& \G2|Add0~41_sumout\ $end
-$var wire 1 d& \G10|Add0~34\ $end
-$var wire 1 e& \G10|Add0~37_sumout\ $end
-$var wire 1 f& \G12|SAIDA~11_combout\ $end
-$var wire 1 g& \G13|SAIDA~11_combout\ $end
-$var wire 1 h& \G2|Add0~42\ $end
-$var wire 1 i& \G2|Add0~45_sumout\ $end
-$var wire 1 j& \G10|Add0~38\ $end
-$var wire 1 k& \G10|Add0~41_sumout\ $end
-$var wire 1 l& \G12|SAIDA~12_combout\ $end
-$var wire 1 m& \G13|SAIDA~12_combout\ $end
-$var wire 1 n& \G2|Add0~46\ $end
-$var wire 1 o& \G2|Add0~49_sumout\ $end
-$var wire 1 p& \G10|Add0~42\ $end
-$var wire 1 q& \G10|Add0~45_sumout\ $end
-$var wire 1 r& \G12|SAIDA~13_combout\ $end
-$var wire 1 s& \G13|SAIDA~13_combout\ $end
-$var wire 1 t& \G2|Add0~50\ $end
-$var wire 1 u& \G2|Add0~53_sumout\ $end
-$var wire 1 v& \G10|Add0~46\ $end
-$var wire 1 w& \G10|Add0~49_sumout\ $end
-$var wire 1 x& \G12|SAIDA~14_combout\ $end
-$var wire 1 y& \G13|SAIDA~14_combout\ $end
-$var wire 1 z& \G2|Add0~54\ $end
-$var wire 1 {& \G2|Add0~57_sumout\ $end
-$var wire 1 |& \G10|Add0~50\ $end
-$var wire 1 }& \G10|Add0~53_sumout\ $end
-$var wire 1 ~& \G12|SAIDA~15_combout\ $end
-$var wire 1 !' \G13|SAIDA~15_combout\ $end
-$var wire 1 "' \G4|Mux0~1_combout\ $end
-$var wire 1 #' \G4|Mux0~3_combout\ $end
-$var wire 1 $' \G4|Mux2~0_combout\ $end
-$var wire 1 %' \G4|tipoi[0]~0_combout\ $end
-$var wire 1 &' \G10|Add0~1_sumout\ $end
-$var wire 1 '' \G12|SAIDA~2_combout\ $end
-$var wire 1 (' \G13|SAIDA~2_combout\ $end
-$var wire 1 )' \G2|Add0~6\ $end
-$var wire 1 *' \G2|Add0~9_sumout\ $end
-$var wire 1 +' \G10|Add0~5_sumout\ $end
-$var wire 1 ,' \G12|SAIDA~3_combout\ $end
-$var wire 1 -' \G13|SAIDA~3_combout\ $end
-$var wire 1 .' \G2|Add0~10\ $end
-$var wire 1 /' \G2|Add0~13_sumout\ $end
-$var wire 1 0' \G10|Add0~9_sumout\ $end
-$var wire 1 1' \G12|SAIDA~4_combout\ $end
-$var wire 1 2' \G13|SAIDA~4_combout\ $end
-$var wire 1 3' \G4|Mux0~0_combout\ $end
-$var wire 1 4' \G4|Mux6~1_combout\ $end
-$var wire 1 5' \G16|Mux14~0_combout\ $end
-$var wire 1 6' \G4|funct[0]~0_combout\ $end
-$var wire 1 7' \G16|Mux14~1_combout\ $end
-$var wire 1 8' \G5|Equal1~0_combout\ $end
-$var wire 1 9' \G5|memparareg~combout\ $end
-$var wire 1 :' \G5|escrevereg~combout\ $end
-$var wire 1 ;' \G14|SAIDA~0_combout\ $end
-$var wire 1 <' \G4|Mux5~1_combout\ $end
-$var wire 1 =' \G4|tipoi[0]~3_combout\ $end
-$var wire 1 >' \G5|regdest~combout\ $end
-$var wire 1 ?' \G4|Mux3~0_combout\ $end
-$var wire 1 @' \G7|Mux27~1_combout\ $end
-$var wire 1 A' \G14|SAIDA~4_combout\ $end
-$var wire 1 B' \G14|SAIDA~8_combout\ $end
-$var wire 1 C' \G14|SAIDA~7_combout\ $end
-$var wire 1 D' \G7|Decoder0~0_combout\ $end
-$var wire 1 E' \G18|SAIDA~2_combout\ $end
-$var wire 1 F' \G6|SAIDA[0]~0_combout\ $end
-$var wire 1 G' \G4|rt[0]~0_combout\ $end
-$var wire 1 H' \G7|Reg[0][0]~0_combout\ $end
-$var wire 1 I' \G7|Mux29~0_combout\ $end
-$var wire 1 J' \G7|Mux31~0_combout\ $end
-$var wire 1 K' \G17|ram~80_combout\ $end
-$var wire 1 L' \G7|Mux30~0_combout\ $end
-$var wire 1 M' \G17|ram~81_combout\ $end
-$var wire 1 N' \G17|ram~113_combout\ $end
-$var wire 1 O' \G7|Mux12~0_combout\ $end
-$var wire 1 P' \G14|SAIDA~5_combout\ $end
-$var wire 1 Q' \G14|SAIDA~6_combout\ $end
-$var wire 1 R' \G14|SAIDA~3_combout\ $end
-$var wire 1 S' \G14|SAIDA~1_combout\ $end
-$var wire 1 T' \G14|SAIDA~2_combout\ $end
-$var wire 1 U' \G16|Add0~2\ $end
-$var wire 1 V' \G16|Add0~6\ $end
-$var wire 1 W' \G16|Add0~10\ $end
-$var wire 1 X' \G16|Add0~13_sumout\ $end
-$var wire 1 Y' \G16|Mux12~0_combout\ $end
-$var wire 1 Z' \G7|Mux11~0_combout\ $end
-$var wire 1 [' \G16|Mux11~0_combout\ $end
-$var wire 1 \' \G7|Mux13~0_combout\ $end
-$var wire 1 ]' \G16|Add1~66_cout\ $end
-$var wire 1 ^' \G16|Add1~2\ $end
-$var wire 1 _' \G16|Add1~6\ $end
-$var wire 1 `' \G16|Add1~9_sumout\ $end
-$var wire 1 a' \G16|Add0~9_sumout\ $end
-$var wire 1 b' \G16|Mux13~0_combout\ $end
-$var wire 1 c' \G17|ram.we_a~0_combout\ $end
-$var wire 1 d' \rtl~4_combout\ $end
-$var wire 1 e' \G17|ram~97_combout\ $end
-$var wire 1 f' \rtl~9_combout\ $end
-$var wire 1 g' \G17|ram~17_combout\ $end
-$var wire 1 h' \rtl~10_combout\ $end
-$var wire 1 i' \G17|ram~49_combout\ $end
-$var wire 1 j' \rtl~12_combout\ $end
-$var wire 1 k' \G17|ram~33_combout\ $end
-$var wire 1 l' \rtl~11_combout\ $end
-$var wire 1 m' \G17|ram~1_combout\ $end
-$var wire 1 n' \G17|ram~409_combout\ $end
-$var wire 1 o' \rtl~3_combout\ $end
-$var wire 1 p' \G17|ram~65_combout\ $end
-$var wire 1 q' \G17|ram~281_combout\ $end
-$var wire 1 r' \rtl~5_combout\ $end
-$var wire 1 s' \G17|ram~209_combout\ $end
-$var wire 1 t' \rtl~6_combout\ $end
-$var wire 1 u' \G17|ram~241_combout\ $end
-$var wire 1 v' \rtl~8_combout\ $end
-$var wire 1 w' \G17|ram~225_combout\ $end
-$var wire 1 x' \rtl~13_combout\ $end
-$var wire 1 y' \G17|ram~145_combout\ $end
-$var wire 1 z' \rtl~14_combout\ $end
-$var wire 1 {' \G17|ram~177_combout\ $end
-$var wire 1 |' \rtl~16_combout\ $end
-$var wire 1 }' \G17|ram~161_combout\ $end
-$var wire 1 ~' \rtl~15_combout\ $end
-$var wire 1 !( \G17|ram~129_combout\ $end
-$var wire 1 "( \G17|ram~413_combout\ $end
-$var wire 1 #( \rtl~7_combout\ $end
-$var wire 1 $( \G17|ram~193_combout\ $end
-$var wire 1 %( \G17|ram~285_combout\ $end
-$var wire 1 &( \G16|Mux12~1_combout\ $end
-$var wire 1 '( \G18|SAIDA~0_combout\ $end
-$var wire 1 (( \G16|Add1~5_sumout\ $end
-$var wire 1 )( \G16|Add0~5_sumout\ $end
-$var wire 1 *( \G16|Mux14~3_combout\ $end
-$var wire 1 +( \G16|Mux14~4_combout\ $end
-$var wire 1 ,( \G16|Add1~1_sumout\ $end
-$var wire 1 -( \G16|Add0~1_sumout\ $end
-$var wire 1 .( \G4|rd[0]~1_combout\ $end
-$var wire 1 /( \G7|Mux15~1_combout\ $end
-$var wire 1 0( \G16|Mux15~1_combout\ $end
-$var wire 1 1( \G16|Mux15~2_combout\ $end
-$var wire 1 2( \G16|Mux13~1_combout\ $end
-$var wire 1 3( \G17|ram~280_combout\ $end
-$var wire 1 4( \rtl~0_combout\ $end
-$var wire 1 5( \G17|ram~257_combout\ $end
-$var wire 1 6( \G18|SAIDA~6_combout\ $end
-$var wire 1 7( \G18|SAIDA~7_combout\ $end
-$var wire 1 8( \G7|Reg[0][0]~1_combout\ $end
-$var wire 1 9( \G7|Reg[0][1]~combout\ $end
-$var wire 1 :( \G7|Mux14~0_combout\ $end
-$var wire 1 ;( \G16|Mux14~2_combout\ $end
-$var wire 1 <( \rtl~2_combout\ $end
-$var wire 1 =( \G17|ram~112_combout\ $end
-$var wire 1 >( \G17|ram~96_combout\ $end
-$var wire 1 ?( \G17|ram~16_combout\ $end
-$var wire 1 @( \G17|ram~48_combout\ $end
-$var wire 1 A( \G17|ram~32_combout\ $end
-$var wire 1 B( \G17|ram~0_combout\ $end
-$var wire 1 C( \G17|ram~401_combout\ $end
-$var wire 1 D( \G17|ram~64_combout\ $end
-$var wire 1 E( \G17|ram~272_combout\ $end
-$var wire 1 F( \G17|ram~208_combout\ $end
-$var wire 1 G( \G17|ram~240_combout\ $end
-$var wire 1 H( \G17|ram~224_combout\ $end
-$var wire 1 I( \G17|ram~144_combout\ $end
-$var wire 1 J( \G17|ram~176_combout\ $end
-$var wire 1 K( \G17|ram~160_combout\ $end
-$var wire 1 L( \G17|ram~128_combout\ $end
-$var wire 1 M( \G17|ram~405_combout\ $end
-$var wire 1 N( \G17|ram~192_combout\ $end
-$var wire 1 O( \G17|ram~276_combout\ $end
-$var wire 1 P( \G18|SAIDA~3_combout\ $end
-$var wire 1 Q( \G17|ram~256_combout\ $end
-$var wire 1 R( \G18|SAIDA~4_combout\ $end
-$var wire 1 S( \G18|SAIDA~5_combout\ $end
-$var wire 1 T( \G7|Reg[0][0]~combout\ $end
-$var wire 1 U( \G7|Mux15~0_combout\ $end
-$var wire 1 V( \G16|Mux15~0_combout\ $end
-$var wire 1 W( \rtl~1_combout\ $end
-$var wire 1 X( \G17|ram~82_combout\ $end
-$var wire 1 Y( \G17|ram~114_combout\ $end
-$var wire 1 Z( \G17|ram~98_combout\ $end
-$var wire 1 [( \G17|ram~18_combout\ $end
-$var wire 1 \( \G17|ram~50_combout\ $end
-$var wire 1 ]( \G17|ram~34_combout\ $end
-$var wire 1 ^( \G17|ram~2_combout\ $end
-$var wire 1 _( \G17|ram~417_combout\ $end
-$var wire 1 `( \G17|ram~66_combout\ $end
-$var wire 1 a( \G17|ram~289_combout\ $end
-$var wire 1 b( \G17|ram~210_combout\ $end
-$var wire 1 c( \G17|ram~242_combout\ $end
-$var wire 1 d( \G17|ram~226_combout\ $end
-$var wire 1 e( \G17|ram~146_combout\ $end
-$var wire 1 f( \G17|ram~178_combout\ $end
-$var wire 1 g( \G17|ram~162_combout\ $end
-$var wire 1 h( \G17|ram~130_combout\ $end
-$var wire 1 i( \G17|ram~421_combout\ $end
-$var wire 1 j( \G17|ram~194_combout\ $end
-$var wire 1 k( \G17|ram~293_combout\ $end
-$var wire 1 l( \G18|SAIDA~8_combout\ $end
-$var wire 1 m( \G17|ram~258_combout\ $end
-$var wire 1 n( \G18|SAIDA~9_combout\ $end
-$var wire 1 o( \G18|SAIDA~10_combout\ $end
-$var wire 1 p( \G7|Reg[0][2]~combout\ $end
-$var wire 1 q( \G16|Add1~10\ $end
-$var wire 1 r( \G16|Add1~13_sumout\ $end
-$var wire 1 s( \G16|Mux12~2_combout\ $end
-$var wire 1 t( \G7|Mux28~0_combout\ $end
-$var wire 1 u( \G17|ram~211_combout\ $end
-$var wire 1 v( \G17|ram~243_combout\ $end
-$var wire 1 w( \G17|ram~227_combout\ $end
-$var wire 1 x( \G17|ram~147_combout\ $end
-$var wire 1 y( \G17|ram~179_combout\ $end
-$var wire 1 z( \G17|ram~163_combout\ $end
-$var wire 1 {( \G17|ram~131_combout\ $end
-$var wire 1 |( \G17|ram~425_combout\ $end
-$var wire 1 }( \G17|ram~195_combout\ $end
-$var wire 1 ~( \G17|ram~297_combout\ $end
-$var wire 1 !) \G17|ram~83_combout\ $end
-$var wire 1 ") \G17|ram~115_combout\ $end
-$var wire 1 #) \G17|ram~99_combout\ $end
-$var wire 1 $) \G17|ram~19_combout\ $end
-$var wire 1 %) \G17|ram~51_combout\ $end
-$var wire 1 &) \G17|ram~35_combout\ $end
-$var wire 1 ') \G17|ram~3_combout\ $end
-$var wire 1 () \G17|ram~429_combout\ $end
-$var wire 1 )) \G17|ram~67_combout\ $end
-$var wire 1 *) \G17|ram~301_combout\ $end
-$var wire 1 +) \G16|Mux13~2_combout\ $end
-$var wire 1 ,) \G17|ram~259_combout\ $end
-$var wire 1 -) \G18|SAIDA~11_combout\ $end
-$var wire 1 .) \G18|SAIDA~12_combout\ $end
-$var wire 1 /) \G7|Reg[0][3]~combout\ $end
-$var wire 1 0) \G16|Add0~14\ $end
-$var wire 1 1) \G16|Add0~17_sumout\ $end
-$var wire 1 2) \G16|Mux11~1_combout\ $end
-$var wire 1 3) \G16|Mux11~2_combout\ $end
-$var wire 1 4) \G7|Mux27~0_combout\ $end
-$var wire 1 5) \G17|ram~84_combout\ $end
-$var wire 1 6) \G17|ram~116_combout\ $end
-$var wire 1 7) \G17|ram~100_combout\ $end
-$var wire 1 8) \G17|ram~20_combout\ $end
-$var wire 1 9) \G17|ram~52_combout\ $end
-$var wire 1 :) \G17|ram~36_combout\ $end
-$var wire 1 ;) \G17|ram~4_combout\ $end
-$var wire 1 <) \G17|ram~433_combout\ $end
-$var wire 1 =) \G17|ram~68_combout\ $end
-$var wire 1 >) \G17|ram~305_combout\ $end
-$var wire 1 ?) \G17|ram~212_combout\ $end
-$var wire 1 @) \G17|ram~244_combout\ $end
-$var wire 1 A) \G17|ram~228_combout\ $end
-$var wire 1 B) \G17|ram~148_combout\ $end
-$var wire 1 C) \G17|ram~180_combout\ $end
-$var wire 1 D) \G17|ram~164_combout\ $end
-$var wire 1 E) \G17|ram~132_combout\ $end
-$var wire 1 F) \G17|ram~437_combout\ $end
-$var wire 1 G) \G17|ram~196_combout\ $end
-$var wire 1 H) \G17|ram~309_combout\ $end
-$var wire 1 I) \G17|ram~260_combout\ $end
-$var wire 1 J) \G18|SAIDA~13_combout\ $end
-$var wire 1 K) \G18|SAIDA~14_combout\ $end
-$var wire 1 L) \G7|Reg[0][4]~combout\ $end
-$var wire 1 M) \G16|Add1~14\ $end
-$var wire 1 N) \G16|Add1~17_sumout\ $end
-$var wire 1 O) \G18|SAIDA~1_combout\ $end
-$var wire 1 P) \G7|Mux25~0_combout\ $end
-$var wire 1 Q) \G17|ram~86_combout\ $end
-$var wire 1 R) \G17|ram~118_combout\ $end
-$var wire 1 S) \G17|ram~102_combout\ $end
-$var wire 1 T) \G17|ram~22_combout\ $end
-$var wire 1 U) \G17|ram~54_combout\ $end
-$var wire 1 V) \G17|ram~38_combout\ $end
-$var wire 1 W) \G17|ram~6_combout\ $end
-$var wire 1 X) \G17|ram~449_combout\ $end
-$var wire 1 Y) \G17|ram~70_combout\ $end
-$var wire 1 Z) \G17|ram~321_combout\ $end
-$var wire 1 [) \G17|ram~214_combout\ $end
-$var wire 1 \) \G17|ram~246_combout\ $end
-$var wire 1 ]) \G17|ram~230_combout\ $end
-$var wire 1 ^) \G17|ram~150_combout\ $end
-$var wire 1 _) \G17|ram~182_combout\ $end
-$var wire 1 `) \G17|ram~166_combout\ $end
-$var wire 1 a) \G17|ram~134_combout\ $end
-$var wire 1 b) \G17|ram~453_combout\ $end
-$var wire 1 c) \G17|ram~198_combout\ $end
-$var wire 1 d) \G17|ram~325_combout\ $end
-$var wire 1 e) \G17|ram~262_combout\ $end
-$var wire 1 f) \G14|SAIDA~10_combout\ $end
-$var wire 1 g) \G7|Mux26~0_combout\ $end
-$var wire 1 h) \G17|ram~85_combout\ $end
-$var wire 1 i) \G17|ram~117_combout\ $end
-$var wire 1 j) \G17|ram~101_combout\ $end
-$var wire 1 k) \G17|ram~21_combout\ $end
-$var wire 1 l) \G17|ram~53_combout\ $end
-$var wire 1 m) \G17|ram~37_combout\ $end
-$var wire 1 n) \G17|ram~5_combout\ $end
-$var wire 1 o) \G17|ram~441_combout\ $end
-$var wire 1 p) \G17|ram~69_combout\ $end
-$var wire 1 q) \G17|ram~313_combout\ $end
-$var wire 1 r) \G17|ram~213_combout\ $end
-$var wire 1 s) \G17|ram~245_combout\ $end
-$var wire 1 t) \G17|ram~229_combout\ $end
-$var wire 1 u) \G17|ram~149_combout\ $end
-$var wire 1 v) \G17|ram~181_combout\ $end
-$var wire 1 w) \G17|ram~165_combout\ $end
-$var wire 1 x) \G17|ram~133_combout\ $end
-$var wire 1 y) \G17|ram~445_combout\ $end
-$var wire 1 z) \G17|ram~197_combout\ $end
-$var wire 1 {) \G17|ram~317_combout\ $end
-$var wire 1 |) \G17|ram~261_combout\ $end
-$var wire 1 }) \G14|SAIDA~9_combout\ $end
-$var wire 1 ~) \G16|Add0~18\ $end
-$var wire 1 !* \G16|Add0~21_sumout\ $end
-$var wire 1 "* \G18|SAIDA~15_combout\ $end
-$var wire 1 #* \G18|SAIDA~16_combout\ $end
-$var wire 1 $* \G18|SAIDA~17_combout\ $end
-$var wire 1 %* \G18|SAIDA~18_combout\ $end
-$var wire 1 &* \G7|Reg[0][5]~combout\ $end
-$var wire 1 '* \G16|Add0~22\ $end
-$var wire 1 (* \G16|Add0~25_sumout\ $end
-$var wire 1 )* \G18|SAIDA~19_combout\ $end
-$var wire 1 ** \G18|SAIDA~20_combout\ $end
-$var wire 1 +* \G18|SAIDA~21_combout\ $end
-$var wire 1 ,* \G18|SAIDA~22_combout\ $end
-$var wire 1 -* \G7|Reg[0][6]~combout\ $end
-$var wire 1 .* \G16|Add1~18\ $end
-$var wire 1 /* \G16|Add1~22\ $end
-$var wire 1 0* \G16|Add1~25_sumout\ $end
-$var wire 1 1* \G7|Mux24~0_combout\ $end
-$var wire 1 2* \G17|ram~87_combout\ $end
-$var wire 1 3* \G17|ram~119_combout\ $end
-$var wire 1 4* \G17|ram~103_combout\ $end
-$var wire 1 5* \G17|ram~23_combout\ $end
-$var wire 1 6* \G17|ram~55_combout\ $end
-$var wire 1 7* \G17|ram~39_combout\ $end
-$var wire 1 8* \G17|ram~7_combout\ $end
-$var wire 1 9* \G17|ram~457_combout\ $end
-$var wire 1 :* \G17|ram~71_combout\ $end
-$var wire 1 ;* \G17|ram~329_combout\ $end
-$var wire 1 <* \G17|ram~215_combout\ $end
-$var wire 1 =* \G17|ram~247_combout\ $end
-$var wire 1 >* \G17|ram~231_combout\ $end
-$var wire 1 ?* \G17|ram~151_combout\ $end
-$var wire 1 @* \G17|ram~183_combout\ $end
-$var wire 1 A* \G17|ram~167_combout\ $end
-$var wire 1 B* \G17|ram~135_combout\ $end
-$var wire 1 C* \G17|ram~461_combout\ $end
-$var wire 1 D* \G17|ram~199_combout\ $end
-$var wire 1 E* \G17|ram~333_combout\ $end
-$var wire 1 F* \G17|ram~263_combout\ $end
-$var wire 1 G* \G14|SAIDA~11_combout\ $end
-$var wire 1 H* \G16|Add0~26\ $end
-$var wire 1 I* \G16|Add0~29_sumout\ $end
-$var wire 1 J* \G18|SAIDA~23_combout\ $end
-$var wire 1 K* \G18|SAIDA~24_combout\ $end
-$var wire 1 L* \G18|SAIDA~25_combout\ $end
-$var wire 1 M* \G18|SAIDA~26_combout\ $end
-$var wire 1 N* \G7|Reg[0][7]~combout\ $end
-$var wire 1 O* \G16|Add1~26\ $end
-$var wire 1 P* \G16|Add1~29_sumout\ $end
-$var wire 1 Q* \G7|Mux23~0_combout\ $end
-$var wire 1 R* \G17|ram~88_combout\ $end
-$var wire 1 S* \G17|ram~120_combout\ $end
-$var wire 1 T* \G17|ram~104_combout\ $end
-$var wire 1 U* \G17|ram~24_combout\ $end
-$var wire 1 V* \G17|ram~56_combout\ $end
-$var wire 1 W* \G17|ram~40_combout\ $end
-$var wire 1 X* \G17|ram~8_combout\ $end
-$var wire 1 Y* \G17|ram~465_combout\ $end
-$var wire 1 Z* \G17|ram~72_combout\ $end
-$var wire 1 [* \G17|ram~337_combout\ $end
-$var wire 1 \* \G17|ram~216_combout\ $end
-$var wire 1 ]* \G17|ram~248_combout\ $end
-$var wire 1 ^* \G17|ram~232_combout\ $end
-$var wire 1 _* \G17|ram~152_combout\ $end
-$var wire 1 `* \G17|ram~184_combout\ $end
-$var wire 1 a* \G17|ram~168_combout\ $end
-$var wire 1 b* \G17|ram~136_combout\ $end
-$var wire 1 c* \G17|ram~469_combout\ $end
-$var wire 1 d* \G17|ram~200_combout\ $end
-$var wire 1 e* \G17|ram~341_combout\ $end
-$var wire 1 f* \G17|ram~264_combout\ $end
-$var wire 1 g* \G14|SAIDA~12_combout\ $end
-$var wire 1 h* \G16|Add0~30\ $end
-$var wire 1 i* \G16|Add0~33_sumout\ $end
-$var wire 1 j* \G18|SAIDA~27_combout\ $end
-$var wire 1 k* \G18|SAIDA~28_combout\ $end
-$var wire 1 l* \G18|SAIDA~29_combout\ $end
-$var wire 1 m* \G18|SAIDA~30_combout\ $end
-$var wire 1 n* \G7|Reg[0][8]~combout\ $end
-$var wire 1 o* \G16|Add1~30\ $end
-$var wire 1 p* \G16|Add1~33_sumout\ $end
-$var wire 1 q* \G7|Mux22~0_combout\ $end
-$var wire 1 r* \G17|ram~89_combout\ $end
-$var wire 1 s* \G17|ram~121_combout\ $end
-$var wire 1 t* \G17|ram~105_combout\ $end
-$var wire 1 u* \G17|ram~25_combout\ $end
-$var wire 1 v* \G17|ram~57_combout\ $end
-$var wire 1 w* \G17|ram~41_combout\ $end
-$var wire 1 x* \G17|ram~9_combout\ $end
-$var wire 1 y* \G17|ram~473_combout\ $end
-$var wire 1 z* \G17|ram~73_combout\ $end
-$var wire 1 {* \G17|ram~345_combout\ $end
-$var wire 1 |* \G17|ram~217_combout\ $end
-$var wire 1 }* \G17|ram~249_combout\ $end
-$var wire 1 ~* \G17|ram~233_combout\ $end
-$var wire 1 !+ \G17|ram~153_combout\ $end
-$var wire 1 "+ \G17|ram~185_combout\ $end
-$var wire 1 #+ \G17|ram~169_combout\ $end
-$var wire 1 $+ \G17|ram~137_combout\ $end
-$var wire 1 %+ \G17|ram~477_combout\ $end
-$var wire 1 &+ \G17|ram~201_combout\ $end
-$var wire 1 '+ \G17|ram~349_combout\ $end
-$var wire 1 (+ \G17|ram~265_combout\ $end
-$var wire 1 )+ \G14|SAIDA~13_combout\ $end
-$var wire 1 *+ \G16|Add0~34\ $end
-$var wire 1 ++ \G16|Add0~37_sumout\ $end
-$var wire 1 ,+ \G18|SAIDA~31_combout\ $end
-$var wire 1 -+ \G18|SAIDA~32_combout\ $end
-$var wire 1 .+ \G18|SAIDA~33_combout\ $end
-$var wire 1 /+ \G18|SAIDA~34_combout\ $end
-$var wire 1 0+ \G7|Reg[0][9]~combout\ $end
-$var wire 1 1+ \G16|Add1~34\ $end
-$var wire 1 2+ \G16|Add1~37_sumout\ $end
-$var wire 1 3+ \G7|Mux21~0_combout\ $end
-$var wire 1 4+ \G17|ram~90_combout\ $end
-$var wire 1 5+ \G17|ram~122_combout\ $end
-$var wire 1 6+ \G17|ram~106_combout\ $end
-$var wire 1 7+ \G17|ram~26_combout\ $end
-$var wire 1 8+ \G17|ram~58_combout\ $end
-$var wire 1 9+ \G17|ram~42_combout\ $end
-$var wire 1 :+ \G17|ram~10_combout\ $end
-$var wire 1 ;+ \G17|ram~481_combout\ $end
-$var wire 1 <+ \G17|ram~74_combout\ $end
-$var wire 1 =+ \G17|ram~353_combout\ $end
-$var wire 1 >+ \G17|ram~218_combout\ $end
-$var wire 1 ?+ \G17|ram~250_combout\ $end
-$var wire 1 @+ \G17|ram~234_combout\ $end
-$var wire 1 A+ \G17|ram~154_combout\ $end
-$var wire 1 B+ \G17|ram~186_combout\ $end
-$var wire 1 C+ \G17|ram~170_combout\ $end
-$var wire 1 D+ \G17|ram~138_combout\ $end
-$var wire 1 E+ \G17|ram~485_combout\ $end
-$var wire 1 F+ \G17|ram~202_combout\ $end
-$var wire 1 G+ \G17|ram~357_combout\ $end
-$var wire 1 H+ \G17|ram~266_combout\ $end
-$var wire 1 I+ \G14|SAIDA~14_combout\ $end
-$var wire 1 J+ \G16|Add0~38\ $end
-$var wire 1 K+ \G16|Add0~41_sumout\ $end
-$var wire 1 L+ \G18|SAIDA~35_combout\ $end
-$var wire 1 M+ \G18|SAIDA~36_combout\ $end
-$var wire 1 N+ \G18|SAIDA~37_combout\ $end
-$var wire 1 O+ \G18|SAIDA~38_combout\ $end
-$var wire 1 P+ \G7|Reg[0][10]~combout\ $end
-$var wire 1 Q+ \G16|Add1~38\ $end
-$var wire 1 R+ \G16|Add1~41_sumout\ $end
-$var wire 1 S+ \G7|Mux16~0_combout\ $end
-$var wire 1 T+ \G17|ram~95_combout\ $end
-$var wire 1 U+ \G17|ram~127_combout\ $end
-$var wire 1 V+ \G17|ram~111_combout\ $end
-$var wire 1 W+ \G17|ram~31_combout\ $end
-$var wire 1 X+ \G17|ram~63_combout\ $end
-$var wire 1 Y+ \G17|ram~47_combout\ $end
-$var wire 1 Z+ \G17|ram~15_combout\ $end
-$var wire 1 [+ \G17|ram~521_combout\ $end
-$var wire 1 \+ \G17|ram~79_combout\ $end
-$var wire 1 ]+ \G17|ram~393_combout\ $end
-$var wire 1 ^+ \G17|ram~223_combout\ $end
-$var wire 1 _+ \G17|ram~255_combout\ $end
-$var wire 1 `+ \G17|ram~239_combout\ $end
-$var wire 1 a+ \G17|ram~159_combout\ $end
-$var wire 1 b+ \G17|ram~191_combout\ $end
-$var wire 1 c+ \G17|ram~175_combout\ $end
-$var wire 1 d+ \G17|ram~143_combout\ $end
-$var wire 1 e+ \G17|ram~525_combout\ $end
-$var wire 1 f+ \G17|ram~207_combout\ $end
-$var wire 1 g+ \G17|ram~397_combout\ $end
-$var wire 1 h+ \G17|ram~271_combout\ $end
-$var wire 1 i+ \G18|SAIDA~55_combout\ $end
-$var wire 1 j+ \G14|SAIDA~19_combout\ $end
-$var wire 1 k+ \G7|Mux17~0_combout\ $end
-$var wire 1 l+ \G17|ram~94_combout\ $end
-$var wire 1 m+ \G17|ram~126_combout\ $end
-$var wire 1 n+ \G17|ram~110_combout\ $end
-$var wire 1 o+ \G17|ram~30_combout\ $end
-$var wire 1 p+ \G17|ram~62_combout\ $end
-$var wire 1 q+ \G17|ram~46_combout\ $end
-$var wire 1 r+ \G17|ram~14_combout\ $end
-$var wire 1 s+ \G17|ram~513_combout\ $end
-$var wire 1 t+ \G17|ram~78_combout\ $end
-$var wire 1 u+ \G17|ram~385_combout\ $end
-$var wire 1 v+ \G17|ram~222_combout\ $end
-$var wire 1 w+ \G17|ram~254_combout\ $end
-$var wire 1 x+ \G17|ram~238_combout\ $end
-$var wire 1 y+ \G17|ram~158_combout\ $end
-$var wire 1 z+ \G17|ram~190_combout\ $end
-$var wire 1 {+ \G17|ram~174_combout\ $end
-$var wire 1 |+ \G17|ram~142_combout\ $end
-$var wire 1 }+ \G17|ram~517_combout\ $end
-$var wire 1 ~+ \G17|ram~206_combout\ $end
-$var wire 1 !, \G17|ram~389_combout\ $end
-$var wire 1 ", \G17|ram~270_combout\ $end
-$var wire 1 #, \G18|SAIDA~51_combout\ $end
-$var wire 1 $, \G14|SAIDA~18_combout\ $end
-$var wire 1 %, \G7|Mux18~0_combout\ $end
-$var wire 1 &, \G17|ram~93_combout\ $end
-$var wire 1 ', \G17|ram~125_combout\ $end
-$var wire 1 (, \G17|ram~109_combout\ $end
-$var wire 1 ), \G17|ram~29_combout\ $end
-$var wire 1 *, \G17|ram~61_combout\ $end
-$var wire 1 +, \G17|ram~45_combout\ $end
-$var wire 1 ,, \G17|ram~13_combout\ $end
-$var wire 1 -, \G17|ram~505_combout\ $end
-$var wire 1 ., \G17|ram~77_combout\ $end
-$var wire 1 /, \G17|ram~377_combout\ $end
-$var wire 1 0, \G17|ram~221_combout\ $end
-$var wire 1 1, \G17|ram~253_combout\ $end
-$var wire 1 2, \G17|ram~237_combout\ $end
-$var wire 1 3, \G17|ram~157_combout\ $end
-$var wire 1 4, \G17|ram~189_combout\ $end
-$var wire 1 5, \G17|ram~173_combout\ $end
-$var wire 1 6, \G17|ram~141_combout\ $end
-$var wire 1 7, \G17|ram~509_combout\ $end
-$var wire 1 8, \G17|ram~205_combout\ $end
-$var wire 1 9, \G17|ram~381_combout\ $end
-$var wire 1 :, \G17|ram~269_combout\ $end
-$var wire 1 ;, \G18|SAIDA~47_combout\ $end
-$var wire 1 <, \G14|SAIDA~17_combout\ $end
-$var wire 1 =, \G7|Mux19~0_combout\ $end
-$var wire 1 >, \G17|ram~92_combout\ $end
-$var wire 1 ?, \G17|ram~124_combout\ $end
-$var wire 1 @, \G17|ram~108_combout\ $end
-$var wire 1 A, \G17|ram~28_combout\ $end
-$var wire 1 B, \G17|ram~60_combout\ $end
-$var wire 1 C, \G17|ram~44_combout\ $end
-$var wire 1 D, \G17|ram~12_combout\ $end
-$var wire 1 E, \G17|ram~497_combout\ $end
-$var wire 1 F, \G17|ram~76_combout\ $end
-$var wire 1 G, \G17|ram~369_combout\ $end
-$var wire 1 H, \G17|ram~220_combout\ $end
-$var wire 1 I, \G17|ram~252_combout\ $end
-$var wire 1 J, \G17|ram~236_combout\ $end
-$var wire 1 K, \G17|ram~156_combout\ $end
-$var wire 1 L, \G17|ram~188_combout\ $end
-$var wire 1 M, \G17|ram~172_combout\ $end
-$var wire 1 N, \G17|ram~140_combout\ $end
-$var wire 1 O, \G17|ram~501_combout\ $end
-$var wire 1 P, \G17|ram~204_combout\ $end
-$var wire 1 Q, \G17|ram~373_combout\ $end
-$var wire 1 R, \G17|ram~268_combout\ $end
-$var wire 1 S, \G14|SAIDA~16_combout\ $end
-$var wire 1 T, \G7|Mux20~0_combout\ $end
-$var wire 1 U, \G17|ram~91_combout\ $end
-$var wire 1 V, \G17|ram~123_combout\ $end
-$var wire 1 W, \G17|ram~107_combout\ $end
-$var wire 1 X, \G17|ram~27_combout\ $end
-$var wire 1 Y, \G17|ram~59_combout\ $end
-$var wire 1 Z, \G17|ram~43_combout\ $end
-$var wire 1 [, \G17|ram~11_combout\ $end
-$var wire 1 \, \G17|ram~489_combout\ $end
-$var wire 1 ], \G17|ram~75_combout\ $end
-$var wire 1 ^, \G17|ram~361_combout\ $end
-$var wire 1 _, \G17|ram~219_combout\ $end
-$var wire 1 `, \G17|ram~251_combout\ $end
-$var wire 1 a, \G17|ram~235_combout\ $end
-$var wire 1 b, \G17|ram~155_combout\ $end
-$var wire 1 c, \G17|ram~187_combout\ $end
-$var wire 1 d, \G17|ram~171_combout\ $end
-$var wire 1 e, \G17|ram~139_combout\ $end
-$var wire 1 f, \G17|ram~493_combout\ $end
-$var wire 1 g, \G17|ram~203_combout\ $end
-$var wire 1 h, \G17|ram~365_combout\ $end
-$var wire 1 i, \G17|ram~267_combout\ $end
-$var wire 1 j, \G14|SAIDA~15_combout\ $end
-$var wire 1 k, \G16|Add1~42\ $end
-$var wire 1 l, \G16|Add1~45_sumout\ $end
-$var wire 1 m, \G16|Add0~42\ $end
-$var wire 1 n, \G16|Add0~45_sumout\ $end
-$var wire 1 o, \G18|SAIDA~39_combout\ $end
-$var wire 1 p, \G18|SAIDA~40_combout\ $end
-$var wire 1 q, \G18|SAIDA~41_combout\ $end
-$var wire 1 r, \G18|SAIDA~42_combout\ $end
-$var wire 1 s, \G7|Reg[0][11]~combout\ $end
-$var wire 1 t, \G16|Add1~46\ $end
-$var wire 1 u, \G16|Add1~49_sumout\ $end
-$var wire 1 v, \G16|Add0~46\ $end
-$var wire 1 w, \G16|Add0~49_sumout\ $end
-$var wire 1 x, \G18|SAIDA~43_combout\ $end
-$var wire 1 y, \G18|SAIDA~44_combout\ $end
-$var wire 1 z, \G18|SAIDA~45_combout\ $end
-$var wire 1 {, \G18|SAIDA~46_combout\ $end
-$var wire 1 |, \G7|Reg[0][12]~combout\ $end
-$var wire 1 }, \G16|Add1~50\ $end
-$var wire 1 ~, \G16|Add1~53_sumout\ $end
-$var wire 1 !- \G16|Add0~50\ $end
-$var wire 1 "- \G16|Add0~53_sumout\ $end
-$var wire 1 #- \G18|SAIDA~48_combout\ $end
-$var wire 1 $- \G18|SAIDA~49_combout\ $end
-$var wire 1 %- \G18|SAIDA~50_combout\ $end
-$var wire 1 &- \G7|Reg[0][13]~combout\ $end
-$var wire 1 '- \G16|Add1~54\ $end
-$var wire 1 (- \G16|Add1~57_sumout\ $end
-$var wire 1 )- \G16|Add0~54\ $end
-$var wire 1 *- \G16|Add0~57_sumout\ $end
-$var wire 1 +- \G18|SAIDA~52_combout\ $end
-$var wire 1 ,- \G18|SAIDA~53_combout\ $end
-$var wire 1 -- \G18|SAIDA~54_combout\ $end
-$var wire 1 .- \G7|Reg[0][14]~combout\ $end
-$var wire 1 /- \G16|Add0~58\ $end
-$var wire 1 0- \G16|Add0~61_sumout\ $end
-$var wire 1 1- \G18|SAIDA~56_combout\ $end
-$var wire 1 2- \G18|SAIDA~57_combout\ $end
-$var wire 1 3- \G18|SAIDA~58_combout\ $end
-$var wire 1 4- \G7|Reg[0][15]~combout\ $end
-$var wire 1 5- \G16|Add1~58\ $end
-$var wire 1 6- \G16|Add1~61_sumout\ $end
-$var wire 1 7- \G16|Equal1~2_combout\ $end
-$var wire 1 8- \G12|SAIDA~1_combout\ $end
-$var wire 1 9- \G13|SAIDA~1_combout\ $end
-$var wire 1 :- \G4|Mux5~0_combout\ $end
-$var wire 1 ;- \G4|rd[0]~0_combout\ $end
-$var wire 1 <- \G16|Add1~21_sumout\ $end
-$var wire 1 =- \G16|Equal1~0_combout\ $end
-$var wire 1 >- \G16|Equal1~1_combout\ $end
-$var wire 1 ?- \G12|SAIDA~0_combout\ $end
-$var wire 1 @- \G13|SAIDA~0_combout\ $end
-$var wire 1 A- \G2|saida[0]~0_combout\ $end
-$var wire 1 B- \G7|Mux10~0_combout\ $end
-$var wire 1 C- \G7|Mux9~0_combout\ $end
-$var wire 1 D- \G7|Mux8~0_combout\ $end
-$var wire 1 E- \G7|Mux7~0_combout\ $end
-$var wire 1 F- \G7|Mux6~0_combout\ $end
-$var wire 1 G- \G7|Mux5~0_combout\ $end
-$var wire 1 H- \G7|Mux4~0_combout\ $end
-$var wire 1 I- \G7|Mux3~0_combout\ $end
-$var wire 1 J- \G7|Mux2~0_combout\ $end
-$var wire 1 K- \G7|Mux1~0_combout\ $end
-$var wire 1 L- \G7|Mux0~0_combout\ $end
-$var wire 1 M- \G6|SAIDA[1]~1_combout\ $end
-$var wire 1 N- \G4|rs[2]~0_combout\ $end
-$var wire 1 O- \G6|SAIDA[2]~2_combout\ $end
-$var wire 1 P- \G4|rs[0]~1_combout\ $end
-$var wire 1 Q- \G16|Mux10~0_combout\ $end
-$var wire 1 R- \G16|Mux9~0_combout\ $end
-$var wire 1 S- \G16|Mux8~0_combout\ $end
-$var wire 1 T- \G16|Mux7~0_combout\ $end
-$var wire 1 U- \G16|Mux6~0_combout\ $end
-$var wire 1 V- \G16|Mux5~0_combout\ $end
-$var wire 1 W- \G16|Mux4~0_combout\ $end
-$var wire 1 X- \G16|Mux3~0_combout\ $end
-$var wire 1 Y- \G16|Mux2~0_combout\ $end
-$var wire 1 Z- \G16|Mux1~0_combout\ $end
-$var wire 1 [- \G16|Mux0~0_combout\ $end
-$var wire 1 \- \G1|G0|G0|state~0_combout\ $end
-$var wire 1 ]- \G1|G0|G0|state~q\ $end
-$var wire 1 ^- \G1|G0|G1|state~0_combout\ $end
-$var wire 1 _- \G1|G0|G1|state~q\ $end
-$var wire 1 `- \G1|G0|G3|state~0_combout\ $end
-$var wire 1 a- \G1|G0|G3|state~q\ $end
-$var wire 1 b- \G9|AUX\ [15] $end
-$var wire 1 c- \G9|AUX\ [14] $end
-$var wire 1 d- \G9|AUX\ [13] $end
-$var wire 1 e- \G9|AUX\ [12] $end
-$var wire 1 f- \G9|AUX\ [11] $end
-$var wire 1 g- \G9|AUX\ [10] $end
-$var wire 1 h- \G9|AUX\ [9] $end
-$var wire 1 i- \G9|AUX\ [8] $end
-$var wire 1 j- \G9|AUX\ [7] $end
-$var wire 1 k- \G9|AUX\ [6] $end
-$var wire 1 l- \G9|AUX\ [5] $end
-$var wire 1 m- \G9|AUX\ [4] $end
-$var wire 1 n- \G9|AUX\ [3] $end
-$var wire 1 o- \G9|AUX\ [2] $end
-$var wire 1 p- \G9|AUX\ [1] $end
-$var wire 1 q- \G9|AUX\ [0] $end
-$var wire 1 r- \G15|SAIDA\ [6] $end
-$var wire 1 s- \G15|SAIDA\ [5] $end
-$var wire 1 t- \G15|SAIDA\ [4] $end
-$var wire 1 u- \G15|SAIDA\ [3] $end
-$var wire 1 v- \G15|SAIDA\ [2] $end
-$var wire 1 w- \G15|SAIDA\ [1] $end
-$var wire 1 x- \G15|SAIDA\ [0] $end
-$var wire 1 y- \G2|saida\ [15] $end
-$var wire 1 z- \G2|saida\ [14] $end
-$var wire 1 {- \G2|saida\ [13] $end
-$var wire 1 |- \G2|saida\ [12] $end
-$var wire 1 }- \G2|saida\ [11] $end
-$var wire 1 ~- \G2|saida\ [10] $end
-$var wire 1 !. \G2|saida\ [9] $end
-$var wire 1 ". \G2|saida\ [8] $end
-$var wire 1 #. \G2|saida\ [7] $end
-$var wire 1 $. \G2|saida\ [6] $end
-$var wire 1 %. \G2|saida\ [5] $end
-$var wire 1 &. \G2|saida\ [4] $end
-$var wire 1 '. \G2|saida\ [3] $end
-$var wire 1 (. \G2|saida\ [2] $end
-$var wire 1 ). \G2|saida\ [1] $end
-$var wire 1 *. \G2|saida\ [0] $end
-$var wire 1 +. \G10|SAIDA\ [15] $end
-$var wire 1 ,. \G10|SAIDA\ [14] $end
-$var wire 1 -. \G10|SAIDA\ [13] $end
-$var wire 1 .. \G10|SAIDA\ [12] $end
-$var wire 1 /. \G10|SAIDA\ [11] $end
-$var wire 1 0. \G10|SAIDA\ [10] $end
-$var wire 1 1. \G10|SAIDA\ [9] $end
-$var wire 1 2. \G10|SAIDA\ [8] $end
-$var wire 1 3. \G10|SAIDA\ [7] $end
-$var wire 1 4. \G10|SAIDA\ [6] $end
-$var wire 1 5. \G10|SAIDA\ [5] $end
-$var wire 1 6. \G10|SAIDA\ [4] $end
-$var wire 1 7. \G10|SAIDA\ [3] $end
-$var wire 1 8. \G10|SAIDA\ [2] $end
-$var wire 1 9. \G10|SAIDA\ [1] $end
-$var wire 1 :. \G10|SAIDA\ [0] $end
-$var wire 1 ;. \G3|resshift\ [15] $end
-$var wire 1 <. \G3|resshift\ [14] $end
-$var wire 1 =. \G3|resshift\ [13] $end
-$var wire 1 >. \G3|resshift\ [12] $end
-$var wire 1 ?. \G3|resshift\ [11] $end
-$var wire 1 @. \G3|resshift\ [10] $end
-$var wire 1 A. \G3|resshift\ [9] $end
-$var wire 1 B. \G3|resshift\ [8] $end
-$var wire 1 C. \G3|resshift\ [7] $end
-$var wire 1 D. \G3|resshift\ [6] $end
-$var wire 1 E. \G3|resshift\ [5] $end
-$var wire 1 F. \G3|resshift\ [4] $end
-$var wire 1 G. \G3|resshift\ [3] $end
-$var wire 1 H. \G3|resshift\ [2] $end
-$var wire 1 I. \G3|resshift\ [1] $end
-$var wire 1 J. \G3|resshift\ [0] $end
-$var wire 1 K. \G12|SAIDA\ [15] $end
-$var wire 1 L. \G12|SAIDA\ [14] $end
-$var wire 1 M. \G12|SAIDA\ [13] $end
-$var wire 1 N. \G12|SAIDA\ [12] $end
-$var wire 1 O. \G12|SAIDA\ [11] $end
-$var wire 1 P. \G12|SAIDA\ [10] $end
-$var wire 1 Q. \G12|SAIDA\ [9] $end
-$var wire 1 R. \G12|SAIDA\ [8] $end
-$var wire 1 S. \G12|SAIDA\ [7] $end
-$var wire 1 T. \G12|SAIDA\ [6] $end
-$var wire 1 U. \G12|SAIDA\ [5] $end
-$var wire 1 V. \G12|SAIDA\ [4] $end
-$var wire 1 W. \G12|SAIDA\ [3] $end
-$var wire 1 X. \G12|SAIDA\ [2] $end
-$var wire 1 Y. \G12|SAIDA\ [1] $end
-$var wire 1 Z. \G12|SAIDA\ [0] $end
-$var wire 1 [. \G9|SAIDA\ [15] $end
-$var wire 1 \. \G9|SAIDA\ [14] $end
-$var wire 1 ]. \G9|SAIDA\ [13] $end
-$var wire 1 ^. \G9|SAIDA\ [12] $end
-$var wire 1 _. \G9|SAIDA\ [11] $end
-$var wire 1 `. \G9|SAIDA\ [10] $end
-$var wire 1 a. \G9|SAIDA\ [9] $end
-$var wire 1 b. \G9|SAIDA\ [8] $end
-$var wire 1 c. \G9|SAIDA\ [7] $end
-$var wire 1 d. \G9|SAIDA\ [6] $end
-$var wire 1 e. \G9|SAIDA\ [5] $end
-$var wire 1 f. \G9|SAIDA\ [4] $end
-$var wire 1 g. \G9|SAIDA\ [3] $end
-$var wire 1 h. \G9|SAIDA\ [2] $end
-$var wire 1 i. \G9|SAIDA\ [1] $end
-$var wire 1 j. \G9|SAIDA\ [0] $end
-$var wire 1 k. \G1|pout\ [15] $end
-$var wire 1 l. \G1|pout\ [14] $end
-$var wire 1 m. \G1|pout\ [13] $end
-$var wire 1 n. \G1|pout\ [12] $end
-$var wire 1 o. \G1|pout\ [11] $end
-$var wire 1 p. \G1|pout\ [10] $end
-$var wire 1 q. \G1|pout\ [9] $end
-$var wire 1 r. \G1|pout\ [8] $end
-$var wire 1 s. \G1|pout\ [7] $end
-$var wire 1 t. \G1|pout\ [6] $end
-$var wire 1 u. \G1|pout\ [5] $end
-$var wire 1 v. \G1|pout\ [4] $end
-$var wire 1 w. \G1|pout\ [3] $end
-$var wire 1 x. \G1|pout\ [2] $end
-$var wire 1 y. \G1|pout\ [1] $end
-$var wire 1 z. \G1|pout\ [0] $end
-$var wire 1 {. \G18|SAIDA\ [15] $end
-$var wire 1 |. \G18|SAIDA\ [14] $end
-$var wire 1 }. \G18|SAIDA\ [13] $end
-$var wire 1 ~. \G18|SAIDA\ [12] $end
-$var wire 1 !/ \G18|SAIDA\ [11] $end
-$var wire 1 "/ \G18|SAIDA\ [10] $end
-$var wire 1 #/ \G18|SAIDA\ [9] $end
-$var wire 1 $/ \G18|SAIDA\ [8] $end
-$var wire 1 %/ \G18|SAIDA\ [7] $end
-$var wire 1 &/ \G18|SAIDA\ [6] $end
-$var wire 1 '/ \G18|SAIDA\ [5] $end
-$var wire 1 (/ \G18|SAIDA\ [4] $end
-$var wire 1 )/ \G18|SAIDA\ [3] $end
-$var wire 1 */ \G18|SAIDA\ [2] $end
-$var wire 1 +/ \G18|SAIDA\ [1] $end
-$var wire 1 ,/ \G18|SAIDA\ [0] $end
-$var wire 1 -/ \G13|SAIDA\ [15] $end
-$var wire 1 ./ \G13|SAIDA\ [14] $end
-$var wire 1 // \G13|SAIDA\ [13] $end
-$var wire 1 0/ \G13|SAIDA\ [12] $end
-$var wire 1 1/ \G13|SAIDA\ [11] $end
-$var wire 1 2/ \G13|SAIDA\ [10] $end
-$var wire 1 3/ \G13|SAIDA\ [9] $end
-$var wire 1 4/ \G13|SAIDA\ [8] $end
-$var wire 1 5/ \G13|SAIDA\ [7] $end
-$var wire 1 6/ \G13|SAIDA\ [6] $end
-$var wire 1 7/ \G13|SAIDA\ [5] $end
-$var wire 1 8/ \G13|SAIDA\ [4] $end
-$var wire 1 9/ \G13|SAIDA\ [3] $end
-$var wire 1 :/ \G13|SAIDA\ [2] $end
-$var wire 1 ;/ \G13|SAIDA\ [1] $end
-$var wire 1 </ \G13|SAIDA\ [0] $end
-$var wire 1 =/ \G14|SAIDA\ [15] $end
-$var wire 1 >/ \G14|SAIDA\ [14] $end
-$var wire 1 ?/ \G14|SAIDA\ [13] $end
-$var wire 1 @/ \G14|SAIDA\ [12] $end
-$var wire 1 A/ \G14|SAIDA\ [11] $end
-$var wire 1 B/ \G14|SAIDA\ [10] $end
-$var wire 1 C/ \G14|SAIDA\ [9] $end
-$var wire 1 D/ \G14|SAIDA\ [8] $end
-$var wire 1 E/ \G14|SAIDA\ [7] $end
-$var wire 1 F/ \G14|SAIDA\ [6] $end
-$var wire 1 G/ \G14|SAIDA\ [5] $end
-$var wire 1 H/ \G14|SAIDA\ [4] $end
-$var wire 1 I/ \G14|SAIDA\ [3] $end
-$var wire 1 J/ \G14|SAIDA\ [2] $end
-$var wire 1 K/ \G14|SAIDA\ [1] $end
-$var wire 1 L/ \G14|SAIDA\ [0] $end
-$var wire 1 M/ \G5|origalu\ [3] $end
-$var wire 1 N/ \G5|origalu\ [2] $end
-$var wire 1 O/ \G5|origalu\ [1] $end
-$var wire 1 P/ \G5|origalu\ [0] $end
-$var wire 1 Q/ \G16|ALT_INV_Add1~29_sumout\ $end
-$var wire 1 R/ \G16|ALT_INV_Add0~25_sumout\ $end
-$var wire 1 S/ \G16|ALT_INV_Add1~25_sumout\ $end
-$var wire 1 T/ \G16|ALT_INV_Add0~21_sumout\ $end
-$var wire 1 U/ \G16|ALT_INV_Add1~21_sumout\ $end
-$var wire 1 V/ \G16|ALT_INV_Add0~17_sumout\ $end
-$var wire 1 W/ \G16|ALT_INV_Add1~17_sumout\ $end
-$var wire 1 X/ \G16|ALT_INV_Add0~13_sumout\ $end
-$var wire 1 Y/ \G16|ALT_INV_Add1~13_sumout\ $end
-$var wire 1 Z/ \G16|ALT_INV_Add0~9_sumout\ $end
-$var wire 1 [/ \G16|ALT_INV_Add1~9_sumout\ $end
-$var wire 1 \/ \G16|ALT_INV_Add0~5_sumout\ $end
-$var wire 1 ]/ \G16|ALT_INV_Add1~5_sumout\ $end
-$var wire 1 ^/ \G16|ALT_INV_Add0~1_sumout\ $end
-$var wire 1 _/ \G16|ALT_INV_Add1~1_sumout\ $end
-$var wire 1 `/ \G17|ALT_INV_ram~525_combout\ $end
-$var wire 1 a/ \G17|ALT_INV_ram~521_combout\ $end
-$var wire 1 b/ \G17|ALT_INV_ram~517_combout\ $end
-$var wire 1 c/ \G17|ALT_INV_ram~513_combout\ $end
-$var wire 1 d/ \G17|ALT_INV_ram~509_combout\ $end
-$var wire 1 e/ \G17|ALT_INV_ram~505_combout\ $end
-$var wire 1 f/ \G17|ALT_INV_ram~501_combout\ $end
-$var wire 1 g/ \G17|ALT_INV_ram~497_combout\ $end
-$var wire 1 h/ \G17|ALT_INV_ram~493_combout\ $end
-$var wire 1 i/ \G17|ALT_INV_ram~489_combout\ $end
-$var wire 1 j/ \G17|ALT_INV_ram~485_combout\ $end
-$var wire 1 k/ \G17|ALT_INV_ram~481_combout\ $end
-$var wire 1 l/ \G17|ALT_INV_ram~477_combout\ $end
-$var wire 1 m/ \G17|ALT_INV_ram~473_combout\ $end
-$var wire 1 n/ \G17|ALT_INV_ram~469_combout\ $end
-$var wire 1 o/ \G17|ALT_INV_ram~465_combout\ $end
-$var wire 1 p/ \G17|ALT_INV_ram~461_combout\ $end
-$var wire 1 q/ \G17|ALT_INV_ram~457_combout\ $end
-$var wire 1 r/ \G17|ALT_INV_ram~453_combout\ $end
-$var wire 1 s/ \G17|ALT_INV_ram~449_combout\ $end
-$var wire 1 t/ \G17|ALT_INV_ram~445_combout\ $end
-$var wire 1 u/ \G17|ALT_INV_ram~441_combout\ $end
-$var wire 1 v/ \G17|ALT_INV_ram~437_combout\ $end
-$var wire 1 w/ \G17|ALT_INV_ram~433_combout\ $end
-$var wire 1 x/ \G17|ALT_INV_ram~429_combout\ $end
-$var wire 1 y/ \G17|ALT_INV_ram~425_combout\ $end
-$var wire 1 z/ \G17|ALT_INV_ram~421_combout\ $end
-$var wire 1 {/ \G17|ALT_INV_ram~417_combout\ $end
-$var wire 1 |/ \G17|ALT_INV_ram~413_combout\ $end
-$var wire 1 }/ \G17|ALT_INV_ram~409_combout\ $end
-$var wire 1 ~/ \G17|ALT_INV_ram~405_combout\ $end
-$var wire 1 !0 \G17|ALT_INV_ram~401_combout\ $end
-$var wire 1 "0 \G17|ALT_INV_ram~397_combout\ $end
-$var wire 1 #0 \G17|ALT_INV_ram~393_combout\ $end
-$var wire 1 $0 \G17|ALT_INV_ram~389_combout\ $end
-$var wire 1 %0 \G17|ALT_INV_ram~385_combout\ $end
-$var wire 1 &0 \G17|ALT_INV_ram~381_combout\ $end
-$var wire 1 '0 \G17|ALT_INV_ram~377_combout\ $end
-$var wire 1 (0 \G17|ALT_INV_ram~373_combout\ $end
-$var wire 1 )0 \G17|ALT_INV_ram~369_combout\ $end
-$var wire 1 *0 \G17|ALT_INV_ram~365_combout\ $end
-$var wire 1 +0 \G17|ALT_INV_ram~361_combout\ $end
-$var wire 1 ,0 \G17|ALT_INV_ram~357_combout\ $end
-$var wire 1 -0 \G17|ALT_INV_ram~353_combout\ $end
-$var wire 1 .0 \G17|ALT_INV_ram~349_combout\ $end
-$var wire 1 /0 \G17|ALT_INV_ram~345_combout\ $end
-$var wire 1 00 \G17|ALT_INV_ram~341_combout\ $end
-$var wire 1 10 \G17|ALT_INV_ram~337_combout\ $end
-$var wire 1 20 \G17|ALT_INV_ram~333_combout\ $end
-$var wire 1 30 \G17|ALT_INV_ram~329_combout\ $end
-$var wire 1 40 \G17|ALT_INV_ram~325_combout\ $end
-$var wire 1 50 \G17|ALT_INV_ram~321_combout\ $end
-$var wire 1 60 \G17|ALT_INV_ram~317_combout\ $end
-$var wire 1 70 \G17|ALT_INV_ram~313_combout\ $end
-$var wire 1 80 \G17|ALT_INV_ram~309_combout\ $end
-$var wire 1 90 \G17|ALT_INV_ram~305_combout\ $end
-$var wire 1 :0 \G17|ALT_INV_ram~301_combout\ $end
-$var wire 1 ;0 \G17|ALT_INV_ram~297_combout\ $end
-$var wire 1 <0 \G17|ALT_INV_ram~293_combout\ $end
-$var wire 1 =0 \G17|ALT_INV_ram~289_combout\ $end
-$var wire 1 >0 \G17|ALT_INV_ram~285_combout\ $end
-$var wire 1 ?0 \G17|ALT_INV_ram~281_combout\ $end
-$var wire 1 @0 \G17|ALT_INV_ram~276_combout\ $end
-$var wire 1 A0 \G17|ALT_INV_ram~272_combout\ $end
-$var wire 1 B0 \G16|ALT_INV_Add0~61_sumout\ $end
-$var wire 1 C0 \G16|ALT_INV_Add1~61_sumout\ $end
-$var wire 1 D0 \G16|ALT_INV_Add0~57_sumout\ $end
-$var wire 1 E0 \G16|ALT_INV_Add1~57_sumout\ $end
-$var wire 1 F0 \G16|ALT_INV_Add0~53_sumout\ $end
-$var wire 1 G0 \G16|ALT_INV_Add1~53_sumout\ $end
-$var wire 1 H0 \G16|ALT_INV_Add0~49_sumout\ $end
-$var wire 1 I0 \G16|ALT_INV_Add1~49_sumout\ $end
-$var wire 1 J0 \G16|ALT_INV_Add0~45_sumout\ $end
-$var wire 1 K0 \G16|ALT_INV_Add1~45_sumout\ $end
-$var wire 1 L0 \G16|ALT_INV_Add0~41_sumout\ $end
-$var wire 1 M0 \G16|ALT_INV_Add1~41_sumout\ $end
-$var wire 1 N0 \G16|ALT_INV_Add0~37_sumout\ $end
-$var wire 1 O0 \G16|ALT_INV_Add1~37_sumout\ $end
-$var wire 1 P0 \G16|ALT_INV_Add0~33_sumout\ $end
-$var wire 1 Q0 \G16|ALT_INV_Add1~33_sumout\ $end
-$var wire 1 R0 \G16|ALT_INV_Add0~29_sumout\ $end
-$var wire 1 S0 \G1|G0|G3|ALT_INV_state~q\ $end
-$var wire 1 T0 \G1|G0|G1|ALT_INV_state~q\ $end
-$var wire 1 U0 \G1|G0|G0|ALT_INV_state~q\ $end
-$var wire 1 V0 \G16|ALT_INV_Mux11~0_combout\ $end
-$var wire 1 W0 \G16|ALT_INV_Mux12~0_combout\ $end
-$var wire 1 X0 \G16|ALT_INV_Mux13~0_combout\ $end
-$var wire 1 Y0 \G16|ALT_INV_Mux14~2_combout\ $end
-$var wire 1 Z0 \G16|ALT_INV_Mux15~0_combout\ $end
-$var wire 1 [0 \G16|ALT_INV_Mux14~1_combout\ $end
-$var wire 1 \0 \G16|ALT_INV_Mux14~0_combout\ $end
-$var wire 1 ]0 \G15|ALT_INV_SAIDA\ [5] $end
-$var wire 1 ^0 \G15|ALT_INV_SAIDA\ [4] $end
-$var wire 1 _0 \G15|ALT_INV_SAIDA\ [3] $end
-$var wire 1 `0 \G15|ALT_INV_SAIDA\ [2] $end
-$var wire 1 a0 \G15|ALT_INV_SAIDA\ [1] $end
-$var wire 1 b0 \G15|ALT_INV_SAIDA\ [0] $end
-$var wire 1 c0 \G4|ALT_INV_Mux1~0_combout\ $end
-$var wire 1 d0 \G4|ALT_INV_Mux2~0_combout\ $end
-$var wire 1 e0 \G4|ALT_INV_Mux0~3_combout\ $end
-$var wire 1 f0 \G4|ALT_INV_op[0]~0_combout\ $end
-$var wire 1 g0 \G4|ALT_INV_rs[1]~2_combout\ $end
-$var wire 1 h0 \G6|ALT_INV_SAIDA[2]~2_combout\ $end
-$var wire 1 i0 \G4|ALT_INV_rs[2]~0_combout\ $end
-$var wire 1 j0 \G6|ALT_INV_SAIDA[1]~1_combout\ $end
-$var wire 1 k0 \G7|ALT_INV_Mux16~0_combout\ $end
-$var wire 1 l0 \G7|ALT_INV_Mux17~0_combout\ $end
-$var wire 1 m0 \G7|ALT_INV_Mux18~0_combout\ $end
-$var wire 1 n0 \G7|ALT_INV_Mux19~0_combout\ $end
-$var wire 1 o0 \G7|ALT_INV_Mux20~0_combout\ $end
-$var wire 1 p0 \G7|ALT_INV_Mux21~0_combout\ $end
-$var wire 1 q0 \G7|ALT_INV_Mux22~0_combout\ $end
-$var wire 1 r0 \G7|ALT_INV_Mux23~0_combout\ $end
-$var wire 1 s0 \G7|ALT_INV_Mux24~0_combout\ $end
-$var wire 1 t0 \G7|ALT_INV_Mux25~0_combout\ $end
-$var wire 1 u0 \G7|ALT_INV_Mux26~0_combout\ $end
-$var wire 1 v0 \G7|ALT_INV_Mux27~0_combout\ $end
-$var wire 1 w0 \G7|ALT_INV_Mux28~0_combout\ $end
-$var wire 1 x0 \G7|ALT_INV_Mux29~0_combout\ $end
-$var wire 1 y0 \G7|ALT_INV_Mux30~0_combout\ $end
-$var wire 1 z0 \G7|ALT_INV_Mux31~0_combout\ $end
-$var wire 1 {0 \G7|ALT_INV_Reg[0][0]~0_combout\ $end
-$var wire 1 |0 \G4|ALT_INV_rt[0]~0_combout\ $end
-$var wire 1 }0 \G6|ALT_INV_SAIDA[0]~0_combout\ $end
-$var wire 1 ~0 \G7|ALT_INV_Mux0~0_combout\ $end
-$var wire 1 !1 \G7|ALT_INV_Mux1~0_combout\ $end
-$var wire 1 "1 \G7|ALT_INV_Mux2~0_combout\ $end
-$var wire 1 #1 \G7|ALT_INV_Mux3~0_combout\ $end
-$var wire 1 $1 \G7|ALT_INV_Mux4~0_combout\ $end
-$var wire 1 %1 \G7|ALT_INV_Mux5~0_combout\ $end
-$var wire 1 &1 \G7|ALT_INV_Mux6~0_combout\ $end
-$var wire 1 '1 \G7|ALT_INV_Mux7~0_combout\ $end
-$var wire 1 (1 \G7|ALT_INV_Mux8~0_combout\ $end
-$var wire 1 )1 \G7|ALT_INV_Mux9~0_combout\ $end
-$var wire 1 *1 \G7|ALT_INV_Mux10~0_combout\ $end
-$var wire 1 +1 \G7|ALT_INV_Mux11~0_combout\ $end
-$var wire 1 ,1 \G7|ALT_INV_Mux12~0_combout\ $end
-$var wire 1 -1 \G7|ALT_INV_Mux13~0_combout\ $end
-$var wire 1 .1 \G7|ALT_INV_Mux14~0_combout\ $end
-$var wire 1 /1 \G7|ALT_INV_Mux15~0_combout\ $end
-$var wire 1 01 \G7|ALT_INV_Decoder0~0_combout\ $end
-$var wire 1 11 \G4|ALT_INV_Mux3~0_combout\ $end
-$var wire 1 21 \G4|ALT_INV_Mux5~1_combout\ $end
-$var wire 1 31 \G4|ALT_INV_rd[0]~0_combout\ $end
-$var wire 1 41 \G4|ALT_INV_Mux0~2_combout\ $end
-$var wire 1 51 \G4|ALT_INV_Mux6~1_combout\ $end
-$var wire 1 61 \G4|ALT_INV_Mux6~0_combout\ $end
-$var wire 1 71 \G4|ALT_INV_Mux5~0_combout\ $end
-$var wire 1 81 \G4|ALT_INV_Mux0~1_combout\ $end
-$var wire 1 91 \G4|ALT_INV_Mux0~0_combout\ $end
-$var wire 1 :1 \G2|ALT_INV_saida\ [15] $end
-$var wire 1 ;1 \G2|ALT_INV_saida\ [14] $end
-$var wire 1 <1 \G2|ALT_INV_saida\ [13] $end
-$var wire 1 =1 \G2|ALT_INV_saida\ [12] $end
-$var wire 1 >1 \G2|ALT_INV_saida\ [11] $end
-$var wire 1 ?1 \G2|ALT_INV_saida\ [10] $end
-$var wire 1 @1 \G2|ALT_INV_saida\ [9] $end
-$var wire 1 A1 \G2|ALT_INV_saida\ [8] $end
-$var wire 1 B1 \G2|ALT_INV_saida\ [7] $end
-$var wire 1 C1 \G2|ALT_INV_saida\ [6] $end
-$var wire 1 D1 \G2|ALT_INV_saida\ [5] $end
-$var wire 1 E1 \G2|ALT_INV_saida\ [4] $end
-$var wire 1 F1 \G2|ALT_INV_saida\ [3] $end
-$var wire 1 G1 \G2|ALT_INV_saida\ [2] $end
-$var wire 1 H1 \G2|ALT_INV_saida\ [1] $end
-$var wire 1 I1 \G2|ALT_INV_saida\ [0] $end
-$var wire 1 J1 \G13|ALT_INV_SAIDA~13_combout\ $end
-$var wire 1 K1 \G13|ALT_INV_SAIDA~12_combout\ $end
-$var wire 1 L1 \G13|ALT_INV_SAIDA~11_combout\ $end
-$var wire 1 M1 \G13|ALT_INV_SAIDA~10_combout\ $end
-$var wire 1 N1 \G13|ALT_INV_SAIDA~9_combout\ $end
-$var wire 1 O1 \G13|ALT_INV_SAIDA~8_combout\ $end
-$var wire 1 P1 \G13|ALT_INV_SAIDA~7_combout\ $end
-$var wire 1 Q1 \G13|ALT_INV_SAIDA~6_combout\ $end
-$var wire 1 R1 \G13|ALT_INV_SAIDA~5_combout\ $end
-$var wire 1 S1 \G13|ALT_INV_SAIDA~4_combout\ $end
-$var wire 1 T1 \G13|ALT_INV_SAIDA~3_combout\ $end
-$var wire 1 U1 \G13|ALT_INV_SAIDA~2_combout\ $end
-$var wire 1 V1 \G13|ALT_INV_SAIDA~1_combout\ $end
-$var wire 1 W1 \G13|ALT_INV_SAIDA~0_combout\ $end
-$var wire 1 X1 \G12|ALT_INV_SAIDA~15_combout\ $end
-$var wire 1 Y1 \G10|ALT_INV_SAIDA\ [15] $end
-$var wire 1 Z1 \G10|ALT_INV_SAIDA\ [14] $end
-$var wire 1 [1 \G10|ALT_INV_SAIDA\ [13] $end
-$var wire 1 \1 \G10|ALT_INV_SAIDA\ [12] $end
-$var wire 1 ]1 \G10|ALT_INV_SAIDA\ [11] $end
-$var wire 1 ^1 \G10|ALT_INV_SAIDA\ [10] $end
-$var wire 1 _1 \G10|ALT_INV_SAIDA\ [9] $end
-$var wire 1 `1 \G10|ALT_INV_SAIDA\ [8] $end
-$var wire 1 a1 \G10|ALT_INV_SAIDA\ [7] $end
-$var wire 1 b1 \G10|ALT_INV_SAIDA\ [6] $end
-$var wire 1 c1 \G10|ALT_INV_SAIDA\ [5] $end
-$var wire 1 d1 \G10|ALT_INV_SAIDA\ [4] $end
-$var wire 1 e1 \G10|ALT_INV_SAIDA\ [3] $end
-$var wire 1 f1 \G10|ALT_INV_SAIDA\ [2] $end
-$var wire 1 g1 \G10|ALT_INV_SAIDA\ [1] $end
-$var wire 1 h1 \G10|ALT_INV_SAIDA\ [0] $end
-$var wire 1 i1 \G12|ALT_INV_SAIDA~14_combout\ $end
-$var wire 1 j1 \G12|ALT_INV_SAIDA~13_combout\ $end
-$var wire 1 k1 \G12|ALT_INV_SAIDA~12_combout\ $end
-$var wire 1 l1 \G12|ALT_INV_SAIDA~11_combout\ $end
-$var wire 1 m1 \G12|ALT_INV_SAIDA~10_combout\ $end
-$var wire 1 n1 \G12|ALT_INV_SAIDA~9_combout\ $end
-$var wire 1 o1 \G12|ALT_INV_SAIDA~8_combout\ $end
-$var wire 1 p1 \G12|ALT_INV_SAIDA~7_combout\ $end
-$var wire 1 q1 \G12|ALT_INV_SAIDA~6_combout\ $end
-$var wire 1 r1 \G12|ALT_INV_SAIDA~5_combout\ $end
-$var wire 1 s1 \G12|ALT_INV_SAIDA~4_combout\ $end
-$var wire 1 t1 \G12|ALT_INV_SAIDA~3_combout\ $end
-$var wire 1 u1 \G12|ALT_INV_SAIDA~2_combout\ $end
-$var wire 1 v1 \G12|ALT_INV_SAIDA~1_combout\ $end
-$var wire 1 w1 \G12|ALT_INV_SAIDA~0_combout\ $end
-$var wire 1 x1 \G11|ALT_INV_S1~1_combout\ $end
-$var wire 1 y1 \G11|ALT_INV_S1~0_combout\ $end
-$var wire 1 z1 \G16|ALT_INV_Equal1~2_combout\ $end
-$var wire 1 {1 \G16|ALT_INV_Equal1~1_combout\ $end
-$var wire 1 |1 \G16|ALT_INV_Equal1~0_combout\ $end
-$var wire 1 }1 \G18|ALT_INV_SAIDA~58_combout\ $end
-$var wire 1 ~1 \G18|ALT_INV_SAIDA~57_combout\ $end
-$var wire 1 !2 \G18|ALT_INV_SAIDA~56_combout\ $end
-$var wire 1 "2 \G18|ALT_INV_SAIDA~55_combout\ $end
-$var wire 1 #2 \G18|ALT_INV_SAIDA~54_combout\ $end
-$var wire 1 $2 \G18|ALT_INV_SAIDA~53_combout\ $end
-$var wire 1 %2 \G18|ALT_INV_SAIDA~52_combout\ $end
-$var wire 1 &2 \G18|ALT_INV_SAIDA~51_combout\ $end
-$var wire 1 '2 \G18|ALT_INV_SAIDA~50_combout\ $end
-$var wire 1 (2 \G18|ALT_INV_SAIDA~49_combout\ $end
-$var wire 1 )2 \G18|ALT_INV_SAIDA~48_combout\ $end
-$var wire 1 *2 \G18|ALT_INV_SAIDA~47_combout\ $end
-$var wire 1 +2 \G18|ALT_INV_SAIDA~46_combout\ $end
-$var wire 1 ,2 \G18|ALT_INV_SAIDA~45_combout\ $end
-$var wire 1 -2 \G18|ALT_INV_SAIDA~44_combout\ $end
-$var wire 1 .2 \G18|ALT_INV_SAIDA~43_combout\ $end
-$var wire 1 /2 \G18|ALT_INV_SAIDA~42_combout\ $end
-$var wire 1 02 \G18|ALT_INV_SAIDA~41_combout\ $end
-$var wire 1 12 \G18|ALT_INV_SAIDA~40_combout\ $end
-$var wire 1 22 \G18|ALT_INV_SAIDA~39_combout\ $end
-$var wire 1 32 \G18|ALT_INV_SAIDA~38_combout\ $end
-$var wire 1 42 \G18|ALT_INV_SAIDA~37_combout\ $end
-$var wire 1 52 \G18|ALT_INV_SAIDA~36_combout\ $end
-$var wire 1 62 \G18|ALT_INV_SAIDA~35_combout\ $end
-$var wire 1 72 \G18|ALT_INV_SAIDA~34_combout\ $end
-$var wire 1 82 \G18|ALT_INV_SAIDA~33_combout\ $end
-$var wire 1 92 \G18|ALT_INV_SAIDA~32_combout\ $end
-$var wire 1 :2 \G18|ALT_INV_SAIDA~31_combout\ $end
-$var wire 1 ;2 \G18|ALT_INV_SAIDA~30_combout\ $end
-$var wire 1 <2 \G18|ALT_INV_SAIDA~29_combout\ $end
-$var wire 1 =2 \G18|ALT_INV_SAIDA~28_combout\ $end
-$var wire 1 >2 \G18|ALT_INV_SAIDA~27_combout\ $end
-$var wire 1 ?2 \G18|ALT_INV_SAIDA~26_combout\ $end
-$var wire 1 @2 \G18|ALT_INV_SAIDA~25_combout\ $end
-$var wire 1 A2 \G18|ALT_INV_SAIDA~24_combout\ $end
-$var wire 1 B2 \G18|ALT_INV_SAIDA~23_combout\ $end
-$var wire 1 C2 \G18|ALT_INV_SAIDA~22_combout\ $end
-$var wire 1 D2 \G18|ALT_INV_SAIDA~21_combout\ $end
-$var wire 1 E2 \G18|ALT_INV_SAIDA~20_combout\ $end
-$var wire 1 F2 \G18|ALT_INV_SAIDA~19_combout\ $end
-$var wire 1 G2 \G18|ALT_INV_SAIDA~18_combout\ $end
-$var wire 1 H2 \G18|ALT_INV_SAIDA~17_combout\ $end
-$var wire 1 I2 \G18|ALT_INV_SAIDA~16_combout\ $end
-$var wire 1 J2 \G18|ALT_INV_SAIDA~15_combout\ $end
-$var wire 1 K2 \G18|ALT_INV_SAIDA~14_combout\ $end
-$var wire 1 L2 \G18|ALT_INV_SAIDA~13_combout\ $end
-$var wire 1 M2 \G18|ALT_INV_SAIDA~12_combout\ $end
-$var wire 1 N2 \G18|ALT_INV_SAIDA~11_combout\ $end
-$var wire 1 O2 \G16|ALT_INV_Mux13~2_combout\ $end
-$var wire 1 P2 \G18|ALT_INV_SAIDA~10_combout\ $end
-$var wire 1 Q2 \G18|ALT_INV_SAIDA~9_combout\ $end
-$var wire 1 R2 \G18|ALT_INV_SAIDA~8_combout\ $end
-$var wire 1 S2 \G18|ALT_INV_SAIDA~7_combout\ $end
-$var wire 1 T2 \G18|ALT_INV_SAIDA~6_combout\ $end
-$var wire 1 U2 \G18|ALT_INV_SAIDA~5_combout\ $end
-$var wire 1 V2 \G18|ALT_INV_SAIDA~4_combout\ $end
-$var wire 1 W2 \G17|ALT_INV_ram~280_combout\ $end
-$var wire 1 X2 \G16|ALT_INV_Mux13~1_combout\ $end
-$var wire 1 Y2 \G16|ALT_INV_Mux15~2_combout\ $end
-$var wire 1 Z2 \G16|ALT_INV_Mux14~4_combout\ $end
-$var wire 1 [2 \G16|ALT_INV_Mux14~3_combout\ $end
-$var wire 1 \2 \G18|ALT_INV_SAIDA~3_combout\ $end
-$var wire 1 ]2 \G16|ALT_INV_Mux15~1_combout\ $end
-$var wire 1 ^2 \G7|ALT_INV_Mux15~1_combout\ $end
-$var wire 1 _2 \G4|ALT_INV_rd[0]~1_combout\ $end
-$var wire 1 `2 \G18|ALT_INV_SAIDA~2_combout\ $end
-$var wire 1 a2 \G16|ALT_INV_Mux12~2_combout\ $end
-$var wire 1 b2 \G16|ALT_INV_Mux11~2_combout\ $end
-$var wire 1 c2 \G18|ALT_INV_SAIDA~1_combout\ $end
-$var wire 1 d2 \G18|ALT_INV_SAIDA~0_combout\ $end
-$var wire 1 e2 \G16|ALT_INV_Mux12~1_combout\ $end
-$var wire 1 f2 \G16|ALT_INV_Mux11~1_combout\ $end
-$var wire 1 g2 \G4|ALT_INV_tipoi[0]~3_combout\ $end
-$var wire 1 h2 \G5|ALT_INV_regdest~0_combout\ $end
-$var wire 1 i2 \G7|ALT_INV_Reg[0][0]~1_combout\ $end
-$var wire 1 j2 \G12|ALT_INV_SAIDA\ [15] $end
-$var wire 1 k2 \G12|ALT_INV_SAIDA\ [14] $end
-$var wire 1 l2 \G12|ALT_INV_SAIDA\ [13] $end
-$var wire 1 m2 \G12|ALT_INV_SAIDA\ [12] $end
-$var wire 1 n2 \G12|ALT_INV_SAIDA\ [11] $end
-$var wire 1 o2 \G12|ALT_INV_SAIDA\ [10] $end
-$var wire 1 p2 \G12|ALT_INV_SAIDA\ [9] $end
-$var wire 1 q2 \G12|ALT_INV_SAIDA\ [8] $end
-$var wire 1 r2 \G12|ALT_INV_SAIDA\ [7] $end
-$var wire 1 s2 \G12|ALT_INV_SAIDA\ [6] $end
-$var wire 1 t2 \G12|ALT_INV_SAIDA\ [5] $end
-$var wire 1 u2 \G12|ALT_INV_SAIDA\ [4] $end
-$var wire 1 v2 \G12|ALT_INV_SAIDA\ [3] $end
-$var wire 1 w2 \G12|ALT_INV_SAIDA\ [2] $end
-$var wire 1 x2 \G12|ALT_INV_SAIDA\ [1] $end
-$var wire 1 y2 \G12|ALT_INV_SAIDA\ [0] $end
-$var wire 1 z2 \G18|ALT_INV_SAIDA\ [15] $end
-$var wire 1 {2 \G18|ALT_INV_SAIDA\ [14] $end
-$var wire 1 |2 \G18|ALT_INV_SAIDA\ [13] $end
-$var wire 1 }2 \G18|ALT_INV_SAIDA\ [12] $end
-$var wire 1 ~2 \G18|ALT_INV_SAIDA\ [11] $end
-$var wire 1 !3 \G18|ALT_INV_SAIDA\ [10] $end
-$var wire 1 "3 \G18|ALT_INV_SAIDA\ [9] $end
-$var wire 1 #3 \G18|ALT_INV_SAIDA\ [8] $end
-$var wire 1 $3 \G18|ALT_INV_SAIDA\ [7] $end
-$var wire 1 %3 \G18|ALT_INV_SAIDA\ [6] $end
-$var wire 1 &3 \G18|ALT_INV_SAIDA\ [5] $end
-$var wire 1 '3 \G18|ALT_INV_SAIDA\ [4] $end
-$var wire 1 (3 \G18|ALT_INV_SAIDA\ [3] $end
-$var wire 1 )3 \G18|ALT_INV_SAIDA\ [2] $end
-$var wire 1 *3 \G18|ALT_INV_SAIDA\ [1] $end
-$var wire 1 +3 \G18|ALT_INV_SAIDA\ [0] $end
-$var wire 1 ,3 \G7|ALT_INV_Reg[0][15]~combout\ $end
-$var wire 1 -3 \G7|ALT_INV_Reg[0][14]~combout\ $end
-$var wire 1 .3 \G7|ALT_INV_Reg[0][13]~combout\ $end
-$var wire 1 /3 \G7|ALT_INV_Reg[0][12]~combout\ $end
-$var wire 1 03 \G7|ALT_INV_Reg[0][11]~combout\ $end
-$var wire 1 13 \G7|ALT_INV_Reg[0][10]~combout\ $end
-$var wire 1 23 \G7|ALT_INV_Reg[0][9]~combout\ $end
-$var wire 1 33 \G7|ALT_INV_Reg[0][8]~combout\ $end
-$var wire 1 43 \G7|ALT_INV_Reg[0][7]~combout\ $end
-$var wire 1 53 \G7|ALT_INV_Reg[0][6]~combout\ $end
-$var wire 1 63 \G7|ALT_INV_Reg[0][5]~combout\ $end
-$var wire 1 73 \G7|ALT_INV_Reg[0][4]~combout\ $end
-$var wire 1 83 \G7|ALT_INV_Reg[0][3]~combout\ $end
-$var wire 1 93 \G7|ALT_INV_Reg[0][2]~combout\ $end
-$var wire 1 :3 \G7|ALT_INV_Reg[0][1]~combout\ $end
-$var wire 1 ;3 \G5|ALT_INV_regdest~combout\ $end
-$var wire 1 <3 \G5|ALT_INV_escrevereg~combout\ $end
-$var wire 1 =3 \G7|ALT_INV_Reg[0][0]~combout\ $end
-$var wire 1 >3 \G1|ALT_INV_pout\ [15] $end
-$var wire 1 ?3 \G1|ALT_INV_pout\ [14] $end
-$var wire 1 @3 \G1|ALT_INV_pout\ [13] $end
-$var wire 1 A3 \G1|ALT_INV_pout\ [12] $end
-$var wire 1 B3 \G1|ALT_INV_pout\ [11] $end
-$var wire 1 C3 \G1|ALT_INV_pout\ [10] $end
-$var wire 1 D3 \G1|ALT_INV_pout\ [9] $end
-$var wire 1 E3 \G1|ALT_INV_pout\ [8] $end
-$var wire 1 F3 \G1|ALT_INV_pout\ [7] $end
-$var wire 1 G3 \G1|ALT_INV_pout\ [6] $end
-$var wire 1 H3 \G1|ALT_INV_pout\ [5] $end
-$var wire 1 I3 \G1|ALT_INV_pout\ [4] $end
-$var wire 1 J3 \G1|ALT_INV_pout\ [3] $end
-$var wire 1 K3 \G1|ALT_INV_pout\ [2] $end
-$var wire 1 L3 \G1|ALT_INV_pout\ [1] $end
-$var wire 1 M3 \G1|ALT_INV_pout\ [0] $end
-$var wire 1 N3 \ALT_INV_rtl~16_combout\ $end
-$var wire 1 O3 \ALT_INV_rtl~15_combout\ $end
-$var wire 1 P3 \ALT_INV_rtl~14_combout\ $end
-$var wire 1 Q3 \ALT_INV_rtl~13_combout\ $end
-$var wire 1 R3 \ALT_INV_rtl~12_combout\ $end
-$var wire 1 S3 \ALT_INV_rtl~11_combout\ $end
-$var wire 1 T3 \ALT_INV_rtl~10_combout\ $end
-$var wire 1 U3 \ALT_INV_rtl~9_combout\ $end
-$var wire 1 V3 \G9|ALT_INV_SAIDA\ [5] $end
-$var wire 1 W3 \G9|ALT_INV_SAIDA\ [4] $end
-$var wire 1 X3 \G9|ALT_INV_SAIDA\ [3] $end
-$var wire 1 Y3 \G9|ALT_INV_SAIDA\ [2] $end
-$var wire 1 Z3 \ALT_INV_rtl~8_combout\ $end
-$var wire 1 [3 \ALT_INV_rtl~7_combout\ $end
-$var wire 1 \3 \ALT_INV_rtl~6_combout\ $end
-$var wire 1 ]3 \ALT_INV_rtl~5_combout\ $end
-$var wire 1 ^3 \ALT_INV_rtl~4_combout\ $end
-$var wire 1 _3 \ALT_INV_rtl~3_combout\ $end
-$var wire 1 `3 \ALT_INV_rtl~2_combout\ $end
-$var wire 1 a3 \ALT_INV_rtl~1_combout\ $end
-$var wire 1 b3 \ALT_INV_rtl~0_combout\ $end
-$var wire 1 c3 \G17|ALT_INV_ram.we_a~0_combout\ $end
-$var wire 1 d3 \G5|ALT_INV_Equal1~0_combout\ $end
-$var wire 1 e3 \G5|ALT_INV_origalu[2]~1_combout\ $end
-$var wire 1 f3 \G5|ALT_INV_origalu[1]~0_combout\ $end
-$var wire 1 g3 \G14|ALT_INV_SAIDA~19_combout\ $end
-$var wire 1 h3 \G14|ALT_INV_SAIDA~18_combout\ $end
-$var wire 1 i3 \G14|ALT_INV_SAIDA~17_combout\ $end
-$var wire 1 j3 \G14|ALT_INV_SAIDA~16_combout\ $end
-$var wire 1 k3 \G14|ALT_INV_SAIDA~15_combout\ $end
-$var wire 1 l3 \G14|ALT_INV_SAIDA~14_combout\ $end
-$var wire 1 m3 \G14|ALT_INV_SAIDA~13_combout\ $end
-$var wire 1 n3 \G14|ALT_INV_SAIDA~12_combout\ $end
-$var wire 1 o3 \G14|ALT_INV_SAIDA~11_combout\ $end
-$var wire 1 p3 \G14|ALT_INV_SAIDA~10_combout\ $end
-$var wire 1 q3 \G14|ALT_INV_SAIDA~9_combout\ $end
-$var wire 1 r3 \G14|ALT_INV_SAIDA~8_combout\ $end
-$var wire 1 s3 \G14|ALT_INV_SAIDA~7_combout\ $end
-$var wire 1 t3 \G14|ALT_INV_SAIDA~6_combout\ $end
-$var wire 1 u3 \G14|ALT_INV_SAIDA~5_combout\ $end
-$var wire 1 v3 \G14|ALT_INV_SAIDA~4_combout\ $end
-$var wire 1 w3 \G14|ALT_INV_SAIDA~3_combout\ $end
-$var wire 1 x3 \G14|ALT_INV_SAIDA~2_combout\ $end
-$var wire 1 y3 \G14|ALT_INV_SAIDA~1_combout\ $end
-$var wire 1 z3 \G7|ALT_INV_Mux27~1_combout\ $end
-$var wire 1 {3 \G14|ALT_INV_SAIDA~0_combout\ $end
-$var wire 1 |3 \G13|ALT_INV_SAIDA~15_combout\ $end
-$var wire 1 }3 \G3|ALT_INV_resshift\ [15] $end
-$var wire 1 ~3 \G3|ALT_INV_resshift\ [14] $end
-$var wire 1 !4 \G13|ALT_INV_SAIDA~14_combout\ $end
-$var wire 1 "4 \G17|ALT_INV_ram~200_combout\ $end
-$var wire 1 #4 \G17|ALT_INV_ram~248_combout\ $end
-$var wire 1 $4 \G17|ALT_INV_ram~216_combout\ $end
-$var wire 1 %4 \G17|ALT_INV_ram~104_combout\ $end
-$var wire 1 &4 \G17|ALT_INV_ram~72_combout\ $end
-$var wire 1 '4 \G17|ALT_INV_ram~120_combout\ $end
-$var wire 1 (4 \G17|ALT_INV_ram~88_combout\ $end
-$var wire 1 )4 \G17|ALT_INV_ram~231_combout\ $end
-$var wire 1 *4 \G17|ALT_INV_ram~199_combout\ $end
-$var wire 1 +4 \G17|ALT_INV_ram~247_combout\ $end
-$var wire 1 ,4 \G17|ALT_INV_ram~215_combout\ $end
-$var wire 1 -4 \G17|ALT_INV_ram~103_combout\ $end
-$var wire 1 .4 \G17|ALT_INV_ram~71_combout\ $end
-$var wire 1 /4 \G17|ALT_INV_ram~119_combout\ $end
-$var wire 1 04 \G17|ALT_INV_ram~87_combout\ $end
-$var wire 1 14 \G17|ALT_INV_ram~230_combout\ $end
-$var wire 1 24 \G17|ALT_INV_ram~198_combout\ $end
-$var wire 1 34 \G17|ALT_INV_ram~246_combout\ $end
-$var wire 1 44 \G17|ALT_INV_ram~214_combout\ $end
-$var wire 1 54 \G17|ALT_INV_ram~102_combout\ $end
-$var wire 1 64 \G17|ALT_INV_ram~70_combout\ $end
-$var wire 1 74 \G17|ALT_INV_ram~118_combout\ $end
-$var wire 1 84 \G17|ALT_INV_ram~86_combout\ $end
-$var wire 1 94 \G17|ALT_INV_ram~229_combout\ $end
-$var wire 1 :4 \G17|ALT_INV_ram~197_combout\ $end
-$var wire 1 ;4 \G17|ALT_INV_ram~245_combout\ $end
-$var wire 1 <4 \G17|ALT_INV_ram~213_combout\ $end
-$var wire 1 =4 \G17|ALT_INV_ram~101_combout\ $end
-$var wire 1 >4 \G17|ALT_INV_ram~69_combout\ $end
-$var wire 1 ?4 \G17|ALT_INV_ram~117_combout\ $end
-$var wire 1 @4 \G17|ALT_INV_ram~85_combout\ $end
-$var wire 1 A4 \G17|ALT_INV_ram~228_combout\ $end
-$var wire 1 B4 \G17|ALT_INV_ram~196_combout\ $end
-$var wire 1 C4 \G17|ALT_INV_ram~244_combout\ $end
-$var wire 1 D4 \G17|ALT_INV_ram~212_combout\ $end
-$var wire 1 E4 \G17|ALT_INV_ram~100_combout\ $end
-$var wire 1 F4 \G17|ALT_INV_ram~68_combout\ $end
-$var wire 1 G4 \G17|ALT_INV_ram~116_combout\ $end
-$var wire 1 H4 \G17|ALT_INV_ram~84_combout\ $end
-$var wire 1 I4 \G17|ALT_INV_ram~99_combout\ $end
-$var wire 1 J4 \G17|ALT_INV_ram~67_combout\ $end
-$var wire 1 K4 \G17|ALT_INV_ram~115_combout\ $end
-$var wire 1 L4 \G17|ALT_INV_ram~83_combout\ $end
-$var wire 1 M4 \G17|ALT_INV_ram~227_combout\ $end
-$var wire 1 N4 \G17|ALT_INV_ram~195_combout\ $end
-$var wire 1 O4 \G17|ALT_INV_ram~243_combout\ $end
-$var wire 1 P4 \G17|ALT_INV_ram~211_combout\ $end
-$var wire 1 Q4 \G17|ALT_INV_ram~226_combout\ $end
-$var wire 1 R4 \G17|ALT_INV_ram~194_combout\ $end
-$var wire 1 S4 \G17|ALT_INV_ram~242_combout\ $end
-$var wire 1 T4 \G17|ALT_INV_ram~210_combout\ $end
-$var wire 1 U4 \G17|ALT_INV_ram~98_combout\ $end
-$var wire 1 V4 \G17|ALT_INV_ram~66_combout\ $end
-$var wire 1 W4 \G17|ALT_INV_ram~114_combout\ $end
-$var wire 1 X4 \G17|ALT_INV_ram~82_combout\ $end
-$var wire 1 Y4 \G17|ALT_INV_ram~225_combout\ $end
-$var wire 1 Z4 \G17|ALT_INV_ram~193_combout\ $end
-$var wire 1 [4 \G17|ALT_INV_ram~241_combout\ $end
-$var wire 1 \4 \G17|ALT_INV_ram~209_combout\ $end
-$var wire 1 ]4 \G17|ALT_INV_ram~97_combout\ $end
-$var wire 1 ^4 \G17|ALT_INV_ram~65_combout\ $end
-$var wire 1 _4 \G17|ALT_INV_ram~113_combout\ $end
-$var wire 1 `4 \G17|ALT_INV_ram~81_combout\ $end
-$var wire 1 a4 \G17|ALT_INV_ram~224_combout\ $end
-$var wire 1 b4 \G17|ALT_INV_ram~192_combout\ $end
-$var wire 1 c4 \G17|ALT_INV_ram~240_combout\ $end
-$var wire 1 d4 \G17|ALT_INV_ram~208_combout\ $end
-$var wire 1 e4 \G17|ALT_INV_ram~96_combout\ $end
-$var wire 1 f4 \G17|ALT_INV_ram~64_combout\ $end
-$var wire 1 g4 \G17|ALT_INV_ram~112_combout\ $end
-$var wire 1 h4 \G17|ALT_INV_ram~80_combout\ $end
-$var wire 1 i4 \G17|ALT_INV_ram~271_combout\ $end
-$var wire 1 j4 \G17|ALT_INV_ram~270_combout\ $end
-$var wire 1 k4 \G17|ALT_INV_ram~269_combout\ $end
-$var wire 1 l4 \G17|ALT_INV_ram~268_combout\ $end
-$var wire 1 m4 \G17|ALT_INV_ram~267_combout\ $end
-$var wire 1 n4 \G17|ALT_INV_ram~266_combout\ $end
-$var wire 1 o4 \G17|ALT_INV_ram~265_combout\ $end
-$var wire 1 p4 \G17|ALT_INV_ram~264_combout\ $end
-$var wire 1 q4 \G17|ALT_INV_ram~263_combout\ $end
-$var wire 1 r4 \G17|ALT_INV_ram~262_combout\ $end
-$var wire 1 s4 \G17|ALT_INV_ram~261_combout\ $end
-$var wire 1 t4 \G17|ALT_INV_ram~260_combout\ $end
-$var wire 1 u4 \G17|ALT_INV_ram~259_combout\ $end
-$var wire 1 v4 \G17|ALT_INV_ram~258_combout\ $end
-$var wire 1 w4 \G17|ALT_INV_ram~257_combout\ $end
-$var wire 1 x4 \G17|ALT_INV_ram~256_combout\ $end
-$var wire 1 y4 \G5|ALT_INV_memparareg~combout\ $end
-$var wire 1 z4 \G5|ALT_INV_origalu\ [2] $end
-$var wire 1 {4 \G5|ALT_INV_origalu\ [1] $end
-$var wire 1 |4 \G5|ALT_INV_origalu\ [0] $end
-$var wire 1 }4 \G14|ALT_INV_SAIDA\ [15] $end
-$var wire 1 ~4 \G14|ALT_INV_SAIDA\ [14] $end
-$var wire 1 !5 \G14|ALT_INV_SAIDA\ [13] $end
-$var wire 1 "5 \G14|ALT_INV_SAIDA\ [12] $end
-$var wire 1 #5 \G14|ALT_INV_SAIDA\ [11] $end
-$var wire 1 $5 \G14|ALT_INV_SAIDA\ [10] $end
-$var wire 1 %5 \G14|ALT_INV_SAIDA\ [9] $end
-$var wire 1 &5 \G14|ALT_INV_SAIDA\ [8] $end
-$var wire 1 '5 \G14|ALT_INV_SAIDA\ [7] $end
-$var wire 1 (5 \G14|ALT_INV_SAIDA\ [6] $end
-$var wire 1 )5 \G14|ALT_INV_SAIDA\ [5] $end
-$var wire 1 *5 \G14|ALT_INV_SAIDA\ [4] $end
-$var wire 1 +5 \G14|ALT_INV_SAIDA\ [3] $end
-$var wire 1 ,5 \G14|ALT_INV_SAIDA\ [2] $end
-$var wire 1 -5 \G14|ALT_INV_SAIDA\ [1] $end
-$var wire 1 .5 \G14|ALT_INV_SAIDA\ [0] $end
-$var wire 1 /5 \G13|ALT_INV_SAIDA\ [15] $end
-$var wire 1 05 \G13|ALT_INV_SAIDA\ [14] $end
-$var wire 1 15 \G13|ALT_INV_SAIDA\ [13] $end
-$var wire 1 25 \G13|ALT_INV_SAIDA\ [12] $end
-$var wire 1 35 \G13|ALT_INV_SAIDA\ [11] $end
-$var wire 1 45 \G13|ALT_INV_SAIDA\ [10] $end
-$var wire 1 55 \G13|ALT_INV_SAIDA\ [9] $end
-$var wire 1 65 \G13|ALT_INV_SAIDA\ [8] $end
-$var wire 1 75 \G13|ALT_INV_SAIDA\ [7] $end
-$var wire 1 85 \G13|ALT_INV_SAIDA\ [6] $end
-$var wire 1 95 \G13|ALT_INV_SAIDA\ [5] $end
-$var wire 1 :5 \G13|ALT_INV_SAIDA\ [4] $end
-$var wire 1 ;5 \G13|ALT_INV_SAIDA\ [3] $end
-$var wire 1 <5 \G13|ALT_INV_SAIDA\ [2] $end
-$var wire 1 =5 \G13|ALT_INV_SAIDA\ [1] $end
-$var wire 1 >5 \G13|ALT_INV_SAIDA\ [0] $end
-$var wire 1 ?5 \G17|ALT_INV_ram~184_combout\ $end
-$var wire 1 @5 \G17|ALT_INV_ram~152_combout\ $end
-$var wire 1 A5 \G17|ALT_INV_ram~40_combout\ $end
-$var wire 1 B5 \G17|ALT_INV_ram~8_combout\ $end
-$var wire 1 C5 \G17|ALT_INV_ram~56_combout\ $end
-$var wire 1 D5 \G17|ALT_INV_ram~24_combout\ $end
-$var wire 1 E5 \G17|ALT_INV_ram~167_combout\ $end
-$var wire 1 F5 \G17|ALT_INV_ram~135_combout\ $end
-$var wire 1 G5 \G17|ALT_INV_ram~183_combout\ $end
-$var wire 1 H5 \G17|ALT_INV_ram~151_combout\ $end
-$var wire 1 I5 \G17|ALT_INV_ram~39_combout\ $end
-$var wire 1 J5 \G17|ALT_INV_ram~7_combout\ $end
-$var wire 1 K5 \G17|ALT_INV_ram~55_combout\ $end
-$var wire 1 L5 \G17|ALT_INV_ram~23_combout\ $end
-$var wire 1 M5 \G17|ALT_INV_ram~166_combout\ $end
-$var wire 1 N5 \G17|ALT_INV_ram~134_combout\ $end
-$var wire 1 O5 \G17|ALT_INV_ram~182_combout\ $end
-$var wire 1 P5 \G17|ALT_INV_ram~150_combout\ $end
-$var wire 1 Q5 \G17|ALT_INV_ram~38_combout\ $end
-$var wire 1 R5 \G17|ALT_INV_ram~6_combout\ $end
-$var wire 1 S5 \G17|ALT_INV_ram~54_combout\ $end
-$var wire 1 T5 \G17|ALT_INV_ram~22_combout\ $end
-$var wire 1 U5 \G17|ALT_INV_ram~165_combout\ $end
-$var wire 1 V5 \G17|ALT_INV_ram~133_combout\ $end
-$var wire 1 W5 \G17|ALT_INV_ram~181_combout\ $end
-$var wire 1 X5 \G17|ALT_INV_ram~149_combout\ $end
-$var wire 1 Y5 \G17|ALT_INV_ram~37_combout\ $end
-$var wire 1 Z5 \G17|ALT_INV_ram~5_combout\ $end
-$var wire 1 [5 \G17|ALT_INV_ram~53_combout\ $end
-$var wire 1 \5 \G17|ALT_INV_ram~21_combout\ $end
-$var wire 1 ]5 \G17|ALT_INV_ram~164_combout\ $end
-$var wire 1 ^5 \G17|ALT_INV_ram~132_combout\ $end
-$var wire 1 _5 \G17|ALT_INV_ram~180_combout\ $end
-$var wire 1 `5 \G17|ALT_INV_ram~148_combout\ $end
-$var wire 1 a5 \G17|ALT_INV_ram~36_combout\ $end
-$var wire 1 b5 \G17|ALT_INV_ram~4_combout\ $end
-$var wire 1 c5 \G17|ALT_INV_ram~52_combout\ $end
-$var wire 1 d5 \G17|ALT_INV_ram~20_combout\ $end
-$var wire 1 e5 \G17|ALT_INV_ram~35_combout\ $end
-$var wire 1 f5 \G17|ALT_INV_ram~3_combout\ $end
-$var wire 1 g5 \G17|ALT_INV_ram~51_combout\ $end
-$var wire 1 h5 \G17|ALT_INV_ram~19_combout\ $end
-$var wire 1 i5 \G17|ALT_INV_ram~163_combout\ $end
-$var wire 1 j5 \G17|ALT_INV_ram~131_combout\ $end
-$var wire 1 k5 \G17|ALT_INV_ram~179_combout\ $end
-$var wire 1 l5 \G17|ALT_INV_ram~147_combout\ $end
-$var wire 1 m5 \G17|ALT_INV_ram~162_combout\ $end
-$var wire 1 n5 \G17|ALT_INV_ram~130_combout\ $end
-$var wire 1 o5 \G17|ALT_INV_ram~178_combout\ $end
-$var wire 1 p5 \G17|ALT_INV_ram~146_combout\ $end
-$var wire 1 q5 \G17|ALT_INV_ram~34_combout\ $end
-$var wire 1 r5 \G17|ALT_INV_ram~2_combout\ $end
-$var wire 1 s5 \G17|ALT_INV_ram~50_combout\ $end
-$var wire 1 t5 \G17|ALT_INV_ram~18_combout\ $end
-$var wire 1 u5 \G17|ALT_INV_ram~161_combout\ $end
-$var wire 1 v5 \G17|ALT_INV_ram~129_combout\ $end
-$var wire 1 w5 \G17|ALT_INV_ram~177_combout\ $end
-$var wire 1 x5 \G17|ALT_INV_ram~145_combout\ $end
-$var wire 1 y5 \G17|ALT_INV_ram~33_combout\ $end
-$var wire 1 z5 \G17|ALT_INV_ram~1_combout\ $end
-$var wire 1 {5 \G17|ALT_INV_ram~49_combout\ $end
-$var wire 1 |5 \G17|ALT_INV_ram~17_combout\ $end
-$var wire 1 }5 \G17|ALT_INV_ram~160_combout\ $end
-$var wire 1 ~5 \G17|ALT_INV_ram~128_combout\ $end
-$var wire 1 !6 \G17|ALT_INV_ram~176_combout\ $end
-$var wire 1 "6 \G17|ALT_INV_ram~144_combout\ $end
-$var wire 1 #6 \G17|ALT_INV_ram~32_combout\ $end
-$var wire 1 $6 \G17|ALT_INV_ram~0_combout\ $end
-$var wire 1 %6 \G17|ALT_INV_ram~48_combout\ $end
-$var wire 1 &6 \G17|ALT_INV_ram~16_combout\ $end
-$var wire 1 '6 \G17|ALT_INV_ram~239_combout\ $end
-$var wire 1 (6 \G17|ALT_INV_ram~207_combout\ $end
-$var wire 1 )6 \G17|ALT_INV_ram~255_combout\ $end
-$var wire 1 *6 \G17|ALT_INV_ram~223_combout\ $end
-$var wire 1 +6 \G17|ALT_INV_ram~111_combout\ $end
-$var wire 1 ,6 \G17|ALT_INV_ram~79_combout\ $end
-$var wire 1 -6 \G17|ALT_INV_ram~127_combout\ $end
-$var wire 1 .6 \G17|ALT_INV_ram~95_combout\ $end
-$var wire 1 /6 \G17|ALT_INV_ram~238_combout\ $end
-$var wire 1 06 \G17|ALT_INV_ram~206_combout\ $end
-$var wire 1 16 \G17|ALT_INV_ram~254_combout\ $end
-$var wire 1 26 \G17|ALT_INV_ram~222_combout\ $end
-$var wire 1 36 \G17|ALT_INV_ram~110_combout\ $end
-$var wire 1 46 \G17|ALT_INV_ram~78_combout\ $end
-$var wire 1 56 \G17|ALT_INV_ram~126_combout\ $end
-$var wire 1 66 \G17|ALT_INV_ram~94_combout\ $end
-$var wire 1 76 \G17|ALT_INV_ram~237_combout\ $end
-$var wire 1 86 \G17|ALT_INV_ram~205_combout\ $end
-$var wire 1 96 \G17|ALT_INV_ram~253_combout\ $end
-$var wire 1 :6 \G17|ALT_INV_ram~221_combout\ $end
-$var wire 1 ;6 \G17|ALT_INV_ram~109_combout\ $end
-$var wire 1 <6 \G17|ALT_INV_ram~77_combout\ $end
-$var wire 1 =6 \G17|ALT_INV_ram~125_combout\ $end
-$var wire 1 >6 \G17|ALT_INV_ram~93_combout\ $end
-$var wire 1 ?6 \G17|ALT_INV_ram~236_combout\ $end
-$var wire 1 @6 \G17|ALT_INV_ram~204_combout\ $end
-$var wire 1 A6 \G17|ALT_INV_ram~252_combout\ $end
-$var wire 1 B6 \G17|ALT_INV_ram~220_combout\ $end
-$var wire 1 C6 \G17|ALT_INV_ram~108_combout\ $end
-$var wire 1 D6 \G17|ALT_INV_ram~76_combout\ $end
-$var wire 1 E6 \G17|ALT_INV_ram~124_combout\ $end
-$var wire 1 F6 \G17|ALT_INV_ram~92_combout\ $end
-$var wire 1 G6 \G17|ALT_INV_ram~235_combout\ $end
-$var wire 1 H6 \G17|ALT_INV_ram~203_combout\ $end
-$var wire 1 I6 \G17|ALT_INV_ram~251_combout\ $end
-$var wire 1 J6 \G17|ALT_INV_ram~219_combout\ $end
-$var wire 1 K6 \G17|ALT_INV_ram~107_combout\ $end
-$var wire 1 L6 \G17|ALT_INV_ram~75_combout\ $end
-$var wire 1 M6 \G17|ALT_INV_ram~123_combout\ $end
-$var wire 1 N6 \G17|ALT_INV_ram~91_combout\ $end
-$var wire 1 O6 \G17|ALT_INV_ram~234_combout\ $end
-$var wire 1 P6 \G17|ALT_INV_ram~202_combout\ $end
-$var wire 1 Q6 \G17|ALT_INV_ram~250_combout\ $end
-$var wire 1 R6 \G17|ALT_INV_ram~218_combout\ $end
-$var wire 1 S6 \G17|ALT_INV_ram~106_combout\ $end
-$var wire 1 T6 \G17|ALT_INV_ram~74_combout\ $end
-$var wire 1 U6 \G17|ALT_INV_ram~122_combout\ $end
-$var wire 1 V6 \G17|ALT_INV_ram~90_combout\ $end
-$var wire 1 W6 \G17|ALT_INV_ram~233_combout\ $end
-$var wire 1 X6 \G17|ALT_INV_ram~201_combout\ $end
-$var wire 1 Y6 \G17|ALT_INV_ram~249_combout\ $end
-$var wire 1 Z6 \G17|ALT_INV_ram~217_combout\ $end
-$var wire 1 [6 \G17|ALT_INV_ram~105_combout\ $end
-$var wire 1 \6 \G17|ALT_INV_ram~73_combout\ $end
-$var wire 1 ]6 \G17|ALT_INV_ram~121_combout\ $end
-$var wire 1 ^6 \G17|ALT_INV_ram~89_combout\ $end
-$var wire 1 _6 \G17|ALT_INV_ram~232_combout\ $end
-$var wire 1 `6 \G17|ALT_INV_ram~175_combout\ $end
-$var wire 1 a6 \G17|ALT_INV_ram~143_combout\ $end
-$var wire 1 b6 \G17|ALT_INV_ram~191_combout\ $end
-$var wire 1 c6 \G17|ALT_INV_ram~159_combout\ $end
-$var wire 1 d6 \G17|ALT_INV_ram~47_combout\ $end
-$var wire 1 e6 \G17|ALT_INV_ram~15_combout\ $end
-$var wire 1 f6 \G17|ALT_INV_ram~63_combout\ $end
-$var wire 1 g6 \G17|ALT_INV_ram~31_combout\ $end
-$var wire 1 h6 \G17|ALT_INV_ram~174_combout\ $end
-$var wire 1 i6 \G17|ALT_INV_ram~142_combout\ $end
-$var wire 1 j6 \G17|ALT_INV_ram~190_combout\ $end
-$var wire 1 k6 \G17|ALT_INV_ram~158_combout\ $end
-$var wire 1 l6 \G17|ALT_INV_ram~46_combout\ $end
-$var wire 1 m6 \G17|ALT_INV_ram~14_combout\ $end
-$var wire 1 n6 \G17|ALT_INV_ram~62_combout\ $end
-$var wire 1 o6 \G17|ALT_INV_ram~30_combout\ $end
-$var wire 1 p6 \G17|ALT_INV_ram~173_combout\ $end
-$var wire 1 q6 \G17|ALT_INV_ram~141_combout\ $end
-$var wire 1 r6 \G17|ALT_INV_ram~189_combout\ $end
-$var wire 1 s6 \G17|ALT_INV_ram~157_combout\ $end
-$var wire 1 t6 \G17|ALT_INV_ram~45_combout\ $end
-$var wire 1 u6 \G17|ALT_INV_ram~13_combout\ $end
-$var wire 1 v6 \G17|ALT_INV_ram~61_combout\ $end
-$var wire 1 w6 \G17|ALT_INV_ram~29_combout\ $end
-$var wire 1 x6 \G17|ALT_INV_ram~172_combout\ $end
-$var wire 1 y6 \G17|ALT_INV_ram~140_combout\ $end
-$var wire 1 z6 \G17|ALT_INV_ram~188_combout\ $end
-$var wire 1 {6 \G17|ALT_INV_ram~156_combout\ $end
-$var wire 1 |6 \G17|ALT_INV_ram~44_combout\ $end
-$var wire 1 }6 \G17|ALT_INV_ram~12_combout\ $end
-$var wire 1 ~6 \G17|ALT_INV_ram~60_combout\ $end
-$var wire 1 !7 \G17|ALT_INV_ram~28_combout\ $end
-$var wire 1 "7 \G17|ALT_INV_ram~171_combout\ $end
-$var wire 1 #7 \G17|ALT_INV_ram~139_combout\ $end
-$var wire 1 $7 \G17|ALT_INV_ram~187_combout\ $end
-$var wire 1 %7 \G17|ALT_INV_ram~155_combout\ $end
-$var wire 1 &7 \G17|ALT_INV_ram~43_combout\ $end
-$var wire 1 '7 \G17|ALT_INV_ram~11_combout\ $end
-$var wire 1 (7 \G17|ALT_INV_ram~59_combout\ $end
-$var wire 1 )7 \G17|ALT_INV_ram~27_combout\ $end
-$var wire 1 *7 \G17|ALT_INV_ram~170_combout\ $end
-$var wire 1 +7 \G17|ALT_INV_ram~138_combout\ $end
-$var wire 1 ,7 \G17|ALT_INV_ram~186_combout\ $end
-$var wire 1 -7 \G17|ALT_INV_ram~154_combout\ $end
-$var wire 1 .7 \G17|ALT_INV_ram~42_combout\ $end
-$var wire 1 /7 \G17|ALT_INV_ram~10_combout\ $end
-$var wire 1 07 \G17|ALT_INV_ram~58_combout\ $end
-$var wire 1 17 \G17|ALT_INV_ram~26_combout\ $end
-$var wire 1 27 \G17|ALT_INV_ram~169_combout\ $end
-$var wire 1 37 \G17|ALT_INV_ram~137_combout\ $end
-$var wire 1 47 \G17|ALT_INV_ram~185_combout\ $end
-$var wire 1 57 \G17|ALT_INV_ram~153_combout\ $end
-$var wire 1 67 \G17|ALT_INV_ram~41_combout\ $end
-$var wire 1 77 \G17|ALT_INV_ram~9_combout\ $end
-$var wire 1 87 \G17|ALT_INV_ram~57_combout\ $end
-$var wire 1 97 \G17|ALT_INV_ram~25_combout\ $end
-$var wire 1 :7 \G17|ALT_INV_ram~168_combout\ $end
-$var wire 1 ;7 \G17|ALT_INV_ram~136_combout\ $end
-$var wire 1 <7 \ALT_INV_Clock_Sistema~input_o\ $end
+$var wire 1 4& \G11|S1~1_combout\ $end
+$var wire 1 5& \G4|Mux0~4_combout\ $end
+$var wire 1 6& \G4|Mux7~0_combout\ $end
+$var wire 1 7& \G4|Mux1~0_combout\ $end
+$var wire 1 8& \G4|tipoi[2]~1_combout\ $end
+$var wire 1 9& \G4|Mux2~0_combout\ $end
+$var wire 1 :& \G4|tipoi[0]~0_combout\ $end
+$var wire 1 ;& \G10|Add0~2\ $end
+$var wire 1 <& \G10|Add0~6\ $end
+$var wire 1 =& \G10|Add0~10\ $end
+$var wire 1 >& \G10|Add0~13_sumout\ $end
+$var wire 1 ?& \G12|SAIDA~5_combout\ $end
+$var wire 1 @& \G13|SAIDA~5_combout\ $end
+$var wire 1 A& \G2|Add0~18\ $end
+$var wire 1 B& \G2|Add0~21_sumout\ $end
+$var wire 1 C& \G10|Add0~14\ $end
+$var wire 1 D& \G10|Add0~17_sumout\ $end
+$var wire 1 E& \G12|SAIDA~6_combout\ $end
+$var wire 1 F& \G13|SAIDA~6_combout\ $end
+$var wire 1 G& \G2|Add0~22\ $end
+$var wire 1 H& \G2|Add0~25_sumout\ $end
+$var wire 1 I& \G10|Add0~18\ $end
+$var wire 1 J& \G10|Add0~21_sumout\ $end
+$var wire 1 K& \G12|SAIDA~7_combout\ $end
+$var wire 1 L& \G13|SAIDA~7_combout\ $end
+$var wire 1 M& \G2|Add0~26\ $end
+$var wire 1 N& \G2|Add0~29_sumout\ $end
+$var wire 1 O& \G10|Add0~22\ $end
+$var wire 1 P& \G10|Add0~25_sumout\ $end
+$var wire 1 Q& \G12|SAIDA~8_combout\ $end
+$var wire 1 R& \G13|SAIDA~8_combout\ $end
+$var wire 1 S& \G2|Add0~30\ $end
+$var wire 1 T& \G2|Add0~33_sumout\ $end
+$var wire 1 U& \G10|Add0~26\ $end
+$var wire 1 V& \G10|Add0~29_sumout\ $end
+$var wire 1 W& \G12|SAIDA~9_combout\ $end
+$var wire 1 X& \G13|SAIDA~9_combout\ $end
+$var wire 1 Y& \G2|Add0~34\ $end
+$var wire 1 Z& \G2|Add0~37_sumout\ $end
+$var wire 1 [& \G10|Add0~30\ $end
+$var wire 1 \& \G10|Add0~33_sumout\ $end
+$var wire 1 ]& \G12|SAIDA~10_combout\ $end
+$var wire 1 ^& \G13|SAIDA~10_combout\ $end
+$var wire 1 _& \G2|Add0~38\ $end
+$var wire 1 `& \G2|Add0~41_sumout\ $end
+$var wire 1 a& \G10|Add0~34\ $end
+$var wire 1 b& \G10|Add0~37_sumout\ $end
+$var wire 1 c& \G12|SAIDA~11_combout\ $end
+$var wire 1 d& \G13|SAIDA~11_combout\ $end
+$var wire 1 e& \G2|Add0~42\ $end
+$var wire 1 f& \G2|Add0~45_sumout\ $end
+$var wire 1 g& \G10|Add0~38\ $end
+$var wire 1 h& \G10|Add0~41_sumout\ $end
+$var wire 1 i& \G12|SAIDA~12_combout\ $end
+$var wire 1 j& \G13|SAIDA~12_combout\ $end
+$var wire 1 k& \G2|Add0~46\ $end
+$var wire 1 l& \G2|Add0~49_sumout\ $end
+$var wire 1 m& \G10|Add0~42\ $end
+$var wire 1 n& \G10|Add0~45_sumout\ $end
+$var wire 1 o& \G12|SAIDA~13_combout\ $end
+$var wire 1 p& \G13|SAIDA~13_combout\ $end
+$var wire 1 q& \G2|Add0~50\ $end
+$var wire 1 r& \G2|Add0~53_sumout\ $end
+$var wire 1 s& \G10|Add0~46\ $end
+$var wire 1 t& \G10|Add0~49_sumout\ $end
+$var wire 1 u& \G12|SAIDA~14_combout\ $end
+$var wire 1 v& \G13|SAIDA~14_combout\ $end
+$var wire 1 w& \G2|Add0~54\ $end
+$var wire 1 x& \G2|Add0~57_sumout\ $end
+$var wire 1 y& \G10|Add0~50\ $end
+$var wire 1 z& \G10|Add0~53_sumout\ $end
+$var wire 1 {& \G12|SAIDA~15_combout\ $end
+$var wire 1 |& \G13|SAIDA~15_combout\ $end
+$var wire 1 }& \G4|Mux0~1_combout\ $end
+$var wire 1 ~& \G4|Mux6~0_combout\ $end
+$var wire 1 !' \G4|rs[0]~1_combout\ $end
+$var wire 1 "' \G4|op[0]~0_combout\ $end
+$var wire 1 #' \G5|origalu[1]~0_combout\ $end
+$var wire 1 $' \G11|S1~0_combout\ $end
+$var wire 1 %' \G10|Add0~1_sumout\ $end
+$var wire 1 &' \G12|SAIDA~2_combout\ $end
+$var wire 1 '' \G13|SAIDA~2_combout\ $end
+$var wire 1 (' \G2|Add0~6\ $end
+$var wire 1 )' \G2|Add0~9_sumout\ $end
+$var wire 1 *' \G10|Add0~5_sumout\ $end
+$var wire 1 +' \G12|SAIDA~3_combout\ $end
+$var wire 1 ,' \G13|SAIDA~3_combout\ $end
+$var wire 1 -' \G2|Add0~10\ $end
+$var wire 1 .' \G2|Add0~13_sumout\ $end
+$var wire 1 /' \G10|Add0~9_sumout\ $end
+$var wire 1 0' \G12|SAIDA~4_combout\ $end
+$var wire 1 1' \G13|SAIDA~4_combout\ $end
+$var wire 1 2' \G4|Mux0~0_combout\ $end
+$var wire 1 3' \G4|Mux7~1_combout\ $end
+$var wire 1 4' \G16|Mux14~0_combout\ $end
+$var wire 1 5' \G4|funct[0]~0_combout\ $end
+$var wire 1 6' \G16|Mux14~1_combout\ $end
+$var wire 1 7' \G5|Equal1~0_combout\ $end
+$var wire 1 8' \G5|memparareg~combout\ $end
+$var wire 1 9' \G5|escrevereg~combout\ $end
+$var wire 1 :' \G4|Mux0~3_combout\ $end
+$var wire 1 ;' \G4|tipoi[0]~2_combout\ $end
+$var wire 1 <' \G5|regdest~combout\ $end
+$var wire 1 =' \G7|Mux27~2_combout\ $end
+$var wire 1 >' \G14|SAIDA~1_combout\ $end
+$var wire 1 ?' \G4|Equal0~0_combout\ $end
+$var wire 1 @' \G14|SAIDA~6_combout\ $end
+$var wire 1 A' \G14|SAIDA~8_combout\ $end
+$var wire 1 B' \G14|SAIDA~7_combout\ $end
+$var wire 1 C' \G7|Decoder0~0_combout\ $end
+$var wire 1 D' \G18|SAIDA~2_combout\ $end
+$var wire 1 E' \G6|SAIDA[0]~0_combout\ $end
+$var wire 1 F' \G4|rs[1]~0_combout\ $end
+$var wire 1 G' \G6|SAIDA[1]~1_combout\ $end
+$var wire 1 H' \G6|SAIDA[2]~2_combout\ $end
+$var wire 1 I' \G6|SAIDA[2]~3_combout\ $end
+$var wire 1 J' \G4|rt[0]~0_combout\ $end
+$var wire 1 K' \G7|Mux29~0_combout\ $end
+$var wire 1 L' \G7|Mux29~1_combout\ $end
+$var wire 1 M' \G7|Mux31~0_combout\ $end
+$var wire 1 N' \G7|Mux31~1_combout\ $end
+$var wire 1 O' \G17|ram~80_combout\ $end
+$var wire 1 P' \G7|Mux30~0_combout\ $end
+$var wire 1 Q' \G7|Mux30~1_combout\ $end
+$var wire 1 R' \G17|ram~81_combout\ $end
+$var wire 1 S' \G17|ram~113_combout\ $end
+$var wire 1 T' \G7|Mux12~0_combout\ $end
+$var wire 1 U' \G14|SAIDA~4_combout\ $end
+$var wire 1 V' \G14|SAIDA~5_combout\ $end
+$var wire 1 W' \G14|SAIDA~3_combout\ $end
+$var wire 1 X' \G14|SAIDA~0_combout\ $end
+$var wire 1 Y' \G14|SAIDA~2_combout\ $end
+$var wire 1 Z' \G16|Add0~2\ $end
+$var wire 1 [' \G16|Add0~6\ $end
+$var wire 1 \' \G16|Add0~10\ $end
+$var wire 1 ]' \G16|Add0~13_sumout\ $end
+$var wire 1 ^' \G16|Mux12~0_combout\ $end
+$var wire 1 _' \G7|Mux11~0_combout\ $end
+$var wire 1 `' \G16|Mux11~0_combout\ $end
+$var wire 1 a' \G7|Mux13~0_combout\ $end
+$var wire 1 b' \G16|Add1~66_cout\ $end
+$var wire 1 c' \G16|Add1~2\ $end
+$var wire 1 d' \G16|Add1~6\ $end
+$var wire 1 e' \G16|Add1~9_sumout\ $end
+$var wire 1 f' \G16|Add0~9_sumout\ $end
+$var wire 1 g' \G16|Mux13~0_combout\ $end
+$var wire 1 h' \G17|ram.we_a~0_combout\ $end
+$var wire 1 i' \rtl~4_combout\ $end
+$var wire 1 j' \G17|ram~97_combout\ $end
+$var wire 1 k' \rtl~9_combout\ $end
+$var wire 1 l' \G17|ram~17_combout\ $end
+$var wire 1 m' \rtl~10_combout\ $end
+$var wire 1 n' \G17|ram~49_combout\ $end
+$var wire 1 o' \rtl~12_combout\ $end
+$var wire 1 p' \G17|ram~33_combout\ $end
+$var wire 1 q' \rtl~11_combout\ $end
+$var wire 1 r' \G17|ram~1_combout\ $end
+$var wire 1 s' \G17|ram~409_combout\ $end
+$var wire 1 t' \rtl~3_combout\ $end
+$var wire 1 u' \G17|ram~65_combout\ $end
+$var wire 1 v' \G17|ram~281_combout\ $end
+$var wire 1 w' \rtl~5_combout\ $end
+$var wire 1 x' \G17|ram~209_combout\ $end
+$var wire 1 y' \rtl~6_combout\ $end
+$var wire 1 z' \G17|ram~241_combout\ $end
+$var wire 1 {' \rtl~8_combout\ $end
+$var wire 1 |' \G17|ram~225_combout\ $end
+$var wire 1 }' \rtl~13_combout\ $end
+$var wire 1 ~' \G17|ram~145_combout\ $end
+$var wire 1 !( \rtl~14_combout\ $end
+$var wire 1 "( \G17|ram~177_combout\ $end
+$var wire 1 #( \rtl~16_combout\ $end
+$var wire 1 $( \G17|ram~161_combout\ $end
+$var wire 1 %( \rtl~15_combout\ $end
+$var wire 1 &( \G17|ram~129_combout\ $end
+$var wire 1 '( \G17|ram~413_combout\ $end
+$var wire 1 (( \rtl~7_combout\ $end
+$var wire 1 )( \G17|ram~193_combout\ $end
+$var wire 1 *( \G17|ram~285_combout\ $end
+$var wire 1 +( \G16|Mux12~1_combout\ $end
+$var wire 1 ,( \G18|SAIDA~0_combout\ $end
+$var wire 1 -( \G16|Add1~5_sumout\ $end
+$var wire 1 .( \G16|Add0~5_sumout\ $end
+$var wire 1 /( \G16|Mux14~3_combout\ $end
+$var wire 1 0( \G16|Mux14~4_combout\ $end
+$var wire 1 1( \G16|Add1~1_sumout\ $end
+$var wire 1 2( \G16|Add0~1_sumout\ $end
+$var wire 1 3( \G4|rd[0]~1_combout\ $end
+$var wire 1 4( \G7|Mux15~1_combout\ $end
+$var wire 1 5( \G16|Mux15~1_combout\ $end
+$var wire 1 6( \G16|Mux15~2_combout\ $end
+$var wire 1 7( \G16|Mux13~1_combout\ $end
+$var wire 1 8( \G17|ram~280_combout\ $end
+$var wire 1 9( \rtl~0_combout\ $end
+$var wire 1 :( \G17|ram~257_combout\ $end
+$var wire 1 ;( \G18|SAIDA~6_combout\ $end
+$var wire 1 <( \G18|SAIDA~7_combout\ $end
+$var wire 1 =( \G7|Reg[0][0]~0_combout\ $end
+$var wire 1 >( \G7|Reg[0][1]~combout\ $end
+$var wire 1 ?( \G7|Mux14~0_combout\ $end
+$var wire 1 @( \G16|Mux14~2_combout\ $end
+$var wire 1 A( \rtl~2_combout\ $end
+$var wire 1 B( \G17|ram~112_combout\ $end
+$var wire 1 C( \G17|ram~96_combout\ $end
+$var wire 1 D( \G17|ram~16_combout\ $end
+$var wire 1 E( \G17|ram~48_combout\ $end
+$var wire 1 F( \G17|ram~32_combout\ $end
+$var wire 1 G( \G17|ram~0_combout\ $end
+$var wire 1 H( \G17|ram~401_combout\ $end
+$var wire 1 I( \G17|ram~64_combout\ $end
+$var wire 1 J( \G17|ram~272_combout\ $end
+$var wire 1 K( \G17|ram~208_combout\ $end
+$var wire 1 L( \G17|ram~240_combout\ $end
+$var wire 1 M( \G17|ram~224_combout\ $end
+$var wire 1 N( \G17|ram~144_combout\ $end
+$var wire 1 O( \G17|ram~176_combout\ $end
+$var wire 1 P( \G17|ram~160_combout\ $end
+$var wire 1 Q( \G17|ram~128_combout\ $end
+$var wire 1 R( \G17|ram~405_combout\ $end
+$var wire 1 S( \G17|ram~192_combout\ $end
+$var wire 1 T( \G17|ram~276_combout\ $end
+$var wire 1 U( \G18|SAIDA~3_combout\ $end
+$var wire 1 V( \G17|ram~256_combout\ $end
+$var wire 1 W( \G18|SAIDA~4_combout\ $end
+$var wire 1 X( \G18|SAIDA~5_combout\ $end
+$var wire 1 Y( \G7|Reg[0][0]~combout\ $end
+$var wire 1 Z( \G7|Mux15~0_combout\ $end
+$var wire 1 [( \G16|Mux15~0_combout\ $end
+$var wire 1 \( \rtl~1_combout\ $end
+$var wire 1 ]( \G17|ram~82_combout\ $end
+$var wire 1 ^( \G17|ram~114_combout\ $end
+$var wire 1 _( \G17|ram~98_combout\ $end
+$var wire 1 `( \G17|ram~18_combout\ $end
+$var wire 1 a( \G17|ram~50_combout\ $end
+$var wire 1 b( \G17|ram~34_combout\ $end
+$var wire 1 c( \G17|ram~2_combout\ $end
+$var wire 1 d( \G17|ram~417_combout\ $end
+$var wire 1 e( \G17|ram~66_combout\ $end
+$var wire 1 f( \G17|ram~289_combout\ $end
+$var wire 1 g( \G17|ram~210_combout\ $end
+$var wire 1 h( \G17|ram~242_combout\ $end
+$var wire 1 i( \G17|ram~226_combout\ $end
+$var wire 1 j( \G17|ram~146_combout\ $end
+$var wire 1 k( \G17|ram~178_combout\ $end
+$var wire 1 l( \G17|ram~162_combout\ $end
+$var wire 1 m( \G17|ram~130_combout\ $end
+$var wire 1 n( \G17|ram~421_combout\ $end
+$var wire 1 o( \G17|ram~194_combout\ $end
+$var wire 1 p( \G17|ram~293_combout\ $end
+$var wire 1 q( \G18|SAIDA~8_combout\ $end
+$var wire 1 r( \G17|ram~258_combout\ $end
+$var wire 1 s( \G18|SAIDA~9_combout\ $end
+$var wire 1 t( \G18|SAIDA~10_combout\ $end
+$var wire 1 u( \G7|Reg[0][2]~combout\ $end
+$var wire 1 v( \G16|Add1~10\ $end
+$var wire 1 w( \G16|Add1~13_sumout\ $end
+$var wire 1 x( \G16|Mux12~2_combout\ $end
+$var wire 1 y( \G7|Mux28~0_combout\ $end
+$var wire 1 z( \G7|Mux28~1_combout\ $end
+$var wire 1 {( \G17|ram~211_combout\ $end
+$var wire 1 |( \G17|ram~243_combout\ $end
+$var wire 1 }( \G17|ram~227_combout\ $end
+$var wire 1 ~( \G17|ram~147_combout\ $end
+$var wire 1 !) \G17|ram~179_combout\ $end
+$var wire 1 ") \G17|ram~163_combout\ $end
+$var wire 1 #) \G17|ram~131_combout\ $end
+$var wire 1 $) \G17|ram~425_combout\ $end
+$var wire 1 %) \G17|ram~195_combout\ $end
+$var wire 1 &) \G17|ram~297_combout\ $end
+$var wire 1 ') \G17|ram~83_combout\ $end
+$var wire 1 () \G17|ram~115_combout\ $end
+$var wire 1 )) \G17|ram~99_combout\ $end
+$var wire 1 *) \G17|ram~19_combout\ $end
+$var wire 1 +) \G17|ram~51_combout\ $end
+$var wire 1 ,) \G17|ram~35_combout\ $end
+$var wire 1 -) \G17|ram~3_combout\ $end
+$var wire 1 .) \G17|ram~429_combout\ $end
+$var wire 1 /) \G17|ram~67_combout\ $end
+$var wire 1 0) \G17|ram~301_combout\ $end
+$var wire 1 1) \G16|Mux13~2_combout\ $end
+$var wire 1 2) \G17|ram~259_combout\ $end
+$var wire 1 3) \G18|SAIDA~11_combout\ $end
+$var wire 1 4) \G18|SAIDA~12_combout\ $end
+$var wire 1 5) \G7|Reg[0][3]~combout\ $end
+$var wire 1 6) \G16|Add0~14\ $end
+$var wire 1 7) \G16|Add0~17_sumout\ $end
+$var wire 1 8) \G16|Mux11~1_combout\ $end
+$var wire 1 9) \G16|Mux11~2_combout\ $end
+$var wire 1 :) \G7|Mux27~0_combout\ $end
+$var wire 1 ;) \G7|Mux27~1_combout\ $end
+$var wire 1 <) \G17|ram~84_combout\ $end
+$var wire 1 =) \G17|ram~116_combout\ $end
+$var wire 1 >) \G17|ram~100_combout\ $end
+$var wire 1 ?) \G17|ram~20_combout\ $end
+$var wire 1 @) \G17|ram~52_combout\ $end
+$var wire 1 A) \G17|ram~36_combout\ $end
+$var wire 1 B) \G17|ram~4_combout\ $end
+$var wire 1 C) \G17|ram~433_combout\ $end
+$var wire 1 D) \G17|ram~68_combout\ $end
+$var wire 1 E) \G17|ram~305_combout\ $end
+$var wire 1 F) \G17|ram~212_combout\ $end
+$var wire 1 G) \G17|ram~244_combout\ $end
+$var wire 1 H) \G17|ram~228_combout\ $end
+$var wire 1 I) \G17|ram~148_combout\ $end
+$var wire 1 J) \G17|ram~180_combout\ $end
+$var wire 1 K) \G17|ram~164_combout\ $end
+$var wire 1 L) \G17|ram~132_combout\ $end
+$var wire 1 M) \G17|ram~437_combout\ $end
+$var wire 1 N) \G17|ram~196_combout\ $end
+$var wire 1 O) \G17|ram~309_combout\ $end
+$var wire 1 P) \G17|ram~260_combout\ $end
+$var wire 1 Q) \G18|SAIDA~13_combout\ $end
+$var wire 1 R) \G18|SAIDA~14_combout\ $end
+$var wire 1 S) \G7|Reg[0][4]~combout\ $end
+$var wire 1 T) \G16|Add1~14\ $end
+$var wire 1 U) \G16|Add1~17_sumout\ $end
+$var wire 1 V) \G18|SAIDA~1_combout\ $end
+$var wire 1 W) \G7|Mux25~0_combout\ $end
+$var wire 1 X) \G7|Mux25~1_combout\ $end
+$var wire 1 Y) \G17|ram~86_combout\ $end
+$var wire 1 Z) \G17|ram~118_combout\ $end
+$var wire 1 [) \G17|ram~102_combout\ $end
+$var wire 1 \) \G17|ram~22_combout\ $end
+$var wire 1 ]) \G17|ram~54_combout\ $end
+$var wire 1 ^) \G17|ram~38_combout\ $end
+$var wire 1 _) \G17|ram~6_combout\ $end
+$var wire 1 `) \G17|ram~449_combout\ $end
+$var wire 1 a) \G17|ram~70_combout\ $end
+$var wire 1 b) \G17|ram~321_combout\ $end
+$var wire 1 c) \G17|ram~214_combout\ $end
+$var wire 1 d) \G17|ram~246_combout\ $end
+$var wire 1 e) \G17|ram~230_combout\ $end
+$var wire 1 f) \G17|ram~150_combout\ $end
+$var wire 1 g) \G17|ram~182_combout\ $end
+$var wire 1 h) \G17|ram~166_combout\ $end
+$var wire 1 i) \G17|ram~134_combout\ $end
+$var wire 1 j) \G17|ram~453_combout\ $end
+$var wire 1 k) \G17|ram~198_combout\ $end
+$var wire 1 l) \G17|ram~325_combout\ $end
+$var wire 1 m) \G17|ram~262_combout\ $end
+$var wire 1 n) \G14|SAIDA~10_combout\ $end
+$var wire 1 o) \G7|Mux26~0_combout\ $end
+$var wire 1 p) \G7|Mux26~1_combout\ $end
+$var wire 1 q) \G17|ram~85_combout\ $end
+$var wire 1 r) \G17|ram~117_combout\ $end
+$var wire 1 s) \G17|ram~101_combout\ $end
+$var wire 1 t) \G17|ram~21_combout\ $end
+$var wire 1 u) \G17|ram~53_combout\ $end
+$var wire 1 v) \G17|ram~37_combout\ $end
+$var wire 1 w) \G17|ram~5_combout\ $end
+$var wire 1 x) \G17|ram~441_combout\ $end
+$var wire 1 y) \G17|ram~69_combout\ $end
+$var wire 1 z) \G17|ram~313_combout\ $end
+$var wire 1 {) \G17|ram~213_combout\ $end
+$var wire 1 |) \G17|ram~245_combout\ $end
+$var wire 1 }) \G17|ram~229_combout\ $end
+$var wire 1 ~) \G17|ram~149_combout\ $end
+$var wire 1 !* \G17|ram~181_combout\ $end
+$var wire 1 "* \G17|ram~165_combout\ $end
+$var wire 1 #* \G17|ram~133_combout\ $end
+$var wire 1 $* \G17|ram~445_combout\ $end
+$var wire 1 %* \G17|ram~197_combout\ $end
+$var wire 1 &* \G17|ram~317_combout\ $end
+$var wire 1 '* \G17|ram~261_combout\ $end
+$var wire 1 (* \G14|SAIDA~9_combout\ $end
+$var wire 1 )* \G16|Add0~18\ $end
+$var wire 1 ** \G16|Add0~21_sumout\ $end
+$var wire 1 +* \G18|SAIDA~15_combout\ $end
+$var wire 1 ,* \G18|SAIDA~16_combout\ $end
+$var wire 1 -* \G18|SAIDA~17_combout\ $end
+$var wire 1 .* \G18|SAIDA~18_combout\ $end
+$var wire 1 /* \G7|Reg[0][5]~combout\ $end
+$var wire 1 0* \G16|Add0~22\ $end
+$var wire 1 1* \G16|Add0~25_sumout\ $end
+$var wire 1 2* \G18|SAIDA~19_combout\ $end
+$var wire 1 3* \G18|SAIDA~20_combout\ $end
+$var wire 1 4* \G18|SAIDA~21_combout\ $end
+$var wire 1 5* \G18|SAIDA~22_combout\ $end
+$var wire 1 6* \G7|Reg[0][6]~combout\ $end
+$var wire 1 7* \G16|Add1~18\ $end
+$var wire 1 8* \G16|Add1~22\ $end
+$var wire 1 9* \G16|Add1~25_sumout\ $end
+$var wire 1 :* \G7|Mux24~0_combout\ $end
+$var wire 1 ;* \G7|Mux24~1_combout\ $end
+$var wire 1 <* \G17|ram~87_combout\ $end
+$var wire 1 =* \G17|ram~119_combout\ $end
+$var wire 1 >* \G17|ram~103_combout\ $end
+$var wire 1 ?* \G17|ram~23_combout\ $end
+$var wire 1 @* \G17|ram~55_combout\ $end
+$var wire 1 A* \G17|ram~39_combout\ $end
+$var wire 1 B* \G17|ram~7_combout\ $end
+$var wire 1 C* \G17|ram~457_combout\ $end
+$var wire 1 D* \G17|ram~71_combout\ $end
+$var wire 1 E* \G17|ram~329_combout\ $end
+$var wire 1 F* \G17|ram~215_combout\ $end
+$var wire 1 G* \G17|ram~247_combout\ $end
+$var wire 1 H* \G17|ram~231_combout\ $end
+$var wire 1 I* \G17|ram~151_combout\ $end
+$var wire 1 J* \G17|ram~183_combout\ $end
+$var wire 1 K* \G17|ram~167_combout\ $end
+$var wire 1 L* \G17|ram~135_combout\ $end
+$var wire 1 M* \G17|ram~461_combout\ $end
+$var wire 1 N* \G17|ram~199_combout\ $end
+$var wire 1 O* \G17|ram~333_combout\ $end
+$var wire 1 P* \G17|ram~263_combout\ $end
+$var wire 1 Q* \G14|SAIDA~11_combout\ $end
+$var wire 1 R* \G16|Add0~26\ $end
+$var wire 1 S* \G16|Add0~29_sumout\ $end
+$var wire 1 T* \G18|SAIDA~23_combout\ $end
+$var wire 1 U* \G18|SAIDA~24_combout\ $end
+$var wire 1 V* \G18|SAIDA~25_combout\ $end
+$var wire 1 W* \G18|SAIDA~26_combout\ $end
+$var wire 1 X* \G7|Reg[0][7]~combout\ $end
+$var wire 1 Y* \G16|Add1~26\ $end
+$var wire 1 Z* \G16|Add1~29_sumout\ $end
+$var wire 1 [* \G7|Mux23~0_combout\ $end
+$var wire 1 \* \G7|Mux23~1_combout\ $end
+$var wire 1 ]* \G17|ram~88_combout\ $end
+$var wire 1 ^* \G17|ram~120_combout\ $end
+$var wire 1 _* \G17|ram~104_combout\ $end
+$var wire 1 `* \G17|ram~24_combout\ $end
+$var wire 1 a* \G17|ram~56_combout\ $end
+$var wire 1 b* \G17|ram~40_combout\ $end
+$var wire 1 c* \G17|ram~8_combout\ $end
+$var wire 1 d* \G17|ram~465_combout\ $end
+$var wire 1 e* \G17|ram~72_combout\ $end
+$var wire 1 f* \G17|ram~337_combout\ $end
+$var wire 1 g* \G17|ram~216_combout\ $end
+$var wire 1 h* \G17|ram~248_combout\ $end
+$var wire 1 i* \G17|ram~232_combout\ $end
+$var wire 1 j* \G17|ram~152_combout\ $end
+$var wire 1 k* \G17|ram~184_combout\ $end
+$var wire 1 l* \G17|ram~168_combout\ $end
+$var wire 1 m* \G17|ram~136_combout\ $end
+$var wire 1 n* \G17|ram~469_combout\ $end
+$var wire 1 o* \G17|ram~200_combout\ $end
+$var wire 1 p* \G17|ram~341_combout\ $end
+$var wire 1 q* \G17|ram~264_combout\ $end
+$var wire 1 r* \G14|SAIDA~12_combout\ $end
+$var wire 1 s* \G16|Add0~30\ $end
+$var wire 1 t* \G16|Add0~33_sumout\ $end
+$var wire 1 u* \G18|SAIDA~27_combout\ $end
+$var wire 1 v* \G18|SAIDA~28_combout\ $end
+$var wire 1 w* \G18|SAIDA~29_combout\ $end
+$var wire 1 x* \G18|SAIDA~30_combout\ $end
+$var wire 1 y* \G7|Reg[0][8]~combout\ $end
+$var wire 1 z* \G16|Add1~30\ $end
+$var wire 1 {* \G16|Add1~33_sumout\ $end
+$var wire 1 |* \G7|Mux22~0_combout\ $end
+$var wire 1 }* \G7|Mux22~1_combout\ $end
+$var wire 1 ~* \G17|ram~89_combout\ $end
+$var wire 1 !+ \G17|ram~121_combout\ $end
+$var wire 1 "+ \G17|ram~105_combout\ $end
+$var wire 1 #+ \G17|ram~25_combout\ $end
+$var wire 1 $+ \G17|ram~57_combout\ $end
+$var wire 1 %+ \G17|ram~41_combout\ $end
+$var wire 1 &+ \G17|ram~9_combout\ $end
+$var wire 1 '+ \G17|ram~473_combout\ $end
+$var wire 1 (+ \G17|ram~73_combout\ $end
+$var wire 1 )+ \G17|ram~345_combout\ $end
+$var wire 1 *+ \G17|ram~217_combout\ $end
+$var wire 1 ++ \G17|ram~249_combout\ $end
+$var wire 1 ,+ \G17|ram~233_combout\ $end
+$var wire 1 -+ \G17|ram~153_combout\ $end
+$var wire 1 .+ \G17|ram~185_combout\ $end
+$var wire 1 /+ \G17|ram~169_combout\ $end
+$var wire 1 0+ \G17|ram~137_combout\ $end
+$var wire 1 1+ \G17|ram~477_combout\ $end
+$var wire 1 2+ \G17|ram~201_combout\ $end
+$var wire 1 3+ \G17|ram~349_combout\ $end
+$var wire 1 4+ \G17|ram~265_combout\ $end
+$var wire 1 5+ \G14|SAIDA~13_combout\ $end
+$var wire 1 6+ \G16|Add0~34\ $end
+$var wire 1 7+ \G16|Add0~37_sumout\ $end
+$var wire 1 8+ \G18|SAIDA~31_combout\ $end
+$var wire 1 9+ \G18|SAIDA~32_combout\ $end
+$var wire 1 :+ \G18|SAIDA~33_combout\ $end
+$var wire 1 ;+ \G18|SAIDA~34_combout\ $end
+$var wire 1 <+ \G7|Reg[0][9]~combout\ $end
+$var wire 1 =+ \G16|Add1~34\ $end
+$var wire 1 >+ \G16|Add1~37_sumout\ $end
+$var wire 1 ?+ \G7|Mux21~0_combout\ $end
+$var wire 1 @+ \G7|Mux21~1_combout\ $end
+$var wire 1 A+ \G17|ram~90_combout\ $end
+$var wire 1 B+ \G17|ram~122_combout\ $end
+$var wire 1 C+ \G17|ram~106_combout\ $end
+$var wire 1 D+ \G17|ram~26_combout\ $end
+$var wire 1 E+ \G17|ram~58_combout\ $end
+$var wire 1 F+ \G17|ram~42_combout\ $end
+$var wire 1 G+ \G17|ram~10_combout\ $end
+$var wire 1 H+ \G17|ram~481_combout\ $end
+$var wire 1 I+ \G17|ram~74_combout\ $end
+$var wire 1 J+ \G17|ram~353_combout\ $end
+$var wire 1 K+ \G17|ram~218_combout\ $end
+$var wire 1 L+ \G17|ram~250_combout\ $end
+$var wire 1 M+ \G17|ram~234_combout\ $end
+$var wire 1 N+ \G17|ram~154_combout\ $end
+$var wire 1 O+ \G17|ram~186_combout\ $end
+$var wire 1 P+ \G17|ram~170_combout\ $end
+$var wire 1 Q+ \G17|ram~138_combout\ $end
+$var wire 1 R+ \G17|ram~485_combout\ $end
+$var wire 1 S+ \G17|ram~202_combout\ $end
+$var wire 1 T+ \G17|ram~357_combout\ $end
+$var wire 1 U+ \G17|ram~266_combout\ $end
+$var wire 1 V+ \G14|SAIDA~14_combout\ $end
+$var wire 1 W+ \G16|Add0~38\ $end
+$var wire 1 X+ \G16|Add0~41_sumout\ $end
+$var wire 1 Y+ \G18|SAIDA~35_combout\ $end
+$var wire 1 Z+ \G18|SAIDA~36_combout\ $end
+$var wire 1 [+ \G18|SAIDA~37_combout\ $end
+$var wire 1 \+ \G18|SAIDA~38_combout\ $end
+$var wire 1 ]+ \G7|Reg[0][10]~combout\ $end
+$var wire 1 ^+ \G16|Add1~38\ $end
+$var wire 1 _+ \G16|Add1~41_sumout\ $end
+$var wire 1 `+ \G7|Mux16~0_combout\ $end
+$var wire 1 a+ \G7|Mux16~1_combout\ $end
+$var wire 1 b+ \G17|ram~95_combout\ $end
+$var wire 1 c+ \G17|ram~127_combout\ $end
+$var wire 1 d+ \G17|ram~111_combout\ $end
+$var wire 1 e+ \G17|ram~31_combout\ $end
+$var wire 1 f+ \G17|ram~63_combout\ $end
+$var wire 1 g+ \G17|ram~47_combout\ $end
+$var wire 1 h+ \G17|ram~15_combout\ $end
+$var wire 1 i+ \G17|ram~521_combout\ $end
+$var wire 1 j+ \G17|ram~79_combout\ $end
+$var wire 1 k+ \G17|ram~393_combout\ $end
+$var wire 1 l+ \G17|ram~223_combout\ $end
+$var wire 1 m+ \G17|ram~255_combout\ $end
+$var wire 1 n+ \G17|ram~239_combout\ $end
+$var wire 1 o+ \G17|ram~159_combout\ $end
+$var wire 1 p+ \G17|ram~191_combout\ $end
+$var wire 1 q+ \G17|ram~175_combout\ $end
+$var wire 1 r+ \G17|ram~143_combout\ $end
+$var wire 1 s+ \G17|ram~525_combout\ $end
+$var wire 1 t+ \G17|ram~207_combout\ $end
+$var wire 1 u+ \G17|ram~397_combout\ $end
+$var wire 1 v+ \G17|ram~271_combout\ $end
+$var wire 1 w+ \G18|SAIDA~55_combout\ $end
+$var wire 1 x+ \G14|SAIDA~19_combout\ $end
+$var wire 1 y+ \G7|Mux17~0_combout\ $end
+$var wire 1 z+ \G7|Mux17~1_combout\ $end
+$var wire 1 {+ \G17|ram~94_combout\ $end
+$var wire 1 |+ \G17|ram~126_combout\ $end
+$var wire 1 }+ \G17|ram~110_combout\ $end
+$var wire 1 ~+ \G17|ram~30_combout\ $end
+$var wire 1 !, \G17|ram~62_combout\ $end
+$var wire 1 ", \G17|ram~46_combout\ $end
+$var wire 1 #, \G17|ram~14_combout\ $end
+$var wire 1 $, \G17|ram~513_combout\ $end
+$var wire 1 %, \G17|ram~78_combout\ $end
+$var wire 1 &, \G17|ram~385_combout\ $end
+$var wire 1 ', \G17|ram~222_combout\ $end
+$var wire 1 (, \G17|ram~254_combout\ $end
+$var wire 1 ), \G17|ram~238_combout\ $end
+$var wire 1 *, \G17|ram~158_combout\ $end
+$var wire 1 +, \G17|ram~190_combout\ $end
+$var wire 1 ,, \G17|ram~174_combout\ $end
+$var wire 1 -, \G17|ram~142_combout\ $end
+$var wire 1 ., \G17|ram~517_combout\ $end
+$var wire 1 /, \G17|ram~206_combout\ $end
+$var wire 1 0, \G17|ram~389_combout\ $end
+$var wire 1 1, \G17|ram~270_combout\ $end
+$var wire 1 2, \G18|SAIDA~51_combout\ $end
+$var wire 1 3, \G14|SAIDA~18_combout\ $end
+$var wire 1 4, \G7|Mux18~0_combout\ $end
+$var wire 1 5, \G7|Mux18~1_combout\ $end
+$var wire 1 6, \G17|ram~93_combout\ $end
+$var wire 1 7, \G17|ram~125_combout\ $end
+$var wire 1 8, \G17|ram~109_combout\ $end
+$var wire 1 9, \G17|ram~29_combout\ $end
+$var wire 1 :, \G17|ram~61_combout\ $end
+$var wire 1 ;, \G17|ram~45_combout\ $end
+$var wire 1 <, \G17|ram~13_combout\ $end
+$var wire 1 =, \G17|ram~505_combout\ $end
+$var wire 1 >, \G17|ram~77_combout\ $end
+$var wire 1 ?, \G17|ram~377_combout\ $end
+$var wire 1 @, \G17|ram~221_combout\ $end
+$var wire 1 A, \G17|ram~253_combout\ $end
+$var wire 1 B, \G17|ram~237_combout\ $end
+$var wire 1 C, \G17|ram~157_combout\ $end
+$var wire 1 D, \G17|ram~189_combout\ $end
+$var wire 1 E, \G17|ram~173_combout\ $end
+$var wire 1 F, \G17|ram~141_combout\ $end
+$var wire 1 G, \G17|ram~509_combout\ $end
+$var wire 1 H, \G17|ram~205_combout\ $end
+$var wire 1 I, \G17|ram~381_combout\ $end
+$var wire 1 J, \G17|ram~269_combout\ $end
+$var wire 1 K, \G18|SAIDA~47_combout\ $end
+$var wire 1 L, \G14|SAIDA~17_combout\ $end
+$var wire 1 M, \G7|Mux19~0_combout\ $end
+$var wire 1 N, \G7|Mux19~1_combout\ $end
+$var wire 1 O, \G17|ram~92_combout\ $end
+$var wire 1 P, \G17|ram~124_combout\ $end
+$var wire 1 Q, \G17|ram~108_combout\ $end
+$var wire 1 R, \G17|ram~28_combout\ $end
+$var wire 1 S, \G17|ram~60_combout\ $end
+$var wire 1 T, \G17|ram~44_combout\ $end
+$var wire 1 U, \G17|ram~12_combout\ $end
+$var wire 1 V, \G17|ram~497_combout\ $end
+$var wire 1 W, \G17|ram~76_combout\ $end
+$var wire 1 X, \G17|ram~369_combout\ $end
+$var wire 1 Y, \G17|ram~220_combout\ $end
+$var wire 1 Z, \G17|ram~252_combout\ $end
+$var wire 1 [, \G17|ram~236_combout\ $end
+$var wire 1 \, \G17|ram~156_combout\ $end
+$var wire 1 ], \G17|ram~188_combout\ $end
+$var wire 1 ^, \G17|ram~172_combout\ $end
+$var wire 1 _, \G17|ram~140_combout\ $end
+$var wire 1 `, \G17|ram~501_combout\ $end
+$var wire 1 a, \G17|ram~204_combout\ $end
+$var wire 1 b, \G17|ram~373_combout\ $end
+$var wire 1 c, \G17|ram~268_combout\ $end
+$var wire 1 d, \G14|SAIDA~16_combout\ $end
+$var wire 1 e, \G7|Mux20~0_combout\ $end
+$var wire 1 f, \G7|Mux20~1_combout\ $end
+$var wire 1 g, \G17|ram~91_combout\ $end
+$var wire 1 h, \G17|ram~123_combout\ $end
+$var wire 1 i, \G17|ram~107_combout\ $end
+$var wire 1 j, \G17|ram~27_combout\ $end
+$var wire 1 k, \G17|ram~59_combout\ $end
+$var wire 1 l, \G17|ram~43_combout\ $end
+$var wire 1 m, \G17|ram~11_combout\ $end
+$var wire 1 n, \G17|ram~489_combout\ $end
+$var wire 1 o, \G17|ram~75_combout\ $end
+$var wire 1 p, \G17|ram~361_combout\ $end
+$var wire 1 q, \G17|ram~219_combout\ $end
+$var wire 1 r, \G17|ram~251_combout\ $end
+$var wire 1 s, \G17|ram~235_combout\ $end
+$var wire 1 t, \G17|ram~155_combout\ $end
+$var wire 1 u, \G17|ram~187_combout\ $end
+$var wire 1 v, \G17|ram~171_combout\ $end
+$var wire 1 w, \G17|ram~139_combout\ $end
+$var wire 1 x, \G17|ram~493_combout\ $end
+$var wire 1 y, \G17|ram~203_combout\ $end
+$var wire 1 z, \G17|ram~365_combout\ $end
+$var wire 1 {, \G17|ram~267_combout\ $end
+$var wire 1 |, \G14|SAIDA~15_combout\ $end
+$var wire 1 }, \G16|Add1~42\ $end
+$var wire 1 ~, \G16|Add1~45_sumout\ $end
+$var wire 1 !- \G16|Add0~42\ $end
+$var wire 1 "- \G16|Add0~45_sumout\ $end
+$var wire 1 #- \G18|SAIDA~39_combout\ $end
+$var wire 1 $- \G18|SAIDA~40_combout\ $end
+$var wire 1 %- \G18|SAIDA~41_combout\ $end
+$var wire 1 &- \G18|SAIDA~42_combout\ $end
+$var wire 1 '- \G7|Reg[0][11]~combout\ $end
+$var wire 1 (- \G16|Add1~46\ $end
+$var wire 1 )- \G16|Add1~49_sumout\ $end
+$var wire 1 *- \G16|Add0~46\ $end
+$var wire 1 +- \G16|Add0~49_sumout\ $end
+$var wire 1 ,- \G18|SAIDA~43_combout\ $end
+$var wire 1 -- \G18|SAIDA~44_combout\ $end
+$var wire 1 .- \G18|SAIDA~45_combout\ $end
+$var wire 1 /- \G18|SAIDA~46_combout\ $end
+$var wire 1 0- \G7|Reg[0][12]~combout\ $end
+$var wire 1 1- \G16|Add1~50\ $end
+$var wire 1 2- \G16|Add1~53_sumout\ $end
+$var wire 1 3- \G16|Add0~50\ $end
+$var wire 1 4- \G16|Add0~53_sumout\ $end
+$var wire 1 5- \G18|SAIDA~48_combout\ $end
+$var wire 1 6- \G18|SAIDA~49_combout\ $end
+$var wire 1 7- \G18|SAIDA~50_combout\ $end
+$var wire 1 8- \G7|Reg[0][13]~combout\ $end
+$var wire 1 9- \G16|Add1~54\ $end
+$var wire 1 :- \G16|Add1~57_sumout\ $end
+$var wire 1 ;- \G16|Add0~54\ $end
+$var wire 1 <- \G16|Add0~57_sumout\ $end
+$var wire 1 =- \G18|SAIDA~52_combout\ $end
+$var wire 1 >- \G18|SAIDA~53_combout\ $end
+$var wire 1 ?- \G18|SAIDA~54_combout\ $end
+$var wire 1 @- \G7|Reg[0][14]~combout\ $end
+$var wire 1 A- \G16|Add0~58\ $end
+$var wire 1 B- \G16|Add0~61_sumout\ $end
+$var wire 1 C- \G18|SAIDA~56_combout\ $end
+$var wire 1 D- \G18|SAIDA~57_combout\ $end
+$var wire 1 E- \G18|SAIDA~58_combout\ $end
+$var wire 1 F- \G7|Reg[0][15]~combout\ $end
+$var wire 1 G- \G16|Add1~58\ $end
+$var wire 1 H- \G16|Add1~61_sumout\ $end
+$var wire 1 I- \G16|Equal1~2_combout\ $end
+$var wire 1 J- \G12|SAIDA~1_combout\ $end
+$var wire 1 K- \G13|SAIDA~1_combout\ $end
+$var wire 1 L- \G4|Mux0~2_combout\ $end
+$var wire 1 M- \G4|rd[0]~0_combout\ $end
+$var wire 1 N- \G16|Add1~21_sumout\ $end
+$var wire 1 O- \G16|Equal1~0_combout\ $end
+$var wire 1 P- \G16|Equal1~1_combout\ $end
+$var wire 1 Q- \G12|SAIDA~0_combout\ $end
+$var wire 1 R- \G13|SAIDA~0_combout\ $end
+$var wire 1 S- \G2|saida[0]~0_combout\ $end
+$var wire 1 T- \G7|Mux10~0_combout\ $end
+$var wire 1 U- \G7|Mux9~0_combout\ $end
+$var wire 1 V- \G7|Mux8~0_combout\ $end
+$var wire 1 W- \G7|Mux7~0_combout\ $end
+$var wire 1 X- \G7|Mux6~0_combout\ $end
+$var wire 1 Y- \G7|Mux5~0_combout\ $end
+$var wire 1 Z- \G7|Mux4~0_combout\ $end
+$var wire 1 [- \G7|Mux3~0_combout\ $end
+$var wire 1 \- \G7|Mux2~0_combout\ $end
+$var wire 1 ]- \G7|Mux1~0_combout\ $end
+$var wire 1 ^- \G7|Mux0~0_combout\ $end
+$var wire 1 _- \G16|Mux10~0_combout\ $end
+$var wire 1 `- \G16|Mux9~0_combout\ $end
+$var wire 1 a- \G16|Mux8~0_combout\ $end
+$var wire 1 b- \G16|Mux7~0_combout\ $end
+$var wire 1 c- \G16|Mux6~0_combout\ $end
+$var wire 1 d- \G16|Mux5~0_combout\ $end
+$var wire 1 e- \G16|Mux4~0_combout\ $end
+$var wire 1 f- \G16|Mux3~0_combout\ $end
+$var wire 1 g- \G16|Mux2~0_combout\ $end
+$var wire 1 h- \G16|Mux1~0_combout\ $end
+$var wire 1 i- \G16|Mux0~0_combout\ $end
+$var wire 1 j- \G1|G0|G0|state~0_combout\ $end
+$var wire 1 k- \G1|G0|G0|state~q\ $end
+$var wire 1 l- \G1|G0|G1|state~0_combout\ $end
+$var wire 1 m- \G1|G0|G1|state~q\ $end
+$var wire 1 n- \G1|G0|G3|state~0_combout\ $end
+$var wire 1 o- \G1|G0|G3|state~q\ $end
+$var wire 1 p- \G2|saida\ [15] $end
+$var wire 1 q- \G2|saida\ [14] $end
+$var wire 1 r- \G2|saida\ [13] $end
+$var wire 1 s- \G2|saida\ [12] $end
+$var wire 1 t- \G2|saida\ [11] $end
+$var wire 1 u- \G2|saida\ [10] $end
+$var wire 1 v- \G2|saida\ [9] $end
+$var wire 1 w- \G2|saida\ [8] $end
+$var wire 1 x- \G2|saida\ [7] $end
+$var wire 1 y- \G2|saida\ [6] $end
+$var wire 1 z- \G2|saida\ [5] $end
+$var wire 1 {- \G2|saida\ [4] $end
+$var wire 1 |- \G2|saida\ [3] $end
+$var wire 1 }- \G2|saida\ [2] $end
+$var wire 1 ~- \G2|saida\ [1] $end
+$var wire 1 !. \G2|saida\ [0] $end
+$var wire 1 ". \G9|AUX\ [15] $end
+$var wire 1 #. \G9|AUX\ [14] $end
+$var wire 1 $. \G9|AUX\ [13] $end
+$var wire 1 %. \G9|AUX\ [12] $end
+$var wire 1 &. \G9|AUX\ [11] $end
+$var wire 1 '. \G9|AUX\ [10] $end
+$var wire 1 (. \G9|AUX\ [9] $end
+$var wire 1 ). \G9|AUX\ [8] $end
+$var wire 1 *. \G9|AUX\ [7] $end
+$var wire 1 +. \G9|AUX\ [6] $end
+$var wire 1 ,. \G9|AUX\ [5] $end
+$var wire 1 -. \G9|AUX\ [4] $end
+$var wire 1 .. \G9|AUX\ [3] $end
+$var wire 1 /. \G9|AUX\ [2] $end
+$var wire 1 0. \G9|AUX\ [1] $end
+$var wire 1 1. \G9|AUX\ [0] $end
+$var wire 1 2. \G18|SAIDA\ [15] $end
+$var wire 1 3. \G18|SAIDA\ [14] $end
+$var wire 1 4. \G18|SAIDA\ [13] $end
+$var wire 1 5. \G18|SAIDA\ [12] $end
+$var wire 1 6. \G18|SAIDA\ [11] $end
+$var wire 1 7. \G18|SAIDA\ [10] $end
+$var wire 1 8. \G18|SAIDA\ [9] $end
+$var wire 1 9. \G18|SAIDA\ [8] $end
+$var wire 1 :. \G18|SAIDA\ [7] $end
+$var wire 1 ;. \G18|SAIDA\ [6] $end
+$var wire 1 <. \G18|SAIDA\ [5] $end
+$var wire 1 =. \G18|SAIDA\ [4] $end
+$var wire 1 >. \G18|SAIDA\ [3] $end
+$var wire 1 ?. \G18|SAIDA\ [2] $end
+$var wire 1 @. \G18|SAIDA\ [1] $end
+$var wire 1 A. \G18|SAIDA\ [0] $end
+$var wire 1 B. \G15|SAIDA\ [6] $end
+$var wire 1 C. \G15|SAIDA\ [5] $end
+$var wire 1 D. \G15|SAIDA\ [4] $end
+$var wire 1 E. \G15|SAIDA\ [3] $end
+$var wire 1 F. \G15|SAIDA\ [2] $end
+$var wire 1 G. \G15|SAIDA\ [1] $end
+$var wire 1 H. \G15|SAIDA\ [0] $end
+$var wire 1 I. \G10|SAIDA\ [15] $end
+$var wire 1 J. \G10|SAIDA\ [14] $end
+$var wire 1 K. \G10|SAIDA\ [13] $end
+$var wire 1 L. \G10|SAIDA\ [12] $end
+$var wire 1 M. \G10|SAIDA\ [11] $end
+$var wire 1 N. \G10|SAIDA\ [10] $end
+$var wire 1 O. \G10|SAIDA\ [9] $end
+$var wire 1 P. \G10|SAIDA\ [8] $end
+$var wire 1 Q. \G10|SAIDA\ [7] $end
+$var wire 1 R. \G10|SAIDA\ [6] $end
+$var wire 1 S. \G10|SAIDA\ [5] $end
+$var wire 1 T. \G10|SAIDA\ [4] $end
+$var wire 1 U. \G10|SAIDA\ [3] $end
+$var wire 1 V. \G10|SAIDA\ [2] $end
+$var wire 1 W. \G10|SAIDA\ [1] $end
+$var wire 1 X. \G10|SAIDA\ [0] $end
+$var wire 1 Y. \G9|SAIDA\ [15] $end
+$var wire 1 Z. \G9|SAIDA\ [14] $end
+$var wire 1 [. \G9|SAIDA\ [13] $end
+$var wire 1 \. \G9|SAIDA\ [12] $end
+$var wire 1 ]. \G9|SAIDA\ [11] $end
+$var wire 1 ^. \G9|SAIDA\ [10] $end
+$var wire 1 _. \G9|SAIDA\ [9] $end
+$var wire 1 `. \G9|SAIDA\ [8] $end
+$var wire 1 a. \G9|SAIDA\ [7] $end
+$var wire 1 b. \G9|SAIDA\ [6] $end
+$var wire 1 c. \G9|SAIDA\ [5] $end
+$var wire 1 d. \G9|SAIDA\ [4] $end
+$var wire 1 e. \G9|SAIDA\ [3] $end
+$var wire 1 f. \G9|SAIDA\ [2] $end
+$var wire 1 g. \G9|SAIDA\ [1] $end
+$var wire 1 h. \G9|SAIDA\ [0] $end
+$var wire 1 i. \G3|resshift\ [15] $end
+$var wire 1 j. \G3|resshift\ [14] $end
+$var wire 1 k. \G3|resshift\ [13] $end
+$var wire 1 l. \G3|resshift\ [12] $end
+$var wire 1 m. \G3|resshift\ [11] $end
+$var wire 1 n. \G3|resshift\ [10] $end
+$var wire 1 o. \G3|resshift\ [9] $end
+$var wire 1 p. \G3|resshift\ [8] $end
+$var wire 1 q. \G3|resshift\ [7] $end
+$var wire 1 r. \G3|resshift\ [6] $end
+$var wire 1 s. \G3|resshift\ [5] $end
+$var wire 1 t. \G3|resshift\ [4] $end
+$var wire 1 u. \G3|resshift\ [3] $end
+$var wire 1 v. \G3|resshift\ [2] $end
+$var wire 1 w. \G3|resshift\ [1] $end
+$var wire 1 x. \G3|resshift\ [0] $end
+$var wire 1 y. \G1|pout\ [15] $end
+$var wire 1 z. \G1|pout\ [14] $end
+$var wire 1 {. \G1|pout\ [13] $end
+$var wire 1 |. \G1|pout\ [12] $end
+$var wire 1 }. \G1|pout\ [11] $end
+$var wire 1 ~. \G1|pout\ [10] $end
+$var wire 1 !/ \G1|pout\ [9] $end
+$var wire 1 "/ \G1|pout\ [8] $end
+$var wire 1 #/ \G1|pout\ [7] $end
+$var wire 1 $/ \G1|pout\ [6] $end
+$var wire 1 %/ \G1|pout\ [5] $end
+$var wire 1 &/ \G1|pout\ [4] $end
+$var wire 1 '/ \G1|pout\ [3] $end
+$var wire 1 (/ \G1|pout\ [2] $end
+$var wire 1 )/ \G1|pout\ [1] $end
+$var wire 1 */ \G1|pout\ [0] $end
+$var wire 1 +/ \G12|SAIDA\ [15] $end
+$var wire 1 ,/ \G12|SAIDA\ [14] $end
+$var wire 1 -/ \G12|SAIDA\ [13] $end
+$var wire 1 ./ \G12|SAIDA\ [12] $end
+$var wire 1 // \G12|SAIDA\ [11] $end
+$var wire 1 0/ \G12|SAIDA\ [10] $end
+$var wire 1 1/ \G12|SAIDA\ [9] $end
+$var wire 1 2/ \G12|SAIDA\ [8] $end
+$var wire 1 3/ \G12|SAIDA\ [7] $end
+$var wire 1 4/ \G12|SAIDA\ [6] $end
+$var wire 1 5/ \G12|SAIDA\ [5] $end
+$var wire 1 6/ \G12|SAIDA\ [4] $end
+$var wire 1 7/ \G12|SAIDA\ [3] $end
+$var wire 1 8/ \G12|SAIDA\ [2] $end
+$var wire 1 9/ \G12|SAIDA\ [1] $end
+$var wire 1 :/ \G12|SAIDA\ [0] $end
+$var wire 1 ;/ \G13|SAIDA\ [15] $end
+$var wire 1 </ \G13|SAIDA\ [14] $end
+$var wire 1 =/ \G13|SAIDA\ [13] $end
+$var wire 1 >/ \G13|SAIDA\ [12] $end
+$var wire 1 ?/ \G13|SAIDA\ [11] $end
+$var wire 1 @/ \G13|SAIDA\ [10] $end
+$var wire 1 A/ \G13|SAIDA\ [9] $end
+$var wire 1 B/ \G13|SAIDA\ [8] $end
+$var wire 1 C/ \G13|SAIDA\ [7] $end
+$var wire 1 D/ \G13|SAIDA\ [6] $end
+$var wire 1 E/ \G13|SAIDA\ [5] $end
+$var wire 1 F/ \G13|SAIDA\ [4] $end
+$var wire 1 G/ \G13|SAIDA\ [3] $end
+$var wire 1 H/ \G13|SAIDA\ [2] $end
+$var wire 1 I/ \G13|SAIDA\ [1] $end
+$var wire 1 J/ \G13|SAIDA\ [0] $end
+$var wire 1 K/ \G14|SAIDA\ [15] $end
+$var wire 1 L/ \G14|SAIDA\ [14] $end
+$var wire 1 M/ \G14|SAIDA\ [13] $end
+$var wire 1 N/ \G14|SAIDA\ [12] $end
+$var wire 1 O/ \G14|SAIDA\ [11] $end
+$var wire 1 P/ \G14|SAIDA\ [10] $end
+$var wire 1 Q/ \G14|SAIDA\ [9] $end
+$var wire 1 R/ \G14|SAIDA\ [8] $end
+$var wire 1 S/ \G14|SAIDA\ [7] $end
+$var wire 1 T/ \G14|SAIDA\ [6] $end
+$var wire 1 U/ \G14|SAIDA\ [5] $end
+$var wire 1 V/ \G14|SAIDA\ [4] $end
+$var wire 1 W/ \G14|SAIDA\ [3] $end
+$var wire 1 X/ \G14|SAIDA\ [2] $end
+$var wire 1 Y/ \G14|SAIDA\ [1] $end
+$var wire 1 Z/ \G14|SAIDA\ [0] $end
+$var wire 1 [/ \G5|origalu\ [3] $end
+$var wire 1 \/ \G5|origalu\ [2] $end
+$var wire 1 ]/ \G5|origalu\ [1] $end
+$var wire 1 ^/ \G5|origalu\ [0] $end
+$var wire 1 _/ \G17|ALT_INV_ram~357_combout\ $end
+$var wire 1 `/ \G17|ALT_INV_ram~353_combout\ $end
+$var wire 1 a/ \G17|ALT_INV_ram~349_combout\ $end
+$var wire 1 b/ \G17|ALT_INV_ram~345_combout\ $end
+$var wire 1 c/ \G17|ALT_INV_ram~341_combout\ $end
+$var wire 1 d/ \G17|ALT_INV_ram~337_combout\ $end
+$var wire 1 e/ \G17|ALT_INV_ram~333_combout\ $end
+$var wire 1 f/ \G17|ALT_INV_ram~329_combout\ $end
+$var wire 1 g/ \G17|ALT_INV_ram~325_combout\ $end
+$var wire 1 h/ \G17|ALT_INV_ram~321_combout\ $end
+$var wire 1 i/ \G17|ALT_INV_ram~317_combout\ $end
+$var wire 1 j/ \G17|ALT_INV_ram~313_combout\ $end
+$var wire 1 k/ \G17|ALT_INV_ram~309_combout\ $end
+$var wire 1 l/ \G17|ALT_INV_ram~305_combout\ $end
+$var wire 1 m/ \G17|ALT_INV_ram~301_combout\ $end
+$var wire 1 n/ \G17|ALT_INV_ram~297_combout\ $end
+$var wire 1 o/ \G17|ALT_INV_ram~293_combout\ $end
+$var wire 1 p/ \G17|ALT_INV_ram~289_combout\ $end
+$var wire 1 q/ \G17|ALT_INV_ram~285_combout\ $end
+$var wire 1 r/ \G17|ALT_INV_ram~281_combout\ $end
+$var wire 1 s/ \G17|ALT_INV_ram~276_combout\ $end
+$var wire 1 t/ \G17|ALT_INV_ram~272_combout\ $end
+$var wire 1 u/ \G16|ALT_INV_Add0~61_sumout\ $end
+$var wire 1 v/ \G16|ALT_INV_Add1~61_sumout\ $end
+$var wire 1 w/ \G16|ALT_INV_Add0~57_sumout\ $end
+$var wire 1 x/ \G16|ALT_INV_Add1~57_sumout\ $end
+$var wire 1 y/ \G16|ALT_INV_Add0~53_sumout\ $end
+$var wire 1 z/ \G16|ALT_INV_Add1~53_sumout\ $end
+$var wire 1 {/ \G16|ALT_INV_Add0~49_sumout\ $end
+$var wire 1 |/ \G16|ALT_INV_Add1~49_sumout\ $end
+$var wire 1 }/ \G16|ALT_INV_Add0~45_sumout\ $end
+$var wire 1 ~/ \G16|ALT_INV_Add1~45_sumout\ $end
+$var wire 1 !0 \G16|ALT_INV_Add0~41_sumout\ $end
+$var wire 1 "0 \G16|ALT_INV_Add1~41_sumout\ $end
+$var wire 1 #0 \G16|ALT_INV_Add0~37_sumout\ $end
+$var wire 1 $0 \G16|ALT_INV_Add1~37_sumout\ $end
+$var wire 1 %0 \G16|ALT_INV_Add0~33_sumout\ $end
+$var wire 1 &0 \G16|ALT_INV_Add1~33_sumout\ $end
+$var wire 1 '0 \G16|ALT_INV_Add0~29_sumout\ $end
+$var wire 1 (0 \G16|ALT_INV_Add1~29_sumout\ $end
+$var wire 1 )0 \G16|ALT_INV_Add0~25_sumout\ $end
+$var wire 1 *0 \G16|ALT_INV_Add1~25_sumout\ $end
+$var wire 1 +0 \G16|ALT_INV_Add0~21_sumout\ $end
+$var wire 1 ,0 \G16|ALT_INV_Add1~21_sumout\ $end
+$var wire 1 -0 \G16|ALT_INV_Add0~17_sumout\ $end
+$var wire 1 .0 \G16|ALT_INV_Add1~17_sumout\ $end
+$var wire 1 /0 \G16|ALT_INV_Add0~13_sumout\ $end
+$var wire 1 00 \G16|ALT_INV_Add1~13_sumout\ $end
+$var wire 1 10 \G16|ALT_INV_Add0~9_sumout\ $end
+$var wire 1 20 \G16|ALT_INV_Add1~9_sumout\ $end
+$var wire 1 30 \G16|ALT_INV_Add0~5_sumout\ $end
+$var wire 1 40 \G16|ALT_INV_Add1~5_sumout\ $end
+$var wire 1 50 \G16|ALT_INV_Add0~1_sumout\ $end
+$var wire 1 60 \G16|ALT_INV_Add1~1_sumout\ $end
+$var wire 1 70 \G7|ALT_INV_Mux27~0_combout\ $end
+$var wire 1 80 \G7|ALT_INV_Mux28~1_combout\ $end
+$var wire 1 90 \G7|ALT_INV_Mux28~0_combout\ $end
+$var wire 1 :0 \G7|ALT_INV_Mux29~1_combout\ $end
+$var wire 1 ;0 \G7|ALT_INV_Mux29~0_combout\ $end
+$var wire 1 <0 \G7|ALT_INV_Mux30~1_combout\ $end
+$var wire 1 =0 \G7|ALT_INV_Mux30~0_combout\ $end
+$var wire 1 >0 \G7|ALT_INV_Mux31~1_combout\ $end
+$var wire 1 ?0 \G7|ALT_INV_Mux31~0_combout\ $end
+$var wire 1 @0 \G4|ALT_INV_rt[0]~0_combout\ $end
+$var wire 1 A0 \G6|ALT_INV_SAIDA[2]~3_combout\ $end
+$var wire 1 B0 \G6|ALT_INV_SAIDA[2]~2_combout\ $end
+$var wire 1 C0 \G6|ALT_INV_SAIDA[1]~1_combout\ $end
+$var wire 1 D0 \G4|ALT_INV_rs[1]~0_combout\ $end
+$var wire 1 E0 \G6|ALT_INV_SAIDA[0]~0_combout\ $end
+$var wire 1 F0 \G7|ALT_INV_Mux0~0_combout\ $end
+$var wire 1 G0 \G7|ALT_INV_Mux1~0_combout\ $end
+$var wire 1 H0 \G7|ALT_INV_Mux2~0_combout\ $end
+$var wire 1 I0 \G7|ALT_INV_Mux3~0_combout\ $end
+$var wire 1 J0 \G7|ALT_INV_Mux4~0_combout\ $end
+$var wire 1 K0 \G7|ALT_INV_Mux5~0_combout\ $end
+$var wire 1 L0 \G7|ALT_INV_Mux6~0_combout\ $end
+$var wire 1 M0 \G7|ALT_INV_Mux7~0_combout\ $end
+$var wire 1 N0 \G7|ALT_INV_Mux8~0_combout\ $end
+$var wire 1 O0 \G7|ALT_INV_Mux9~0_combout\ $end
+$var wire 1 P0 \G7|ALT_INV_Mux10~0_combout\ $end
+$var wire 1 Q0 \G7|ALT_INV_Mux11~0_combout\ $end
+$var wire 1 R0 \G7|ALT_INV_Mux12~0_combout\ $end
+$var wire 1 S0 \G7|ALT_INV_Mux13~0_combout\ $end
+$var wire 1 T0 \G7|ALT_INV_Mux14~0_combout\ $end
+$var wire 1 U0 \G7|ALT_INV_Mux15~0_combout\ $end
+$var wire 1 V0 \G7|ALT_INV_Decoder0~0_combout\ $end
+$var wire 1 W0 \G4|ALT_INV_Mux0~3_combout\ $end
+$var wire 1 X0 \G4|ALT_INV_rd[0]~0_combout\ $end
+$var wire 1 Y0 \G4|ALT_INV_Mux7~1_combout\ $end
+$var wire 1 Z0 \G4|ALT_INV_Mux7~0_combout\ $end
+$var wire 1 [0 \G4|ALT_INV_Mux6~0_combout\ $end
+$var wire 1 \0 \G4|ALT_INV_Mux0~2_combout\ $end
+$var wire 1 ]0 \G4|ALT_INV_Mux0~1_combout\ $end
+$var wire 1 ^0 \G4|ALT_INV_Mux0~0_combout\ $end
+$var wire 1 _0 \G2|ALT_INV_saida\ [15] $end
+$var wire 1 `0 \G2|ALT_INV_saida\ [14] $end
+$var wire 1 a0 \G2|ALT_INV_saida\ [13] $end
+$var wire 1 b0 \G2|ALT_INV_saida\ [12] $end
+$var wire 1 c0 \G2|ALT_INV_saida\ [11] $end
+$var wire 1 d0 \G2|ALT_INV_saida\ [10] $end
+$var wire 1 e0 \G2|ALT_INV_saida\ [9] $end
+$var wire 1 f0 \G2|ALT_INV_saida\ [8] $end
+$var wire 1 g0 \G2|ALT_INV_saida\ [7] $end
+$var wire 1 h0 \G2|ALT_INV_saida\ [6] $end
+$var wire 1 i0 \G2|ALT_INV_saida\ [5] $end
+$var wire 1 j0 \G2|ALT_INV_saida\ [4] $end
+$var wire 1 k0 \G2|ALT_INV_saida\ [3] $end
+$var wire 1 l0 \G2|ALT_INV_saida\ [2] $end
+$var wire 1 m0 \G2|ALT_INV_saida\ [1] $end
+$var wire 1 n0 \G2|ALT_INV_saida\ [0] $end
+$var wire 1 o0 \G17|ALT_INV_ram~525_combout\ $end
+$var wire 1 p0 \G17|ALT_INV_ram~521_combout\ $end
+$var wire 1 q0 \G17|ALT_INV_ram~517_combout\ $end
+$var wire 1 r0 \G17|ALT_INV_ram~513_combout\ $end
+$var wire 1 s0 \G17|ALT_INV_ram~509_combout\ $end
+$var wire 1 t0 \G17|ALT_INV_ram~505_combout\ $end
+$var wire 1 u0 \G17|ALT_INV_ram~501_combout\ $end
+$var wire 1 v0 \G17|ALT_INV_ram~497_combout\ $end
+$var wire 1 w0 \G17|ALT_INV_ram~493_combout\ $end
+$var wire 1 x0 \G17|ALT_INV_ram~489_combout\ $end
+$var wire 1 y0 \G17|ALT_INV_ram~485_combout\ $end
+$var wire 1 z0 \G17|ALT_INV_ram~481_combout\ $end
+$var wire 1 {0 \G17|ALT_INV_ram~477_combout\ $end
+$var wire 1 |0 \G17|ALT_INV_ram~473_combout\ $end
+$var wire 1 }0 \G17|ALT_INV_ram~469_combout\ $end
+$var wire 1 ~0 \G17|ALT_INV_ram~465_combout\ $end
+$var wire 1 !1 \G17|ALT_INV_ram~461_combout\ $end
+$var wire 1 "1 \G17|ALT_INV_ram~457_combout\ $end
+$var wire 1 #1 \G17|ALT_INV_ram~453_combout\ $end
+$var wire 1 $1 \G17|ALT_INV_ram~449_combout\ $end
+$var wire 1 %1 \G17|ALT_INV_ram~445_combout\ $end
+$var wire 1 &1 \G17|ALT_INV_ram~441_combout\ $end
+$var wire 1 '1 \G17|ALT_INV_ram~437_combout\ $end
+$var wire 1 (1 \G17|ALT_INV_ram~433_combout\ $end
+$var wire 1 )1 \G17|ALT_INV_ram~429_combout\ $end
+$var wire 1 *1 \G17|ALT_INV_ram~425_combout\ $end
+$var wire 1 +1 \G17|ALT_INV_ram~421_combout\ $end
+$var wire 1 ,1 \G17|ALT_INV_ram~417_combout\ $end
+$var wire 1 -1 \G17|ALT_INV_ram~413_combout\ $end
+$var wire 1 .1 \G17|ALT_INV_ram~409_combout\ $end
+$var wire 1 /1 \G17|ALT_INV_ram~405_combout\ $end
+$var wire 1 01 \G17|ALT_INV_ram~401_combout\ $end
+$var wire 1 11 \G17|ALT_INV_ram~397_combout\ $end
+$var wire 1 21 \G17|ALT_INV_ram~393_combout\ $end
+$var wire 1 31 \G17|ALT_INV_ram~389_combout\ $end
+$var wire 1 41 \G17|ALT_INV_ram~385_combout\ $end
+$var wire 1 51 \G17|ALT_INV_ram~381_combout\ $end
+$var wire 1 61 \G17|ALT_INV_ram~377_combout\ $end
+$var wire 1 71 \G17|ALT_INV_ram~373_combout\ $end
+$var wire 1 81 \G17|ALT_INV_ram~369_combout\ $end
+$var wire 1 91 \G17|ALT_INV_ram~365_combout\ $end
+$var wire 1 :1 \G17|ALT_INV_ram~361_combout\ $end
+$var wire 1 ;1 \G18|ALT_INV_SAIDA~54_combout\ $end
+$var wire 1 <1 \G18|ALT_INV_SAIDA~53_combout\ $end
+$var wire 1 =1 \G18|ALT_INV_SAIDA~52_combout\ $end
+$var wire 1 >1 \G18|ALT_INV_SAIDA~51_combout\ $end
+$var wire 1 ?1 \G18|ALT_INV_SAIDA~50_combout\ $end
+$var wire 1 @1 \G18|ALT_INV_SAIDA~49_combout\ $end
+$var wire 1 A1 \G18|ALT_INV_SAIDA~48_combout\ $end
+$var wire 1 B1 \G18|ALT_INV_SAIDA~47_combout\ $end
+$var wire 1 C1 \G18|ALT_INV_SAIDA~46_combout\ $end
+$var wire 1 D1 \G18|ALT_INV_SAIDA~45_combout\ $end
+$var wire 1 E1 \G18|ALT_INV_SAIDA~44_combout\ $end
+$var wire 1 F1 \G18|ALT_INV_SAIDA~43_combout\ $end
+$var wire 1 G1 \G18|ALT_INV_SAIDA~42_combout\ $end
+$var wire 1 H1 \G18|ALT_INV_SAIDA~41_combout\ $end
+$var wire 1 I1 \G18|ALT_INV_SAIDA~40_combout\ $end
+$var wire 1 J1 \G18|ALT_INV_SAIDA~39_combout\ $end
+$var wire 1 K1 \G18|ALT_INV_SAIDA~38_combout\ $end
+$var wire 1 L1 \G18|ALT_INV_SAIDA~37_combout\ $end
+$var wire 1 M1 \G18|ALT_INV_SAIDA~36_combout\ $end
+$var wire 1 N1 \G18|ALT_INV_SAIDA~35_combout\ $end
+$var wire 1 O1 \G18|ALT_INV_SAIDA~34_combout\ $end
+$var wire 1 P1 \G18|ALT_INV_SAIDA~33_combout\ $end
+$var wire 1 Q1 \G18|ALT_INV_SAIDA~32_combout\ $end
+$var wire 1 R1 \G18|ALT_INV_SAIDA~31_combout\ $end
+$var wire 1 S1 \G18|ALT_INV_SAIDA~30_combout\ $end
+$var wire 1 T1 \G18|ALT_INV_SAIDA~29_combout\ $end
+$var wire 1 U1 \G18|ALT_INV_SAIDA~28_combout\ $end
+$var wire 1 V1 \G18|ALT_INV_SAIDA~27_combout\ $end
+$var wire 1 W1 \G18|ALT_INV_SAIDA~26_combout\ $end
+$var wire 1 X1 \G18|ALT_INV_SAIDA~25_combout\ $end
+$var wire 1 Y1 \G18|ALT_INV_SAIDA~24_combout\ $end
+$var wire 1 Z1 \G18|ALT_INV_SAIDA~23_combout\ $end
+$var wire 1 [1 \G18|ALT_INV_SAIDA~22_combout\ $end
+$var wire 1 \1 \G18|ALT_INV_SAIDA~21_combout\ $end
+$var wire 1 ]1 \G18|ALT_INV_SAIDA~20_combout\ $end
+$var wire 1 ^1 \G18|ALT_INV_SAIDA~19_combout\ $end
+$var wire 1 _1 \G18|ALT_INV_SAIDA~18_combout\ $end
+$var wire 1 `1 \G18|ALT_INV_SAIDA~17_combout\ $end
+$var wire 1 a1 \G18|ALT_INV_SAIDA~16_combout\ $end
+$var wire 1 b1 \G18|ALT_INV_SAIDA~15_combout\ $end
+$var wire 1 c1 \G18|ALT_INV_SAIDA~14_combout\ $end
+$var wire 1 d1 \G18|ALT_INV_SAIDA~13_combout\ $end
+$var wire 1 e1 \G18|ALT_INV_SAIDA~12_combout\ $end
+$var wire 1 f1 \G18|ALT_INV_SAIDA~11_combout\ $end
+$var wire 1 g1 \G16|ALT_INV_Mux13~2_combout\ $end
+$var wire 1 h1 \G18|ALT_INV_SAIDA~10_combout\ $end
+$var wire 1 i1 \G18|ALT_INV_SAIDA~9_combout\ $end
+$var wire 1 j1 \G18|ALT_INV_SAIDA~8_combout\ $end
+$var wire 1 k1 \G18|ALT_INV_SAIDA~7_combout\ $end
+$var wire 1 l1 \G18|ALT_INV_SAIDA~6_combout\ $end
+$var wire 1 m1 \G18|ALT_INV_SAIDA~5_combout\ $end
+$var wire 1 n1 \G18|ALT_INV_SAIDA~4_combout\ $end
+$var wire 1 o1 \G17|ALT_INV_ram~280_combout\ $end
+$var wire 1 p1 \G16|ALT_INV_Mux13~1_combout\ $end
+$var wire 1 q1 \G16|ALT_INV_Mux15~2_combout\ $end
+$var wire 1 r1 \G16|ALT_INV_Mux14~4_combout\ $end
+$var wire 1 s1 \G16|ALT_INV_Mux14~3_combout\ $end
+$var wire 1 t1 \G18|ALT_INV_SAIDA~3_combout\ $end
+$var wire 1 u1 \G16|ALT_INV_Mux15~1_combout\ $end
+$var wire 1 v1 \G4|ALT_INV_rd[0]~1_combout\ $end
+$var wire 1 w1 \G18|ALT_INV_SAIDA~2_combout\ $end
+$var wire 1 x1 \G16|ALT_INV_Mux12~2_combout\ $end
+$var wire 1 y1 \G16|ALT_INV_Mux11~2_combout\ $end
+$var wire 1 z1 \G18|ALT_INV_SAIDA~1_combout\ $end
+$var wire 1 {1 \G18|ALT_INV_SAIDA~0_combout\ $end
+$var wire 1 |1 \G16|ALT_INV_Mux12~1_combout\ $end
+$var wire 1 }1 \G16|ALT_INV_Mux11~1_combout\ $end
+$var wire 1 ~1 \G4|ALT_INV_tipoi[0]~2_combout\ $end
+$var wire 1 !2 \G5|ALT_INV_regdest~0_combout\ $end
+$var wire 1 "2 \G7|ALT_INV_Reg[0][0]~0_combout\ $end
+$var wire 1 #2 \G1|G0|G3|ALT_INV_state~q\ $end
+$var wire 1 $2 \G1|G0|G1|ALT_INV_state~q\ $end
+$var wire 1 %2 \G1|G0|G0|ALT_INV_state~q\ $end
+$var wire 1 &2 \G16|ALT_INV_Mux11~0_combout\ $end
+$var wire 1 '2 \G16|ALT_INV_Mux12~0_combout\ $end
+$var wire 1 (2 \G16|ALT_INV_Mux13~0_combout\ $end
+$var wire 1 )2 \G16|ALT_INV_Mux14~2_combout\ $end
+$var wire 1 *2 \G16|ALT_INV_Mux15~0_combout\ $end
+$var wire 1 +2 \G16|ALT_INV_Mux14~1_combout\ $end
+$var wire 1 ,2 \G16|ALT_INV_Mux14~0_combout\ $end
+$var wire 1 -2 \G15|ALT_INV_SAIDA\ [5] $end
+$var wire 1 .2 \G15|ALT_INV_SAIDA\ [4] $end
+$var wire 1 /2 \G15|ALT_INV_SAIDA\ [3] $end
+$var wire 1 02 \G15|ALT_INV_SAIDA\ [2] $end
+$var wire 1 12 \G15|ALT_INV_SAIDA\ [1] $end
+$var wire 1 22 \G15|ALT_INV_SAIDA\ [0] $end
+$var wire 1 32 \G4|ALT_INV_Mux1~0_combout\ $end
+$var wire 1 42 \G4|ALT_INV_Mux2~0_combout\ $end
+$var wire 1 52 \G4|ALT_INV_Mux0~4_combout\ $end
+$var wire 1 62 \G4|ALT_INV_op[0]~0_combout\ $end
+$var wire 1 72 \G4|ALT_INV_rs[0]~1_combout\ $end
+$var wire 1 82 \G7|ALT_INV_Mux16~1_combout\ $end
+$var wire 1 92 \G7|ALT_INV_Mux16~0_combout\ $end
+$var wire 1 :2 \G7|ALT_INV_Mux17~1_combout\ $end
+$var wire 1 ;2 \G7|ALT_INV_Mux17~0_combout\ $end
+$var wire 1 <2 \G7|ALT_INV_Mux18~1_combout\ $end
+$var wire 1 =2 \G7|ALT_INV_Mux18~0_combout\ $end
+$var wire 1 >2 \G7|ALT_INV_Mux19~1_combout\ $end
+$var wire 1 ?2 \G7|ALT_INV_Mux19~0_combout\ $end
+$var wire 1 @2 \G7|ALT_INV_Mux20~1_combout\ $end
+$var wire 1 A2 \G7|ALT_INV_Mux20~0_combout\ $end
+$var wire 1 B2 \G7|ALT_INV_Mux21~1_combout\ $end
+$var wire 1 C2 \G7|ALT_INV_Mux21~0_combout\ $end
+$var wire 1 D2 \G7|ALT_INV_Mux22~1_combout\ $end
+$var wire 1 E2 \G7|ALT_INV_Mux22~0_combout\ $end
+$var wire 1 F2 \G7|ALT_INV_Mux23~1_combout\ $end
+$var wire 1 G2 \G7|ALT_INV_Mux23~0_combout\ $end
+$var wire 1 H2 \G7|ALT_INV_Mux24~1_combout\ $end
+$var wire 1 I2 \G7|ALT_INV_Mux24~0_combout\ $end
+$var wire 1 J2 \G7|ALT_INV_Mux25~1_combout\ $end
+$var wire 1 K2 \G7|ALT_INV_Mux25~0_combout\ $end
+$var wire 1 L2 \G7|ALT_INV_Mux26~1_combout\ $end
+$var wire 1 M2 \G7|ALT_INV_Mux26~0_combout\ $end
+$var wire 1 N2 \G7|ALT_INV_Mux27~1_combout\ $end
+$var wire 1 O2 \G1|ALT_INV_pout\ [15] $end
+$var wire 1 P2 \G1|ALT_INV_pout\ [14] $end
+$var wire 1 Q2 \G1|ALT_INV_pout\ [13] $end
+$var wire 1 R2 \G1|ALT_INV_pout\ [12] $end
+$var wire 1 S2 \G1|ALT_INV_pout\ [11] $end
+$var wire 1 T2 \G1|ALT_INV_pout\ [10] $end
+$var wire 1 U2 \G1|ALT_INV_pout\ [9] $end
+$var wire 1 V2 \G1|ALT_INV_pout\ [8] $end
+$var wire 1 W2 \G1|ALT_INV_pout\ [7] $end
+$var wire 1 X2 \G1|ALT_INV_pout\ [6] $end
+$var wire 1 Y2 \G1|ALT_INV_pout\ [5] $end
+$var wire 1 Z2 \G1|ALT_INV_pout\ [4] $end
+$var wire 1 [2 \G1|ALT_INV_pout\ [3] $end
+$var wire 1 \2 \G1|ALT_INV_pout\ [2] $end
+$var wire 1 ]2 \G1|ALT_INV_pout\ [1] $end
+$var wire 1 ^2 \G1|ALT_INV_pout\ [0] $end
+$var wire 1 _2 \G7|ALT_INV_Mux15~1_combout\ $end
+$var wire 1 `2 \ALT_INV_rtl~16_combout\ $end
+$var wire 1 a2 \ALT_INV_rtl~15_combout\ $end
+$var wire 1 b2 \ALT_INV_rtl~14_combout\ $end
+$var wire 1 c2 \ALT_INV_rtl~13_combout\ $end
+$var wire 1 d2 \ALT_INV_rtl~12_combout\ $end
+$var wire 1 e2 \ALT_INV_rtl~11_combout\ $end
+$var wire 1 f2 \ALT_INV_rtl~10_combout\ $end
+$var wire 1 g2 \ALT_INV_rtl~9_combout\ $end
+$var wire 1 h2 \G9|ALT_INV_SAIDA\ [4] $end
+$var wire 1 i2 \G9|ALT_INV_SAIDA\ [3] $end
+$var wire 1 j2 \G9|ALT_INV_SAIDA\ [2] $end
+$var wire 1 k2 \ALT_INV_rtl~8_combout\ $end
+$var wire 1 l2 \ALT_INV_rtl~7_combout\ $end
+$var wire 1 m2 \ALT_INV_rtl~6_combout\ $end
+$var wire 1 n2 \ALT_INV_rtl~5_combout\ $end
+$var wire 1 o2 \ALT_INV_rtl~4_combout\ $end
+$var wire 1 p2 \ALT_INV_rtl~3_combout\ $end
+$var wire 1 q2 \ALT_INV_rtl~2_combout\ $end
+$var wire 1 r2 \ALT_INV_rtl~1_combout\ $end
+$var wire 1 s2 \ALT_INV_rtl~0_combout\ $end
+$var wire 1 t2 \G17|ALT_INV_ram.we_a~0_combout\ $end
+$var wire 1 u2 \G5|ALT_INV_Equal1~0_combout\ $end
+$var wire 1 v2 \G5|ALT_INV_origalu[2]~1_combout\ $end
+$var wire 1 w2 \G5|ALT_INV_origalu[1]~0_combout\ $end
+$var wire 1 x2 \G14|ALT_INV_SAIDA~19_combout\ $end
+$var wire 1 y2 \G14|ALT_INV_SAIDA~18_combout\ $end
+$var wire 1 z2 \G14|ALT_INV_SAIDA~17_combout\ $end
+$var wire 1 {2 \G14|ALT_INV_SAIDA~16_combout\ $end
+$var wire 1 |2 \G14|ALT_INV_SAIDA~15_combout\ $end
+$var wire 1 }2 \G14|ALT_INV_SAIDA~14_combout\ $end
+$var wire 1 ~2 \G14|ALT_INV_SAIDA~13_combout\ $end
+$var wire 1 !3 \G14|ALT_INV_SAIDA~12_combout\ $end
+$var wire 1 "3 \G14|ALT_INV_SAIDA~11_combout\ $end
+$var wire 1 #3 \G14|ALT_INV_SAIDA~10_combout\ $end
+$var wire 1 $3 \G14|ALT_INV_SAIDA~9_combout\ $end
+$var wire 1 %3 \G14|ALT_INV_SAIDA~8_combout\ $end
+$var wire 1 &3 \G14|ALT_INV_SAIDA~7_combout\ $end
+$var wire 1 '3 \G14|ALT_INV_SAIDA~6_combout\ $end
+$var wire 1 (3 \G14|ALT_INV_SAIDA~5_combout\ $end
+$var wire 1 )3 \G14|ALT_INV_SAIDA~4_combout\ $end
+$var wire 1 *3 \G14|ALT_INV_SAIDA~3_combout\ $end
+$var wire 1 +3 \G14|ALT_INV_SAIDA~2_combout\ $end
+$var wire 1 ,3 \G14|ALT_INV_SAIDA~1_combout\ $end
+$var wire 1 -3 \G7|ALT_INV_Mux27~2_combout\ $end
+$var wire 1 .3 \G14|ALT_INV_SAIDA~0_combout\ $end
+$var wire 1 /3 \G4|ALT_INV_Equal0~0_combout\ $end
+$var wire 1 03 \G13|ALT_INV_SAIDA~15_combout\ $end
+$var wire 1 13 \G3|ALT_INV_resshift\ [15] $end
+$var wire 1 23 \G3|ALT_INV_resshift\ [14] $end
+$var wire 1 33 \G13|ALT_INV_SAIDA~14_combout\ $end
+$var wire 1 43 \G13|ALT_INV_SAIDA~13_combout\ $end
+$var wire 1 53 \G13|ALT_INV_SAIDA~12_combout\ $end
+$var wire 1 63 \G13|ALT_INV_SAIDA~11_combout\ $end
+$var wire 1 73 \G13|ALT_INV_SAIDA~10_combout\ $end
+$var wire 1 83 \G13|ALT_INV_SAIDA~9_combout\ $end
+$var wire 1 93 \G13|ALT_INV_SAIDA~8_combout\ $end
+$var wire 1 :3 \G13|ALT_INV_SAIDA~7_combout\ $end
+$var wire 1 ;3 \G13|ALT_INV_SAIDA~6_combout\ $end
+$var wire 1 <3 \G13|ALT_INV_SAIDA~5_combout\ $end
+$var wire 1 =3 \G13|ALT_INV_SAIDA~4_combout\ $end
+$var wire 1 >3 \G13|ALT_INV_SAIDA~3_combout\ $end
+$var wire 1 ?3 \G13|ALT_INV_SAIDA~2_combout\ $end
+$var wire 1 @3 \G13|ALT_INV_SAIDA~1_combout\ $end
+$var wire 1 A3 \G13|ALT_INV_SAIDA~0_combout\ $end
+$var wire 1 B3 \G12|ALT_INV_SAIDA~15_combout\ $end
+$var wire 1 C3 \G10|ALT_INV_SAIDA\ [15] $end
+$var wire 1 D3 \G10|ALT_INV_SAIDA\ [14] $end
+$var wire 1 E3 \G10|ALT_INV_SAIDA\ [13] $end
+$var wire 1 F3 \G10|ALT_INV_SAIDA\ [12] $end
+$var wire 1 G3 \G10|ALT_INV_SAIDA\ [11] $end
+$var wire 1 H3 \G10|ALT_INV_SAIDA\ [10] $end
+$var wire 1 I3 \G10|ALT_INV_SAIDA\ [9] $end
+$var wire 1 J3 \G10|ALT_INV_SAIDA\ [8] $end
+$var wire 1 K3 \G10|ALT_INV_SAIDA\ [7] $end
+$var wire 1 L3 \G10|ALT_INV_SAIDA\ [6] $end
+$var wire 1 M3 \G10|ALT_INV_SAIDA\ [5] $end
+$var wire 1 N3 \G10|ALT_INV_SAIDA\ [4] $end
+$var wire 1 O3 \G10|ALT_INV_SAIDA\ [3] $end
+$var wire 1 P3 \G10|ALT_INV_SAIDA\ [2] $end
+$var wire 1 Q3 \G10|ALT_INV_SAIDA\ [1] $end
+$var wire 1 R3 \G10|ALT_INV_SAIDA\ [0] $end
+$var wire 1 S3 \G12|ALT_INV_SAIDA~14_combout\ $end
+$var wire 1 T3 \G12|ALT_INV_SAIDA~13_combout\ $end
+$var wire 1 U3 \G12|ALT_INV_SAIDA~12_combout\ $end
+$var wire 1 V3 \G12|ALT_INV_SAIDA~11_combout\ $end
+$var wire 1 W3 \G12|ALT_INV_SAIDA~10_combout\ $end
+$var wire 1 X3 \G12|ALT_INV_SAIDA~9_combout\ $end
+$var wire 1 Y3 \G12|ALT_INV_SAIDA~8_combout\ $end
+$var wire 1 Z3 \G12|ALT_INV_SAIDA~7_combout\ $end
+$var wire 1 [3 \G12|ALT_INV_SAIDA~6_combout\ $end
+$var wire 1 \3 \G12|ALT_INV_SAIDA~5_combout\ $end
+$var wire 1 ]3 \G12|ALT_INV_SAIDA~4_combout\ $end
+$var wire 1 ^3 \G12|ALT_INV_SAIDA~3_combout\ $end
+$var wire 1 _3 \G12|ALT_INV_SAIDA~2_combout\ $end
+$var wire 1 `3 \G12|ALT_INV_SAIDA~1_combout\ $end
+$var wire 1 a3 \G12|ALT_INV_SAIDA~0_combout\ $end
+$var wire 1 b3 \G11|ALT_INV_S1~1_combout\ $end
+$var wire 1 c3 \G11|ALT_INV_S1~0_combout\ $end
+$var wire 1 d3 \G16|ALT_INV_Equal1~2_combout\ $end
+$var wire 1 e3 \G16|ALT_INV_Equal1~1_combout\ $end
+$var wire 1 f3 \G16|ALT_INV_Equal1~0_combout\ $end
+$var wire 1 g3 \G18|ALT_INV_SAIDA~58_combout\ $end
+$var wire 1 h3 \G18|ALT_INV_SAIDA~57_combout\ $end
+$var wire 1 i3 \G18|ALT_INV_SAIDA~56_combout\ $end
+$var wire 1 j3 \G18|ALT_INV_SAIDA~55_combout\ $end
+$var wire 1 k3 \G17|ALT_INV_ram~193_combout\ $end
+$var wire 1 l3 \G17|ALT_INV_ram~241_combout\ $end
+$var wire 1 m3 \G17|ALT_INV_ram~209_combout\ $end
+$var wire 1 n3 \G17|ALT_INV_ram~97_combout\ $end
+$var wire 1 o3 \G17|ALT_INV_ram~65_combout\ $end
+$var wire 1 p3 \G17|ALT_INV_ram~113_combout\ $end
+$var wire 1 q3 \G17|ALT_INV_ram~81_combout\ $end
+$var wire 1 r3 \G17|ALT_INV_ram~224_combout\ $end
+$var wire 1 s3 \G17|ALT_INV_ram~192_combout\ $end
+$var wire 1 t3 \G17|ALT_INV_ram~240_combout\ $end
+$var wire 1 u3 \G17|ALT_INV_ram~208_combout\ $end
+$var wire 1 v3 \G17|ALT_INV_ram~96_combout\ $end
+$var wire 1 w3 \G17|ALT_INV_ram~64_combout\ $end
+$var wire 1 x3 \G17|ALT_INV_ram~112_combout\ $end
+$var wire 1 y3 \G17|ALT_INV_ram~80_combout\ $end
+$var wire 1 z3 \G17|ALT_INV_ram~271_combout\ $end
+$var wire 1 {3 \G17|ALT_INV_ram~270_combout\ $end
+$var wire 1 |3 \G17|ALT_INV_ram~269_combout\ $end
+$var wire 1 }3 \G17|ALT_INV_ram~268_combout\ $end
+$var wire 1 ~3 \G17|ALT_INV_ram~267_combout\ $end
+$var wire 1 !4 \G17|ALT_INV_ram~266_combout\ $end
+$var wire 1 "4 \G17|ALT_INV_ram~265_combout\ $end
+$var wire 1 #4 \G17|ALT_INV_ram~264_combout\ $end
+$var wire 1 $4 \G17|ALT_INV_ram~263_combout\ $end
+$var wire 1 %4 \G17|ALT_INV_ram~262_combout\ $end
+$var wire 1 &4 \G17|ALT_INV_ram~261_combout\ $end
+$var wire 1 '4 \G17|ALT_INV_ram~260_combout\ $end
+$var wire 1 (4 \G17|ALT_INV_ram~259_combout\ $end
+$var wire 1 )4 \G17|ALT_INV_ram~258_combout\ $end
+$var wire 1 *4 \G17|ALT_INV_ram~257_combout\ $end
+$var wire 1 +4 \G17|ALT_INV_ram~256_combout\ $end
+$var wire 1 ,4 \G5|ALT_INV_memparareg~combout\ $end
+$var wire 1 -4 \G5|ALT_INV_origalu\ [2] $end
+$var wire 1 .4 \G5|ALT_INV_origalu\ [1] $end
+$var wire 1 /4 \G5|ALT_INV_origalu\ [0] $end
+$var wire 1 04 \G14|ALT_INV_SAIDA\ [15] $end
+$var wire 1 14 \G14|ALT_INV_SAIDA\ [14] $end
+$var wire 1 24 \G14|ALT_INV_SAIDA\ [13] $end
+$var wire 1 34 \G14|ALT_INV_SAIDA\ [12] $end
+$var wire 1 44 \G14|ALT_INV_SAIDA\ [11] $end
+$var wire 1 54 \G14|ALT_INV_SAIDA\ [10] $end
+$var wire 1 64 \G14|ALT_INV_SAIDA\ [9] $end
+$var wire 1 74 \G14|ALT_INV_SAIDA\ [8] $end
+$var wire 1 84 \G14|ALT_INV_SAIDA\ [7] $end
+$var wire 1 94 \G14|ALT_INV_SAIDA\ [6] $end
+$var wire 1 :4 \G14|ALT_INV_SAIDA\ [5] $end
+$var wire 1 ;4 \G14|ALT_INV_SAIDA\ [4] $end
+$var wire 1 <4 \G14|ALT_INV_SAIDA\ [3] $end
+$var wire 1 =4 \G14|ALT_INV_SAIDA\ [2] $end
+$var wire 1 >4 \G14|ALT_INV_SAIDA\ [1] $end
+$var wire 1 ?4 \G14|ALT_INV_SAIDA\ [0] $end
+$var wire 1 @4 \G13|ALT_INV_SAIDA\ [15] $end
+$var wire 1 A4 \G13|ALT_INV_SAIDA\ [14] $end
+$var wire 1 B4 \G13|ALT_INV_SAIDA\ [13] $end
+$var wire 1 C4 \G13|ALT_INV_SAIDA\ [12] $end
+$var wire 1 D4 \G13|ALT_INV_SAIDA\ [11] $end
+$var wire 1 E4 \G13|ALT_INV_SAIDA\ [10] $end
+$var wire 1 F4 \G13|ALT_INV_SAIDA\ [9] $end
+$var wire 1 G4 \G13|ALT_INV_SAIDA\ [8] $end
+$var wire 1 H4 \G13|ALT_INV_SAIDA\ [7] $end
+$var wire 1 I4 \G13|ALT_INV_SAIDA\ [6] $end
+$var wire 1 J4 \G13|ALT_INV_SAIDA\ [5] $end
+$var wire 1 K4 \G13|ALT_INV_SAIDA\ [4] $end
+$var wire 1 L4 \G13|ALT_INV_SAIDA\ [3] $end
+$var wire 1 M4 \G13|ALT_INV_SAIDA\ [2] $end
+$var wire 1 N4 \G13|ALT_INV_SAIDA\ [1] $end
+$var wire 1 O4 \G13|ALT_INV_SAIDA\ [0] $end
+$var wire 1 P4 \G12|ALT_INV_SAIDA\ [15] $end
+$var wire 1 Q4 \G12|ALT_INV_SAIDA\ [14] $end
+$var wire 1 R4 \G12|ALT_INV_SAIDA\ [13] $end
+$var wire 1 S4 \G12|ALT_INV_SAIDA\ [12] $end
+$var wire 1 T4 \G12|ALT_INV_SAIDA\ [11] $end
+$var wire 1 U4 \G12|ALT_INV_SAIDA\ [10] $end
+$var wire 1 V4 \G12|ALT_INV_SAIDA\ [9] $end
+$var wire 1 W4 \G12|ALT_INV_SAIDA\ [8] $end
+$var wire 1 X4 \G12|ALT_INV_SAIDA\ [7] $end
+$var wire 1 Y4 \G12|ALT_INV_SAIDA\ [6] $end
+$var wire 1 Z4 \G12|ALT_INV_SAIDA\ [5] $end
+$var wire 1 [4 \G12|ALT_INV_SAIDA\ [4] $end
+$var wire 1 \4 \G12|ALT_INV_SAIDA\ [3] $end
+$var wire 1 ]4 \G12|ALT_INV_SAIDA\ [2] $end
+$var wire 1 ^4 \G12|ALT_INV_SAIDA\ [1] $end
+$var wire 1 _4 \G12|ALT_INV_SAIDA\ [0] $end
+$var wire 1 `4 \G18|ALT_INV_SAIDA\ [15] $end
+$var wire 1 a4 \G18|ALT_INV_SAIDA\ [14] $end
+$var wire 1 b4 \G18|ALT_INV_SAIDA\ [13] $end
+$var wire 1 c4 \G18|ALT_INV_SAIDA\ [12] $end
+$var wire 1 d4 \G18|ALT_INV_SAIDA\ [11] $end
+$var wire 1 e4 \G18|ALT_INV_SAIDA\ [10] $end
+$var wire 1 f4 \G18|ALT_INV_SAIDA\ [9] $end
+$var wire 1 g4 \G18|ALT_INV_SAIDA\ [8] $end
+$var wire 1 h4 \G18|ALT_INV_SAIDA\ [7] $end
+$var wire 1 i4 \G18|ALT_INV_SAIDA\ [6] $end
+$var wire 1 j4 \G18|ALT_INV_SAIDA\ [5] $end
+$var wire 1 k4 \G18|ALT_INV_SAIDA\ [4] $end
+$var wire 1 l4 \G18|ALT_INV_SAIDA\ [3] $end
+$var wire 1 m4 \G18|ALT_INV_SAIDA\ [2] $end
+$var wire 1 n4 \G18|ALT_INV_SAIDA\ [1] $end
+$var wire 1 o4 \G18|ALT_INV_SAIDA\ [0] $end
+$var wire 1 p4 \G7|ALT_INV_Reg[0][15]~combout\ $end
+$var wire 1 q4 \G7|ALT_INV_Reg[0][14]~combout\ $end
+$var wire 1 r4 \G7|ALT_INV_Reg[0][13]~combout\ $end
+$var wire 1 s4 \G7|ALT_INV_Reg[0][12]~combout\ $end
+$var wire 1 t4 \G7|ALT_INV_Reg[0][11]~combout\ $end
+$var wire 1 u4 \G7|ALT_INV_Reg[0][10]~combout\ $end
+$var wire 1 v4 \G7|ALT_INV_Reg[0][9]~combout\ $end
+$var wire 1 w4 \G7|ALT_INV_Reg[0][8]~combout\ $end
+$var wire 1 x4 \G7|ALT_INV_Reg[0][7]~combout\ $end
+$var wire 1 y4 \G7|ALT_INV_Reg[0][6]~combout\ $end
+$var wire 1 z4 \G7|ALT_INV_Reg[0][5]~combout\ $end
+$var wire 1 {4 \G7|ALT_INV_Reg[0][4]~combout\ $end
+$var wire 1 |4 \G7|ALT_INV_Reg[0][3]~combout\ $end
+$var wire 1 }4 \G7|ALT_INV_Reg[0][2]~combout\ $end
+$var wire 1 ~4 \G7|ALT_INV_Reg[0][1]~combout\ $end
+$var wire 1 !5 \G5|ALT_INV_regdest~combout\ $end
+$var wire 1 "5 \G5|ALT_INV_escrevereg~combout\ $end
+$var wire 1 #5 \G7|ALT_INV_Reg[0][0]~combout\ $end
+$var wire 1 $5 \G17|ALT_INV_ram~177_combout\ $end
+$var wire 1 %5 \G17|ALT_INV_ram~145_combout\ $end
+$var wire 1 &5 \G17|ALT_INV_ram~33_combout\ $end
+$var wire 1 '5 \G17|ALT_INV_ram~1_combout\ $end
+$var wire 1 (5 \G17|ALT_INV_ram~49_combout\ $end
+$var wire 1 )5 \G17|ALT_INV_ram~17_combout\ $end
+$var wire 1 *5 \G17|ALT_INV_ram~160_combout\ $end
+$var wire 1 +5 \G17|ALT_INV_ram~128_combout\ $end
+$var wire 1 ,5 \G17|ALT_INV_ram~176_combout\ $end
+$var wire 1 -5 \G17|ALT_INV_ram~144_combout\ $end
+$var wire 1 .5 \G17|ALT_INV_ram~32_combout\ $end
+$var wire 1 /5 \G17|ALT_INV_ram~0_combout\ $end
+$var wire 1 05 \G17|ALT_INV_ram~48_combout\ $end
+$var wire 1 15 \G17|ALT_INV_ram~16_combout\ $end
+$var wire 1 25 \G17|ALT_INV_ram~239_combout\ $end
+$var wire 1 35 \G17|ALT_INV_ram~207_combout\ $end
+$var wire 1 45 \G17|ALT_INV_ram~255_combout\ $end
+$var wire 1 55 \G17|ALT_INV_ram~223_combout\ $end
+$var wire 1 65 \G17|ALT_INV_ram~111_combout\ $end
+$var wire 1 75 \G17|ALT_INV_ram~79_combout\ $end
+$var wire 1 85 \G17|ALT_INV_ram~127_combout\ $end
+$var wire 1 95 \G17|ALT_INV_ram~95_combout\ $end
+$var wire 1 :5 \G17|ALT_INV_ram~238_combout\ $end
+$var wire 1 ;5 \G17|ALT_INV_ram~206_combout\ $end
+$var wire 1 <5 \G17|ALT_INV_ram~254_combout\ $end
+$var wire 1 =5 \G17|ALT_INV_ram~222_combout\ $end
+$var wire 1 >5 \G17|ALT_INV_ram~110_combout\ $end
+$var wire 1 ?5 \G17|ALT_INV_ram~78_combout\ $end
+$var wire 1 @5 \G17|ALT_INV_ram~126_combout\ $end
+$var wire 1 A5 \G17|ALT_INV_ram~94_combout\ $end
+$var wire 1 B5 \G17|ALT_INV_ram~237_combout\ $end
+$var wire 1 C5 \G17|ALT_INV_ram~205_combout\ $end
+$var wire 1 D5 \G17|ALT_INV_ram~253_combout\ $end
+$var wire 1 E5 \G17|ALT_INV_ram~221_combout\ $end
+$var wire 1 F5 \G17|ALT_INV_ram~109_combout\ $end
+$var wire 1 G5 \G17|ALT_INV_ram~77_combout\ $end
+$var wire 1 H5 \G17|ALT_INV_ram~125_combout\ $end
+$var wire 1 I5 \G17|ALT_INV_ram~93_combout\ $end
+$var wire 1 J5 \G17|ALT_INV_ram~236_combout\ $end
+$var wire 1 K5 \G17|ALT_INV_ram~204_combout\ $end
+$var wire 1 L5 \G17|ALT_INV_ram~252_combout\ $end
+$var wire 1 M5 \G17|ALT_INV_ram~220_combout\ $end
+$var wire 1 N5 \G17|ALT_INV_ram~108_combout\ $end
+$var wire 1 O5 \G17|ALT_INV_ram~76_combout\ $end
+$var wire 1 P5 \G17|ALT_INV_ram~124_combout\ $end
+$var wire 1 Q5 \G17|ALT_INV_ram~92_combout\ $end
+$var wire 1 R5 \G17|ALT_INV_ram~235_combout\ $end
+$var wire 1 S5 \G17|ALT_INV_ram~203_combout\ $end
+$var wire 1 T5 \G17|ALT_INV_ram~251_combout\ $end
+$var wire 1 U5 \G17|ALT_INV_ram~219_combout\ $end
+$var wire 1 V5 \G17|ALT_INV_ram~107_combout\ $end
+$var wire 1 W5 \G17|ALT_INV_ram~75_combout\ $end
+$var wire 1 X5 \G17|ALT_INV_ram~123_combout\ $end
+$var wire 1 Y5 \G17|ALT_INV_ram~91_combout\ $end
+$var wire 1 Z5 \G17|ALT_INV_ram~234_combout\ $end
+$var wire 1 [5 \G17|ALT_INV_ram~202_combout\ $end
+$var wire 1 \5 \G17|ALT_INV_ram~250_combout\ $end
+$var wire 1 ]5 \G17|ALT_INV_ram~218_combout\ $end
+$var wire 1 ^5 \G17|ALT_INV_ram~106_combout\ $end
+$var wire 1 _5 \G17|ALT_INV_ram~74_combout\ $end
+$var wire 1 `5 \G17|ALT_INV_ram~122_combout\ $end
+$var wire 1 a5 \G17|ALT_INV_ram~90_combout\ $end
+$var wire 1 b5 \G17|ALT_INV_ram~233_combout\ $end
+$var wire 1 c5 \G17|ALT_INV_ram~201_combout\ $end
+$var wire 1 d5 \G17|ALT_INV_ram~249_combout\ $end
+$var wire 1 e5 \G17|ALT_INV_ram~217_combout\ $end
+$var wire 1 f5 \G17|ALT_INV_ram~105_combout\ $end
+$var wire 1 g5 \G17|ALT_INV_ram~73_combout\ $end
+$var wire 1 h5 \G17|ALT_INV_ram~121_combout\ $end
+$var wire 1 i5 \G17|ALT_INV_ram~89_combout\ $end
+$var wire 1 j5 \G17|ALT_INV_ram~232_combout\ $end
+$var wire 1 k5 \G17|ALT_INV_ram~200_combout\ $end
+$var wire 1 l5 \G17|ALT_INV_ram~248_combout\ $end
+$var wire 1 m5 \G17|ALT_INV_ram~216_combout\ $end
+$var wire 1 n5 \G17|ALT_INV_ram~104_combout\ $end
+$var wire 1 o5 \G17|ALT_INV_ram~72_combout\ $end
+$var wire 1 p5 \G17|ALT_INV_ram~120_combout\ $end
+$var wire 1 q5 \G17|ALT_INV_ram~88_combout\ $end
+$var wire 1 r5 \G17|ALT_INV_ram~231_combout\ $end
+$var wire 1 s5 \G17|ALT_INV_ram~199_combout\ $end
+$var wire 1 t5 \G17|ALT_INV_ram~247_combout\ $end
+$var wire 1 u5 \G17|ALT_INV_ram~215_combout\ $end
+$var wire 1 v5 \G17|ALT_INV_ram~103_combout\ $end
+$var wire 1 w5 \G17|ALT_INV_ram~71_combout\ $end
+$var wire 1 x5 \G17|ALT_INV_ram~119_combout\ $end
+$var wire 1 y5 \G17|ALT_INV_ram~87_combout\ $end
+$var wire 1 z5 \G17|ALT_INV_ram~230_combout\ $end
+$var wire 1 {5 \G17|ALT_INV_ram~198_combout\ $end
+$var wire 1 |5 \G17|ALT_INV_ram~246_combout\ $end
+$var wire 1 }5 \G17|ALT_INV_ram~214_combout\ $end
+$var wire 1 ~5 \G17|ALT_INV_ram~102_combout\ $end
+$var wire 1 !6 \G17|ALT_INV_ram~70_combout\ $end
+$var wire 1 "6 \G17|ALT_INV_ram~118_combout\ $end
+$var wire 1 #6 \G17|ALT_INV_ram~86_combout\ $end
+$var wire 1 $6 \G17|ALT_INV_ram~229_combout\ $end
+$var wire 1 %6 \G17|ALT_INV_ram~197_combout\ $end
+$var wire 1 &6 \G17|ALT_INV_ram~245_combout\ $end
+$var wire 1 '6 \G17|ALT_INV_ram~213_combout\ $end
+$var wire 1 (6 \G17|ALT_INV_ram~101_combout\ $end
+$var wire 1 )6 \G17|ALT_INV_ram~69_combout\ $end
+$var wire 1 *6 \G17|ALT_INV_ram~117_combout\ $end
+$var wire 1 +6 \G17|ALT_INV_ram~85_combout\ $end
+$var wire 1 ,6 \G17|ALT_INV_ram~228_combout\ $end
+$var wire 1 -6 \G17|ALT_INV_ram~196_combout\ $end
+$var wire 1 .6 \G17|ALT_INV_ram~244_combout\ $end
+$var wire 1 /6 \G17|ALT_INV_ram~212_combout\ $end
+$var wire 1 06 \G17|ALT_INV_ram~100_combout\ $end
+$var wire 1 16 \G17|ALT_INV_ram~68_combout\ $end
+$var wire 1 26 \G17|ALT_INV_ram~116_combout\ $end
+$var wire 1 36 \G17|ALT_INV_ram~84_combout\ $end
+$var wire 1 46 \G17|ALT_INV_ram~99_combout\ $end
+$var wire 1 56 \G17|ALT_INV_ram~67_combout\ $end
+$var wire 1 66 \G17|ALT_INV_ram~115_combout\ $end
+$var wire 1 76 \G17|ALT_INV_ram~83_combout\ $end
+$var wire 1 86 \G17|ALT_INV_ram~227_combout\ $end
+$var wire 1 96 \G17|ALT_INV_ram~195_combout\ $end
+$var wire 1 :6 \G17|ALT_INV_ram~243_combout\ $end
+$var wire 1 ;6 \G17|ALT_INV_ram~211_combout\ $end
+$var wire 1 <6 \G17|ALT_INV_ram~226_combout\ $end
+$var wire 1 =6 \G17|ALT_INV_ram~194_combout\ $end
+$var wire 1 >6 \G17|ALT_INV_ram~242_combout\ $end
+$var wire 1 ?6 \G17|ALT_INV_ram~210_combout\ $end
+$var wire 1 @6 \G17|ALT_INV_ram~98_combout\ $end
+$var wire 1 A6 \G17|ALT_INV_ram~66_combout\ $end
+$var wire 1 B6 \G17|ALT_INV_ram~114_combout\ $end
+$var wire 1 C6 \G17|ALT_INV_ram~82_combout\ $end
+$var wire 1 D6 \G17|ALT_INV_ram~225_combout\ $end
+$var wire 1 E6 \G17|ALT_INV_ram~175_combout\ $end
+$var wire 1 F6 \G17|ALT_INV_ram~143_combout\ $end
+$var wire 1 G6 \G17|ALT_INV_ram~191_combout\ $end
+$var wire 1 H6 \G17|ALT_INV_ram~159_combout\ $end
+$var wire 1 I6 \G17|ALT_INV_ram~47_combout\ $end
+$var wire 1 J6 \G17|ALT_INV_ram~15_combout\ $end
+$var wire 1 K6 \G17|ALT_INV_ram~63_combout\ $end
+$var wire 1 L6 \G17|ALT_INV_ram~31_combout\ $end
+$var wire 1 M6 \G17|ALT_INV_ram~174_combout\ $end
+$var wire 1 N6 \G17|ALT_INV_ram~142_combout\ $end
+$var wire 1 O6 \G17|ALT_INV_ram~190_combout\ $end
+$var wire 1 P6 \G17|ALT_INV_ram~158_combout\ $end
+$var wire 1 Q6 \G17|ALT_INV_ram~46_combout\ $end
+$var wire 1 R6 \G17|ALT_INV_ram~14_combout\ $end
+$var wire 1 S6 \G17|ALT_INV_ram~62_combout\ $end
+$var wire 1 T6 \G17|ALT_INV_ram~30_combout\ $end
+$var wire 1 U6 \G17|ALT_INV_ram~173_combout\ $end
+$var wire 1 V6 \G17|ALT_INV_ram~141_combout\ $end
+$var wire 1 W6 \G17|ALT_INV_ram~189_combout\ $end
+$var wire 1 X6 \G17|ALT_INV_ram~157_combout\ $end
+$var wire 1 Y6 \G17|ALT_INV_ram~45_combout\ $end
+$var wire 1 Z6 \G17|ALT_INV_ram~13_combout\ $end
+$var wire 1 [6 \G17|ALT_INV_ram~61_combout\ $end
+$var wire 1 \6 \G17|ALT_INV_ram~29_combout\ $end
+$var wire 1 ]6 \G17|ALT_INV_ram~172_combout\ $end
+$var wire 1 ^6 \G17|ALT_INV_ram~140_combout\ $end
+$var wire 1 _6 \G17|ALT_INV_ram~188_combout\ $end
+$var wire 1 `6 \G17|ALT_INV_ram~156_combout\ $end
+$var wire 1 a6 \G17|ALT_INV_ram~44_combout\ $end
+$var wire 1 b6 \G17|ALT_INV_ram~12_combout\ $end
+$var wire 1 c6 \G17|ALT_INV_ram~60_combout\ $end
+$var wire 1 d6 \G17|ALT_INV_ram~28_combout\ $end
+$var wire 1 e6 \G17|ALT_INV_ram~171_combout\ $end
+$var wire 1 f6 \G17|ALT_INV_ram~139_combout\ $end
+$var wire 1 g6 \G17|ALT_INV_ram~187_combout\ $end
+$var wire 1 h6 \G17|ALT_INV_ram~155_combout\ $end
+$var wire 1 i6 \G17|ALT_INV_ram~43_combout\ $end
+$var wire 1 j6 \G17|ALT_INV_ram~11_combout\ $end
+$var wire 1 k6 \G17|ALT_INV_ram~59_combout\ $end
+$var wire 1 l6 \G17|ALT_INV_ram~27_combout\ $end
+$var wire 1 m6 \G17|ALT_INV_ram~170_combout\ $end
+$var wire 1 n6 \G17|ALT_INV_ram~138_combout\ $end
+$var wire 1 o6 \G17|ALT_INV_ram~186_combout\ $end
+$var wire 1 p6 \G17|ALT_INV_ram~154_combout\ $end
+$var wire 1 q6 \G17|ALT_INV_ram~42_combout\ $end
+$var wire 1 r6 \G17|ALT_INV_ram~10_combout\ $end
+$var wire 1 s6 \G17|ALT_INV_ram~58_combout\ $end
+$var wire 1 t6 \G17|ALT_INV_ram~26_combout\ $end
+$var wire 1 u6 \G17|ALT_INV_ram~169_combout\ $end
+$var wire 1 v6 \G17|ALT_INV_ram~137_combout\ $end
+$var wire 1 w6 \G17|ALT_INV_ram~185_combout\ $end
+$var wire 1 x6 \G17|ALT_INV_ram~153_combout\ $end
+$var wire 1 y6 \G17|ALT_INV_ram~41_combout\ $end
+$var wire 1 z6 \G17|ALT_INV_ram~9_combout\ $end
+$var wire 1 {6 \G17|ALT_INV_ram~57_combout\ $end
+$var wire 1 |6 \G17|ALT_INV_ram~25_combout\ $end
+$var wire 1 }6 \G17|ALT_INV_ram~168_combout\ $end
+$var wire 1 ~6 \G17|ALT_INV_ram~136_combout\ $end
+$var wire 1 !7 \G17|ALT_INV_ram~184_combout\ $end
+$var wire 1 "7 \G17|ALT_INV_ram~152_combout\ $end
+$var wire 1 #7 \G17|ALT_INV_ram~40_combout\ $end
+$var wire 1 $7 \G17|ALT_INV_ram~8_combout\ $end
+$var wire 1 %7 \G17|ALT_INV_ram~56_combout\ $end
+$var wire 1 &7 \G17|ALT_INV_ram~24_combout\ $end
+$var wire 1 '7 \G17|ALT_INV_ram~167_combout\ $end
+$var wire 1 (7 \G17|ALT_INV_ram~135_combout\ $end
+$var wire 1 )7 \G17|ALT_INV_ram~183_combout\ $end
+$var wire 1 *7 \G17|ALT_INV_ram~151_combout\ $end
+$var wire 1 +7 \G17|ALT_INV_ram~39_combout\ $end
+$var wire 1 ,7 \G17|ALT_INV_ram~7_combout\ $end
+$var wire 1 -7 \G17|ALT_INV_ram~55_combout\ $end
+$var wire 1 .7 \G17|ALT_INV_ram~23_combout\ $end
+$var wire 1 /7 \G17|ALT_INV_ram~166_combout\ $end
+$var wire 1 07 \G17|ALT_INV_ram~134_combout\ $end
+$var wire 1 17 \G17|ALT_INV_ram~182_combout\ $end
+$var wire 1 27 \G17|ALT_INV_ram~150_combout\ $end
+$var wire 1 37 \G17|ALT_INV_ram~38_combout\ $end
+$var wire 1 47 \G17|ALT_INV_ram~6_combout\ $end
+$var wire 1 57 \G17|ALT_INV_ram~54_combout\ $end
+$var wire 1 67 \G17|ALT_INV_ram~22_combout\ $end
+$var wire 1 77 \G17|ALT_INV_ram~165_combout\ $end
+$var wire 1 87 \G17|ALT_INV_ram~133_combout\ $end
+$var wire 1 97 \G17|ALT_INV_ram~181_combout\ $end
+$var wire 1 :7 \G17|ALT_INV_ram~149_combout\ $end
+$var wire 1 ;7 \G17|ALT_INV_ram~37_combout\ $end
+$var wire 1 <7 \G17|ALT_INV_ram~5_combout\ $end
+$var wire 1 =7 \G17|ALT_INV_ram~53_combout\ $end
+$var wire 1 >7 \G17|ALT_INV_ram~21_combout\ $end
+$var wire 1 ?7 \G17|ALT_INV_ram~164_combout\ $end
+$var wire 1 @7 \G17|ALT_INV_ram~132_combout\ $end
+$var wire 1 A7 \G17|ALT_INV_ram~180_combout\ $end
+$var wire 1 B7 \G17|ALT_INV_ram~148_combout\ $end
+$var wire 1 C7 \G17|ALT_INV_ram~36_combout\ $end
+$var wire 1 D7 \G17|ALT_INV_ram~4_combout\ $end
+$var wire 1 E7 \G17|ALT_INV_ram~52_combout\ $end
+$var wire 1 F7 \G17|ALT_INV_ram~20_combout\ $end
+$var wire 1 G7 \G17|ALT_INV_ram~35_combout\ $end
+$var wire 1 H7 \G17|ALT_INV_ram~3_combout\ $end
+$var wire 1 I7 \G17|ALT_INV_ram~51_combout\ $end
+$var wire 1 J7 \G17|ALT_INV_ram~19_combout\ $end
+$var wire 1 K7 \G17|ALT_INV_ram~163_combout\ $end
+$var wire 1 L7 \G17|ALT_INV_ram~131_combout\ $end
+$var wire 1 M7 \G17|ALT_INV_ram~179_combout\ $end
+$var wire 1 N7 \G17|ALT_INV_ram~147_combout\ $end
+$var wire 1 O7 \G17|ALT_INV_ram~162_combout\ $end
+$var wire 1 P7 \G17|ALT_INV_ram~130_combout\ $end
+$var wire 1 Q7 \G17|ALT_INV_ram~178_combout\ $end
+$var wire 1 R7 \G17|ALT_INV_ram~146_combout\ $end
+$var wire 1 S7 \G17|ALT_INV_ram~34_combout\ $end
+$var wire 1 T7 \G17|ALT_INV_ram~2_combout\ $end
+$var wire 1 U7 \G17|ALT_INV_ram~50_combout\ $end
+$var wire 1 V7 \G17|ALT_INV_ram~18_combout\ $end
+$var wire 1 W7 \G17|ALT_INV_ram~161_combout\ $end
+$var wire 1 X7 \G17|ALT_INV_ram~129_combout\ $end
+$var wire 1 Y7 \ALT_INV_Clock_Sistema~input_o\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -2293,9 +2322,9 @@ x$"
 0Y$
 0Z$
 0[$
-1\$
-1]$
-0^$
+0\$
+0]$
+1^$
 0_$
 0`$
 0a$
@@ -2353,7 +2382,7 @@ x$"
 07%
 08%
 09%
-0:%
+1:%
 0;%
 0<%
 1=%
@@ -2401,7 +2430,7 @@ x$"
 0g%
 0h%
 0i%
-0j%
+1j%
 0k%
 0l%
 1m%
@@ -2441,8 +2470,8 @@ x$"
 01&
 12&
 13&
-14&
-05&
+04&
+15&
 06&
 07&
 08&
@@ -2514,12 +2543,12 @@ x$"
 0z&
 0{&
 0|&
-0}&
+1}&
 0~&
 0!'
-1"'
+0"'
 1#'
-1$'
+0$'
 0%'
 0&'
 0''
@@ -2533,21 +2562,21 @@ x$"
 0/'
 00'
 01'
-02'
-13'
-04'
+12'
+03'
+14'
 15'
-16'
-07'
-18'
-09'
+06'
+17'
+08'
+19'
 1:'
-0;'
-0<'
+1;'
+1<'
 1='
-1>'
-0?'
-1@'
+0>'
+1?'
+0@'
 0A'
 0B'
 0C'
@@ -2555,94 +2584,94 @@ x$"
 0E'
 0F'
 1G'
-1H'
-0I'
+0H'
+1I'
 1J'
-xK'
+0K'
 1L'
-xM'
-xN'
-1O'
+1M'
+0N'
+xO'
 0P'
 0Q'
-1R'
-0S'
+xR'
+xS'
 1T'
-1U'
+0U'
 1V'
-1W'
-1X'
-1Y'
-1Z'
+0W'
+0X'
+0Y'
+0Z'
 0['
 1\'
 1]'
 1^'
-0_'
+1_'
 0`'
-0a'
-0b'
-0c'
-0d'
-xe'
+1a'
+1b'
+1c'
+1d'
+0e'
 0f'
-xg'
+0g'
 0h'
-xi'
-0j'
-xk'
-0l'
-xm'
+0i'
+xj'
+0k'
+xl'
+0m'
 xn'
 0o'
 xp'
-xq'
-0r'
+0q'
+xr'
 xs'
 0t'
 xu'
-0v'
-xw'
-0x'
-xy'
-0z'
-x{'
-0|'
-x}'
-0~'
-x!(
+xv'
+0w'
+xx'
+0y'
+xz'
+0{'
+x|'
+0}'
+x~'
+0!(
 x"(
 0#(
 x$(
-x%(
-1&(
-0'(
-1((
-0)(
-0*(
-0+(
+0%(
+x&(
+x'(
+0((
+x)(
+x*(
+1+(
 0,(
 0-(
-1.(
+0.(
 0/(
 00(
-01(
-02(
+11(
+12(
 13(
-04(
-x5(
-06(
+14(
+05(
+16(
 07(
-18(
+08(
 09(
-1:(
+x:(
 0;(
 0<(
-x=(
-x>(
-x?(
-x@(
-xA(
+1=(
+0>(
+1?(
+0@(
+0A(
 xB(
 xC(
 xD(
@@ -2657,19 +2686,19 @@ xL(
 xM(
 xN(
 xO(
-0P(
+xP(
 xQ(
-1R(
-0S(
-0T(
+xR(
+xS(
+xT(
 1U(
-0V(
+xV(
 0W(
-xX(
-xY(
-xZ(
-x[(
-x\(
+1X(
+1Y(
+1Z(
+1[(
+0\(
 x](
 x^(
 x_(
@@ -2685,21 +2714,21 @@ xh(
 xi(
 xj(
 xk(
-0l(
+xl(
 xm(
-1n(
-0o(
-0p(
-1q(
-0r(
+xn(
+xo(
+xp(
+0q(
+xr(
 1s(
 0t(
-xu(
-xv(
-xw(
-xx(
-xy(
-xz(
+0u(
+1v(
+0w(
+1x(
+1y(
+0z(
 x{(
 x|(
 x}(
@@ -2714,23 +2743,23 @@ x')
 x()
 x))
 x*)
-0+)
+x+)
 x,)
-0-)
-1.)
-1/)
-00)
+x-)
+x.)
+x/)
+x0)
 01)
-12)
+x2)
 03)
-04)
-x5)
-x6)
-x7)
-x8)
-x9)
-x:)
-x;)
+14)
+15)
+06)
+07)
+18)
+09)
+0:)
+0;)
 x<)
 x=)
 x>)
@@ -2745,21 +2774,21 @@ xF)
 xG)
 xH)
 xI)
-0J)
-0K)
-0L)
-1M)
-0N)
-0O)
-0P)
-xQ)
-xR)
-xS)
-xT)
-xU)
-xV)
-xW)
-xX)
+xJ)
+xK)
+xL)
+xM)
+xN)
+xO)
+xP)
+0Q)
+0R)
+0S)
+1T)
+0U)
+0V)
+0W)
+0X)
 xY)
 xZ)
 x[)
@@ -2773,17 +2802,17 @@ xb)
 xc)
 xd)
 xe)
-0f)
-0g)
+xf)
+xg)
 xh)
 xi)
 xj)
 xk)
 xl)
 xm)
-xn)
-xo)
-xp)
+0n)
+0o)
+0p)
 xq)
 xr)
 xs)
@@ -2796,35 +2825,35 @@ xy)
 xz)
 x{)
 x|)
-0})
-0~)
-0!*
-1"*
-0#*
-1$*
-0%*
-0&*
-0'*
+x})
+x~)
+x!*
+x"*
+x#*
+x$*
+x%*
+x&*
+x'*
 0(*
-1)*
+0)*
 0**
 1+*
 0,*
-0-*
-1.*
-1/*
+1-*
+0.*
+0/*
 00*
 01*
-x2*
-x3*
-x4*
-x5*
-x6*
-x7*
-x8*
-x9*
-x:*
-x;*
+12*
+03*
+14*
+05*
+06*
+17*
+18*
+09*
+0:*
+0;*
 x<*
 x=*
 x>*
@@ -2836,28 +2865,28 @@ xC*
 xD*
 xE*
 xF*
-0G*
-0H*
-0I*
-1J*
-0K*
-1L*
-0M*
-0N*
-1O*
-0P*
+xG*
+xH*
+xI*
+xJ*
+xK*
+xL*
+xM*
+xN*
+xO*
+xP*
 0Q*
-xR*
-xS*
-xT*
-xU*
-xV*
-xW*
-xX*
-xY*
-xZ*
-x[*
-x\*
+0R*
+0S*
+1T*
+0U*
+1V*
+0W*
+0X*
+1Y*
+0Z*
+0[*
+0\*
 x]*
 x^*
 x_*
@@ -2868,29 +2897,29 @@ xc*
 xd*
 xe*
 xf*
-0g*
-0h*
-0i*
-1j*
-0k*
-1l*
-0m*
-0n*
-1o*
-0p*
-0q*
-xr*
-xs*
-xt*
-xu*
-xv*
-xw*
-xx*
-xy*
-xz*
-x{*
-x|*
-x}*
+xg*
+xh*
+xi*
+xj*
+xk*
+xl*
+xm*
+xn*
+xo*
+xp*
+xq*
+0r*
+0s*
+0t*
+1u*
+0v*
+1w*
+0x*
+0y*
+1z*
+0{*
+0|*
+0}*
 x~*
 x!+
 x"+
@@ -2900,30 +2929,30 @@ x%+
 x&+
 x'+
 x(+
-0)+
-0*+
-0++
-1,+
-0-+
-1.+
-0/+
-00+
-11+
-02+
-03+
+x)+
+x*+
+x++
+x,+
+x-+
+x.+
+x/+
+x0+
+x1+
+x2+
+x3+
 x4+
-x5+
-x6+
-x7+
-x8+
-x9+
-x:+
-x;+
-x<+
-x=+
-x>+
-x?+
-x@+
+05+
+06+
+07+
+18+
+09+
+1:+
+0;+
+0<+
+1=+
+0>+
+0?+
+0@+
 xA+
 xB+
 xC+
@@ -2932,31 +2961,31 @@ xE+
 xF+
 xG+
 xH+
-0I+
-0J+
-0K+
-1L+
-0M+
-1N+
-0O+
-0P+
-1Q+
-0R+
-0S+
+xI+
+xJ+
+xK+
+xL+
+xM+
+xN+
+xO+
+xP+
+xQ+
+xR+
+xS+
 xT+
 xU+
-xV+
-xW+
-xX+
-xY+
-xZ+
-x[+
-x\+
-x]+
-x^+
-x_+
-x`+
-xa+
+0V+
+0W+
+0X+
+1Y+
+0Z+
+1[+
+0\+
+0]+
+1^+
+0_+
+0`+
+0a+
 xb+
 xc+
 xd+
@@ -2964,9 +2993,9 @@ xe+
 xf+
 xg+
 xh+
-0i+
-0j+
-0k+
+xi+
+xj+
+xk+
 xl+
 xm+
 xn+
@@ -2978,19 +3007,19 @@ xs+
 xt+
 xu+
 xv+
-xw+
-xx+
-xy+
-xz+
+0w+
+0x+
+0y+
+0z+
 x{+
 x|+
 x}+
 x~+
 x!,
 x",
-0#,
-0$,
-0%,
+x#,
+x$,
+x%,
 x&,
 x',
 x(,
@@ -3003,18 +3032,18 @@ x.,
 x/,
 x0,
 x1,
-x2,
-x3,
-x4,
-x5,
+02,
+03,
+04,
+05,
 x6,
 x7,
 x8,
 x9,
 x:,
-0;,
-0<,
-0=,
+x;,
+x<,
+x=,
 x>,
 x?,
 x@,
@@ -3028,16 +3057,16 @@ xG,
 xH,
 xI,
 xJ,
-xK,
-xL,
-xM,
-xN,
+0K,
+0L,
+0M,
+0N,
 xO,
 xP,
 xQ,
 xR,
-0S,
-0T,
+xS,
+xT,
 xU,
 xV,
 xW,
@@ -3053,30 +3082,30 @@ x`,
 xa,
 xb,
 xc,
-xd,
-xe,
-xf,
+0d,
+0e,
+0f,
 xg,
 xh,
 xi,
-0j,
-1k,
-0l,
-0m,
-0n,
-1o,
-0p,
-1q,
-0r,
-0s,
-1t,
-0u,
-0v,
-0w,
-1x,
-0y,
-1z,
-0{,
+xj,
+xk,
+xl,
+xm,
+xn,
+xo,
+xp,
+xq,
+xr,
+xs,
+xt,
+xu,
+xv,
+xw,
+xx,
+xy,
+xz,
+x{,
 0|,
 1},
 0~,
@@ -3084,16 +3113,16 @@ xi,
 0"-
 1#-
 0$-
-0%-
+1%-
 0&-
-1'-
-0(-
+0'-
+1(-
 0)-
 0*-
-1+-
-0,-
+0+-
+1,-
 0--
-0.-
+1.-
 0/-
 00-
 11-
@@ -3102,64 +3131,64 @@ xi,
 04-
 15-
 06-
-17-
+07-
 08-
-09-
+19-
 0:-
-1;-
+0;-
 0<-
-0=-
+1=-
 0>-
 0?-
 0@-
-1A-
-1B-
+0A-
+0B-
 1C-
-1D-
-1E-
-1F-
+0D-
+0E-
+0F-
 1G-
-1H-
+0H-
 1I-
-1J-
-1K-
+0J-
+0K-
 1L-
 1M-
 0N-
-1O-
+0O-
 0P-
 0Q-
 0R-
-0S-
-0T-
-0U-
-0V-
-0W-
-0X-
-0Y-
-0Z-
-0[-
+1S-
+1T-
+1U-
+1V-
+1W-
+1X-
+1Y-
+1Z-
+1[-
 1\-
-0]-
-0^-
+1]-
+1^-
 0_-
 0`-
 0a-
-1Q/
-1R/
-1S/
-1T/
-1U/
-1V/
-1W/
-0X/
-1Y/
-1Z/
-1[/
-1\/
-0]/
-1^/
-1_/
+0b-
+0c-
+0d-
+0e-
+0f-
+0g-
+0h-
+0i-
+1j-
+0k-
+0l-
+0m-
+0n-
+0o-
+x_/
 x`/
 xa/
 xb/
@@ -3181,265 +3210,296 @@ xq/
 xr/
 xs/
 xt/
-xu/
-xv/
-xw/
-xx/
-xy/
-xz/
-x{/
-x|/
-x}/
-x~/
-x!0
-x"0
-x#0
-x$0
-x%0
-x&0
-x'0
-x(0
-x)0
-x*0
-x+0
-x,0
-x-0
-x.0
-x/0
-x00
-x10
-x20
-x30
-x40
-x50
-x60
-x70
-x80
-x90
-x:0
-x;0
-x<0
-x=0
-x>0
-x?0
-x@0
-xA0
+1u/
+1v/
+1w/
+1x/
+1y/
+1z/
+1{/
+1|/
+1}/
+1~/
+1!0
+1"0
+1#0
+1$0
+1%0
+1&0
+1'0
+1(0
+1)0
+1*0
+1+0
+1,0
+1-0
+1.0
+0/0
+100
+110
+120
+130
+140
+050
+060
+170
+180
+090
+0:0
+1;0
+1<0
+1=0
+1>0
+0?0
+0@0
+0A0
 1B0
-1C0
+0C0
 1D0
 1E0
-1F0
-1G0
-1H0
-1I0
-1J0
-1K0
-1L0
-1M0
-1N0
-1O0
-1P0
-1Q0
-1R0
-1S0
-1T0
-1U0
+0F0
+0G0
+0H0
+0I0
+0J0
+0K0
+0L0
+0M0
+0N0
+0O0
+0P0
+0Q0
+0R0
+0S0
+0T0
+0U0
 1V0
 0W0
-1X0
+0X0
 1Y0
 1Z0
 1[0
 0\0
-1c0
-0d0
-0e0
-1f0
-1g0
-0h0
-1i0
-0j0
-1k0
-1l0
-1m0
-1n0
-1o0
-1p0
-1q0
-1r0
-1s0
-1t0
-1u0
-1v0
-1w0
-1x0
-0y0
-0z0
-0{0
-0|0
-1}0
-0~0
-0!1
-0"1
-0#1
-0$1
-0%1
-0&1
-0'1
-0(1
-0)1
-0*1
-0+1
-0,1
-0-1
-0.1
-0/1
-101
-111
-121
-031
-041
-151
-161
-171
-081
-091
-1J1
+0]0
+0^0
+xo0
+xp0
+xq0
+xr0
+xs0
+xt0
+xu0
+xv0
+xw0
+xx0
+xy0
+xz0
+x{0
+x|0
+x}0
+x~0
+x!1
+x"1
+x#1
+x$1
+x%1
+x&1
+x'1
+x(1
+x)1
+x*1
+x+1
+x,1
+x-1
+x.1
+x/1
+x01
+x11
+x21
+x31
+x41
+x51
+x61
+x71
+x81
+x91
+x:1
+1;1
+1<1
+0=1
+1>1
+1?1
+1@1
+0A1
+1B1
+1C1
+0D1
+1E1
+0F1
+1G1
+0H1
+1I1
+0J1
 1K1
-1L1
+0L1
 1M1
-1N1
+0N1
 1O1
-1P1
+0P1
 1Q1
-1R1
+0R1
 1S1
-1T1
+0T1
 1U1
-1V1
+0V1
 1W1
-1X1
-1i1
+0X1
+1Y1
+0Z1
+1[1
+0\1
+1]1
+0^1
+1_1
+0`1
+1a1
+0b1
+1c1
+1d1
+0e1
+1f1
+1g1
+1h1
+0i1
 1j1
 1k1
 1l1
-1m1
+0m1
 1n1
 1o1
 1p1
-1q1
+0q1
 1r1
 1s1
-1t1
+0t1
 1u1
-1v1
+0v1
 1w1
-1x1
+0x1
 1y1
-0z1
+1z1
 1{1
-1|1
-1}1
-1~1
+0|1
+0}1
+0~1
 0!2
-1"2
+0"2
 1#2
 1$2
-0%2
+1%2
 1&2
-1'2
+0'2
 1(2
-0)2
-1*2
+1)2
+0*2
 1+2
 0,2
-1-2
-0.2
-1/2
-002
-112
-022
 132
 042
-152
-062
+052
+162
 172
-082
+182
 192
-0:2
+1:2
 1;2
-0<2
+1<2
 1=2
-0>2
+1>2
 1?2
-0@2
+1@2
 1A2
-0B2
+1B2
 1C2
-0D2
+1D2
 1E2
-0F2
+1F2
 1G2
-0H2
+1H2
 1I2
-0J2
+1J2
 1K2
 1L2
-0M2
+1M2
 1N2
-1O2
-1P2
-0Q2
-1R2
-1S2
-1T2
-1U2
-0V2
-0W2
-1X2
-1Y2
-1Z2
-1[2
-1\2
-1]2
-1^2
 0_2
 1`2
-0a2
+1a2
 1b2
 1c2
 1d2
-0e2
-0f2
-0g2
-0h2
-0i2
+1e2
+1f2
+1g2
+1k2
+1l2
+1m2
+1n2
+1o2
+1p2
+1q2
+1r2
+1s2
+1t2
+0u2
+0v2
+0w2
+1x2
+1y2
+1z2
+1{2
+1|2
+1}2
+1~2
+1!3
+1"3
+1#3
+1$3
+1%3
+1&3
+1'3
+0(3
+1)3
+1*3
+1+3
 1,3
-1-3
+0-3
 1.3
-1/3
+0/3
 103
-113
-123
 133
 143
 153
 163
 173
-083
+183
 193
 1:3
-0;3
-0<3
+1;3
+1<3
 1=3
-1N3
-1O3
-1P3
-1Q3
-1R3
+1>3
+1?3
+1@3
+1A3
+1B3
 1S3
 1T3
 1U3
+1V3
+1W3
+1X3
+1Y3
 1Z3
 1[3
 1\3
@@ -3451,31 +3511,33 @@ xA0
 1b3
 1c3
 0d3
-0e3
-0f3
+1e3
+1f3
 1g3
 1h3
-1i3
+0i3
 1j3
-1k3
-1l3
-1m3
-1n3
-1o3
-1p3
-1q3
-1r3
-1s3
-1t3
-1u3
-1v3
-0w3
-0x3
-1y3
-0z3
-1{3
-1|3
-1!4
+xk3
+xl3
+xm3
+xn3
+xo3
+xp3
+xq3
+xr3
+xs3
+xt3
+xu3
+xv3
+xw3
+xx3
+xy3
+xz3
+x{3
+x|3
+x}3
+x~3
+x!4
 x"4
 x#4
 x$4
@@ -3486,84 +3548,52 @@ x(4
 x)4
 x*4
 x+4
-x,4
-x-4
-x.4
-x/4
-x04
-x14
-x24
-x34
-x44
-x54
-x64
-x74
-x84
-x94
-x:4
-x;4
-x<4
-x=4
-x>4
-x?4
-x@4
-xA4
-xB4
-xC4
-xD4
-xE4
-xF4
-xG4
-xH4
-xI4
-xJ4
-xK4
-xL4
-xM4
-xN4
-xO4
-xP4
-xQ4
-xR4
-xS4
-xT4
-xU4
-xV4
-xW4
-xX4
-xY4
-xZ4
-x[4
-x\4
-x]4
-x^4
-x_4
-x`4
-xa4
-xb4
-xc4
-xd4
-xe4
-xf4
-xg4
-xh4
-xi4
-xj4
-xk4
-xl4
-xm4
-xn4
-xo4
-xp4
-xq4
-xr4
-xs4
-xt4
-xu4
-xv4
-xw4
-xx4
+1,4
+1p4
+1q4
+1r4
+1s4
+1t4
+1u4
+1v4
+1w4
+1x4
 1y4
+1z4
+1{4
+0|4
+1}4
+1~4
+0!5
+0"5
+0#5
+x$5
+x%5
+x&5
+x'5
+x(5
+x)5
+x*5
+x+5
+x,5
+x-5
+x.5
+x/5
+x05
+x15
+x25
+x35
+x45
+x55
+x65
+x75
+x85
+x95
+x:5
+x;5
+x<5
+x=5
+x>5
 x?5
 x@5
 xA5
@@ -3749,7 +3779,36 @@ x87
 x97
 x:7
 x;7
-0<7
+x<7
+x=7
+x>7
+x?7
+x@7
+xA7
+xB7
+xC7
+xD7
+xE7
+xF7
+xG7
+xH7
+xI7
+xJ7
+xK7
+xL7
+xM7
+xN7
+xO7
+xP7
+xQ7
+xR7
+xS7
+xT7
+xU7
+xV7
+xW7
+xX7
+0Y7
 0p!
 0q!
 0r!
@@ -3811,9 +3870,9 @@ x;7
 0j!
 0k!
 0l!
-0m!
-1n!
-1o!
+1m!
+0n!
+0o!
 0a
 0b
 0c
@@ -3873,7 +3932,7 @@ x;7
 1.
 0/
 00
-01
+11
 0~
 0!!
 0"!
@@ -3921,7 +3980,7 @@ x;7
 1w
 0x
 0y
-0z
+1z
 09
 0:
 0;
@@ -3987,9 +4046,9 @@ x;7
 0f"
 0g"
 0h"
-0i"
-1j"
-1k"
+1i"
+0j"
+0k"
 0l"
 0m"
 0n"
@@ -4049,7 +4108,7 @@ x;7
 1F#
 0G#
 0H#
-0I#
+1I#
 0J#
 0K#
 0L#
@@ -4097,33 +4156,19 @@ x;7
 1v#
 0w#
 0x#
-0y#
+1y#
 0!$
 0"$
 0#$
 0$$
-xb-
-xc-
-xd-
-xe-
-xf-
-xg-
-xh-
-xi-
-xj-
-xk-
-0l-
-0m-
-xn-
-0o-
-xp-
-xq-
-xr-
+0p-
+0q-
+0r-
 0s-
 0t-
 0u-
-xv-
-xw-
+0v-
+0w-
 0x-
 0y-
 0z-
@@ -4132,22 +4177,22 @@ xw-
 0}-
 0~-
 0!.
-0".
-0#.
-0$.
-0%.
-0&.
-0'.
-0(.
-0).
-0*.
-0+.
-0,.
+x".
+x#.
+x$.
+x%.
+x&.
+x'.
+x(.
+x).
+x*.
+x+.
+x,.
 0-.
-0..
+x..
 0/.
-00.
-01.
+x0.
+x1.
 02.
 03.
 04.
@@ -4159,20 +4204,20 @@ xw-
 0:.
 0;.
 0<.
-x=.
-x>.
-x?.
-x@.
-xA.
+0=.
+1>.
+0?.
+0@.
+1A.
 xB.
-xC.
-xD.
-xE.
+0C.
+0D.
+0E.
 xF.
 xG.
-xH.
-xI.
-xJ.
+0H.
+0I.
+0J.
 0K.
 0L.
 0M.
@@ -4187,8 +4232,8 @@ xJ.
 0V.
 0W.
 0X.
-0Y.
-0Z.
+xY.
+xZ.
 x[.
 x\.
 x].
@@ -4198,27 +4243,27 @@ x`.
 xa.
 xb.
 xc.
-xd.
-0e.
+0d.
+xe.
 0f.
 xg.
-0h.
-xi.
-xj.
-0k.
-0l.
-0m.
-0n.
-0o.
-0p.
-0q.
-0r.
-0s.
-0t.
-0u.
-0v.
-0w.
-0x.
+xh.
+0i.
+0j.
+xk.
+xl.
+xm.
+xn.
+xo.
+xp.
+xq.
+xr.
+xs.
+xt.
+xu.
+xv.
+xw.
+xx.
 0y.
 0z.
 0{.
@@ -4233,7 +4278,7 @@ xj.
 0&/
 0'/
 0(/
-1)/
+0)/
 0*/
 0+/
 0,/
@@ -4267,87 +4312,69 @@ xj.
 0H/
 0I/
 0J/
-1K/
-1L/
-xM/
+0K/
+0L/
+0M/
 0N/
 0O/
 0P/
-1]0
-1^0
+0Q/
+0R/
+0S/
+0T/
+0U/
+0V/
+0W/
+1X/
+0Y/
+0Z/
+x[/
+0\/
+0]/
+0^/
 1_0
-x`0
-xa0
+1`0
+1a0
 1b0
-1:1
-1;1
-1<1
-1=1
-1>1
-1?1
-1@1
-1A1
-1B1
-1C1
-1D1
-1E1
-1F1
-1G1
-1H1
-1I1
-1Y1
-1Z1
-1[1
-1\1
-1]1
-1^1
-1_1
-1`1
-1a1
-1b1
-1c1
-1d1
-1e1
-1f1
-1g1
-1h1
+1c0
+1d0
+1e0
+1f0
+1g0
+1h0
+1i0
+1j0
+1k0
+1l0
+1m0
+1n0
+1-2
+1.2
+1/2
+x02
+x12
+122
+1O2
+1P2
+1Q2
+1R2
+1S2
+1T2
+1U2
+1V2
+1W2
+1X2
+1Y2
+1Z2
+1[2
+1\2
+1]2
+1^2
+1h2
+xi2
 1j2
-1k2
-1l2
-1m2
-1n2
-1o2
-1p2
-1q2
-1r2
-1s2
-1t2
-1u2
-1v2
-1w2
-1x2
-1y2
-1z2
-1{2
-1|2
-1}2
-1~2
-1!3
-1"3
-1#3
-1$3
-1%3
-1&3
-1'3
-0(3
-1)3
-1*3
-1+3
-1>3
-1?3
-1@3
-1A3
-1B3
+113
+123
 1C3
 1D3
 1E3
@@ -4359,479 +4386,959 @@ xa0
 1K3
 1L3
 1M3
-1V3
-1W3
-xX3
-1Y3
-1}3
-1~3
-1z4
-1{4
-1|4
-1}4
-1~4
-1!5
-1"5
-1#5
-1$5
-1%5
-1&5
-1'5
-1(5
-1)5
-1*5
-1+5
-1,5
-0-5
-0.5
-1/5
-105
-115
-125
-135
-145
-155
-165
-175
-185
-195
-1:5
-1;5
-1<5
-1=5
-1>5
+1N3
+1O3
+1P3
+1Q3
+1R3
+1-4
+1.4
+1/4
+104
+114
+124
+134
+144
+154
+164
+174
+184
+194
+1:4
+1;4
+1<4
+0=4
+1>4
+1?4
+1@4
+1A4
+1B4
+1C4
+1D4
+1E4
+1F4
+1G4
+1H4
+1I4
+1J4
+1K4
+1L4
+1M4
+1N4
+1O4
+1P4
+1Q4
+1R4
+1S4
+1T4
+1U4
+1V4
+1W4
+1X4
+1Y4
+1Z4
+1[4
+1\4
+1]4
+1^4
+1_4
+1`4
+1a4
+1b4
+1c4
+1d4
+1e4
+1f4
+1g4
+1h4
+1i4
+1j4
+1k4
+0l4
+1m4
+1n4
+0o4
 $end
-#530000
+#10000
 0!
 0+"
 0,&
-1<7
+1Y7
 03&
-06'
-0G'
-0O'
-08(
-0;-
-131
-1i2
-1,1
-1|0
-1h2
+05'
 0J'
+0T'
+0=(
+0M-
+1X0
+1"2
+1R0
+1@0
+1!2
 0L'
-1t(
-1-(
-0U'
-1a'
-0W'
-0X'
-10)
+1N'
+1z(
+1f'
 0\'
-1,(
-0^'
-1`'
-0q(
-0U(
-1r(
-0Y/
-1/1
-0[/
-0_/
-1-1
-1X/
-0Z/
-0^/
-0w0
-1y0
-1z0
+0]'
+16)
+0a'
+1e'
+0v(
+1w(
+000
+020
+1S0
+1/0
+010
+080
+0>0
+1:0
 0v$
 0w$
 0y$
 0|$
-0r(
-0((
-11)
-1X'
-00)
-1)(
-0V'
+0w(
+17)
+1]'
+06)
 1O$
-11(
-1P(
-1b'
-03(
-1l(
-1+)
-1V(
-0Y'
-0s(
-0\/
-0X/
-0V/
-1]/
-1Y/
+1g'
+1q(
+11)
+0^'
+0x(
+0/0
+0-0
+100
 0x"
 0w"
 0{"
 0~"
-0a'
-01)
-1a2
-1W0
-0Z0
-0O2
-0R2
-1W2
-0X0
-0\2
-0Y2
+07)
+1x1
+1'2
+0g1
+0j1
+0(2
 1X"
 0]
 0\
 0`
 0E
-0L$
 0N$
 1_$
-0]$
-0\$
-1['
-13)
-1Y'
-1s(
-1+(
-1;(
-1V/
-1Z/
+1\$
+0^$
+1`'
+19)
+1^'
+1x(
+1-0
 1\!
-0R(
-0n(
-1n'
-1"(
-1C(
-1M(
-1_(
-1i(
-1|(
-1()
-1<)
-1F)
-1X)
-1b)
-1o)
-1y)
-19*
+1s'
+1'(
+1H(
+1R(
+1d(
+1n(
+1$)
+1.)
+1C)
+1M)
+1`)
+1j)
+1x)
+1$*
 1C*
-1Y*
-1c*
-1y*
-1%+
-1;+
-1E+
-1[+
-1e+
+1M*
+1d*
+1n*
+1'+
+11+
+1H+
+1R+
+1i+
 1s+
-1}+
-1-,
-17,
-1E,
-1O,
-1\,
-1f,
-0.)
-0Y0
-0Z2
-0a2
-0W0
-0b2
-0V0
-0["
+1$,
+1.,
+1=,
+1G,
+1V,
+1`,
+1n,
+1x,
+0s(
+04)
+0x1
+0'2
+0y1
+0&2
 0Y"
 1h"
-0j"
-0k"
-0b'
-0l(
-0+)
-0['
-03)
-1M2
-0h/
-0i/
-0f/
-0g/
-0d/
-0e/
-0b/
-0c/
-0`/
-0a/
-0j/
-0k/
-0l/
-0m/
-0n/
-0o/
-0p/
-0q/
-0t/
-0u/
-0r/
-0s/
-0v/
-0w/
-0x/
-0y/
-0z/
-0{/
-0~/
-0!0
-0|/
-0}/
-1Q2
-1V2
-0_!
+1k"
+0i"
+0`'
+09)
+1e1
+1i1
+0w0
+0x0
+0u0
+0v0
+0s0
+0t0
+0q0
+0r0
+0o0
+0p0
+0y0
+0z0
+0{0
+0|0
+0}0
+0~0
+0!1
+0"1
+0%1
+0&1
+0#1
+0$1
+0'1
+0(1
+0)1
+0*1
+0+1
+0,1
+0/1
+001
+0-1
+0.1
 0]!
-0o!
-0n!
+1o!
+0m!
 1l!
 0m%
-1j%
 1l%
-1.)
-1K)
-16(
-1b2
-1V0
-1O2
-1R2
-1X0
-1S(
-1o(
-0T2
-0K2
-0M2
+14)
+1R)
+1y1
+1&2
+1t(
+0c1
+0e1
 0v#
-1y#
 1w#
-1k%
 1m%
 1n%
-xn'
-1q'
-x"(
-1%(
-xC(
-1E(
-xM(
-1O(
-x_(
-1a(
-xi(
-1k(
-x|(
-1~(
-x()
-1*)
-x<)
-1>)
-xF)
-1H)
-xX)
-1Z)
-xb)
-1d)
-xo)
-1q)
-xy)
-1{)
-x9*
-1;*
-xC*
-1E*
-xY*
-1[*
-xc*
-1e*
-xy*
-1{*
-x%+
-1'+
-x;+
-1=+
-xE+
-1G+
-x[+
-1]+
-xe+
-1g+
-xs+
-1u+
-x}+
-1!,
-x-,
-1/,
-x7,
-19,
-xE,
-1G,
-xO,
-1Q,
-x\,
-1^,
-xf,
-1h,
-1n(
-0K)
-0P2
-0U2
-1z
+0R)
+0h1
 1x
 0w
-17(
-1K2
-0Q2
-0*0
-xh/
-0+0
-xi/
-0(0
-xf/
-0)0
-xg/
-0&0
-xd/
-0'0
-xe/
-0$0
-xb/
-0%0
-xc/
-0"0
-x`/
-0#0
-xa/
-0,0
-xj/
-0-0
-xk/
-0.0
-xl/
-0/0
-xm/
-000
-xn/
-010
-xo/
-020
-xp/
-030
-xq/
-060
-xt/
-070
-xu/
-040
-xr/
-050
-xs/
-080
-xv/
-090
-xw/
-0:0
-xx/
-0;0
-xy/
-0<0
-xz/
-0=0
-x{/
-0@0
-x~/
-0A0
-x!0
-0>0
-x|/
-0?0
-x}/
-1x#
+1c1
 1v#
 1u#
 0n%
-0l%
-0S2
-1y
 1w
 1v
-xq'
-x%(
-xE(
-xO(
-xa(
-xk(
-x~(
-x*)
-x>)
-xH)
-xZ)
-xd)
-xq)
-x{)
-x;*
-xE*
-x[*
-xe*
-x{*
-x'+
-x=+
-xG+
-x]+
-xg+
-xu+
-x!,
-x/,
-x9,
-xG,
-xQ,
-x^,
-xh,
-0o(
 0u#
-0w#
-1P2
-x*0
-x+0
-x(0
-x)0
-x&0
-x'0
-x$0
-x%0
-x"0
-x#0
-x,0
-x-0
-x.0
-x/0
-x00
-x10
-x20
-x30
-x60
-x70
-x40
-x50
-x80
-x90
-x:0
-x;0
-x<0
-x=0
-x@0
-xA0
-x>0
-x?0
-0x
 0v
+#20000
+1!
+1+"
+1,&
+0Y7
+1!.
+1k-
+13&
+15'
+1J'
+1T'
+1=(
+1?.
+1M-
+0%2
+0n0
+0X0
+0m4
+0"2
+0R0
+0@0
+0!2
+1Q-
+0j-
+1l-
+1L'
+0N'
+0z(
+1K'
+1u(
+0f'
+1\'
+0]'
+1a'
+0e'
+1v(
+1w(
+0T)
+0a3
+1z%
+1,$
+000
+120
+0S0
+1/0
+110
+0}4
+0;0
+180
+1>0
+0:0
+1v$
+1w$
+1<%
+1y$
+1|$
+1:/
+1U)
+07*
+0w(
+1T)
+1]'
+1z#
+1;"
+0O$
+0g'
+0q(
+01)
+0^'
+0x(
+0/0
+100
+0.0
+0_4
+1x"
+1w"
+1G#
+1{"
+1~"
+1{
+1!"
+0U)
+17*
+1N-
+08*
+1x1
+1'2
+1g1
+1j1
+1(2
+0X"
+1]
+1\
+1/
+1`
+1E
+1N$
+0_$
+0\$
+1^$
+1R-
+1^'
+1x(
+0,0
+1.0
+0\!
+xs'
+1v'
+x'(
+1*(
+xH(
+1J(
+xR(
+1T(
+xd(
+1f(
+xn(
+1p(
+x$)
+1&)
+x.)
+10)
+xC)
+1E)
+xM)
+1O)
+x`)
+1b)
+xj)
+1l)
+xx)
+1z)
+x$*
+1&*
+xC*
+1E*
+xM*
+1O*
+xd*
+1f*
+xn*
+1p*
+x'+
+1)+
+x1+
+13+
+xH+
+1J+
+xR+
+1T+
+xi+
+1k+
+xs+
+1u+
+x$,
+1&,
+x.,
+10,
+x=,
+1?,
+xG,
+1I,
+xV,
+1X,
+x`,
+1b,
+xn,
+1p,
+xx,
+1z,
+1s(
+04)
+19*
+0Y*
+0N-
+18*
+0x1
+0'2
+0A3
+1Y"
+0h"
+0k"
+1i"
+1J%
+1,0
+0*0
+1e1
+0i1
+091
+xw0
+0:1
+xx0
+071
+xu0
+081
+xv0
+051
+xs0
+061
+xt0
+031
+xq0
+041
+xr0
+011
+xo0
+021
+xp0
+0_/
+xy0
+0`/
+xz0
+0a/
+x{0
+0b/
+x|0
+0c/
+x}0
+0d/
+x~0
+0e/
+x!1
+0f/
+x"1
+0i/
+x%1
+0j/
+x&1
+0g/
+x#1
+0h/
+x$1
+0k/
+x'1
+0l/
+x(1
+0m/
+x)1
+0n/
+x*1
+0o/
+x+1
+0p/
+x,1
+0s/
+x/1
+0t/
+x01
+0q/
+x-1
+0r/
+x.1
+1]!
+0o!
+1m!
+0l!
+0m%
+0l%
+1J/
+14)
+09*
+1Y*
+1Z*
+0z*
+1Y#
+xv'
+x*(
+xJ(
+xT(
+xf(
+xp(
+x&)
+x0)
+xE)
+xO)
+xb)
+xl)
+xz)
+x&*
+xE*
+xO*
+xf*
+xp*
+x)+
+x3+
+xJ+
+xT+
+xk+
+xu+
+x&,
+x0,
+x?,
+xI,
+xX,
+xb,
+xp,
+xz,
+0t(
+0>.
+0I-
+0(0
+1*0
+0e1
+0O4
+0v#
+0w#
+1/!
+1m%
+1{*
+0=+
+0Z*
+1z*
+1d3
+1l4
+1h1
+x91
+x:1
+x71
+x81
+x51
+x61
+x31
+x41
+x11
+x21
+x_/
+x`/
+xa/
+xb/
+xc/
+xd/
+xe/
+xf/
+xi/
+xj/
+xg/
+xh/
+xk/
+xl/
+xm/
+xn/
+xo/
+xp/
+xs/
+xt/
+xq/
+xr/
+0x
+0w
+1*/
+1>.
+1(0
+0&0
+1v#
+0?.
+0y(
+05)
+0{*
+1=+
+1>+
+0^+
+0l4
+0^2
+1w
+1Z%
+0$0
+1&0
+1|4
+190
+1m4
+0=%
+1-&
+1F'
+0T'
+0+(
+03(
+04(
+0M-
+0S-
+1y(
+15)
+1_+
+0},
+0>+
+1^+
+1i#
+0K'
+0u(
+1T'
+1+(
+1$0
+0"0
+0|4
+090
+1X0
+1_2
+1v1
+1|1
+1R0
+0D0
+0F#
+1?!
+1=%
+1<$
+0_+
+1},
+1~,
+0(-
+0|1
+0R0
+1}4
+1;0
+0.
+0<%
+0G'
+0T'
+0]'
+16)
+0+(
+1w(
+0~/
+1"0
+1F#
+1K"
+1f'
+0\'
+0a'
+1e'
+0v(
+1)-
+01-
+0~,
+1(-
+000
+1|1
+1/0
+1R0
+1C0
+0G#
+1.
+1O!
+0v$
+0w$
+1p$
+1I-
+17)
+1~/
+0|/
+020
+1S0
+010
+0/
+1O$
+0=(
+0^'
+0x(
+0)-
+11-
+12-
+09-
+0w(
+1]'
+06)
+0-0
+0d3
+0x"
+0w"
+1p"
+0O$
+1g'
+1q(
+11)
+0/0
+100
+0z/
+1|/
+1x1
+1'2
+1"2
+1X"
+0]
+0\
+1Y
+1`'
+19)
+07)
+1:-
+0G-
+02-
+19-
+0g1
+0j1
+0(2
+0X"
+1\!
+1m$
+1O$
+0N$
+04)
+1^'
+1x(
+1z/
+0x/
+1-0
+0y1
+0&2
+0\!
+1s'
+1'(
+1H(
+1R(
+1d(
+1n(
+1$)
+1.)
+1C)
+1M)
+1`)
+1j)
+1x)
+1$*
+1C*
+1M*
+1d*
+1n*
+1'+
+11+
+1H+
+1R+
+1i+
+1s+
+1$,
+1.,
+1=,
+1G,
+1V,
+1`,
+1n,
+1x,
+0s(
+0:-
+1G-
+1H-
+0x1
+0'2
+1e1
+1m"
+1X"
+0Y"
+0m%
+1R)
+0`'
+09)
+0v/
+1x/
+1i1
+0w0
+0x0
+0u0
+0v0
+0s0
+0t0
+0q0
+0r0
+0o0
+0p0
+0y0
+0z0
+0{0
+0|0
+0}0
+0~0
+0!1
+0"1
+0%1
+0&1
+0#1
+0$1
+0'1
+0(1
+0)1
+0*1
+0+1
+0,1
+0/1
+001
+0-1
+0.1
+1b
+0]!
+1\!
+1l%
+0>.
+14)
+0H-
+1y1
+1&2
+0c1
+0v#
+1n%
+1t(
+0I-
+1v/
+0e1
+1l4
+1w#
+0w
+1m%
+1=.
+0R)
+1d3
+0h1
+1u#
+1x
+0y(
+1>.
+1I-
+1c1
+0k4
+1v#
+1v
+0n%
+1?.
+0d3
+0l4
+190
+1w
+0=%
+1:)
+0=.
+0m4
+0u#
+1y(
+1k4
+070
+0F#
+0v
+1>%
+1K'
+090
+0.
+1=%
+0:)
+0;0
+1E#
+1<%
+170
+1F#
+1-
+0>%
+1G#
+1.
+0E#
+1/
+0-
+#30000
+0!
+0+"
+0,&
+1Y7
+03&
+05'
+0F'
+0J'
+0K'
+1;0
+1@0
+1D0
+1!2
+1G'
+1N'
+1z(
+0L'
+1:0
+080
+0>0
+0C0
+0y$
+0p$
+0|$
+0{"
+0p"
+0~"
+0`
+0Y
+0E
+0^$
+1_$
+1\$
+0m$
+0i"
+1h"
+1k"
+0m"
+1o!
+0m!
+1l!
+0b
 #1000000

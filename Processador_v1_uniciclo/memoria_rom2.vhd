@@ -24,7 +24,7 @@ SHARED VARIABLE ROM : matriz;
 procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
 BEGIN
 	listaInstrucoes(0) := "0000000001011001";
-	listaInstrucoes(1) := "0001001000000001";
+	listaInstrucoes(1) := "0000010001000001";
 	listaInstrucoes(2) := "0001000000000101";
 	listaInstrucoes(3) := "0011011000000000";
 	listaInstrucoes(4) := "0001100000000001";

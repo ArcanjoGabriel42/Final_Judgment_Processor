@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Sun Dec 02 16:18:20 2018
+Sun Dec 02 20:12:24 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -47,13 +47,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Dec 02 16:18:20 2018       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec 02 20:12:24 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 47                                          ;
+; Total registers                 ; 45                                          ;
 ; Total pins                      ; 189                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -202,25 +202,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 446                 ;
+; Estimate of Logic utilization (ALMs needed) ; 469                 ;
 ;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 734                 ;
+; Combinational ALUT usage for logic          ; 748                 ;
 ;     -- 7 input functions                    ; 64                  ;
-;     -- 6 input functions                    ; 92                  ;
-;     -- 5 input functions                    ; 65                  ;
-;     -- 4 input functions                    ; 27                  ;
-;     -- <=3 input functions                  ; 486                 ;
+;     -- 6 input functions                    ; 124                 ;
+;     -- 5 input functions                    ; 32                  ;
+;     -- 4 input functions                    ; 44                  ;
+;     -- <=3 input functions                  ; 484                 ;
 ;                                             ;                     ;
-; Dedicated logic registers                   ; 47                  ;
+; Dedicated logic registers                   ; 45                  ;
 ;                                             ;                     ;
 ; I/O pins                                    ; 189                 ;
 ;                                             ;                     ;
 ; Total DSP Blocks                            ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; Clock_Sistema~input ;
-; Maximum fan-out                             ; 148                 ;
-; Total fan-out                               ; 3298                ;
-; Average fan-out                             ; 2.85                ;
+; Maximum fan-out                             ; 159                 ;
+; Total fan-out                               ; 3378                ;
+; Average fan-out                             ; 2.88                ;
 +---------------------------------------------+---------------------+
 
 
@@ -229,9 +229,9 @@ refer to the applicable agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name             ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------------------+--------------+
-; |DataPath                        ; 734 (17)            ; 47 (0)                    ; 0                 ; 0          ; 189  ; 0            ; |DataPath                                 ; DataPath                ; work         ;
-;    |BancoRegistradores:G7|       ; 53 (53)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G7           ; BancoRegistradores      ; work         ;
-;    |Multiplexador2x1:G6|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6             ; Multiplexador2x1        ; work         ;
+; |DataPath                        ; 748 (17)            ; 45 (0)                    ; 0                 ; 0          ; 189  ; 0            ; |DataPath                                 ; DataPath                ; work         ;
+;    |BancoRegistradores:G7|       ; 68 (68)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G7           ; BancoRegistradores      ; work         ;
+;    |Multiplexador2x1:G6|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6             ; Multiplexador2x1        ; work         ;
 ;    |Multiplexador2x1_16bits:G12| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G12     ; Multiplexador2x1_16bits ; work         ;
 ;    |Multiplexador2x1_16bits:G13| ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G13     ; Multiplexador2x1_16bits ; work         ;
 ;    |Multiplexador2x1_16bits:G14| ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G14     ; Multiplexador2x1_16bits ; work         ;
@@ -244,12 +244,12 @@ refer to the applicable agreement for further details.
 ;          |registerjk:G3|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1|contsinc:G0|registerjk:G3 ; registerjk              ; work         ;
 ;    |QAndBIT:G11|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|QAndBIT:G11                     ; QAndBIT                 ; work         ;
 ;    |Qsll:G3|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Qsll:G3                         ; Qsll                    ; work         ;
-;    |ShiftEsquerda:G9|            ; 0 (0)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ShiftEsquerda:G9                ; ShiftEsquerda           ; work         ;
+;    |ShiftEsquerda:G9|            ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ShiftEsquerda:G9                ; ShiftEsquerda           ; work         ;
 ;    |SomadorPC:G2|                ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2                    ; SomadorPC               ; work         ;
 ;    |Somadorde16bits:G10|         ; 14 (14)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Somadorde16bits:G10             ; Somadorde16bits         ; work         ;
 ;    |ULA:G16|                     ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                         ; ULA                     ; work         ;
 ;    |UnidadedeControle:G5|        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5            ; UnidadedeControle       ; work         ;
-;    |memoria_ROM2:G4|             ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4                 ; memoria_ROM2            ; work         ;
+;    |memoria_ROM2:G4|             ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4                 ; memoria_ROM2            ; work         ;
 ;    |memram:G17|                  ; 338 (338)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memram:G17                      ; memram                  ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -376,40 +376,43 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; ShiftEsquerda:G9|SAIDA[0,1]            ; Stuck at GND due to stuck port data_in ;
 ; Qsll:G3|resshift[0,1]                  ; Stuck at GND due to stuck port data_in ;
 ; Qsll:G3|resshift[3,7,9]                ; Merged with Qsll:G3|resshift[10]       ;
-; Qsll:G3|resshift[6,8]                  ; Merged with Qsll:G3|resshift[5]        ;
+; Qsll:G3|resshift[6]                    ; Merged with Qsll:G3|resshift[5]        ;
 ; ShiftEsquerda:G9|SAIDA[3,7..9,11..15]  ; Merged with ShiftEsquerda:G9|SAIDA[10] ;
 ; ShiftEsquerda:G9|SAIDA[6]              ; Merged with ShiftEsquerda:G9|SAIDA[5]  ;
 ; Qsll:G3|vet[3,7,9]                     ; Merged with Qsll:G3|vet[10]            ;
-; Qsll:G3|vet[6,8]                       ; Merged with Qsll:G3|vet[5]             ;
+; Qsll:G3|vet[6]                         ; Merged with Qsll:G3|vet[5]             ;
 ; ShiftEsquerda:G9|AUX[3,7..9,11..15]    ; Merged with ShiftEsquerda:G9|AUX[10]   ;
 ; ShiftEsquerda:G9|AUX[6]                ; Merged with ShiftEsquerda:G9|AUX[5]    ;
-; Qsll:G3|vet[2,4,5,10..13]              ; Stuck at GND due to stuck port data_in ;
+; Qsll:G3|vet[2,4,5,8,10..13]            ; Stuck at GND due to stuck port data_in ;
 ; OperacaoDaULA:G15|SAIDA[1]             ; Stuck at GND due to stuck port data_in ;
-; Qsll:G3|resshift[2,4,5,10..13]         ; Stuck at GND due to stuck port data_in ;
+; Qsll:G3|resshift[2,4,5,8,10..13]       ; Stuck at GND due to stuck port data_in ;
 ; ShiftEsquerda:G9|AUX[10]               ; Stuck at GND due to stuck port data_in ;
 ; ShiftEsquerda:G9|SAIDA[10]             ; Stuck at GND due to stuck port data_in ;
 ; OperacaoDaULA:G15|SAIDA[2]             ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 57 ;                                        ;
+; ShiftEsquerda:G9|AUX[5]                ; Stuck at GND due to stuck port data_in ;
+; ShiftEsquerda:G9|SAIDA[5]              ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 59 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                  ;
-+-------------------------+---------------------------+----------------------------------------------------------------------------------------+
-; Register name           ; Reason for Removal        ; Registers Removed due to This Register                                                 ;
-+-------------------------+---------------------------+----------------------------------------------------------------------------------------+
-; Qsll:G3|vet[1]          ; Stuck at GND              ; Qsll:G3|resshift[1], Qsll:G3|vet[2], Qsll:G3|vet[4], Qsll:G3|vet[5], Qsll:G3|vet[10],  ;
-;                         ; due to stuck port data_in ; Qsll:G3|vet[11], Qsll:G3|vet[12], Qsll:G3|vet[13], Qsll:G3|resshift[13],               ;
-;                         ;                           ; Qsll:G3|resshift[12], Qsll:G3|resshift[11], Qsll:G3|resshift[10], Qsll:G3|resshift[5], ;
-;                         ;                           ; Qsll:G3|resshift[4], Qsll:G3|resshift[2], ShiftEsquerda:G9|AUX[10],                    ;
-;                         ;                           ; ShiftEsquerda:G9|SAIDA[10], OperacaoDaULA:G15|SAIDA[2]                                 ;
-; ShiftEsquerda:G9|AUX[0] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[0]                                                              ;
-;                         ; due to stuck port data_in ;                                                                                        ;
-; ShiftEsquerda:G9|AUX[1] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[1]                                                              ;
-;                         ; due to stuck port data_in ;                                                                                        ;
-; Qsll:G3|vet[0]          ; Stuck at GND              ; Qsll:G3|resshift[0]                                                                    ;
-;                         ; due to stuck port data_in ;                                                                                        ;
-+-------------------------+---------------------------+----------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                     ;
++-------------------------+---------------------------+-------------------------------------------------------------------------------------------+
+; Register name           ; Reason for Removal        ; Registers Removed due to This Register                                                    ;
++-------------------------+---------------------------+-------------------------------------------------------------------------------------------+
+; Qsll:G3|vet[1]          ; Stuck at GND              ; Qsll:G3|resshift[1], Qsll:G3|vet[2], Qsll:G3|vet[4], Qsll:G3|vet[5], Qsll:G3|vet[8],      ;
+;                         ; due to stuck port data_in ; Qsll:G3|vet[10], Qsll:G3|vet[11], Qsll:G3|vet[12], Qsll:G3|vet[13], Qsll:G3|resshift[13], ;
+;                         ;                           ; Qsll:G3|resshift[12], Qsll:G3|resshift[11], Qsll:G3|resshift[10], Qsll:G3|resshift[8],    ;
+;                         ;                           ; Qsll:G3|resshift[5], Qsll:G3|resshift[4], Qsll:G3|resshift[2],                            ;
+;                         ;                           ; ShiftEsquerda:G9|AUX[10], ShiftEsquerda:G9|SAIDA[10], OperacaoDaULA:G15|SAIDA[2],         ;
+;                         ;                           ; ShiftEsquerda:G9|AUX[5], ShiftEsquerda:G9|SAIDA[5]                                        ;
+; ShiftEsquerda:G9|AUX[0] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[0]                                                                 ;
+;                         ; due to stuck port data_in ;                                                                                           ;
+; ShiftEsquerda:G9|AUX[1] ; Stuck at GND              ; ShiftEsquerda:G9|SAIDA[1]                                                                 ;
+;                         ; due to stuck port data_in ;                                                                                           ;
+; Qsll:G3|vet[0]          ; Stuck at GND              ; Qsll:G3|resshift[0]                                                                       ;
+;                         ; due to stuck port data_in ;                                                                                           ;
++-------------------------+---------------------------+-------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -417,7 +420,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 47    ;
+; Total registers                              ; 45    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -457,29 +460,29 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 47                          ;
-;     plain             ; 47                          ;
-; arriav_lcell_comb     ; 752                         ;
+; arriav_ff             ; 45                          ;
+;     plain             ; 45                          ;
+; arriav_lcell_comb     ; 766                         ;
 ;     arith             ; 62                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 5                           ;
+;         1 data inputs ; 26                          ;
+;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 28                          ;
 ;         5 data inputs ; 4                           ;
 ;     extend            ; 64                          ;
 ;         7 data inputs ; 64                          ;
-;     normal            ; 626                         ;
+;     normal            ; 640                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 18                          ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 390                         ;
-;         4 data inputs ; 27                          ;
-;         5 data inputs ; 61                          ;
-;         6 data inputs ; 92                          ;
+;         2 data inputs ; 37                          ;
+;         3 data inputs ; 387                         ;
+;         4 data inputs ; 44                          ;
+;         5 data inputs ; 28                          ;
+;         6 data inputs ; 124                         ;
 ; boundary_port         ; 189                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.20                        ;
-; Average LUT depth     ; 5.13                        ;
+; Average LUT depth     ; 5.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -488,7 +491,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -498,7 +501,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 16:16:16 2018
+    Info: Processing started: Sun Dec 02 20:11:58 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1322,14 +1325,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 937 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 949 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 188 output pins
-    Info (21061): Implemented 748 logic cells
+    Info (21061): Implemented 760 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 599 warnings
-    Info: Peak virtual memory: 5225 megabytes
-    Info: Processing ended: Sun Dec 02 16:18:20 2018
-    Info: Elapsed time: 00:02:04
-    Info: Total CPU time (on all processors): 00:02:09
+    Info: Peak virtual memory: 4901 megabytes
+    Info: Processing ended: Sun Dec 02 20:12:24 2018
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:50
 
 

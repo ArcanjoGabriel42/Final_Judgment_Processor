@@ -33,7 +33,7 @@ begin
 	process (Clock, LeReg1, LeReg2, EscReg, Data, RegDst)
 		begin
 		Reg(3) := "0000000000000101";
-		Reg(1) := "0000000000000011";	
+		Reg(1) := "0000000000000100";	
 	     if(Clock = '1') then
 			if EscReg = '1' then
 				Reg(to_integer(unsigned(RegDst))) := Data;
