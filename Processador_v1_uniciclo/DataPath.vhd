@@ -199,11 +199,10 @@ END COMPONENT;
 	COMPONENT memram IS
 		PORT
 			(
-				clk :  IN  STD_LOGIC;
-				entrada  : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
-				saida    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
-				endereco : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
-				rd, wr   : IN STD_LOGIC
+				Endereco: in std_logic_vector (15 downto 0);
+				EscData: in std_logic_vector (15 downto 0);	 
+				SaiData: out std_logic_vector (15 downto 0);
+				Clock, EscMem, LeMem: in std_logic
 			);
 		END COMPONENT;	
 		
@@ -328,7 +327,7 @@ G13: Multiplexador2x1_16bits  port map (Clock_Sistema,Saida_mult_to_mult, Saida_
 G14: Multiplexador2x1_16bits  port map (Clock_Sistema,SaidaRegB,Saida_extensor,Flag_aluSRC,Saida_mult_to_ULA);
 G15: OperacaoDaULA				port map (Clock_Sistema,Flag_origialu,Instruction_to_controlULA,Saida_OperacaoDaULA);
 G16: ULA								port map (SaidaRegA,Saida_mult_to_ULA,Saida_OperacaoDaULA,Saida_adress_to_RAM,Saida_valor_to_mult,Saida_ZeroDaULA);
-G17: memram     					port map (Clock_Sistema,SaidaRegB,Saida_MemoridaDeDados_to_mult,Saida_adress_to_RAM,Flag_lemem,Flag_escrevemem);
+G17: memram     					port map (Saida_adress_to_RAM,SaidaRegB,Saida_MemoridaDeDados_to_mult,Clock_Sistema,Flag_escrevemem,Flag_lemem);
 G18: Multiplexador2x1_16bits  port map (Clock_Sistema,Saida_MemoridaDeDados_to_mult,Saida_valor_to_mult,Flag_memparareg,Data_to_writeRegister);
 
 SomadorToPc_outWaveform <= SomadorToPc; -- SAIDA DA SOMA DO PC + 1

@@ -20,18 +20,17 @@ END memoria_ROM2;
 ARCHITECTURE behavior OF memoria_ROM2 IS
 
 TYPE matriz IS ARRAY(0 TO 65535) OF STD_LOGIC_VECTOR(15 downto 0);
-SHARED VARIABLE ROM : matriz;
+SHARED VARIABLE ROM : matriz:= (others => "0000000000000000");
 procedure carregando_ROM (variable listaInstrucoes :inout matriz) is
 BEGIN
-	listaInstrucoes(0) := "0000011010000001";-- SUB R3,R3,R0
-	listaInstrucoes(1) := "0000000001010011";-- Mult R,
-	listaInstrucoes(2) := "0100000011000000";-- BNE R0,R3,0
-	listaInstrucoes(3) := "0010100011000000";-- STORE R3,R4(0)
-	listaInstrucoes(4) := "0001100010000000";-- LOAD R2,R4(0)
-	listaInstrucoes(5) := "0000011000001010";-- Mult R3,R0,R3
-	listaInstrucoes(6) := "0001100000000001";
-	listaInstrucoes(7) := "0001000000000101";
-	listaInstrucoes(8) := "0001100000000000";
+	listaInstrucoes(0) := "0000011011000001";-- SUB R3,R0,R1
+	listaInstrucoes(1) := "0100000011000000";-- BNE R0,R3,0
+	listaInstrucoes(2) := "0010100011000000";-- STORE R3,R4(0)
+	listaInstrucoes(3) := "0001100010000000";-- LOAD R2,R4(0)
+	listaInstrucoes(4) := "0000011000001010";-- Mult R3,R0,R3
+	listaInstrucoes(5) := "0001100000000001";
+	listaInstrucoes(6) := "0001000000000101";
+	listaInstrucoes(7) := "0001100000000000";
 END PROCEDURE;
 
 BEGIN
