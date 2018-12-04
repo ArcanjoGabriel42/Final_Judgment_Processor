@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Dec 03 19:59:38 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : Chumusuke
+Top-level Entity Name : Chumusuke
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 80
+Total pins : 239
+Total virtual pins : 0
+Total block memory bits : 16,016
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
