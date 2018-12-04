@@ -268,43 +268,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "multiplexador_to_writeRegister_outWaveform[2]",
-					"strict" : false
-				},
-				{
 					"name" : "Instruction_to_multiplexador_outWaveform[0]",
 					"strict" : false
 				},
 				{
 					"name" : "Instruction_to_multiplexador_outWaveform[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_multiplexador_outWaveform[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Control_outWaveform[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Control_outWaveform[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Control_outWaveform[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_register1_outWaveform[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_register1_outWaveform[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_register2_outWaveform[0]",
 					"strict" : false
 				},
 				{
@@ -316,79 +284,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instruction_to_controlULA_outWaveform[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_controlULA_outWaveform[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_extensorDeSinal_outWaveform[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_extensorDeSinal_outWaveform[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_extensorDeSinal_outWaveform[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_extensorDeSinal_outWaveform[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_extensorDeSinal_outWaveform[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Jump_outWaveform[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Jump_outWaveform[6]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Jump_outWaveform[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Jump_outWaveform[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Jump_outWaveform[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Instruction_to_Jump_outWaveform[11]",
-					"strict" : false
-				},
-				{
 					"name" : "out_Saida_OperacaoDaULA[0]",
-					"strict" : false
-				},
-				{
-					"name" : "out_Saida_OperacaoDaULA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "out_Saida_OperacaoDaULA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "out_Saida_OperacaoDaULA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "out_Saida_OperacaoDaULA[4]",
-					"strict" : false
-				},
-				{
-					"name" : "out_Saida_OperacaoDaULA[5]",
 					"strict" : false
 				},
 				{
@@ -645,50 +541,6 @@
 				},
 				{
 					"name" : "Saida_adress_to_RAM_outWaveform[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_regdest_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_origialu_OUT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_origialu_OUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_origialu_OUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_memparareg_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_escrevereg_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_lemem_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_escrevemem_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_branch_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_aluSRC_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "Flag_jump_OUT",
 					"strict" : false
 				},
 				{
