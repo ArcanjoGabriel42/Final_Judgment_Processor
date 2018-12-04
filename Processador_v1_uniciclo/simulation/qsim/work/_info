@@ -9,7 +9,7 @@ z2
 cModel Technology
 dE:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim
 Edatapath
-Z0 w1543870397
+Z0 w1543870933
 Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 PDz30Zoj;e1JEj1l7dCiT1
 Z2 DPx8 cyclonev 19 cyclonev_components 0 22 O_kVZAFaN7XDl67flUT[n1
 Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ;`SHL]^j4UaADA9ENAN^]0
@@ -19,7 +19,7 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z9 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
-Z10 dC:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim
+Z10 dC:/Trabalhos_AOC/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim
 Z11 8Processador_v1_uniciclo.vho
 Z12 FProcessador_v1_uniciclo.vho
 l0
@@ -28,9 +28,9 @@ VLFG8E90m2CF<>z4M9>iKE0
 !s100 >9J63So2<Xg<V>;2XTbiL3
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1543870399
+Z14 !s110 1543870934
 !i10b 1
-Z15 !s108 1543870398.000000
+Z15 !s108 1543870934.000000
 Z16 !s90 -work|work|Processador_v1_uniciclo.vho|
 Z17 !s107 Processador_v1_uniciclo.vho|
 !i113 1
@@ -49,8 +49,8 @@ R9
 DEx4 work 8 datapath 0 22 LFG8E90m2CF<>z4M9>iKE0
 l2487
 L70
-VOFNHI:[[oS2zUY58?1Y;L0
-!s100 i;fHhfBla9K[KFO1]W1n62
+VY_IIfHIY7P??ICjHFkPDS2
+!s100 ?IDoS8gfB4mXGV09XYRL30
 R13
 32
 R14
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Edatapath_vhd_vec_tst
-Z20 w1543870395
+Z20 w1543870931
 R7
 R8
 R10
@@ -74,34 +74,34 @@ VIHFkm4W?_O7LbQ`];lz?<1
 !s100 WSND17n`95cIi1P?e3l0C1
 R13
 32
-R14
+Z23 !s110 1543870935
 !i10b 1
-Z23 !s108 1543870399.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
+Z24 !s108 1543870935.000000
+Z25 !s90 -work|work|Waveform.vwf.vht|
+Z26 !s107 Waveform.vwf.vht|
 !i113 1
 R18
 R19
 Adatapath_arch
 R7
 R8
-Z26 DEx4 work 20 datapath_vhd_vec_tst 0 22 IHFkm4W?_O7LbQ`];lz?<1
+DEx4 work 20 datapath_vhd_vec_tst 0 22 IHFkm4W?_O7LbQ`];lz?<1
 l94
 L33
-Z27 V?@PYFGIAF?jIj_6o0@?0c0
-Z28 !s100 ab5e1E3zVHZCSV9]VS>8l0
+V?@PYFGIAF?jIj_6o0@?0c0
+!s100 ab5e1E3zVHZCSV9]VS>8l0
 R13
 32
-R14
-!i10b 1
 R23
+!i10b 1
 R24
 R25
+R26
 !i113 1
 R18
 R19
 Eunidadedecontrole
-Z29 w1543870007
+Z27 w1543872474
 R4
 R1
 R6
@@ -114,13 +114,13 @@ R11
 R12
 l0
 L36
-VS;kSnBTRBfmBTC=^]42S[2
-!s100 :zHeQLMMBF0jW6?Ik=0`b3
+VUoZZ0?T3n5<nkc4I]hGAE1
+!s100 OfW8NLXl7hMlQ[md_F81J0
 R13
 32
-Z30 !s110 1543870008
+Z28 !s110 1543872475
 !i10b 1
-Z31 !s108 1543870008.000000
+Z29 !s108 1543872475.000000
 R16
 R17
 !i113 1
@@ -134,23 +134,23 @@ R2
 R7
 R8
 R3
-DEx4 work 17 unidadedecontrole 0 22 S;kSnBTRBfmBTC=^]42S[2
-l140
-L52
-VmAR6[ZdgX_`JgoX<MYFEK0
-!s100 >Z]]kH3Gnnb8TXDcUG4Ah1
+DEx4 work 17 unidadedecontrole 0 22 UoZZ0?T3n5<nkc4I]hGAE1
+l102
+L70
+VIGlGdngUabFck3o:hfmH?1
+!s100 jj^BiTK9h;gMGmjoYR[P<2
 R13
 32
-R30
+R28
 !i10b 1
-R31
+R29
 R16
 R17
 !i113 1
 R18
 R19
 Eunidadedecontrole_vhd_vec_tst
-Z32 w1543870005
+Z30 w1543872471
 R7
 R8
 R10
@@ -162,29 +162,29 @@ V=fVehSi=R;:?fOF[7FDg>1
 !s100 C2Omh9^_PkBm><i??0]2z3
 R13
 32
-R30
+R28
 !i10b 1
-R31
-R24
+R29
 R25
+R26
 !i113 1
 R18
 R19
 Aunidadedecontrole_arch
 R7
 R8
-DEx4 work 29 unidadedecontrole_vhd_vec_tst 0 22 =fVehSi=R;:?fOF[7FDg>1
-l62
+Z31 DEx4 work 29 unidadedecontrole_vhd_vec_tst 0 22 =fVehSi=R;:?fOF[7FDg>1
+l60
 L33
-V_9BZKleI3Cc^UClOiD4[43
-!s100 f86T9S179IRZQI3^zkW;]1
+VzBAoLjV8HWJ>[<<NP3HTJ2
+!s100 ?]E91?eFff8koV8G;P0De1
 R13
 32
-R30
+R28
 !i10b 1
-R31
-R24
+R29
 R25
+R26
 !i113 1
 R18
 R19
