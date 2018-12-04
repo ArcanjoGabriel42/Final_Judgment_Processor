@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador_v1_uniciclo
-Tue Dec 04 00:44:49 2018
+Tue Dec 04 01:28:11 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
  10. Registers Removed During Synthesis
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 04 00:44:49 2018       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 04 01:28:11 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processador_v1_uniciclo                     ;
 ; Top-level Entity Name           ; DataPath                                    ;
@@ -217,14 +217,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 372                 ;
+; Estimate of Logic utilization (ALMs needed) ; 248                 ;
 ;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 662                 ;
-;     -- 7 input functions                    ; 8                   ;
-;     -- 6 input functions                    ; 73                  ;
-;     -- 5 input functions                    ; 246                 ;
-;     -- 4 input functions                    ; 101                 ;
-;     -- <=3 input functions                  ; 234                 ;
+; Combinational ALUT usage for logic          ; 447                 ;
+;     -- 7 input functions                    ; 1                   ;
+;     -- 6 input functions                    ; 46                  ;
+;     -- 5 input functions                    ; 225                 ;
+;     -- 4 input functions                    ; 65                  ;
+;     -- <=3 input functions                  ; 110                 ;
 ;                                             ;                     ;
 ; Dedicated logic registers                   ; 34                  ;
 ;                                             ;                     ;
@@ -235,9 +235,9 @@ refer to the applicable agreement for further details.
 ; Total DSP Blocks                            ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; Clock_Sistema~input ;
-; Maximum fan-out                             ; 324                 ;
-; Total fan-out                               ; 3504                ;
-; Average fan-out                             ; 3.24                ;
+; Maximum fan-out                             ; 274                 ;
+; Total fan-out                               ; 2681                ;
+; Average fan-out                             ; 3.09                ;
 +---------------------------------------------+---------------------+
 
 
@@ -246,19 +246,18 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name             ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+-------------------------+--------------+
-; |DataPath                                 ; 662 (0)             ; 34 (0)                    ; 16016             ; 0          ; 185  ; 0            ; |DataPath                                                                ; DataPath                ; work         ;
-;    |BancoRegistradores:G7|                ; 117 (117)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G7                                          ; BancoRegistradores      ; work         ;
-;    |Multiplexador2x1:G6|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6                                            ; Multiplexador2x1        ; work         ;
-;    |Multiplexador2x1_16bits:G12|          ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G12                                    ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G13|          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G13                                    ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G14|          ; 53 (53)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G14                                    ; Multiplexador2x1_16bits ; work         ;
-;    |Multiplexador2x1_16bits:G18|          ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G18                                    ; Multiplexador2x1_16bits ; work         ;
+; |DataPath                                 ; 447 (0)             ; 34 (0)                    ; 16016             ; 0          ; 185  ; 0            ; |DataPath                                                                ; DataPath                ; work         ;
+;    |BancoRegistradores:G7|                ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|BancoRegistradores:G7                                          ; BancoRegistradores      ; work         ;
+;    |Multiplexador2x1:G6|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1:G6                                            ; Multiplexador2x1        ; work         ;
+;    |Multiplexador2x1_16bits:G13|          ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G13                                    ; Multiplexador2x1_16bits ; work         ;
+;    |Multiplexador2x1_16bits:G14|          ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G14                                    ; Multiplexador2x1_16bits ; work         ;
+;    |Multiplexador2x1_16bits:G18|          ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Multiplexador2x1_16bits:G18                                    ; Multiplexador2x1_16bits ; work         ;
 ;    |PC:G1|                                ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|PC:G1                                                          ; PC                      ; work         ;
 ;    |Qsll:G3|                              ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|Qsll:G3                                                        ; Qsll                    ; work         ;
 ;    |SomadorPC:G2|                         ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPath|SomadorPC:G2                                                   ; SomadorPC               ; work         ;
-;    |ULA:G16|                              ; 327 (327)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                                                        ; ULA                     ; work         ;
-;    |UnidadedeControle:G5|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5                                           ; UnidadedeControle       ; work         ;
-;    |memoria_ROM2:G4|                      ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4                                                ; memoria_ROM2            ; work         ;
+;    |ULA:G16|                              ; 301 (301)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|ULA:G16                                                        ; ULA                     ; work         ;
+;    |UnidadedeControle:G5|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|UnidadedeControle:G5                                           ; UnidadedeControle       ; work         ;
+;    |memoria_ROM2:G4|                      ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DataPath|memoria_ROM2:G4                                                ; memoria_ROM2            ; work         ;
 ;    |memram:G17|                           ; 0 (0)               ; 0 (0)                     ; 16016             ; 0          ; 0    ; 0            ; |DataPath|memram:G17                                                     ; memram                  ; work         ;
 ;       |altsyncram:RAM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16016             ; 0          ; 0    ; 0            ; |DataPath|memram:G17|altsyncram:RAM_rtl_0                                ; altsyncram              ; work         ;
 ;          |altsyncram_5b02:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16016             ; 0          ; 0    ; 0            ; |DataPath|memram:G17|altsyncram:RAM_rtl_0|altsyncram_5b02:auto_generated ; altsyncram_5b02         ; work         ;
@@ -275,110 +274,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                            ;
-+-----------------------------------------------------+---------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal             ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------------------+------------------------+
-; Multiplexador2x1_16bits:G18|SAIDA[0]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[1]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[2]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[3]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[4]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[5]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[6]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[7]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[8]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[9]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[10]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[11]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[12]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[13]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[14]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G18|SAIDA[15]               ; Clock_Sistema                   ; yes                    ;
-; BancoRegistradores:G7|Reg[2][0]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][0]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][1]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][1]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][2]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][2]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][3]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][3]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][4]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][4]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][5]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][5]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][6]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][6]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][7]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][7]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][8]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][8]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][9]                     ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][9]                     ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][10]                    ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][10]                    ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][11]                    ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][11]                    ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][12]                    ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][12]                    ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][13]                    ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][13]                    ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][14]                    ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][14]                    ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[2][15]                    ; BancoRegistradores:G7|Reg[2][0] ; yes                    ;
-; BancoRegistradores:G7|Reg[3][15]                    ; BancoRegistradores:G7|Reg[3][0] ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[0]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[1]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[2]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[3]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[4]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[5]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[6]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[7]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[8]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[9]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[10]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[11]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[12]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[13]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[14]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G12|SAIDA[15]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[0]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[1]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[2]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[3]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[4]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[5]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[6]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[7]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[8]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[9]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[10]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[11]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[12]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[13]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[14]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G13|SAIDA[15]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[0]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[1]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[2]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[3]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[4]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[5]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[6]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[7]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[8]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[9]                ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[10]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[11]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[12]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[13]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[14]               ; Clock_Sistema                   ; yes                    ;
-; Multiplexador2x1_16bits:G14|SAIDA[15]               ; Clock_Sistema                   ; yes                    ;
-; Number of user-specified and inferred latches = 96  ;                                 ;                        ;
-+-----------------------------------------------------+---------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; Multiplexador2x1_16bits:G18|SAIDA[0]~1                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[1]~3                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[2]~2                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[3]~4                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[4]~5                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[5]~6                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[6]~7                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[7]~8                 ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[8]~15                ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[9]~14                ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[10]~13               ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[11]~12               ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[12]~11               ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[13]~10               ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[14]~9                ;    ;
+; Multiplexador2x1_16bits:G18|SAIDA[15]~0                ;    ;
+; Number of logic cells representing combinational loops ; 16 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------+
@@ -409,12 +328,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Qsll:G3|vet[3,4]                       ; Stuck at GND due to stuck port data_in ;
 ; Qsll:G3|resshift[3,4]                  ; Stuck at GND due to stuck port data_in ;
 ; Somadorde16bits:G10|SAIDA[0..15]       ; Lost fanout                            ;
-; ShiftEsquerda:G9|SAIDA[4]              ; Lost fanout                            ;
-; ShiftEsquerda:G9|AUX[4]                ; Lost fanout                            ;
-; ShiftEsquerda:G9|SAIDA[3]              ; Lost fanout                            ;
-; ShiftEsquerda:G9|AUX[3]                ; Lost fanout                            ;
-; ShiftEsquerda:G9|SAIDA[2]              ; Lost fanout                            ;
-; ShiftEsquerda:G9|AUX[2]                ; Lost fanout                            ;
+; ShiftEsquerda:G9|SAIDA[2..4]           ; Lost fanout                            ;
+; ShiftEsquerda:G9|AUX[2..4]             ; Lost fanout                            ;
 ; Qsll:G3|vet[2,8,9,13]                  ; Stuck at GND due to stuck port data_in ;
 ; Qsll:G3|resshift[2,8,9,13]             ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 76 ;                                        ;
@@ -485,10 +400,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|rd[0]        ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|funct[0]     ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|rs[2]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DataPath|BancoRegistradores:G7|Mux7   ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|op[0]        ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DataPath|BancoRegistradores:G7|Mux8   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|op[1]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DataPath|BancoRegistradores:G7|Reg    ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DataPath|BancoRegistradores:G7|Reg    ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |DataPath|ULA:G16|Prod                 ;
@@ -499,10 +414,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |DataPath|ULA:G16|Prod                 ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DataPath|Multiplexador2x1:G6|SAIDA[0] ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|tipoi[2]     ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DataPath|BancoRegistradores:G7|Mux20  ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 35 LEs               ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|jump[7]      ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 35 LEs               ; 0 LEs                  ; No         ; |DataPath|memoria_ROM2:G4|jump[0]      ;
 ; 36:1               ; 2 bits    ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; No         ; |DataPath|ULA:G16|Saida_to_Dados[15]   ;
-; 67:1               ; 7 bits    ; 308 LEs       ; 56 LEs               ; 252 LEs                ; No         ; |DataPath|ULA:G16|Saida_to_Dados[13]   ;
+; 67:1               ; 7 bits    ; 308 LEs       ; 56 LEs               ; 252 LEs                ; No         ; |DataPath|ULA:G16|Saida_to_Dados[10]   ;
+; 12:1               ; 16 bits   ; 128 LEs       ; 80 LEs               ; 48 LEs                 ; No         ; |DataPath|BancoRegistradores:G7|Mux22  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
@@ -603,29 +518,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 34                          ;
 ;     plain             ; 34                          ;
-; arriav_lcell_comb     ; 665                         ;
+; arriav_lcell_comb     ; 450                         ;
 ;     arith             ; 175                         ;
 ;         0 data inputs ; 8                           ;
 ;         1 data inputs ; 14                          ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 23                          ;
-;         5 data inputs ; 128                         ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 482                         ;
+;         4 data inputs ; 21                          ;
+;         5 data inputs ; 130                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 274                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 50                          ;
-;         3 data inputs ; 159                         ;
-;         4 data inputs ; 78                          ;
-;         5 data inputs ; 118                         ;
-;         6 data inputs ; 73                          ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 44                          ;
+;         4 data inputs ; 44                          ;
+;         5 data inputs ; 95                          ;
+;         6 data inputs ; 46                          ;
 ; boundary_port         ; 185                         ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 23.40                       ;
-; Average LUT depth     ; 12.89                       ;
+; Max LUT depth         ; 22.40                       ;
+; Average LUT depth     ; 15.08                       ;
 +-----------------------+-----------------------------+
 
 
@@ -634,7 +549,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -644,7 +559,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 04 00:44:30 2018
+    Info: Processing started: Tue Dec 04 01:27:52 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -710,125 +625,11 @@ Info (12128): Elaborating entity "memoria_ROM2" for hierarchy "memoria_ROM2:G4" 
 Info (12128): Elaborating entity "UnidadedeControle" for hierarchy "UnidadedeControle:G5" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 316
 Info (12128): Elaborating entity "Multiplexador2x1" for hierarchy "Multiplexador2x1:G6" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 318
 Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "BancoRegistradores:G7" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 319
-Warning (10631): VHDL Process Statement warning at BancoRegistradores.vhd(33): inferring latch(es) for signal or variable "Reg", which holds its previous value in one or more paths through the process File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 33
-Info (10041): Inferred latch for "Reg[7][0]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][1]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][2]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][3]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][4]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][5]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][6]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][7]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][8]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][9]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][10]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][11]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][12]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][13]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][14]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[7][15]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][0]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][1]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][2]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][3]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][4]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][5]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][6]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][7]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][8]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][9]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][10]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][11]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][12]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][13]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][14]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[6][15]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][0]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][1]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][2]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][3]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][4]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][5]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][6]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][7]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][8]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][9]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][10]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][11]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][12]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][13]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][14]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[5][15]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][0]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][1]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][2]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][3]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][4]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][5]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][6]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][7]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][8]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][9]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][10]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][11]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][12]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][13]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][14]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[4][15]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][0]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][1]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][2]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][3]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][4]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][5]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][6]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][7]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][8]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][9]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][10]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][11]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][12]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][13]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][14]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[3][15]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][0]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][1]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][2]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][3]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][4]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][5]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][6]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][7]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][8]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][9]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][10]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][11]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][12]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][13]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][14]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
-Info (10041): Inferred latch for "Reg[2][15]" at BancoRegistradores.vhd(37) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/BancoRegistradores.vhd Line: 37
 Info (12128): Elaborating entity "ExtensordeSinal6To16bits" for hierarchy "ExtensordeSinal6To16bits:G8" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 321
 Info (12128): Elaborating entity "ShiftEsquerda" for hierarchy "ShiftEsquerda:G9" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 322
 Info (12128): Elaborating entity "Somadorde16bits" for hierarchy "Somadorde16bits:G10" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 323
 Info (12128): Elaborating entity "QAndBIT" for hierarchy "QAndBIT:G11" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 324
 Info (12128): Elaborating entity "Multiplexador2x1_16bits" for hierarchy "Multiplexador2x1_16bits:G12" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 325
-Warning (10631): VHDL Process Statement warning at Multiplexador2x1_16bits.vhd(18): inferring latch(es) for signal or variable "SAIDA", which holds its previous value in one or more paths through the process File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[0]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[1]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[2]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[3]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[4]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[5]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[6]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[7]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[8]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[9]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[10]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[11]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[12]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[13]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[14]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
-Info (10041): Inferred latch for "SAIDA[15]" at Multiplexador2x1_16bits.vhd(18) File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Multiplexador2x1_16bits.vhd Line: 18
 Info (12128): Elaborating entity "OperacaoDaULA" for hierarchy "OperacaoDaULA:G15" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 328
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:G16" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 329
 Info (12128): Elaborating entity "memram" for hierarchy "memram:G17" File: C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/DataPath.vhd Line: 330
@@ -893,15 +694,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 881 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 666 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 184 output pins
-    Info (21061): Implemented 680 logic cells
+    Info (21061): Implemented 465 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4939 megabytes
-    Info: Processing ended: Tue Dec 04 00:44:49 2018
+    Info: Processing ended: Tue Dec 04 01:28:11 2018
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Total CPU time (on all processors): 00:00:34
 
 
