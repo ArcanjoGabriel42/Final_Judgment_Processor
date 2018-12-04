@@ -19,7 +19,9 @@ end BancoRegistradores;
 Architecture behavior of BancoRegistradores is
 	
 	type RegBank is array(0 to 7) of std_logic_vector (15 downto 0);
-	shared variable Reg : RegBank;
+	--shared variable Reg : RegBank 
+	SHARED VARIABLE Reg : RegBank:= (others => "0000000000000000");
+	
 --									:= ("0000000000000000",
 --									 "0000000000000000",
 --									 "0000000000000000",
@@ -32,10 +34,14 @@ Architecture behavior of BancoRegistradores is
 begin
 	process (Clock, LeReg1, LeReg2, EscReg, Data, RegDst)
 		begin
-		Reg(0) := "0000000000000101";
-		Reg(1) := "0000000000000111";
-		Reg(2) := "0000000000001000";
-		Reg(3) := "0000000000001010";
+		Reg(0) := "0000000000000001";
+		Reg(1) := "0000000000000010";
+		Reg(2) := "0000000000000011";
+		Reg(3) := "0000000000000100";
+		Reg(4) := "0000000000000101";
+		Reg(5) := "0000000000000110";
+		Reg(6) := "0000000000000111";
+		Reg(7) := "0000000000000000";
 	     if(Clock = '1') then 
 			if EscReg = '1' then
 				Reg(to_integer(unsigned(RegDst))) := Data;

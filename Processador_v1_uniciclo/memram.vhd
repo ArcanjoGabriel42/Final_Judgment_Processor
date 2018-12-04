@@ -1,31 +1,33 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.STD_LOGIC_ARITH.ALL;
-USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-ENTITY memram IS
-PORT(
-	clk: in std_logic;
-	entrada  : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
-	saida    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
-	endereco : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
-	rd, wr   : IN STD_LOGIC);
-END memram;
 
-ARCHITECTURE behavior OF memram IS
-	TYPE memoria IS ARRAY (0 TO 16) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
-	SIGNAL ram : memoria;
-BEGIN
-	PROCESS (endereco,entrada,clk,wr,rd)
-	BEGIN
-	ram(0) <= "0000000000000011";
-	IF (clk = '1') THEN
-		IF (wr = '1') THEN
-			IF rd = '0' THEN
-				ram(conv_integer(endereco)) <= entrada;
-				END IF;
-			END IF;
-	END IF;
-	END PROCESS;
-	saida <= ram(conv_integer(endereco));
-END behavior;
+Entity memram is port
+	(Endereco: in std_logic_vector (15 downto 0);
+	 EscData: in std_logic_vector (15 downto 0);	 
+	 SaiData: out std_logic_vector (15 downto 0);
+	 Clock, EscMem, LeMem: in std_logic
+	);
+End memram;
+
+Architecture behavior of memram is
+
+type RAMMem is array (0 to 1000) of std_logic_vector (15 downto 0);
+
+signal RAM : RAMMem := (others => "0000000000000000");
+
+begin
+	process(Clock)
+		begin
+			if(rising_edge(Clock)) then
+				if(EscMem = '1') then
+					RAM(to_integer(unsigned(Endereco))) <= EscData;
+				elsif (LeMem = '1') then
+					SaiData <= RAM(to_integer(unsigned(Endereco)));
+				else
+					SaiData <= "XXXXXXXXXXXXXXXX";
+				end if;
+			end if;
+	end process;
+end behavior;

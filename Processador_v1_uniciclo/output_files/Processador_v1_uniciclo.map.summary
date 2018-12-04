@@ -1,11 +1,19 @@
-Analysis & Synthesis Status : Successful - Mon Dec 03 20:51:05 2018
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Tue Dec 04 01:13:28 2018
+=======
+Analysis & Synthesis Status : Successful - Mon Dec 03 13:53:50 2018
+>>>>>>> master
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : Processador_v1_uniciclo
-Top-level Entity Name : memoria_ROM2
+Top-level Entity Name : DataPath
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 51
+<<<<<<< HEAD
+Total registers : 16
+=======
+Total registers : 44
+>>>>>>> master
+Total pins : 185
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

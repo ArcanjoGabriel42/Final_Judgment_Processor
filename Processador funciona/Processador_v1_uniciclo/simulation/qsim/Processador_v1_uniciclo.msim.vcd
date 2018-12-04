@@ -1,0 +1,2052 @@
+$comment
+	File created using the following command:
+		vcd file Processador_v1_uniciclo.msim.vcd -direction
+$end
+$date
+	Tue Dec 04 02:09:36 2018
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module datapath_vhd_vec_tst $end
+$var wire 1 ! Clock_Sistema $end
+$var wire 1 " dado_register_destino [15] $end
+$var wire 1 # dado_register_destino [14] $end
+$var wire 1 $ dado_register_destino [13] $end
+$var wire 1 % dado_register_destino [12] $end
+$var wire 1 & dado_register_destino [11] $end
+$var wire 1 ' dado_register_destino [10] $end
+$var wire 1 ( dado_register_destino [9] $end
+$var wire 1 ) dado_register_destino [8] $end
+$var wire 1 * dado_register_destino [7] $end
+$var wire 1 + dado_register_destino [6] $end
+$var wire 1 , dado_register_destino [5] $end
+$var wire 1 - dado_register_destino [4] $end
+$var wire 1 . dado_register_destino [3] $end
+$var wire 1 / dado_register_destino [2] $end
+$var wire 1 0 dado_register_destino [1] $end
+$var wire 1 1 dado_register_destino [0] $end
+$var wire 1 2 Data_to_writeRegister_outWaveform [15] $end
+$var wire 1 3 Data_to_writeRegister_outWaveform [14] $end
+$var wire 1 4 Data_to_writeRegister_outWaveform [13] $end
+$var wire 1 5 Data_to_writeRegister_outWaveform [12] $end
+$var wire 1 6 Data_to_writeRegister_outWaveform [11] $end
+$var wire 1 7 Data_to_writeRegister_outWaveform [10] $end
+$var wire 1 8 Data_to_writeRegister_outWaveform [9] $end
+$var wire 1 9 Data_to_writeRegister_outWaveform [8] $end
+$var wire 1 : Data_to_writeRegister_outWaveform [7] $end
+$var wire 1 ; Data_to_writeRegister_outWaveform [6] $end
+$var wire 1 < Data_to_writeRegister_outWaveform [5] $end
+$var wire 1 = Data_to_writeRegister_outWaveform [4] $end
+$var wire 1 > Data_to_writeRegister_outWaveform [3] $end
+$var wire 1 ? Data_to_writeRegister_outWaveform [2] $end
+$var wire 1 @ Data_to_writeRegister_outWaveform [1] $end
+$var wire 1 A Data_to_writeRegister_outWaveform [0] $end
+$var wire 1 B Flag_aluSRC_OUT $end
+$var wire 1 C Flag_branch_OUT $end
+$var wire 1 D Flag_escrevemem_OUT $end
+$var wire 1 E Flag_escrevereg_OUT $end
+$var wire 1 F Flag_jump_OUT $end
+$var wire 1 G Flag_lemem_OUT $end
+$var wire 1 H Flag_memparareg_OUT $end
+$var wire 1 I Flag_origialu_OUT [3] $end
+$var wire 1 J Flag_origialu_OUT [2] $end
+$var wire 1 K Flag_origialu_OUT [1] $end
+$var wire 1 L Flag_origialu_OUT [0] $end
+$var wire 1 M Flag_regdest_OUT $end
+$var wire 1 N Instruction_to_Control_outWaveform [3] $end
+$var wire 1 O Instruction_to_Control_outWaveform [2] $end
+$var wire 1 P Instruction_to_Control_outWaveform [1] $end
+$var wire 1 Q Instruction_to_Control_outWaveform [0] $end
+$var wire 1 R Instruction_to_controlULA_outWaveform [2] $end
+$var wire 1 S Instruction_to_controlULA_outWaveform [1] $end
+$var wire 1 T Instruction_to_controlULA_outWaveform [0] $end
+$var wire 1 U Instruction_to_extensorDeSinal_outWaveform [5] $end
+$var wire 1 V Instruction_to_extensorDeSinal_outWaveform [4] $end
+$var wire 1 W Instruction_to_extensorDeSinal_outWaveform [3] $end
+$var wire 1 X Instruction_to_extensorDeSinal_outWaveform [2] $end
+$var wire 1 Y Instruction_to_extensorDeSinal_outWaveform [1] $end
+$var wire 1 Z Instruction_to_extensorDeSinal_outWaveform [0] $end
+$var wire 1 [ Instruction_to_Jump_outWaveform [11] $end
+$var wire 1 \ Instruction_to_Jump_outWaveform [10] $end
+$var wire 1 ] Instruction_to_Jump_outWaveform [9] $end
+$var wire 1 ^ Instruction_to_Jump_outWaveform [8] $end
+$var wire 1 _ Instruction_to_Jump_outWaveform [7] $end
+$var wire 1 ` Instruction_to_Jump_outWaveform [6] $end
+$var wire 1 a Instruction_to_Jump_outWaveform [5] $end
+$var wire 1 b Instruction_to_Jump_outWaveform [4] $end
+$var wire 1 c Instruction_to_Jump_outWaveform [3] $end
+$var wire 1 d Instruction_to_Jump_outWaveform [2] $end
+$var wire 1 e Instruction_to_Jump_outWaveform [1] $end
+$var wire 1 f Instruction_to_Jump_outWaveform [0] $end
+$var wire 1 g Instruction_to_multiplexador_outWaveform [2] $end
+$var wire 1 h Instruction_to_multiplexador_outWaveform [1] $end
+$var wire 1 i Instruction_to_multiplexador_outWaveform [0] $end
+$var wire 1 j Instruction_to_register1_outWaveform [2] $end
+$var wire 1 k Instruction_to_register1_outWaveform [1] $end
+$var wire 1 l Instruction_to_register1_outWaveform [0] $end
+$var wire 1 m Instruction_to_register2_outWaveform [2] $end
+$var wire 1 n Instruction_to_register2_outWaveform [1] $end
+$var wire 1 o Instruction_to_register2_outWaveform [0] $end
+$var wire 1 p multiplexador_to_writeRegister_outWaveform [2] $end
+$var wire 1 q multiplexador_to_writeRegister_outWaveform [1] $end
+$var wire 1 r multiplexador_to_writeRegister_outWaveform [0] $end
+$var wire 1 s out_Saida_OperacaoDaULA [6] $end
+$var wire 1 t out_Saida_OperacaoDaULA [5] $end
+$var wire 1 u out_Saida_OperacaoDaULA [4] $end
+$var wire 1 v out_Saida_OperacaoDaULA [3] $end
+$var wire 1 w out_Saida_OperacaoDaULA [2] $end
+$var wire 1 x out_Saida_OperacaoDaULA [1] $end
+$var wire 1 y out_Saida_OperacaoDaULA [0] $end
+$var wire 1 z Saida_adress_to_RAM_outWaveform [15] $end
+$var wire 1 { Saida_adress_to_RAM_outWaveform [14] $end
+$var wire 1 | Saida_adress_to_RAM_outWaveform [13] $end
+$var wire 1 } Saida_adress_to_RAM_outWaveform [12] $end
+$var wire 1 ~ Saida_adress_to_RAM_outWaveform [11] $end
+$var wire 1 !! Saida_adress_to_RAM_outWaveform [10] $end
+$var wire 1 "! Saida_adress_to_RAM_outWaveform [9] $end
+$var wire 1 #! Saida_adress_to_RAM_outWaveform [8] $end
+$var wire 1 $! Saida_adress_to_RAM_outWaveform [7] $end
+$var wire 1 %! Saida_adress_to_RAM_outWaveform [6] $end
+$var wire 1 &! Saida_adress_to_RAM_outWaveform [5] $end
+$var wire 1 '! Saida_adress_to_RAM_outWaveform [4] $end
+$var wire 1 (! Saida_adress_to_RAM_outWaveform [3] $end
+$var wire 1 )! Saida_adress_to_RAM_outWaveform [2] $end
+$var wire 1 *! Saida_adress_to_RAM_outWaveform [1] $end
+$var wire 1 +! Saida_adress_to_RAM_outWaveform [0] $end
+$var wire 1 ,! Saida_mult_to_mult_outWaveform [15] $end
+$var wire 1 -! Saida_mult_to_mult_outWaveform [14] $end
+$var wire 1 .! Saida_mult_to_mult_outWaveform [13] $end
+$var wire 1 /! Saida_mult_to_mult_outWaveform [12] $end
+$var wire 1 0! Saida_mult_to_mult_outWaveform [11] $end
+$var wire 1 1! Saida_mult_to_mult_outWaveform [10] $end
+$var wire 1 2! Saida_mult_to_mult_outWaveform [9] $end
+$var wire 1 3! Saida_mult_to_mult_outWaveform [8] $end
+$var wire 1 4! Saida_mult_to_mult_outWaveform [7] $end
+$var wire 1 5! Saida_mult_to_mult_outWaveform [6] $end
+$var wire 1 6! Saida_mult_to_mult_outWaveform [5] $end
+$var wire 1 7! Saida_mult_to_mult_outWaveform [4] $end
+$var wire 1 8! Saida_mult_to_mult_outWaveform [3] $end
+$var wire 1 9! Saida_mult_to_mult_outWaveform [2] $end
+$var wire 1 :! Saida_mult_to_mult_outWaveform [1] $end
+$var wire 1 ;! Saida_mult_to_mult_outWaveform [0] $end
+$var wire 1 <! Saida_to_PC_outWaveform [15] $end
+$var wire 1 =! Saida_to_PC_outWaveform [14] $end
+$var wire 1 >! Saida_to_PC_outWaveform [13] $end
+$var wire 1 ?! Saida_to_PC_outWaveform [12] $end
+$var wire 1 @! Saida_to_PC_outWaveform [11] $end
+$var wire 1 A! Saida_to_PC_outWaveform [10] $end
+$var wire 1 B! Saida_to_PC_outWaveform [9] $end
+$var wire 1 C! Saida_to_PC_outWaveform [8] $end
+$var wire 1 D! Saida_to_PC_outWaveform [7] $end
+$var wire 1 E! Saida_to_PC_outWaveform [6] $end
+$var wire 1 F! Saida_to_PC_outWaveform [5] $end
+$var wire 1 G! Saida_to_PC_outWaveform [4] $end
+$var wire 1 H! Saida_to_PC_outWaveform [3] $end
+$var wire 1 I! Saida_to_PC_outWaveform [2] $end
+$var wire 1 J! Saida_to_PC_outWaveform [1] $end
+$var wire 1 K! Saida_to_PC_outWaveform [0] $end
+$var wire 1 L! Saida_ula [15] $end
+$var wire 1 M! Saida_ula [14] $end
+$var wire 1 N! Saida_ula [13] $end
+$var wire 1 O! Saida_ula [12] $end
+$var wire 1 P! Saida_ula [11] $end
+$var wire 1 Q! Saida_ula [10] $end
+$var wire 1 R! Saida_ula [9] $end
+$var wire 1 S! Saida_ula [8] $end
+$var wire 1 T! Saida_ula [7] $end
+$var wire 1 U! Saida_ula [6] $end
+$var wire 1 V! Saida_ula [5] $end
+$var wire 1 W! Saida_ula [4] $end
+$var wire 1 X! Saida_ula [3] $end
+$var wire 1 Y! Saida_ula [2] $end
+$var wire 1 Z! Saida_ula [1] $end
+$var wire 1 [! Saida_ula [0] $end
+$var wire 1 \! SaidaPc_outWaveform [15] $end
+$var wire 1 ]! SaidaPc_outWaveform [14] $end
+$var wire 1 ^! SaidaPc_outWaveform [13] $end
+$var wire 1 _! SaidaPc_outWaveform [12] $end
+$var wire 1 `! SaidaPc_outWaveform [11] $end
+$var wire 1 a! SaidaPc_outWaveform [10] $end
+$var wire 1 b! SaidaPc_outWaveform [9] $end
+$var wire 1 c! SaidaPc_outWaveform [8] $end
+$var wire 1 d! SaidaPc_outWaveform [7] $end
+$var wire 1 e! SaidaPc_outWaveform [6] $end
+$var wire 1 f! SaidaPc_outWaveform [5] $end
+$var wire 1 g! SaidaPc_outWaveform [4] $end
+$var wire 1 h! SaidaPc_outWaveform [3] $end
+$var wire 1 i! SaidaPc_outWaveform [2] $end
+$var wire 1 j! SaidaPc_outWaveform [1] $end
+$var wire 1 k! SaidaPc_outWaveform [0] $end
+$var wire 1 l! SaidaRegA_outWaveform [15] $end
+$var wire 1 m! SaidaRegA_outWaveform [14] $end
+$var wire 1 n! SaidaRegA_outWaveform [13] $end
+$var wire 1 o! SaidaRegA_outWaveform [12] $end
+$var wire 1 p! SaidaRegA_outWaveform [11] $end
+$var wire 1 q! SaidaRegA_outWaveform [10] $end
+$var wire 1 r! SaidaRegA_outWaveform [9] $end
+$var wire 1 s! SaidaRegA_outWaveform [8] $end
+$var wire 1 t! SaidaRegA_outWaveform [7] $end
+$var wire 1 u! SaidaRegA_outWaveform [6] $end
+$var wire 1 v! SaidaRegA_outWaveform [5] $end
+$var wire 1 w! SaidaRegA_outWaveform [4] $end
+$var wire 1 x! SaidaRegA_outWaveform [3] $end
+$var wire 1 y! SaidaRegA_outWaveform [2] $end
+$var wire 1 z! SaidaRegA_outWaveform [1] $end
+$var wire 1 {! SaidaRegA_outWaveform [0] $end
+$var wire 1 |! SaidaRegB_outWaveform [15] $end
+$var wire 1 }! SaidaRegB_outWaveform [14] $end
+$var wire 1 ~! SaidaRegB_outWaveform [13] $end
+$var wire 1 !" SaidaRegB_outWaveform [12] $end
+$var wire 1 "" SaidaRegB_outWaveform [11] $end
+$var wire 1 #" SaidaRegB_outWaveform [10] $end
+$var wire 1 $" SaidaRegB_outWaveform [9] $end
+$var wire 1 %" SaidaRegB_outWaveform [8] $end
+$var wire 1 &" SaidaRegB_outWaveform [7] $end
+$var wire 1 '" SaidaRegB_outWaveform [6] $end
+$var wire 1 (" SaidaRegB_outWaveform [5] $end
+$var wire 1 )" SaidaRegB_outWaveform [4] $end
+$var wire 1 *" SaidaRegB_outWaveform [3] $end
+$var wire 1 +" SaidaRegB_outWaveform [2] $end
+$var wire 1 ," SaidaRegB_outWaveform [1] $end
+$var wire 1 -" SaidaRegB_outWaveform [0] $end
+$var wire 1 ." SomadorToPc_outWaveform [15] $end
+$var wire 1 /" SomadorToPc_outWaveform [14] $end
+$var wire 1 0" SomadorToPc_outWaveform [13] $end
+$var wire 1 1" SomadorToPc_outWaveform [12] $end
+$var wire 1 2" SomadorToPc_outWaveform [11] $end
+$var wire 1 3" SomadorToPc_outWaveform [10] $end
+$var wire 1 4" SomadorToPc_outWaveform [9] $end
+$var wire 1 5" SomadorToPc_outWaveform [8] $end
+$var wire 1 6" SomadorToPc_outWaveform [7] $end
+$var wire 1 7" SomadorToPc_outWaveform [6] $end
+$var wire 1 8" SomadorToPc_outWaveform [5] $end
+$var wire 1 9" SomadorToPc_outWaveform [4] $end
+$var wire 1 :" SomadorToPc_outWaveform [3] $end
+$var wire 1 ;" SomadorToPc_outWaveform [2] $end
+$var wire 1 <" SomadorToPc_outWaveform [1] $end
+$var wire 1 =" SomadorToPc_outWaveform [0] $end
+
+$scope module i1 $end
+$var wire 1 >" gnd $end
+$var wire 1 ?" vcc $end
+$var wire 1 @" unknown $end
+$var wire 1 A" devoe $end
+$var wire 1 B" devclrn $end
+$var wire 1 C" devpor $end
+$var wire 1 D" ww_devoe $end
+$var wire 1 E" ww_devclrn $end
+$var wire 1 F" ww_devpor $end
+$var wire 1 G" ww_Clock_Sistema $end
+$var wire 1 H" ww_SomadorToPc_outWaveform [15] $end
+$var wire 1 I" ww_SomadorToPc_outWaveform [14] $end
+$var wire 1 J" ww_SomadorToPc_outWaveform [13] $end
+$var wire 1 K" ww_SomadorToPc_outWaveform [12] $end
+$var wire 1 L" ww_SomadorToPc_outWaveform [11] $end
+$var wire 1 M" ww_SomadorToPc_outWaveform [10] $end
+$var wire 1 N" ww_SomadorToPc_outWaveform [9] $end
+$var wire 1 O" ww_SomadorToPc_outWaveform [8] $end
+$var wire 1 P" ww_SomadorToPc_outWaveform [7] $end
+$var wire 1 Q" ww_SomadorToPc_outWaveform [6] $end
+$var wire 1 R" ww_SomadorToPc_outWaveform [5] $end
+$var wire 1 S" ww_SomadorToPc_outWaveform [4] $end
+$var wire 1 T" ww_SomadorToPc_outWaveform [3] $end
+$var wire 1 U" ww_SomadorToPc_outWaveform [2] $end
+$var wire 1 V" ww_SomadorToPc_outWaveform [1] $end
+$var wire 1 W" ww_SomadorToPc_outWaveform [0] $end
+$var wire 1 X" ww_SaidaPc_outWaveform [15] $end
+$var wire 1 Y" ww_SaidaPc_outWaveform [14] $end
+$var wire 1 Z" ww_SaidaPc_outWaveform [13] $end
+$var wire 1 [" ww_SaidaPc_outWaveform [12] $end
+$var wire 1 \" ww_SaidaPc_outWaveform [11] $end
+$var wire 1 ]" ww_SaidaPc_outWaveform [10] $end
+$var wire 1 ^" ww_SaidaPc_outWaveform [9] $end
+$var wire 1 _" ww_SaidaPc_outWaveform [8] $end
+$var wire 1 `" ww_SaidaPc_outWaveform [7] $end
+$var wire 1 a" ww_SaidaPc_outWaveform [6] $end
+$var wire 1 b" ww_SaidaPc_outWaveform [5] $end
+$var wire 1 c" ww_SaidaPc_outWaveform [4] $end
+$var wire 1 d" ww_SaidaPc_outWaveform [3] $end
+$var wire 1 e" ww_SaidaPc_outWaveform [2] $end
+$var wire 1 f" ww_SaidaPc_outWaveform [1] $end
+$var wire 1 g" ww_SaidaPc_outWaveform [0] $end
+$var wire 1 h" ww_SaidaRegA_outWaveform [15] $end
+$var wire 1 i" ww_SaidaRegA_outWaveform [14] $end
+$var wire 1 j" ww_SaidaRegA_outWaveform [13] $end
+$var wire 1 k" ww_SaidaRegA_outWaveform [12] $end
+$var wire 1 l" ww_SaidaRegA_outWaveform [11] $end
+$var wire 1 m" ww_SaidaRegA_outWaveform [10] $end
+$var wire 1 n" ww_SaidaRegA_outWaveform [9] $end
+$var wire 1 o" ww_SaidaRegA_outWaveform [8] $end
+$var wire 1 p" ww_SaidaRegA_outWaveform [7] $end
+$var wire 1 q" ww_SaidaRegA_outWaveform [6] $end
+$var wire 1 r" ww_SaidaRegA_outWaveform [5] $end
+$var wire 1 s" ww_SaidaRegA_outWaveform [4] $end
+$var wire 1 t" ww_SaidaRegA_outWaveform [3] $end
+$var wire 1 u" ww_SaidaRegA_outWaveform [2] $end
+$var wire 1 v" ww_SaidaRegA_outWaveform [1] $end
+$var wire 1 w" ww_SaidaRegA_outWaveform [0] $end
+$var wire 1 x" ww_SaidaRegB_outWaveform [15] $end
+$var wire 1 y" ww_SaidaRegB_outWaveform [14] $end
+$var wire 1 z" ww_SaidaRegB_outWaveform [13] $end
+$var wire 1 {" ww_SaidaRegB_outWaveform [12] $end
+$var wire 1 |" ww_SaidaRegB_outWaveform [11] $end
+$var wire 1 }" ww_SaidaRegB_outWaveform [10] $end
+$var wire 1 ~" ww_SaidaRegB_outWaveform [9] $end
+$var wire 1 !# ww_SaidaRegB_outWaveform [8] $end
+$var wire 1 "# ww_SaidaRegB_outWaveform [7] $end
+$var wire 1 ## ww_SaidaRegB_outWaveform [6] $end
+$var wire 1 $# ww_SaidaRegB_outWaveform [5] $end
+$var wire 1 %# ww_SaidaRegB_outWaveform [4] $end
+$var wire 1 &# ww_SaidaRegB_outWaveform [3] $end
+$var wire 1 '# ww_SaidaRegB_outWaveform [2] $end
+$var wire 1 (# ww_SaidaRegB_outWaveform [1] $end
+$var wire 1 )# ww_SaidaRegB_outWaveform [0] $end
+$var wire 1 *# ww_multiplexador_to_writeRegister_outWaveform [2] $end
+$var wire 1 +# ww_multiplexador_to_writeRegister_outWaveform [1] $end
+$var wire 1 ,# ww_multiplexador_to_writeRegister_outWaveform [0] $end
+$var wire 1 -# ww_Instruction_to_multiplexador_outWaveform [2] $end
+$var wire 1 .# ww_Instruction_to_multiplexador_outWaveform [1] $end
+$var wire 1 /# ww_Instruction_to_multiplexador_outWaveform [0] $end
+$var wire 1 0# ww_Instruction_to_Control_outWaveform [3] $end
+$var wire 1 1# ww_Instruction_to_Control_outWaveform [2] $end
+$var wire 1 2# ww_Instruction_to_Control_outWaveform [1] $end
+$var wire 1 3# ww_Instruction_to_Control_outWaveform [0] $end
+$var wire 1 4# ww_Instruction_to_register1_outWaveform [2] $end
+$var wire 1 5# ww_Instruction_to_register1_outWaveform [1] $end
+$var wire 1 6# ww_Instruction_to_register1_outWaveform [0] $end
+$var wire 1 7# ww_Instruction_to_register2_outWaveform [2] $end
+$var wire 1 8# ww_Instruction_to_register2_outWaveform [1] $end
+$var wire 1 9# ww_Instruction_to_register2_outWaveform [0] $end
+$var wire 1 :# ww_Instruction_to_controlULA_outWaveform [2] $end
+$var wire 1 ;# ww_Instruction_to_controlULA_outWaveform [1] $end
+$var wire 1 <# ww_Instruction_to_controlULA_outWaveform [0] $end
+$var wire 1 =# ww_Instruction_to_extensorDeSinal_outWaveform [5] $end
+$var wire 1 ># ww_Instruction_to_extensorDeSinal_outWaveform [4] $end
+$var wire 1 ?# ww_Instruction_to_extensorDeSinal_outWaveform [3] $end
+$var wire 1 @# ww_Instruction_to_extensorDeSinal_outWaveform [2] $end
+$var wire 1 A# ww_Instruction_to_extensorDeSinal_outWaveform [1] $end
+$var wire 1 B# ww_Instruction_to_extensorDeSinal_outWaveform [0] $end
+$var wire 1 C# ww_Instruction_to_Jump_outWaveform [11] $end
+$var wire 1 D# ww_Instruction_to_Jump_outWaveform [10] $end
+$var wire 1 E# ww_Instruction_to_Jump_outWaveform [9] $end
+$var wire 1 F# ww_Instruction_to_Jump_outWaveform [8] $end
+$var wire 1 G# ww_Instruction_to_Jump_outWaveform [7] $end
+$var wire 1 H# ww_Instruction_to_Jump_outWaveform [6] $end
+$var wire 1 I# ww_Instruction_to_Jump_outWaveform [5] $end
+$var wire 1 J# ww_Instruction_to_Jump_outWaveform [4] $end
+$var wire 1 K# ww_Instruction_to_Jump_outWaveform [3] $end
+$var wire 1 L# ww_Instruction_to_Jump_outWaveform [2] $end
+$var wire 1 M# ww_Instruction_to_Jump_outWaveform [1] $end
+$var wire 1 N# ww_Instruction_to_Jump_outWaveform [0] $end
+$var wire 1 O# ww_out_Saida_OperacaoDaULA [6] $end
+$var wire 1 P# ww_out_Saida_OperacaoDaULA [5] $end
+$var wire 1 Q# ww_out_Saida_OperacaoDaULA [4] $end
+$var wire 1 R# ww_out_Saida_OperacaoDaULA [3] $end
+$var wire 1 S# ww_out_Saida_OperacaoDaULA [2] $end
+$var wire 1 T# ww_out_Saida_OperacaoDaULA [1] $end
+$var wire 1 U# ww_out_Saida_OperacaoDaULA [0] $end
+$var wire 1 V# ww_Data_to_writeRegister_outWaveform [15] $end
+$var wire 1 W# ww_Data_to_writeRegister_outWaveform [14] $end
+$var wire 1 X# ww_Data_to_writeRegister_outWaveform [13] $end
+$var wire 1 Y# ww_Data_to_writeRegister_outWaveform [12] $end
+$var wire 1 Z# ww_Data_to_writeRegister_outWaveform [11] $end
+$var wire 1 [# ww_Data_to_writeRegister_outWaveform [10] $end
+$var wire 1 \# ww_Data_to_writeRegister_outWaveform [9] $end
+$var wire 1 ]# ww_Data_to_writeRegister_outWaveform [8] $end
+$var wire 1 ^# ww_Data_to_writeRegister_outWaveform [7] $end
+$var wire 1 _# ww_Data_to_writeRegister_outWaveform [6] $end
+$var wire 1 `# ww_Data_to_writeRegister_outWaveform [5] $end
+$var wire 1 a# ww_Data_to_writeRegister_outWaveform [4] $end
+$var wire 1 b# ww_Data_to_writeRegister_outWaveform [3] $end
+$var wire 1 c# ww_Data_to_writeRegister_outWaveform [2] $end
+$var wire 1 d# ww_Data_to_writeRegister_outWaveform [1] $end
+$var wire 1 e# ww_Data_to_writeRegister_outWaveform [0] $end
+$var wire 1 f# ww_Saida_mult_to_mult_outWaveform [15] $end
+$var wire 1 g# ww_Saida_mult_to_mult_outWaveform [14] $end
+$var wire 1 h# ww_Saida_mult_to_mult_outWaveform [13] $end
+$var wire 1 i# ww_Saida_mult_to_mult_outWaveform [12] $end
+$var wire 1 j# ww_Saida_mult_to_mult_outWaveform [11] $end
+$var wire 1 k# ww_Saida_mult_to_mult_outWaveform [10] $end
+$var wire 1 l# ww_Saida_mult_to_mult_outWaveform [9] $end
+$var wire 1 m# ww_Saida_mult_to_mult_outWaveform [8] $end
+$var wire 1 n# ww_Saida_mult_to_mult_outWaveform [7] $end
+$var wire 1 o# ww_Saida_mult_to_mult_outWaveform [6] $end
+$var wire 1 p# ww_Saida_mult_to_mult_outWaveform [5] $end
+$var wire 1 q# ww_Saida_mult_to_mult_outWaveform [4] $end
+$var wire 1 r# ww_Saida_mult_to_mult_outWaveform [3] $end
+$var wire 1 s# ww_Saida_mult_to_mult_outWaveform [2] $end
+$var wire 1 t# ww_Saida_mult_to_mult_outWaveform [1] $end
+$var wire 1 u# ww_Saida_mult_to_mult_outWaveform [0] $end
+$var wire 1 v# ww_Saida_to_PC_outWaveform [15] $end
+$var wire 1 w# ww_Saida_to_PC_outWaveform [14] $end
+$var wire 1 x# ww_Saida_to_PC_outWaveform [13] $end
+$var wire 1 y# ww_Saida_to_PC_outWaveform [12] $end
+$var wire 1 z# ww_Saida_to_PC_outWaveform [11] $end
+$var wire 1 {# ww_Saida_to_PC_outWaveform [10] $end
+$var wire 1 |# ww_Saida_to_PC_outWaveform [9] $end
+$var wire 1 }# ww_Saida_to_PC_outWaveform [8] $end
+$var wire 1 ~# ww_Saida_to_PC_outWaveform [7] $end
+$var wire 1 !$ ww_Saida_to_PC_outWaveform [6] $end
+$var wire 1 "$ ww_Saida_to_PC_outWaveform [5] $end
+$var wire 1 #$ ww_Saida_to_PC_outWaveform [4] $end
+$var wire 1 $$ ww_Saida_to_PC_outWaveform [3] $end
+$var wire 1 %$ ww_Saida_to_PC_outWaveform [2] $end
+$var wire 1 &$ ww_Saida_to_PC_outWaveform [1] $end
+$var wire 1 '$ ww_Saida_to_PC_outWaveform [0] $end
+$var wire 1 ($ ww_Saida_adress_to_RAM_outWaveform [15] $end
+$var wire 1 )$ ww_Saida_adress_to_RAM_outWaveform [14] $end
+$var wire 1 *$ ww_Saida_adress_to_RAM_outWaveform [13] $end
+$var wire 1 +$ ww_Saida_adress_to_RAM_outWaveform [12] $end
+$var wire 1 ,$ ww_Saida_adress_to_RAM_outWaveform [11] $end
+$var wire 1 -$ ww_Saida_adress_to_RAM_outWaveform [10] $end
+$var wire 1 .$ ww_Saida_adress_to_RAM_outWaveform [9] $end
+$var wire 1 /$ ww_Saida_adress_to_RAM_outWaveform [8] $end
+$var wire 1 0$ ww_Saida_adress_to_RAM_outWaveform [7] $end
+$var wire 1 1$ ww_Saida_adress_to_RAM_outWaveform [6] $end
+$var wire 1 2$ ww_Saida_adress_to_RAM_outWaveform [5] $end
+$var wire 1 3$ ww_Saida_adress_to_RAM_outWaveform [4] $end
+$var wire 1 4$ ww_Saida_adress_to_RAM_outWaveform [3] $end
+$var wire 1 5$ ww_Saida_adress_to_RAM_outWaveform [2] $end
+$var wire 1 6$ ww_Saida_adress_to_RAM_outWaveform [1] $end
+$var wire 1 7$ ww_Saida_adress_to_RAM_outWaveform [0] $end
+$var wire 1 8$ ww_Flag_regdest_OUT $end
+$var wire 1 9$ ww_Flag_origialu_OUT [3] $end
+$var wire 1 :$ ww_Flag_origialu_OUT [2] $end
+$var wire 1 ;$ ww_Flag_origialu_OUT [1] $end
+$var wire 1 <$ ww_Flag_origialu_OUT [0] $end
+$var wire 1 =$ ww_Flag_memparareg_OUT $end
+$var wire 1 >$ ww_Flag_escrevereg_OUT $end
+$var wire 1 ?$ ww_Flag_lemem_OUT $end
+$var wire 1 @$ ww_Flag_escrevemem_OUT $end
+$var wire 1 A$ ww_Flag_branch_OUT $end
+$var wire 1 B$ ww_Flag_aluSRC_OUT $end
+$var wire 1 C$ ww_Flag_jump_OUT $end
+$var wire 1 D$ ww_Saida_ula [15] $end
+$var wire 1 E$ ww_Saida_ula [14] $end
+$var wire 1 F$ ww_Saida_ula [13] $end
+$var wire 1 G$ ww_Saida_ula [12] $end
+$var wire 1 H$ ww_Saida_ula [11] $end
+$var wire 1 I$ ww_Saida_ula [10] $end
+$var wire 1 J$ ww_Saida_ula [9] $end
+$var wire 1 K$ ww_Saida_ula [8] $end
+$var wire 1 L$ ww_Saida_ula [7] $end
+$var wire 1 M$ ww_Saida_ula [6] $end
+$var wire 1 N$ ww_Saida_ula [5] $end
+$var wire 1 O$ ww_Saida_ula [4] $end
+$var wire 1 P$ ww_Saida_ula [3] $end
+$var wire 1 Q$ ww_Saida_ula [2] $end
+$var wire 1 R$ ww_Saida_ula [1] $end
+$var wire 1 S$ ww_Saida_ula [0] $end
+$var wire 1 T$ ww_dado_register_destino [15] $end
+$var wire 1 U$ ww_dado_register_destino [14] $end
+$var wire 1 V$ ww_dado_register_destino [13] $end
+$var wire 1 W$ ww_dado_register_destino [12] $end
+$var wire 1 X$ ww_dado_register_destino [11] $end
+$var wire 1 Y$ ww_dado_register_destino [10] $end
+$var wire 1 Z$ ww_dado_register_destino [9] $end
+$var wire 1 [$ ww_dado_register_destino [8] $end
+$var wire 1 \$ ww_dado_register_destino [7] $end
+$var wire 1 ]$ ww_dado_register_destino [6] $end
+$var wire 1 ^$ ww_dado_register_destino [5] $end
+$var wire 1 _$ ww_dado_register_destino [4] $end
+$var wire 1 `$ ww_dado_register_destino [3] $end
+$var wire 1 a$ ww_dado_register_destino [2] $end
+$var wire 1 b$ ww_dado_register_destino [1] $end
+$var wire 1 c$ ww_dado_register_destino [0] $end
+$var wire 1 d$ \SomadorToPc_outWaveform[0]~output_o\ $end
+$var wire 1 e$ \SomadorToPc_outWaveform[1]~output_o\ $end
+$var wire 1 f$ \SomadorToPc_outWaveform[2]~output_o\ $end
+$var wire 1 g$ \SomadorToPc_outWaveform[3]~output_o\ $end
+$var wire 1 h$ \SomadorToPc_outWaveform[4]~output_o\ $end
+$var wire 1 i$ \SomadorToPc_outWaveform[5]~output_o\ $end
+$var wire 1 j$ \SomadorToPc_outWaveform[6]~output_o\ $end
+$var wire 1 k$ \SomadorToPc_outWaveform[7]~output_o\ $end
+$var wire 1 l$ \SomadorToPc_outWaveform[8]~output_o\ $end
+$var wire 1 m$ \SomadorToPc_outWaveform[9]~output_o\ $end
+$var wire 1 n$ \SomadorToPc_outWaveform[10]~output_o\ $end
+$var wire 1 o$ \SomadorToPc_outWaveform[11]~output_o\ $end
+$var wire 1 p$ \SomadorToPc_outWaveform[12]~output_o\ $end
+$var wire 1 q$ \SomadorToPc_outWaveform[13]~output_o\ $end
+$var wire 1 r$ \SomadorToPc_outWaveform[14]~output_o\ $end
+$var wire 1 s$ \SomadorToPc_outWaveform[15]~output_o\ $end
+$var wire 1 t$ \SaidaPc_outWaveform[0]~output_o\ $end
+$var wire 1 u$ \SaidaPc_outWaveform[1]~output_o\ $end
+$var wire 1 v$ \SaidaPc_outWaveform[2]~output_o\ $end
+$var wire 1 w$ \SaidaPc_outWaveform[3]~output_o\ $end
+$var wire 1 x$ \SaidaPc_outWaveform[4]~output_o\ $end
+$var wire 1 y$ \SaidaPc_outWaveform[5]~output_o\ $end
+$var wire 1 z$ \SaidaPc_outWaveform[6]~output_o\ $end
+$var wire 1 {$ \SaidaPc_outWaveform[7]~output_o\ $end
+$var wire 1 |$ \SaidaPc_outWaveform[8]~output_o\ $end
+$var wire 1 }$ \SaidaPc_outWaveform[9]~output_o\ $end
+$var wire 1 ~$ \SaidaPc_outWaveform[10]~output_o\ $end
+$var wire 1 !% \SaidaPc_outWaveform[11]~output_o\ $end
+$var wire 1 "% \SaidaPc_outWaveform[12]~output_o\ $end
+$var wire 1 #% \SaidaPc_outWaveform[13]~output_o\ $end
+$var wire 1 $% \SaidaPc_outWaveform[14]~output_o\ $end
+$var wire 1 %% \SaidaPc_outWaveform[15]~output_o\ $end
+$var wire 1 &% \SaidaRegA_outWaveform[0]~output_o\ $end
+$var wire 1 '% \SaidaRegA_outWaveform[1]~output_o\ $end
+$var wire 1 (% \SaidaRegA_outWaveform[2]~output_o\ $end
+$var wire 1 )% \SaidaRegA_outWaveform[3]~output_o\ $end
+$var wire 1 *% \SaidaRegA_outWaveform[4]~output_o\ $end
+$var wire 1 +% \SaidaRegA_outWaveform[5]~output_o\ $end
+$var wire 1 ,% \SaidaRegA_outWaveform[6]~output_o\ $end
+$var wire 1 -% \SaidaRegA_outWaveform[7]~output_o\ $end
+$var wire 1 .% \SaidaRegA_outWaveform[8]~output_o\ $end
+$var wire 1 /% \SaidaRegA_outWaveform[9]~output_o\ $end
+$var wire 1 0% \SaidaRegA_outWaveform[10]~output_o\ $end
+$var wire 1 1% \SaidaRegA_outWaveform[11]~output_o\ $end
+$var wire 1 2% \SaidaRegA_outWaveform[12]~output_o\ $end
+$var wire 1 3% \SaidaRegA_outWaveform[13]~output_o\ $end
+$var wire 1 4% \SaidaRegA_outWaveform[14]~output_o\ $end
+$var wire 1 5% \SaidaRegA_outWaveform[15]~output_o\ $end
+$var wire 1 6% \SaidaRegB_outWaveform[0]~output_o\ $end
+$var wire 1 7% \SaidaRegB_outWaveform[1]~output_o\ $end
+$var wire 1 8% \SaidaRegB_outWaveform[2]~output_o\ $end
+$var wire 1 9% \SaidaRegB_outWaveform[3]~output_o\ $end
+$var wire 1 :% \SaidaRegB_outWaveform[4]~output_o\ $end
+$var wire 1 ;% \SaidaRegB_outWaveform[5]~output_o\ $end
+$var wire 1 <% \SaidaRegB_outWaveform[6]~output_o\ $end
+$var wire 1 =% \SaidaRegB_outWaveform[7]~output_o\ $end
+$var wire 1 >% \SaidaRegB_outWaveform[8]~output_o\ $end
+$var wire 1 ?% \SaidaRegB_outWaveform[9]~output_o\ $end
+$var wire 1 @% \SaidaRegB_outWaveform[10]~output_o\ $end
+$var wire 1 A% \SaidaRegB_outWaveform[11]~output_o\ $end
+$var wire 1 B% \SaidaRegB_outWaveform[12]~output_o\ $end
+$var wire 1 C% \SaidaRegB_outWaveform[13]~output_o\ $end
+$var wire 1 D% \SaidaRegB_outWaveform[14]~output_o\ $end
+$var wire 1 E% \SaidaRegB_outWaveform[15]~output_o\ $end
+$var wire 1 F% \multiplexador_to_writeRegister_outWaveform[0]~output_o\ $end
+$var wire 1 G% \multiplexador_to_writeRegister_outWaveform[1]~output_o\ $end
+$var wire 1 H% \multiplexador_to_writeRegister_outWaveform[2]~output_o\ $end
+$var wire 1 I% \Instruction_to_multiplexador_outWaveform[0]~output_o\ $end
+$var wire 1 J% \Instruction_to_multiplexador_outWaveform[1]~output_o\ $end
+$var wire 1 K% \Instruction_to_multiplexador_outWaveform[2]~output_o\ $end
+$var wire 1 L% \Instruction_to_Control_outWaveform[0]~output_o\ $end
+$var wire 1 M% \Instruction_to_Control_outWaveform[1]~output_o\ $end
+$var wire 1 N% \Instruction_to_Control_outWaveform[2]~output_o\ $end
+$var wire 1 O% \Instruction_to_Control_outWaveform[3]~output_o\ $end
+$var wire 1 P% \Instruction_to_register1_outWaveform[0]~output_o\ $end
+$var wire 1 Q% \Instruction_to_register1_outWaveform[1]~output_o\ $end
+$var wire 1 R% \Instruction_to_register1_outWaveform[2]~output_o\ $end
+$var wire 1 S% \Instruction_to_register2_outWaveform[0]~output_o\ $end
+$var wire 1 T% \Instruction_to_register2_outWaveform[1]~output_o\ $end
+$var wire 1 U% \Instruction_to_register2_outWaveform[2]~output_o\ $end
+$var wire 1 V% \Instruction_to_controlULA_outWaveform[0]~output_o\ $end
+$var wire 1 W% \Instruction_to_controlULA_outWaveform[1]~output_o\ $end
+$var wire 1 X% \Instruction_to_controlULA_outWaveform[2]~output_o\ $end
+$var wire 1 Y% \Instruction_to_extensorDeSinal_outWaveform[0]~output_o\ $end
+$var wire 1 Z% \Instruction_to_extensorDeSinal_outWaveform[1]~output_o\ $end
+$var wire 1 [% \Instruction_to_extensorDeSinal_outWaveform[2]~output_o\ $end
+$var wire 1 \% \Instruction_to_extensorDeSinal_outWaveform[3]~output_o\ $end
+$var wire 1 ]% \Instruction_to_extensorDeSinal_outWaveform[4]~output_o\ $end
+$var wire 1 ^% \Instruction_to_extensorDeSinal_outWaveform[5]~output_o\ $end
+$var wire 1 _% \Instruction_to_Jump_outWaveform[0]~output_o\ $end
+$var wire 1 `% \Instruction_to_Jump_outWaveform[1]~output_o\ $end
+$var wire 1 a% \Instruction_to_Jump_outWaveform[2]~output_o\ $end
+$var wire 1 b% \Instruction_to_Jump_outWaveform[3]~output_o\ $end
+$var wire 1 c% \Instruction_to_Jump_outWaveform[4]~output_o\ $end
+$var wire 1 d% \Instruction_to_Jump_outWaveform[5]~output_o\ $end
+$var wire 1 e% \Instruction_to_Jump_outWaveform[6]~output_o\ $end
+$var wire 1 f% \Instruction_to_Jump_outWaveform[7]~output_o\ $end
+$var wire 1 g% \Instruction_to_Jump_outWaveform[8]~output_o\ $end
+$var wire 1 h% \Instruction_to_Jump_outWaveform[9]~output_o\ $end
+$var wire 1 i% \Instruction_to_Jump_outWaveform[10]~output_o\ $end
+$var wire 1 j% \Instruction_to_Jump_outWaveform[11]~output_o\ $end
+$var wire 1 k% \out_Saida_OperacaoDaULA[0]~output_o\ $end
+$var wire 1 l% \out_Saida_OperacaoDaULA[1]~output_o\ $end
+$var wire 1 m% \out_Saida_OperacaoDaULA[2]~output_o\ $end
+$var wire 1 n% \out_Saida_OperacaoDaULA[3]~output_o\ $end
+$var wire 1 o% \out_Saida_OperacaoDaULA[4]~output_o\ $end
+$var wire 1 p% \out_Saida_OperacaoDaULA[5]~output_o\ $end
+$var wire 1 q% \out_Saida_OperacaoDaULA[6]~output_o\ $end
+$var wire 1 r% \Data_to_writeRegister_outWaveform[0]~output_o\ $end
+$var wire 1 s% \Data_to_writeRegister_outWaveform[1]~output_o\ $end
+$var wire 1 t% \Data_to_writeRegister_outWaveform[2]~output_o\ $end
+$var wire 1 u% \Data_to_writeRegister_outWaveform[3]~output_o\ $end
+$var wire 1 v% \Data_to_writeRegister_outWaveform[4]~output_o\ $end
+$var wire 1 w% \Data_to_writeRegister_outWaveform[5]~output_o\ $end
+$var wire 1 x% \Data_to_writeRegister_outWaveform[6]~output_o\ $end
+$var wire 1 y% \Data_to_writeRegister_outWaveform[7]~output_o\ $end
+$var wire 1 z% \Data_to_writeRegister_outWaveform[8]~output_o\ $end
+$var wire 1 {% \Data_to_writeRegister_outWaveform[9]~output_o\ $end
+$var wire 1 |% \Data_to_writeRegister_outWaveform[10]~output_o\ $end
+$var wire 1 }% \Data_to_writeRegister_outWaveform[11]~output_o\ $end
+$var wire 1 ~% \Data_to_writeRegister_outWaveform[12]~output_o\ $end
+$var wire 1 !& \Data_to_writeRegister_outWaveform[13]~output_o\ $end
+$var wire 1 "& \Data_to_writeRegister_outWaveform[14]~output_o\ $end
+$var wire 1 #& \Data_to_writeRegister_outWaveform[15]~output_o\ $end
+$var wire 1 $& \Saida_mult_to_mult_outWaveform[0]~output_o\ $end
+$var wire 1 %& \Saida_mult_to_mult_outWaveform[1]~output_o\ $end
+$var wire 1 && \Saida_mult_to_mult_outWaveform[2]~output_o\ $end
+$var wire 1 '& \Saida_mult_to_mult_outWaveform[3]~output_o\ $end
+$var wire 1 (& \Saida_mult_to_mult_outWaveform[4]~output_o\ $end
+$var wire 1 )& \Saida_mult_to_mult_outWaveform[5]~output_o\ $end
+$var wire 1 *& \Saida_mult_to_mult_outWaveform[6]~output_o\ $end
+$var wire 1 +& \Saida_mult_to_mult_outWaveform[7]~output_o\ $end
+$var wire 1 ,& \Saida_mult_to_mult_outWaveform[8]~output_o\ $end
+$var wire 1 -& \Saida_mult_to_mult_outWaveform[9]~output_o\ $end
+$var wire 1 .& \Saida_mult_to_mult_outWaveform[10]~output_o\ $end
+$var wire 1 /& \Saida_mult_to_mult_outWaveform[11]~output_o\ $end
+$var wire 1 0& \Saida_mult_to_mult_outWaveform[12]~output_o\ $end
+$var wire 1 1& \Saida_mult_to_mult_outWaveform[13]~output_o\ $end
+$var wire 1 2& \Saida_mult_to_mult_outWaveform[14]~output_o\ $end
+$var wire 1 3& \Saida_mult_to_mult_outWaveform[15]~output_o\ $end
+$var wire 1 4& \Saida_to_PC_outWaveform[0]~output_o\ $end
+$var wire 1 5& \Saida_to_PC_outWaveform[1]~output_o\ $end
+$var wire 1 6& \Saida_to_PC_outWaveform[2]~output_o\ $end
+$var wire 1 7& \Saida_to_PC_outWaveform[3]~output_o\ $end
+$var wire 1 8& \Saida_to_PC_outWaveform[4]~output_o\ $end
+$var wire 1 9& \Saida_to_PC_outWaveform[5]~output_o\ $end
+$var wire 1 :& \Saida_to_PC_outWaveform[6]~output_o\ $end
+$var wire 1 ;& \Saida_to_PC_outWaveform[7]~output_o\ $end
+$var wire 1 <& \Saida_to_PC_outWaveform[8]~output_o\ $end
+$var wire 1 =& \Saida_to_PC_outWaveform[9]~output_o\ $end
+$var wire 1 >& \Saida_to_PC_outWaveform[10]~output_o\ $end
+$var wire 1 ?& \Saida_to_PC_outWaveform[11]~output_o\ $end
+$var wire 1 @& \Saida_to_PC_outWaveform[12]~output_o\ $end
+$var wire 1 A& \Saida_to_PC_outWaveform[13]~output_o\ $end
+$var wire 1 B& \Saida_to_PC_outWaveform[14]~output_o\ $end
+$var wire 1 C& \Saida_to_PC_outWaveform[15]~output_o\ $end
+$var wire 1 D& \Saida_adress_to_RAM_outWaveform[0]~output_o\ $end
+$var wire 1 E& \Saida_adress_to_RAM_outWaveform[1]~output_o\ $end
+$var wire 1 F& \Saida_adress_to_RAM_outWaveform[2]~output_o\ $end
+$var wire 1 G& \Saida_adress_to_RAM_outWaveform[3]~output_o\ $end
+$var wire 1 H& \Saida_adress_to_RAM_outWaveform[4]~output_o\ $end
+$var wire 1 I& \Saida_adress_to_RAM_outWaveform[5]~output_o\ $end
+$var wire 1 J& \Saida_adress_to_RAM_outWaveform[6]~output_o\ $end
+$var wire 1 K& \Saida_adress_to_RAM_outWaveform[7]~output_o\ $end
+$var wire 1 L& \Saida_adress_to_RAM_outWaveform[8]~output_o\ $end
+$var wire 1 M& \Saida_adress_to_RAM_outWaveform[9]~output_o\ $end
+$var wire 1 N& \Saida_adress_to_RAM_outWaveform[10]~output_o\ $end
+$var wire 1 O& \Saida_adress_to_RAM_outWaveform[11]~output_o\ $end
+$var wire 1 P& \Saida_adress_to_RAM_outWaveform[12]~output_o\ $end
+$var wire 1 Q& \Saida_adress_to_RAM_outWaveform[13]~output_o\ $end
+$var wire 1 R& \Saida_adress_to_RAM_outWaveform[14]~output_o\ $end
+$var wire 1 S& \Saida_adress_to_RAM_outWaveform[15]~output_o\ $end
+$var wire 1 T& \Flag_regdest_OUT~output_o\ $end
+$var wire 1 U& \Flag_origialu_OUT[0]~output_o\ $end
+$var wire 1 V& \Flag_origialu_OUT[1]~output_o\ $end
+$var wire 1 W& \Flag_origialu_OUT[2]~output_o\ $end
+$var wire 1 X& \Flag_origialu_OUT[3]~output_o\ $end
+$var wire 1 Y& \Flag_memparareg_OUT~output_o\ $end
+$var wire 1 Z& \Flag_escrevereg_OUT~output_o\ $end
+$var wire 1 [& \Flag_lemem_OUT~output_o\ $end
+$var wire 1 \& \Flag_escrevemem_OUT~output_o\ $end
+$var wire 1 ]& \Flag_branch_OUT~output_o\ $end
+$var wire 1 ^& \Flag_aluSRC_OUT~output_o\ $end
+$var wire 1 _& \Flag_jump_OUT~output_o\ $end
+$var wire 1 `& \Saida_ula[0]~output_o\ $end
+$var wire 1 a& \Saida_ula[1]~output_o\ $end
+$var wire 1 b& \Saida_ula[2]~output_o\ $end
+$var wire 1 c& \Saida_ula[3]~output_o\ $end
+$var wire 1 d& \Saida_ula[4]~output_o\ $end
+$var wire 1 e& \Saida_ula[5]~output_o\ $end
+$var wire 1 f& \Saida_ula[6]~output_o\ $end
+$var wire 1 g& \Saida_ula[7]~output_o\ $end
+$var wire 1 h& \Saida_ula[8]~output_o\ $end
+$var wire 1 i& \Saida_ula[9]~output_o\ $end
+$var wire 1 j& \Saida_ula[10]~output_o\ $end
+$var wire 1 k& \Saida_ula[11]~output_o\ $end
+$var wire 1 l& \Saida_ula[12]~output_o\ $end
+$var wire 1 m& \Saida_ula[13]~output_o\ $end
+$var wire 1 n& \Saida_ula[14]~output_o\ $end
+$var wire 1 o& \Saida_ula[15]~output_o\ $end
+$var wire 1 p& \dado_register_destino[0]~output_o\ $end
+$var wire 1 q& \dado_register_destino[1]~output_o\ $end
+$var wire 1 r& \dado_register_destino[2]~output_o\ $end
+$var wire 1 s& \dado_register_destino[3]~output_o\ $end
+$var wire 1 t& \dado_register_destino[4]~output_o\ $end
+$var wire 1 u& \dado_register_destino[5]~output_o\ $end
+$var wire 1 v& \dado_register_destino[6]~output_o\ $end
+$var wire 1 w& \dado_register_destino[7]~output_o\ $end
+$var wire 1 x& \dado_register_destino[8]~output_o\ $end
+$var wire 1 y& \dado_register_destino[9]~output_o\ $end
+$var wire 1 z& \dado_register_destino[10]~output_o\ $end
+$var wire 1 {& \dado_register_destino[11]~output_o\ $end
+$var wire 1 |& \dado_register_destino[12]~output_o\ $end
+$var wire 1 }& \dado_register_destino[13]~output_o\ $end
+$var wire 1 ~& \dado_register_destino[14]~output_o\ $end
+$var wire 1 !' \dado_register_destino[15]~output_o\ $end
+$var wire 1 "' \Clock_Sistema~input_o\ $end
+$var wire 1 #' \G2|saida[0]~0_combout\ $end
+$var wire 1 $' \G2|Add0~1_sumout\ $end
+$var wire 1 %' \G2|Add0~2\ $end
+$var wire 1 &' \G2|Add0~5_sumout\ $end
+$var wire 1 '' \G2|Add0~6\ $end
+$var wire 1 (' \G2|Add0~9_sumout\ $end
+$var wire 1 )' \G2|Add0~10\ $end
+$var wire 1 *' \G2|Add0~13_sumout\ $end
+$var wire 1 +' \G2|Add0~14\ $end
+$var wire 1 ,' \G2|Add0~17_sumout\ $end
+$var wire 1 -' \G2|Add0~18\ $end
+$var wire 1 .' \G2|Add0~21_sumout\ $end
+$var wire 1 /' \G2|Add0~22\ $end
+$var wire 1 0' \G2|Add0~25_sumout\ $end
+$var wire 1 1' \G2|Add0~26\ $end
+$var wire 1 2' \G2|Add0~29_sumout\ $end
+$var wire 1 3' \G2|Add0~30\ $end
+$var wire 1 4' \G2|Add0~33_sumout\ $end
+$var wire 1 5' \G2|Add0~34\ $end
+$var wire 1 6' \G2|Add0~37_sumout\ $end
+$var wire 1 7' \G2|Add0~38\ $end
+$var wire 1 8' \G2|Add0~41_sumout\ $end
+$var wire 1 9' \G2|Add0~42\ $end
+$var wire 1 :' \G2|Add0~45_sumout\ $end
+$var wire 1 ;' \G2|Add0~46\ $end
+$var wire 1 <' \G2|Add0~49_sumout\ $end
+$var wire 1 =' \G2|Add0~50\ $end
+$var wire 1 >' \G2|Add0~53_sumout\ $end
+$var wire 1 ?' \G2|Add0~54\ $end
+$var wire 1 @' \G2|Add0~57_sumout\ $end
+$var wire 1 A' \G4|Mux0~0_combout\ $end
+$var wire 1 B' \G4|Mux0~1_combout\ $end
+$var wire 1 C' \G4|Mux0~2_combout\ $end
+$var wire 1 D' \G4|Mux0~3_combout\ $end
+$var wire 1 E' \G7|Reg[0][0]~16_combout\ $end
+$var wire 1 F' \G16|Add0~1_sumout\ $end
+$var wire 1 G' \G7|Reg[0][0]~0_combout\ $end
+$var wire 1 H' \G7|Reg[0][1]~17_combout\ $end
+$var wire 1 I' \G16|Add0~2\ $end
+$var wire 1 J' \G16|Add0~5_sumout\ $end
+$var wire 1 K' \G7|Reg[0][1]~1_combout\ $end
+$var wire 1 L' \G7|Reg[0][2]~18_combout\ $end
+$var wire 1 M' \G16|Add0~6\ $end
+$var wire 1 N' \G16|Add0~9_sumout\ $end
+$var wire 1 O' \G7|Reg[0][2]~2_combout\ $end
+$var wire 1 P' \G7|Mux28~1_combout\ $end
+$var wire 1 Q' \G16|Add0~10\ $end
+$var wire 1 R' \G16|Add0~13_sumout\ $end
+$var wire 1 S' \G7|Reg[0][3]~3_combout\ $end
+$var wire 1 T' \G7|Mux27~1_combout\ $end
+$var wire 1 U' \G16|Add0~14\ $end
+$var wire 1 V' \G16|Add0~17_sumout\ $end
+$var wire 1 W' \G7|Reg[0][4]~4_combout\ $end
+$var wire 1 X' \G7|Reg[0][5]~19_combout\ $end
+$var wire 1 Y' \G16|Add0~18\ $end
+$var wire 1 Z' \G16|Add0~21_sumout\ $end
+$var wire 1 [' \G7|Reg[0][5]~5_combout\ $end
+$var wire 1 \' \G7|Mux25~1_combout\ $end
+$var wire 1 ]' \G16|Add0~22\ $end
+$var wire 1 ^' \G16|Add0~25_sumout\ $end
+$var wire 1 _' \G7|Reg[0][6]~6_combout\ $end
+$var wire 1 `' \G7|Mux24~1_combout\ $end
+$var wire 1 a' \G16|Add0~26\ $end
+$var wire 1 b' \G16|Add0~29_sumout\ $end
+$var wire 1 c' \G7|Reg[0][7]~7_combout\ $end
+$var wire 1 d' \G7|Reg[0][8]~20_combout\ $end
+$var wire 1 e' \G16|Add0~30\ $end
+$var wire 1 f' \G16|Add0~33_sumout\ $end
+$var wire 1 g' \G7|Reg[0][8]~8_combout\ $end
+$var wire 1 h' \G7|Reg[0][9]~21_combout\ $end
+$var wire 1 i' \G16|Add0~34\ $end
+$var wire 1 j' \G16|Add0~37_sumout\ $end
+$var wire 1 k' \G7|Reg[0][9]~9_combout\ $end
+$var wire 1 l' \G7|Reg[0][10]~22_combout\ $end
+$var wire 1 m' \G16|Add0~38\ $end
+$var wire 1 n' \G16|Add0~41_sumout\ $end
+$var wire 1 o' \G7|Reg[0][10]~10_combout\ $end
+$var wire 1 p' \G7|Mux20~1_combout\ $end
+$var wire 1 q' \G16|Add0~42\ $end
+$var wire 1 r' \G16|Add0~45_sumout\ $end
+$var wire 1 s' \G7|Reg[0][11]~11_combout\ $end
+$var wire 1 t' \G7|Mux19~1_combout\ $end
+$var wire 1 u' \G16|Add0~46\ $end
+$var wire 1 v' \G16|Add0~49_sumout\ $end
+$var wire 1 w' \G7|Reg[0][12]~12_combout\ $end
+$var wire 1 x' \G7|Reg[0][13]~23_combout\ $end
+$var wire 1 y' \G16|Add0~50\ $end
+$var wire 1 z' \G16|Add0~53_sumout\ $end
+$var wire 1 {' \G7|Reg[0][13]~13_combout\ $end
+$var wire 1 |' \G7|Reg[0][14]~24_combout\ $end
+$var wire 1 }' \G16|Add0~54\ $end
+$var wire 1 ~' \G16|Add0~57_sumout\ $end
+$var wire 1 !( \G7|Reg[0][14]~14_combout\ $end
+$var wire 1 "( \G7|Reg[0][15]~25_combout\ $end
+$var wire 1 #( \G16|Add0~58\ $end
+$var wire 1 $( \G16|Add0~61_sumout\ $end
+$var wire 1 %( \G7|Reg[0][15]~15_combout\ $end
+$var wire 1 &( \G7|Mux28~0_combout\ $end
+$var wire 1 '( \G7|Mux27~0_combout\ $end
+$var wire 1 (( \G7|Mux25~0_combout\ $end
+$var wire 1 )( \G7|Mux24~0_combout\ $end
+$var wire 1 *( \G7|Mux20~0_combout\ $end
+$var wire 1 +( \G7|Mux19~0_combout\ $end
+$var wire 1 ,( \G6|SAIDA[2]~0_combout\ $end
+$var wire 1 -( \G2|saida\ [15] $end
+$var wire 1 .( \G2|saida\ [14] $end
+$var wire 1 /( \G2|saida\ [13] $end
+$var wire 1 0( \G2|saida\ [12] $end
+$var wire 1 1( \G2|saida\ [11] $end
+$var wire 1 2( \G2|saida\ [10] $end
+$var wire 1 3( \G2|saida\ [9] $end
+$var wire 1 4( \G2|saida\ [8] $end
+$var wire 1 5( \G2|saida\ [7] $end
+$var wire 1 6( \G2|saida\ [6] $end
+$var wire 1 7( \G2|saida\ [5] $end
+$var wire 1 8( \G2|saida\ [4] $end
+$var wire 1 9( \G2|saida\ [3] $end
+$var wire 1 :( \G2|saida\ [2] $end
+$var wire 1 ;( \G2|saida\ [1] $end
+$var wire 1 <( \G2|saida\ [0] $end
+$var wire 1 =( \G1|pout\ [15] $end
+$var wire 1 >( \G1|pout\ [14] $end
+$var wire 1 ?( \G1|pout\ [13] $end
+$var wire 1 @( \G1|pout\ [12] $end
+$var wire 1 A( \G1|pout\ [11] $end
+$var wire 1 B( \G1|pout\ [10] $end
+$var wire 1 C( \G1|pout\ [9] $end
+$var wire 1 D( \G1|pout\ [8] $end
+$var wire 1 E( \G1|pout\ [7] $end
+$var wire 1 F( \G1|pout\ [6] $end
+$var wire 1 G( \G1|pout\ [5] $end
+$var wire 1 H( \G1|pout\ [4] $end
+$var wire 1 I( \G1|pout\ [3] $end
+$var wire 1 J( \G1|pout\ [2] $end
+$var wire 1 K( \G1|pout\ [1] $end
+$var wire 1 L( \G1|pout\ [0] $end
+$var wire 1 M( \G18|SAIDA\ [15] $end
+$var wire 1 N( \G18|SAIDA\ [14] $end
+$var wire 1 O( \G18|SAIDA\ [13] $end
+$var wire 1 P( \G18|SAIDA\ [12] $end
+$var wire 1 Q( \G18|SAIDA\ [11] $end
+$var wire 1 R( \G18|SAIDA\ [10] $end
+$var wire 1 S( \G18|SAIDA\ [9] $end
+$var wire 1 T( \G18|SAIDA\ [8] $end
+$var wire 1 U( \G18|SAIDA\ [7] $end
+$var wire 1 V( \G18|SAIDA\ [6] $end
+$var wire 1 W( \G18|SAIDA\ [5] $end
+$var wire 1 X( \G18|SAIDA\ [4] $end
+$var wire 1 Y( \G18|SAIDA\ [3] $end
+$var wire 1 Z( \G18|SAIDA\ [2] $end
+$var wire 1 [( \G18|SAIDA\ [1] $end
+$var wire 1 \( \G18|SAIDA\ [0] $end
+$var wire 1 ]( \G14|SAIDA\ [15] $end
+$var wire 1 ^( \G14|SAIDA\ [14] $end
+$var wire 1 _( \G14|SAIDA\ [13] $end
+$var wire 1 `( \G14|SAIDA\ [12] $end
+$var wire 1 a( \G14|SAIDA\ [11] $end
+$var wire 1 b( \G14|SAIDA\ [10] $end
+$var wire 1 c( \G14|SAIDA\ [9] $end
+$var wire 1 d( \G14|SAIDA\ [8] $end
+$var wire 1 e( \G14|SAIDA\ [7] $end
+$var wire 1 f( \G14|SAIDA\ [6] $end
+$var wire 1 g( \G14|SAIDA\ [5] $end
+$var wire 1 h( \G14|SAIDA\ [4] $end
+$var wire 1 i( \G14|SAIDA\ [3] $end
+$var wire 1 j( \G14|SAIDA\ [2] $end
+$var wire 1 k( \G14|SAIDA\ [1] $end
+$var wire 1 l( \G14|SAIDA\ [0] $end
+$var wire 1 m( \G12|SAIDA\ [15] $end
+$var wire 1 n( \G12|SAIDA\ [14] $end
+$var wire 1 o( \G12|SAIDA\ [13] $end
+$var wire 1 p( \G12|SAIDA\ [12] $end
+$var wire 1 q( \G12|SAIDA\ [11] $end
+$var wire 1 r( \G12|SAIDA\ [10] $end
+$var wire 1 s( \G12|SAIDA\ [9] $end
+$var wire 1 t( \G12|SAIDA\ [8] $end
+$var wire 1 u( \G12|SAIDA\ [7] $end
+$var wire 1 v( \G12|SAIDA\ [6] $end
+$var wire 1 w( \G12|SAIDA\ [5] $end
+$var wire 1 x( \G12|SAIDA\ [4] $end
+$var wire 1 y( \G12|SAIDA\ [3] $end
+$var wire 1 z( \G12|SAIDA\ [2] $end
+$var wire 1 {( \G12|SAIDA\ [1] $end
+$var wire 1 |( \G12|SAIDA\ [0] $end
+$var wire 1 }( \G13|SAIDA\ [15] $end
+$var wire 1 ~( \G13|SAIDA\ [14] $end
+$var wire 1 !) \G13|SAIDA\ [13] $end
+$var wire 1 ") \G13|SAIDA\ [12] $end
+$var wire 1 #) \G13|SAIDA\ [11] $end
+$var wire 1 $) \G13|SAIDA\ [10] $end
+$var wire 1 %) \G13|SAIDA\ [9] $end
+$var wire 1 &) \G13|SAIDA\ [8] $end
+$var wire 1 ') \G13|SAIDA\ [7] $end
+$var wire 1 () \G13|SAIDA\ [6] $end
+$var wire 1 )) \G13|SAIDA\ [5] $end
+$var wire 1 *) \G13|SAIDA\ [4] $end
+$var wire 1 +) \G13|SAIDA\ [3] $end
+$var wire 1 ,) \G13|SAIDA\ [2] $end
+$var wire 1 -) \G13|SAIDA\ [1] $end
+$var wire 1 .) \G13|SAIDA\ [0] $end
+$var wire 1 /) \G4|ALT_INV_Mux0~1_combout\ $end
+$var wire 1 0) \G4|ALT_INV_Mux0~0_combout\ $end
+$var wire 1 1) \G2|ALT_INV_saida\ [15] $end
+$var wire 1 2) \G2|ALT_INV_saida\ [14] $end
+$var wire 1 3) \G2|ALT_INV_saida\ [13] $end
+$var wire 1 4) \G2|ALT_INV_saida\ [12] $end
+$var wire 1 5) \G2|ALT_INV_saida\ [11] $end
+$var wire 1 6) \G2|ALT_INV_saida\ [10] $end
+$var wire 1 7) \G2|ALT_INV_saida\ [9] $end
+$var wire 1 8) \G2|ALT_INV_saida\ [8] $end
+$var wire 1 9) \G2|ALT_INV_saida\ [7] $end
+$var wire 1 :) \G2|ALT_INV_saida\ [6] $end
+$var wire 1 ;) \G2|ALT_INV_saida\ [5] $end
+$var wire 1 <) \G2|ALT_INV_saida\ [4] $end
+$var wire 1 =) \G2|ALT_INV_saida\ [3] $end
+$var wire 1 >) \G2|ALT_INV_saida\ [2] $end
+$var wire 1 ?) \G2|ALT_INV_saida\ [1] $end
+$var wire 1 @) \G2|ALT_INV_saida\ [0] $end
+$var wire 1 A) \G16|ALT_INV_Add0~61_sumout\ $end
+$var wire 1 B) \G16|ALT_INV_Add0~57_sumout\ $end
+$var wire 1 C) \G16|ALT_INV_Add0~53_sumout\ $end
+$var wire 1 D) \G16|ALT_INV_Add0~49_sumout\ $end
+$var wire 1 E) \G16|ALT_INV_Add0~45_sumout\ $end
+$var wire 1 F) \G16|ALT_INV_Add0~41_sumout\ $end
+$var wire 1 G) \G16|ALT_INV_Add0~37_sumout\ $end
+$var wire 1 H) \G16|ALT_INV_Add0~33_sumout\ $end
+$var wire 1 I) \G16|ALT_INV_Add0~29_sumout\ $end
+$var wire 1 J) \G16|ALT_INV_Add0~25_sumout\ $end
+$var wire 1 K) \G16|ALT_INV_Add0~21_sumout\ $end
+$var wire 1 L) \G16|ALT_INV_Add0~17_sumout\ $end
+$var wire 1 M) \G16|ALT_INV_Add0~13_sumout\ $end
+$var wire 1 N) \G16|ALT_INV_Add0~9_sumout\ $end
+$var wire 1 O) \G16|ALT_INV_Add0~5_sumout\ $end
+$var wire 1 P) \G16|ALT_INV_Add0~1_sumout\ $end
+$var wire 1 Q) \G14|ALT_INV_SAIDA\ [15] $end
+$var wire 1 R) \G14|ALT_INV_SAIDA\ [14] $end
+$var wire 1 S) \G14|ALT_INV_SAIDA\ [13] $end
+$var wire 1 T) \G14|ALT_INV_SAIDA\ [12] $end
+$var wire 1 U) \G14|ALT_INV_SAIDA\ [11] $end
+$var wire 1 V) \G14|ALT_INV_SAIDA\ [10] $end
+$var wire 1 W) \G14|ALT_INV_SAIDA\ [9] $end
+$var wire 1 X) \G14|ALT_INV_SAIDA\ [8] $end
+$var wire 1 Y) \G14|ALT_INV_SAIDA\ [7] $end
+$var wire 1 Z) \G14|ALT_INV_SAIDA\ [6] $end
+$var wire 1 [) \G14|ALT_INV_SAIDA\ [5] $end
+$var wire 1 \) \G14|ALT_INV_SAIDA\ [4] $end
+$var wire 1 ]) \G14|ALT_INV_SAIDA\ [3] $end
+$var wire 1 ^) \G14|ALT_INV_SAIDA\ [2] $end
+$var wire 1 _) \G14|ALT_INV_SAIDA\ [1] $end
+$var wire 1 `) \G14|ALT_INV_SAIDA\ [0] $end
+$var wire 1 a) \G13|ALT_INV_SAIDA\ [15] $end
+$var wire 1 b) \G13|ALT_INV_SAIDA\ [14] $end
+$var wire 1 c) \G13|ALT_INV_SAIDA\ [13] $end
+$var wire 1 d) \G13|ALT_INV_SAIDA\ [12] $end
+$var wire 1 e) \G13|ALT_INV_SAIDA\ [11] $end
+$var wire 1 f) \G13|ALT_INV_SAIDA\ [10] $end
+$var wire 1 g) \G13|ALT_INV_SAIDA\ [9] $end
+$var wire 1 h) \G13|ALT_INV_SAIDA\ [8] $end
+$var wire 1 i) \G13|ALT_INV_SAIDA\ [7] $end
+$var wire 1 j) \G13|ALT_INV_SAIDA\ [6] $end
+$var wire 1 k) \G13|ALT_INV_SAIDA\ [5] $end
+$var wire 1 l) \G13|ALT_INV_SAIDA\ [4] $end
+$var wire 1 m) \G13|ALT_INV_SAIDA\ [3] $end
+$var wire 1 n) \G13|ALT_INV_SAIDA\ [2] $end
+$var wire 1 o) \G13|ALT_INV_SAIDA\ [1] $end
+$var wire 1 p) \G13|ALT_INV_SAIDA\ [0] $end
+$var wire 1 q) \G12|ALT_INV_SAIDA\ [15] $end
+$var wire 1 r) \G12|ALT_INV_SAIDA\ [14] $end
+$var wire 1 s) \G12|ALT_INV_SAIDA\ [13] $end
+$var wire 1 t) \G12|ALT_INV_SAIDA\ [12] $end
+$var wire 1 u) \G12|ALT_INV_SAIDA\ [11] $end
+$var wire 1 v) \G12|ALT_INV_SAIDA\ [10] $end
+$var wire 1 w) \G12|ALT_INV_SAIDA\ [9] $end
+$var wire 1 x) \G12|ALT_INV_SAIDA\ [8] $end
+$var wire 1 y) \G12|ALT_INV_SAIDA\ [7] $end
+$var wire 1 z) \G12|ALT_INV_SAIDA\ [6] $end
+$var wire 1 {) \G12|ALT_INV_SAIDA\ [5] $end
+$var wire 1 |) \G12|ALT_INV_SAIDA\ [4] $end
+$var wire 1 }) \G12|ALT_INV_SAIDA\ [3] $end
+$var wire 1 ~) \G12|ALT_INV_SAIDA\ [2] $end
+$var wire 1 !* \G12|ALT_INV_SAIDA\ [1] $end
+$var wire 1 "* \G12|ALT_INV_SAIDA\ [0] $end
+$var wire 1 #* \G18|ALT_INV_SAIDA\ [15] $end
+$var wire 1 $* \G18|ALT_INV_SAIDA\ [14] $end
+$var wire 1 %* \G18|ALT_INV_SAIDA\ [13] $end
+$var wire 1 &* \G18|ALT_INV_SAIDA\ [12] $end
+$var wire 1 '* \G18|ALT_INV_SAIDA\ [11] $end
+$var wire 1 (* \G18|ALT_INV_SAIDA\ [10] $end
+$var wire 1 )* \G18|ALT_INV_SAIDA\ [9] $end
+$var wire 1 ** \G18|ALT_INV_SAIDA\ [8] $end
+$var wire 1 +* \G18|ALT_INV_SAIDA\ [7] $end
+$var wire 1 ,* \G18|ALT_INV_SAIDA\ [6] $end
+$var wire 1 -* \G18|ALT_INV_SAIDA\ [5] $end
+$var wire 1 .* \G18|ALT_INV_SAIDA\ [4] $end
+$var wire 1 /* \G18|ALT_INV_SAIDA\ [3] $end
+$var wire 1 0* \G18|ALT_INV_SAIDA\ [2] $end
+$var wire 1 1* \G18|ALT_INV_SAIDA\ [1] $end
+$var wire 1 2* \G18|ALT_INV_SAIDA\ [0] $end
+$var wire 1 3* \G1|ALT_INV_pout\ [15] $end
+$var wire 1 4* \G1|ALT_INV_pout\ [14] $end
+$var wire 1 5* \G1|ALT_INV_pout\ [13] $end
+$var wire 1 6* \G1|ALT_INV_pout\ [12] $end
+$var wire 1 7* \G1|ALT_INV_pout\ [11] $end
+$var wire 1 8* \G1|ALT_INV_pout\ [10] $end
+$var wire 1 9* \G1|ALT_INV_pout\ [9] $end
+$var wire 1 :* \G1|ALT_INV_pout\ [8] $end
+$var wire 1 ;* \G1|ALT_INV_pout\ [7] $end
+$var wire 1 <* \G1|ALT_INV_pout\ [6] $end
+$var wire 1 =* \G1|ALT_INV_pout\ [5] $end
+$var wire 1 >* \G1|ALT_INV_pout\ [4] $end
+$var wire 1 ?* \G1|ALT_INV_pout\ [3] $end
+$var wire 1 @* \G1|ALT_INV_pout\ [2] $end
+$var wire 1 A* \G1|ALT_INV_pout\ [1] $end
+$var wire 1 B* \G1|ALT_INV_pout\ [0] $end
+$var wire 1 C* \G7|ALT_INV_Reg[0][15]~25_combout\ $end
+$var wire 1 D* \G7|ALT_INV_Reg[0][14]~24_combout\ $end
+$var wire 1 E* \G7|ALT_INV_Reg[0][13]~23_combout\ $end
+$var wire 1 F* \G7|ALT_INV_Mux19~1_combout\ $end
+$var wire 1 G* \G7|ALT_INV_Mux20~1_combout\ $end
+$var wire 1 H* \G7|ALT_INV_Reg[0][10]~22_combout\ $end
+$var wire 1 I* \G7|ALT_INV_Reg[0][9]~21_combout\ $end
+$var wire 1 J* \G7|ALT_INV_Reg[0][8]~20_combout\ $end
+$var wire 1 K* \G7|ALT_INV_Mux24~1_combout\ $end
+$var wire 1 L* \G7|ALT_INV_Mux25~1_combout\ $end
+$var wire 1 M* \G7|ALT_INV_Reg[0][5]~19_combout\ $end
+$var wire 1 N* \G7|ALT_INV_Mux27~1_combout\ $end
+$var wire 1 O* \G7|ALT_INV_Mux28~1_combout\ $end
+$var wire 1 P* \G7|ALT_INV_Reg[0][2]~18_combout\ $end
+$var wire 1 Q* \G7|ALT_INV_Reg[0][1]~17_combout\ $end
+$var wire 1 R* \G7|ALT_INV_Reg[0][0]~16_combout\ $end
+$var wire 1 S* \G4|ALT_INV_Mux0~3_combout\ $end
+$var wire 1 T* \G4|ALT_INV_Mux0~2_combout\ $end
+$var wire 1 U* \ALT_INV_Clock_Sistema~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0B
+0C
+0D
+1E
+0F
+0G
+1H
+1M
+0>"
+1?"
+x@"
+1A"
+1B"
+1C"
+1D"
+1E"
+1F"
+1G"
+18$
+1=$
+1>$
+0?$
+0@$
+0A$
+0B$
+0C$
+0d$
+0e$
+0f$
+0g$
+0h$
+0i$
+0j$
+0k$
+0l$
+0m$
+0n$
+0o$
+0p$
+0q$
+0r$
+0s$
+0t$
+0u$
+0v$
+0w$
+0x$
+0y$
+0z$
+0{$
+0|$
+0}$
+0~$
+0!%
+0"%
+0#%
+0$%
+0%%
+0&%
+0'%
+0(%
+0)%
+0*%
+0+%
+0,%
+0-%
+0.%
+1/%
+10%
+01%
+12%
+13%
+04%
+05%
+06%
+07%
+08%
+19%
+1:%
+0;%
+1<%
+1=%
+0>%
+1?%
+1@%
+1A%
+0B%
+1C%
+0D%
+0E%
+0F%
+0G%
+1H%
+0I%
+0J%
+1K%
+0L%
+0M%
+0N%
+0O%
+0P%
+0Q%
+0R%
+1S%
+1T%
+0U%
+0V%
+0W%
+0X%
+0Y%
+0Z%
+0[%
+0\%
+0]%
+0^%
+0_%
+0`%
+0a%
+0b%
+0c%
+0d%
+0e%
+0f%
+0g%
+0h%
+0i%
+0j%
+0k%
+0l%
+0m%
+0n%
+0o%
+0p%
+0q%
+0r%
+0s%
+0t%
+1u%
+1v%
+0w%
+1x%
+1y%
+0z%
+0{%
+1|%
+0}%
+0~%
+1!&
+1"&
+0#&
+0$&
+0%&
+0&&
+0'&
+0(&
+0)&
+0*&
+0+&
+0,&
+0-&
+0.&
+0/&
+00&
+01&
+02&
+03&
+04&
+05&
+06&
+07&
+08&
+09&
+0:&
+0;&
+0<&
+0=&
+0>&
+0?&
+0@&
+0A&
+0B&
+0C&
+0D&
+0E&
+0F&
+1G&
+1H&
+0I&
+1J&
+1K&
+0L&
+0M&
+1N&
+0O&
+0P&
+1Q&
+1R&
+0S&
+1T&
+0U&
+0V&
+0W&
+0X&
+1Y&
+1Z&
+0[&
+0\&
+0]&
+0^&
+0_&
+0`&
+0a&
+0b&
+1c&
+1d&
+0e&
+1f&
+1g&
+0h&
+0i&
+1j&
+0k&
+0l&
+1m&
+1n&
+0o&
+0p&
+0q&
+0r&
+1s&
+1t&
+0u&
+1v&
+1w&
+0x&
+0y&
+1z&
+0{&
+0|&
+1}&
+1~&
+0!'
+1"'
+1#'
+0$'
+0%'
+0&'
+0''
+0('
+0)'
+0*'
+0+'
+0,'
+0-'
+0.'
+0/'
+00'
+01'
+02'
+03'
+04'
+05'
+06'
+07'
+08'
+09'
+0:'
+0;'
+0<'
+0='
+0>'
+0?'
+0@'
+1A'
+1B'
+1C'
+1D'
+0E'
+0F'
+0G'
+0H'
+0I'
+0J'
+0K'
+0L'
+0M'
+0N'
+0O'
+1P'
+0Q'
+1R'
+0S'
+1T'
+0U'
+1V'
+0W'
+0X'
+0Y'
+0Z'
+0['
+1\'
+0]'
+1^'
+0_'
+1`'
+0a'
+1b'
+0c'
+0d'
+0e'
+0f'
+0g'
+1h'
+0i'
+0j'
+1k'
+1l'
+1m'
+1n'
+1o'
+1p'
+1q'
+0r'
+0s'
+0t'
+1u'
+0v'
+1w'
+1x'
+1y'
+1z'
+1{'
+0|'
+1}'
+1~'
+0!(
+0"(
+0#(
+0$(
+0%(
+1&(
+1'(
+1((
+1)(
+1*(
+0+(
+1,(
+0/)
+00)
+1A)
+0B)
+0C)
+1D)
+1E)
+0F)
+1G)
+1H)
+0I)
+0J)
+1K)
+0L)
+0M)
+1N)
+1O)
+1P)
+1C*
+1D*
+0E*
+1F*
+0G*
+0H*
+0I*
+1J*
+0K*
+0L*
+1M*
+0N*
+0O*
+1P*
+1Q*
+1R*
+0S*
+0T*
+0U*
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+1n!
+1o!
+0p!
+1q!
+1r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+1~!
+0!"
+1""
+1#"
+1$"
+0%"
+1&"
+1'"
+0("
+1)"
+1*"
+0+"
+0,"
+0-"
+1p
+0q
+0r
+1g
+0h
+0i
+0N
+0O
+0P
+0Q
+0j
+0k
+0l
+0m
+1n
+1o
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+02
+13
+14
+05
+06
+17
+08
+09
+1:
+1;
+0<
+1=
+1>
+0?
+0@
+0A
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0z
+1{
+1|
+0}
+0~
+1!!
+0"!
+0#!
+1$!
+1%!
+0&!
+1'!
+1(!
+0)!
+0*!
+0+!
+0I
+0J
+0K
+0L
+0L!
+1M!
+1N!
+0O!
+0P!
+1Q!
+0R!
+0S!
+1T!
+1U!
+0V!
+1W!
+1X!
+0Y!
+0Z!
+0[!
+0"
+1#
+1$
+0%
+0&
+1'
+0(
+0)
+1*
+1+
+0,
+1-
+1.
+0/
+00
+01
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+1j"
+1k"
+0l"
+1m"
+1n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+1z"
+0{"
+1|"
+1}"
+1~"
+0!#
+1"#
+1##
+0$#
+1%#
+1&#
+0'#
+0(#
+0)#
+1*#
+0+#
+0,#
+1-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+18#
+19#
+0:#
+0;#
+0<#
+0=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0C#
+0D#
+0E#
+0F#
+0G#
+0H#
+0I#
+0J#
+0K#
+0L#
+0M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+0S#
+0T#
+0U#
+0V#
+1W#
+1X#
+0Y#
+0Z#
+1[#
+0\#
+0]#
+1^#
+1_#
+0`#
+1a#
+1b#
+0c#
+0d#
+0e#
+0f#
+0g#
+0h#
+0i#
+0j#
+0k#
+0l#
+0m#
+0n#
+0o#
+0p#
+0q#
+0r#
+0s#
+0t#
+0u#
+0v#
+0w#
+0x#
+0y#
+0z#
+0{#
+0|#
+0}#
+0~#
+0!$
+0"$
+0#$
+0$$
+0%$
+0&$
+0'$
+0($
+1)$
+1*$
+0+$
+0,$
+1-$
+0.$
+0/$
+10$
+11$
+02$
+13$
+14$
+05$
+06$
+07$
+09$
+0:$
+0;$
+0<$
+0D$
+1E$
+1F$
+0G$
+0H$
+1I$
+0J$
+0K$
+1L$
+1M$
+0N$
+1O$
+1P$
+0Q$
+0R$
+0S$
+0T$
+1U$
+1V$
+0W$
+0X$
+1Y$
+0Z$
+0[$
+1\$
+1]$
+0^$
+1_$
+1`$
+0a$
+0b$
+0c$
+0-(
+0.(
+0/(
+00(
+01(
+02(
+03(
+04(
+05(
+06(
+07(
+08(
+09(
+0:(
+0;(
+0<(
+0=(
+0>(
+0?(
+0@(
+0A(
+0B(
+0C(
+0D(
+0E(
+0F(
+0G(
+0H(
+0I(
+0J(
+0K(
+0L(
+0M(
+1N(
+1O(
+0P(
+0Q(
+1R(
+0S(
+0T(
+1U(
+1V(
+0W(
+1X(
+1Y(
+0Z(
+0[(
+0\(
+0](
+0^(
+1_(
+0`(
+1a(
+1b(
+1c(
+0d(
+1e(
+1f(
+0g(
+1h(
+1i(
+0j(
+0k(
+0l(
+0m(
+0n(
+0o(
+0p(
+0q(
+0r(
+0s(
+0t(
+0u(
+0v(
+0w(
+0x(
+0y(
+0z(
+0{(
+0|(
+0}(
+0~(
+0!)
+0")
+0#)
+0$)
+0%)
+0&)
+0')
+0()
+0))
+0*)
+0+)
+0,)
+0-)
+0.)
+11)
+12)
+13)
+14)
+15)
+16)
+17)
+18)
+19)
+1:)
+1;)
+1<)
+1=)
+1>)
+1?)
+1@)
+1Q)
+1R)
+0S)
+1T)
+0U)
+0V)
+0W)
+1X)
+0Y)
+0Z)
+1[)
+0\)
+0])
+1^)
+1_)
+1`)
+1a)
+1b)
+1c)
+1d)
+1e)
+1f)
+1g)
+1h)
+1i)
+1j)
+1k)
+1l)
+1m)
+1n)
+1o)
+1p)
+1q)
+1r)
+1s)
+1t)
+1u)
+1v)
+1w)
+1x)
+1y)
+1z)
+1{)
+1|)
+1})
+1~)
+1!*
+1"*
+1#*
+0$*
+0%*
+1&*
+1'*
+0(*
+1)*
+1**
+0+*
+0,*
+1-*
+0.*
+0/*
+10*
+11*
+12*
+13*
+14*
+15*
+16*
+17*
+18*
+19*
+1:*
+1;*
+1<*
+1=*
+1>*
+1?*
+1@*
+1A*
+1B*
+$end
+#20000
+0!
+0G"
+0"'
+1U*
+0&(
+0'(
+0((
+0)(
+0*(
+1+(
+0,(
+0H%
+0K%
+0S%
+0T%
+1B%
+0A%
+0=%
+0<%
+0:%
+09%
+0*#
+0-#
+09#
+08#
+1{"
+0|"
+0"#
+0##
+0%#
+0&#
+0p
+0g
+0o
+0n
+0*"
+0)"
+0'"
+0&"
+0""
+1!"
+#1000000
