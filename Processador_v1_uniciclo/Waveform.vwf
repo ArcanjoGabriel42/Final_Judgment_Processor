@@ -2110,13 +2110,8 @@ TRANSITION_LIST("Clock_Sistema")
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 950.0;
-=======
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 750.0;
->>>>>>> master
+		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 500.0;
 	}
 }
 

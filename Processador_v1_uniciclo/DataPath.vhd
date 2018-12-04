@@ -320,7 +320,7 @@ G7:  BancoRegistradores 		port map (Clock_Sistema, Flag_escrevereg, SaidaRegA,Sa
 																		Instruction_to_register1, Instruction_to_register2);
 G8:  ExtensordeSinal6To16bits port map (Clock_Sistema,Instruction_to_extensorDeSinal,Saida_extensor);
 G9:  ShiftEsquerda            port map (Clock_Sistema,Saida_extensor, Saida_SLL_to_SumUla);
-G10: Somadorde16bits          port map (Clock_Sistema,SomadorToPc,Saida_SLL_to_sumULA, Saida_SumUla_to_mult);
+G10: Somadorde16bits          port map (Clock_Sistema,SomadorToPc,Saida_SLL_to_SumUla, Saida_SumUla_to_mult);
 G11: QAndBIT                  port map (Flag_branch, Saida_ZeroDaULA, SaidaAND);
 G12: Multiplexador2x1_16bits  port map (Clock_Sistema,SomadorToPc, Saida_SumUla_to_mult, SaidaAND, Saida_mult_to_mult);
 G13: Multiplexador2x1_16bits  port map (Clock_Sistema,Saida_mult_to_mult, Saida_Qsll, Flag_jump, Saida_to_PC);

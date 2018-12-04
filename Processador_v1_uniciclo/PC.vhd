@@ -6,6 +6,7 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 ENTITY PC IS
 PORT
 (
+		--ativo : IN STD_LOGIC;
 		clk :  IN  STD_LOGIC;
 		pin :  IN  STD_LOGIC_VECTOR (15 DOWNTO 0);
 		pout : OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
@@ -17,7 +18,7 @@ ARCHITECTURE behavior OF PC IS
 BEGIN
 	PROCESS(clk)
 		BEGIN
-			IF (clk = '1') THEN
+			IF rising_edge(clk) THEN
 				pout <= pin;
 			END IF;
 	END PROCESS;
