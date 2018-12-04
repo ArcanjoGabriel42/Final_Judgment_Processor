@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Processador_v1_uniciclo -c Processador_v1_uniciclo --vector_source="C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/Waveform.vwf" --testbench_file="C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim/" Processador_v1_uniciclo -c Processador_v1_uniciclo</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work Processador_v1_uniciclo.vho
@@ -2110,8 +2110,13 @@ TRANSITION_LIST("Clock_Sistema")
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 950.0;
+=======
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 750.0;
+>>>>>>> master
 	}
 }
 

@@ -9,7 +9,11 @@ z2
 cModel Technology
 dE:/Documentos/Final Judgment/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim
 Edatapath
+<<<<<<< HEAD
 Z0 w1543900431
+=======
+Z0 w1543901514
+>>>>>>> master
 Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 PDz30Zoj;e1JEj1l7dCiT1
 Z2 DPx8 cyclonev 19 cyclonev_components 0 22 O_kVZAFaN7XDl67flUT[n1
 Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ;`SHL]^j4UaADA9ENAN^]0
@@ -19,7 +23,7 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z9 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
-Z10 dC:/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim
+Z10 dC:/Users/Tarlison Sander/Desktop/Final_Judgment_Processor/Processador_v1_uniciclo/simulation/qsim
 Z11 8Processador_v1_uniciclo.vho
 Z12 FProcessador_v1_uniciclo.vho
 l0
@@ -28,9 +32,15 @@ VLFG8E90m2CF<>z4M9>iKE0
 !s100 >9J63So2<Xg<V>;2XTbiL3
 Z13 OV;C;10.5b;63
 32
+<<<<<<< HEAD
 Z14 !s110 1543900432
 !i10b 1
 Z15 !s108 1543900432.000000
+=======
+Z14 !s110 1543901515
+!i10b 1
+Z15 !s108 1543901515.000000
+>>>>>>> master
 Z16 !s90 -work|work|Processador_v1_uniciclo.vho|
 Z17 !s107 Processador_v1_uniciclo.vho|
 !i113 1
@@ -47,10 +57,17 @@ R7
 R8
 R9
 DEx4 work 8 datapath 0 22 LFG8E90m2CF<>z4M9>iKE0
+<<<<<<< HEAD
 l444
 L70
 V8>1c5:WMgmO8z`>bK`B^32
 !s100 TiT1hC2a[DRCKd2bjoI3j1
+=======
+l1378
+L70
+V<WTj^i9fzVl370_MmV:B51
+!s100 _R@N83LkPWX8l6^95P_7f0
+>>>>>>> master
 R13
 32
 R14
@@ -62,7 +79,11 @@ R17
 R18
 R19
 Edatapath_vhd_vec_tst
+<<<<<<< HEAD
 Z20 w1543900429
+=======
+Z20 w1543901512
+>>>>>>> master
 R7
 R8
 R10
@@ -74,11 +95,16 @@ VIHFkm4W?_O7LbQ`];lz?<1
 !s100 WSND17n`95cIi1P?e3l0C1
 R13
 32
-R14
+Z23 !s110 1543901516
 !i10b 1
 R15
+<<<<<<< HEAD
 Z23 !s90 -work|work|Waveform.vwf.vht|
 Z24 !s107 Waveform.vwf.vht|
+=======
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
+>>>>>>> master
 !i113 1
 R18
 R19
@@ -88,6 +114,7 @@ R8
 Z25 DEx4 work 20 datapath_vhd_vec_tst 0 22 IHFkm4W?_O7LbQ`];lz?<1
 l94
 L33
+<<<<<<< HEAD
 Z26 V7hjhXUK[4mj]mOP_gBJ5:0
 Z27 !s100 4Ch<5Z6?:SZzn4>?@kE`A3
 R13
@@ -184,6 +211,15 @@ R29
 !i10b 1
 R30
 R23
+=======
+VUVo4]U=6C3O9lg0ERjU3g2
+!s100 L9aDFB:RzH7Z9JQoOjL8>0
+R13
+32
+R23
+!i10b 1
+R15
+>>>>>>> master
 R24
 !i113 1
 R18

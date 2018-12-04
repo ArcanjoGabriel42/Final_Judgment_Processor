@@ -276,6 +276,33 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
+=======
+					"name" : "Instruction_to_multiplexador_outWaveform[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control_outWaveform[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control_outWaveform[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_Control_outWaveform[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register1_outWaveform[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_register2_outWaveform[0]",
+					"strict" : false
+				},
+				{
+>>>>>>> master
 					"name" : "Instruction_to_register2_outWaveform[1]",
 					"strict" : false
 				},
@@ -284,6 +311,25 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
+=======
+					"name" : "Instruction_to_controlULA_outWaveform[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_controlULA_outWaveform[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction_to_extensorDeSinal_outWaveform[2]",
+					"strict" : false
+				},
+				{
+>>>>>>> master
 					"name" : "out_Saida_OperacaoDaULA[0]",
 					"strict" : false
 				},
