@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/03/2018 16:53:15"
+-- Generated on "12/04/2018 01:04:12"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DataPath
 -- 
@@ -63,32 +63,32 @@ SIGNAL SomadorToPc_outWaveform : STD_LOGIC_VECTOR(15 DOWNTO 0);
 COMPONENT DataPath
 	PORT (
 	Clock_Sistema : IN STD_LOGIC;
-	Data_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Flag_aluSRC_OUT : BUFFER STD_LOGIC;
-	Flag_branch_OUT : BUFFER STD_LOGIC;
-	Flag_escrevemem_OUT : BUFFER STD_LOGIC;
-	Flag_escrevereg_OUT : BUFFER STD_LOGIC;
-	Flag_jump_OUT : BUFFER STD_LOGIC;
-	Flag_lemem_OUT : BUFFER STD_LOGIC;
-	Flag_memparareg_OUT : BUFFER STD_LOGIC;
-	Flag_origialu_OUT : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
-	Flag_regdest_OUT : BUFFER STD_LOGIC;
-	Instruction_to_Control_outWaveform : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
-	Instruction_to_controlULA_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
-	Instruction_to_extensorDeSinal_outWaveform : BUFFER STD_LOGIC_VECTOR(5 DOWNTO 0);
-	Instruction_to_Jump_outWaveform : BUFFER STD_LOGIC_VECTOR(11 DOWNTO 0);
-	Instruction_to_multiplexador_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
-	Instruction_to_register1_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
-	Instruction_to_register2_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
-	multiplexador_to_writeRegister_outWaveform : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
-	out_Saida_OperacaoDaULA : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
-	Saida_adress_to_RAM_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Saida_mult_to_mult_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Saida_to_PC_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	SaidaPc_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	SaidaRegA_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	SaidaRegB_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
-	SomadorToPc_outWaveform : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0)
+	Data_to_writeRegister_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Flag_aluSRC_OUT : OUT STD_LOGIC;
+	Flag_branch_OUT : OUT STD_LOGIC;
+	Flag_escrevemem_OUT : OUT STD_LOGIC;
+	Flag_escrevereg_OUT : OUT STD_LOGIC;
+	Flag_jump_OUT : OUT STD_LOGIC;
+	Flag_lemem_OUT : OUT STD_LOGIC;
+	Flag_memparareg_OUT : OUT STD_LOGIC;
+	Flag_origialu_OUT : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Flag_regdest_OUT : OUT STD_LOGIC;
+	Instruction_to_Control_outWaveform : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Instruction_to_controlULA_outWaveform : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Instruction_to_extensorDeSinal_outWaveform : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+	Instruction_to_Jump_outWaveform : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+	Instruction_to_multiplexador_outWaveform : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Instruction_to_register1_outWaveform : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	Instruction_to_register2_outWaveform : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	multiplexador_to_writeRegister_outWaveform : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	out_Saida_OperacaoDaULA : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	Saida_adress_to_RAM_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Saida_mult_to_mult_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Saida_to_PC_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SaidaPc_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SaidaRegA_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SaidaRegB_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SomadorToPc_outWaveform : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
